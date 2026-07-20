@@ -1,20 +1,57 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { DEFAULT_DESCRIPTION, JsonLd, SITE_NAME, SITE_URL } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Maroc Treks - Randonnées & Treks au Maroc",
-  description:
-    "Votre guide pour le trekking dans l'Atlas et le désert. Vivez l'aventure au Sahara et partez pour un trekking inoubliable dans les montagnes de l'Atlas marocain.",
+  metadataBase: new URL(SITE_URL),
+  title: { default: "Trekking au Maroc avec guide local | Maroc Treks", template: "%s | Maroc Treks" },
+  description: DEFAULT_DESCRIPTION,
+  applicationName: SITE_NAME,
+  authors: [{ name: SITE_NAME, url: SITE_URL }],
+  creator: SITE_NAME,
+  publisher: SITE_NAME,
+  category: "travel",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1, "max-video-preview": -1 },
+  },
+  alternates: { canonical: "/" },
+  openGraph: { type: "website", locale: "fr_FR", url: SITE_URL, siteName: SITE_NAME, title: "Trekking au Maroc avec guide local | Maroc Treks", description: DEFAULT_DESCRIPTION },
+  twitter: { card: "summary_large_image", title: "Trekking au Maroc avec guide local | Maroc Treks", description: DEFAULT_DESCRIPTION },
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+  const organization = {
+    "@context": "https://schema.org",
+    "@type": ["Organization", "TravelAgency"],
+    "@id": `${SITE_URL}/#organization`,
+    name: SITE_NAME,
+    url: SITE_URL,
+    email: "tadrartmed@gmail.com",
+    telephone: "+212667591933",
+    description: DEFAULT_DESCRIPTION,
+    founder: { "@type": "Person", name: "Mohamed Ait Tadrart" },
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "Douar Armed, Imlil",
+      addressLocality: "Asni",
+      addressRegion: "Marrakech-Safi",
+      postalCode: "42152",
+      addressCountry: "MA",
+    },
+    areaServed: { "@type": "Country", name: "Maroc" },
+    contactPoint: { "@type": "ContactPoint", telephone: "+212667591933", email: "tadrartmed@gmail.com", contactType: "reservations", availableLanguage: ["fr", "en", "es", "nl"] },
+  };
+  const website = {
+    "@context": "https://schema.org", "@type": "WebSite", "@id": `${SITE_URL}/#website`,
+    url: SITE_URL, name: SITE_NAME, inLanguage: "fr-FR", publisher: { "@id": `${SITE_URL}/#organization` },
+  };
+
   return (
     <html lang="fr" className="h-full antialiased font-sans">
       <body className="min-h-full flex flex-col bg-brand-sand text-brand-slate">
+        <JsonLd data={[organization, website]} />
         {children}
       </body>
     </html>

@@ -127,7 +127,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <span className="block text-xs text-slate-400 font-bold uppercase tracking-wider">Bureau local</span>
-                    <span className="text-sm font-semibold text-brand-slate">Imlil, Atlas Mountains, Maroc</span>
+                    <span className="text-sm font-semibold text-brand-slate">Douar Armed, Imlil, Asni 42152, Maroc</span>
                   </div>
                 </div>
               </div>

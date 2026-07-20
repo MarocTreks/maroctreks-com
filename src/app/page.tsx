@@ -3,6 +3,13 @@ import Image from "next/image";
 import { Mountain, Clock, CheckCircle2, ChevronRight } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { createMetadata } from "@/lib/seo";
+
+export const metadata = createMetadata({
+  title: "Trekking au Maroc avec guide local | Maroc Treks",
+  description: "Explorez le Toubkal, le M’Goun, l’Atlas et le Sahara avec Mohamed Ait Tadrart, guide local. Treks authentiques et circuits sur mesure au Maroc.",
+  path: "/",
+});
 
 export default function Home() {
   const treks = [
@@ -10,7 +17,7 @@ export default function Home() {
       title: "Haut Atlas Toubkal",
       description: "Gravissez le sommet de l'Afrique du Nord (4 167 m) et découvrez les villages berbères traditionnels.",
       href: "/haut-atlas-toubkal",
-      duration: "2-8 Jours",
+      duration: "8-15 Jours",
       difficulty: "Modéré à Difficile",
       image: "https://images.unsplash.com/photo-1542401886-65d6c61db217?auto=format&fit=crop&q=80&w=800",
     },
@@ -35,7 +42,7 @@ export default function Home() {
       description: "Le trek ultime de 22 jours à travers les vallées et les hauts cols sauvages du Maroc.",
       href: "/grande-traversee-de-latlas-marocain-circuit-de-22-jours",
       duration: "22 Jours",
-      difficulty: "Trés Difficile",
+      difficulty: "Très difficile",
       image: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=800",
     },
   ];
@@ -51,7 +58,7 @@ export default function Home() {
           <div className="absolute inset-0 z-0">
             <Image
               src="https://images.unsplash.com/photo-1486915309851-b0cc1f8a0084?auto=format&fit=crop&q=80&w=1920"
-              alt="Trekking in Morocco Atlas Mountains"
+              alt="Randonnée dans les montagnes de l’Atlas au Maroc"
               fill
               priority
               sizes="100vw"

@@ -1,0 +1,1674 @@
+[
+  {
+    "slug": "randonnee-dans-latlas",
+    "path": "/randonnee-dans-latlas",
+    "sourceUrl": "https://maroctreks.com/randonnee-dans-latlas/",
+    "category": "toubkal",
+    "title": "Randonnée dans l'Atlas : Le Circuit Complet du Tour du Toubkal en 15 Jours",
+    "subtitle": "Tour du Toubkal Complet en 15 Jours – Randonnée dans le Haut Atlas",
+    "image": "https://images.unsplash.com/photo-1542401886-65d6c61db217?auto=format&fit=crop&q=80&w=1600",
+    "duration": "15 jours",
+    "difficulty": "Randonnée modérée",
+    "maxAltitude": "4 167 m",
+    "bestSeason": "Mai – Octobre",
+    "groupSize": "À partir de 5 personnes",
+    "tourType": "Tour du Toubkal",
+    "price": "Sur demande",
+    "sectionHeadings": {
+      "description": "Description du Circuit",
+      "highlights": "Points Forts du Circuit",
+      "itinerary": "Itinéraire Détaillé de la Randonnée de 15 Jours",
+      "included": "Ce Qui Est Inclus",
+      "details": "Détails Supplémentaires du Circuit",
+      "faqs": "Questions Fréquemment Posées",
+      "gallery": "Galerie Photo du Tour du Toubkal",
+      "price": "Prix du Circuit",
+      "request": "Demander Ce Circuit"
+    },
+    "detailLabels": {
+      "duration": "Durée de la Randonnée",
+      "difficulty": "Difficulté de la Randonnée",
+      "bestSeason": "Meilleure Saison",
+      "groupSize": "Taille du Groupe",
+      "tourType": "Type de Randonnée",
+      "price": "Prix de la Randonnée"
+    },
+    "description": "Vivez l'expérience d'une vie avec notre Tour du Toubkal de 15 jours , la manière la plus complète de découvrir le Haut Atlas . Cette aventure épique de randonnée dans l'Atlas est conçue pour ceux qui veulent aller au-delà du simple sommet et s'immerger complètement dans les paysages à couper le souffle et la riche culture berbère du Maroc.\n\nConnue comme le « Toit de l'Afrique du Nord », la chaîne du Haut Atlas présente un monde de vallées profondes, de cols élevés et de villages traditionnels. Notre voyage culmine avec l'ascension du Jbel Toubkal , le plus haut sommet d'Afrique du Nord à 4 167 mètres, offrant des vues panoramiques incomparables. Cette randonnée est de niveau modéré , rendue accessible grâce au soutien de nos guides expérimentés et de nos équipes de mulets, vous permettant de vous concentrer sur les paysages magnifiques et les rencontres culturelles uniques pendant votre randonnée au Maroc .",
+    "highlights": [
+      "Ascension du Jbel Toubkal, le plus haut sommet d'Afrique du Nord (4 167 m).",
+      "Complétez le circuit classique du Tour du Toubkal, un voyage que peu de randonneurs expérimentent pleinement.",
+      "Randonnée à travers des paysages variés, du lac Ifni à la vallée reculée d'Azib Likemt.",
+      "Imprégnez-vous de la culture berbère en visitant des villages de montagne accessibles uniquement à pied.",
+      "Forfait tout inclus avec guides de montagne certifiés, soutien muletier et pension complète pendant la randonnée."
+    ],
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Arrivée à Marrakech",
+        "description": "Bienvenue au Maroc ! À votre arrivée à l'aéroport de Marrakech, vous serez transféré à votre hôtel ou Riad traditionnel. Nuit à Marrakech."
+      },
+      {
+        "day": 2,
+        "title": "Marrakech – Imi Oughlad – Tizi n'Tacht – Tiziane (5 heures de randonnée)",
+        "description": "Après le petit-déjeuner, nous nous rendons au point de départ de la randonnée à Imi Oughlad. Rencontrez votre guide et votre équipe de mulets avant de commencer votre première randonnée sur le col Tizi n'Tacht, descendant vers le village de Tiziane (1 800 m) pour la nuit."
+      },
+      {
+        "day": 3,
+        "title": "Tiziane – Col Tizi n'Teouti – Azib n'Tizgui (6 heures de randonnée)",
+        "description": "Une journée de magnifique randonnée à travers des vergers de noyers et par-dessus le Col Tizi n'Teouti (2 400 m), offrant vos premières vues spectaculaires sur les hauts sommets. Nous descendons vers le pâturage d'été d'Azib n'Tizgui (2 250 m) pour camper."
+      },
+      {
+        "day": 4,
+        "title": "Azib n'Tizgui – Col Tougdal – Azib n'Tamsoult (6 heures de randonnée)",
+        "description": "Randonnée sur le Col Tougdal et profitez de vues magnifiques avant de descendre vers le charmant village d'Azib n'Tamsoult (2 250 m), niché au bord d'une rivière."
+      },
+      {
+        "day": 5,
+        "title": "Azib n'Tamsoult – Col Mezzik – Armed (5 heures de randonnée)",
+        "description": "Une ascension panoramique sur le Col Mezzik nous mène au village d'Armed (2 000 m), l'un des plus grands de la région, où nous pouvons découvrir la vie locale."
+      },
+      {
+        "day": 6,
+        "title": "Armed – Sidi Chamharouch – Refuge du Toubkal (5 heures de randonnée)",
+        "description": "Nous remontons la vallée vers le sommet, passant par le lieu de pèlerinage de Sidi Chamharouch avant une montée régulière vers le Refuge du Toubkal (3 207 m), notre base pour l'ascension du sommet."
+      },
+      {
+        "day": 7,
+        "title": "Jour du Sommet – Jbel Toubkal (4 167 m) – Retour au Refuge (5 heures de randonnée)",
+        "description": "Départ tôt pour l'ascension non technique mais exigeante du sommet du Jbel Toubkal. Votre récompense est l'incroyable vue à 360 degrés depuis le « Toit de l'Afrique du Nord ». Nous redescendons ensuite au refuge."
+      },
+      {
+        "day": 8,
+        "title": "Refuge Toubkal – Col Ouanoums – Lac Ifni (6 heures de randonnée)",
+        "description": "Au lieu de descendre par le même chemin, nous passons par le Col Ouanoums pour découvrir le magnifique lac Ifni (2 400 m), caché."
+      },
+      {
+        "day": 9,
+        "title": "Lac Ifni – Tissaldai – Taghbalout (5,5 heures de randonnée)",
+        "description": "Une journée d'exploration, randonnée du lac à travers la région de Tissaldai jusqu'à notre camp à Taghbalout (2 500 m)."
+      },
+      {
+        "day": 10,
+        "title": "Taghbalout – Col (2 900 m) – Azib n'Likkemt (6,5 heures de randonnée)",
+        "description": "Une longue mais gratifiante journée sur un col élevé (2 900 m) avec des vues spectaculaires, descendant vers les magnifiques pâturages d'Azib n'Likkemt pour camper."
+      },
+      {
+        "day": 11,
+        "title": "Azib n'Likemt – Col n'Likemt – Tachdirt (6 heures de randonnée)",
+        "description": "Nous affrontons le Col n'Likemt et poursuivons notre voyage à travers le paysage changeant, arrivant au village de Tachdirt."
+      },
+      {
+        "day": 12,
+        "title": "Tachdirt – Tamguist – Imesker (5,5 heures de randonnée)",
+        "description": "Une descente à travers des champs en terrasses et des villages, montrant un côté différent, plus vert, du Haut Atlas, se terminant à Imesker (1 600 m)."
+      },
+      {
+        "day": 13,
+        "title": "Imesker – Imi Oughlad – Retour à Marrakech (1,5 heure de randonnée)",
+        "description": "Une courte randonnée finale jusqu'à Imi Oughlad, où notre véhicule nous attend pour nous ramener à Marrakech. Nuit dans un hôtel/Riad."
+      },
+      {
+        "day": 14,
+        "title": "Journée Libre à Marrakech",
+        "description": "Une journée bien méritée pour se détendre, explorer les souks animés et visiter la célèbre place Jemaa el-Fnaa."
+      },
+      {
+        "day": 15,
+        "title": "Départ de Marrakech",
+        "description": "Transfert à l'aéroport de Marrakech pour votre vol de départ."
+      }
+    ],
+    "included": [
+      "Tous les transferts aéroport et montagne.",
+      "Assistance d'un guide de montagne certifié et expérimenté.",
+      "Équipe de muletiers pour le transport des bagages et de l'équipement.",
+      "Tous les hébergements (hôtel à Marrakech, refuge de montagne, gîtes berbères et tentes de camping).",
+      "Pension complète pendant la randonnée (tous les repas fournis par notre cuisinier).",
+      "Équipement de camping (tentes, matelas)."
+    ],
+    "notIncluded": [
+      "Assurance voyage (obligatoire).",
+      "Dépenses personnelles et boissons non alcoolisées.",
+      "Pourboires pour le guide et l'équipe de muletiers."
+    ],
+    "faqs": [
+      {
+        "question": "Quel est le niveau de difficulté du Tour du Toubkal ?",
+        "answer": "Il s'agit d'une randonnée de niveau modéré. Elle nécessite un bon niveau de condition physique car les journées de randonnée sont longues (5 à 6,5 heures en moyenne) et impliquent des montées et descentes importantes. Aucune compétence d'escalade technique n'est nécessaire pour le sommet du Toubkal."
+      },
+      {
+        "question": "Quelle est la meilleure période pour la randonnée dans l'Atlas ?",
+        "answer": "La meilleure saison pour cette randonnée est de mai à octobre. Pendant ces mois, le temps est généralement stable et la neige d'été a fondu, rendant les cols élevés et le sommet accessibles et plus sûrs."
+      },
+      {
+        "question": "Les villages berbères sont-ils accessibles toute l'année ?",
+        "answer": "Oui, les villages berbères sur cet itinéraire sont accessibles aux randonneurs tout au long de l'année, offrant un aperçu culturel unique, peu importe quand vous voyagez."
+      },
+      {
+        "question": "Le mal d'altitude est-il un risque lors de cette randonnée ?",
+        "answer": "Bien que nous dormions à des altitudes juste au-dessus de 3 000 m seulement pendant deux nuits, le risque de mal aigu des montagnes est faible mais pas nul. Notre itinéraire est conçu avec une acclimatation appropriée. Il est important d'être bien hydraté et d'informer votre guide de tout symptôme."
+      }
+    ]
+  },
+  {
+    "slug": "randonnee-berbere-avec-ascension-du-toubkal-8-jours",
+    "path": "/randonnee-berbere-avec-ascension-du-toubkal-8-jours",
+    "sourceUrl": "https://maroctreks.com/randonnee-berbere-avec-ascension-du-toubkal-8-jours/",
+    "category": "toubkal",
+    "title": "Les villages berbères avec ascension du Toubkal en 8 jours",
+    "subtitle": "Randonnée Berbère avec Ascension du Toubkal - 8 Jours",
+    "image": "https://images.unsplash.com/photo-1542401886-65d6c61db217?auto=format&fit=crop&q=80&w=1600",
+    "duration": "8 jours / 7 nuits",
+    "difficulty": "Moyen",
+    "maxAltitude": "4 167 m",
+    "bestSeason": "Toute l'année",
+    "groupSize": "À partir de 2 personnes",
+    "tourType": "Villages berbères + ascension",
+    "price": "Sur demande",
+    "sectionHeadings": {
+      "description": "Description du Circuit",
+      "highlights": "Points Forts du Circuit",
+      "itinerary": "Itinéraire Détaillé - 8 Jours",
+      "included": "Ce Qui Est Inclus",
+      "details": "Détails du Circuit",
+      "faqs": "Questions Fréquentes",
+      "gallery": "Galerie Photo",
+      "price": "Prix du Circuit",
+      "request": "Demander Ce Circuit"
+    },
+    "detailLabels": {
+      "duration": "Durée",
+      "difficulty": "Niveau",
+      "bestSeason": "Période",
+      "groupSize": "Participants",
+      "tourType": "Type de Randonnée",
+      "price": "Prix"
+    },
+    "description": "Cette randonnée de 8 jours vous emmène à la découverte des villages berbères authentiques du Haut Atlas marocain, avec l' ascension du Jbel Toubkal , le plus haut sommet d'Afrique du Nord à 4 167 mètres d'altitude.\n\nVous traverserez des paysages montagneux spectaculaires, rencontrerez les habitants locaux et découvrirez leur mode de vie traditionnel. L'ascension du Toubkal, bien que facultative, constitue le point d'orgue de ce trek. Ce circuit de niveau moyen est accessible à toute personne en bonne condition physique.\n\nNotre équipe de guides diplômés et muletiers expérimentés vous accompagnera tout au long de ce périple pour une expérience authentique et sécurisée dans les montagnes de l'Atlas.",
+    "highlights": [
+      "Ascension du Jbel Toubkal (4 167 m), le plus haut sommet d'Afrique du Nord",
+      "Immersion dans la culture berbère authentique",
+      "Découverte des villages traditionnels de montagne",
+      "Paysages spectaculaires du Haut Atlas",
+      "Accompagnement par des guides diplômés et une équipe muletière",
+      "Hébergement en gîtes et sous tente pour une expérience authentique"
+    ],
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Marrakech",
+        "description": "Arrivée à l'aéroport de Marrakech, accueil et transfert vers votre hébergement. Installation et nuit à Marrakech."
+      },
+      {
+        "day": 2,
+        "title": "Marrakech - Asni Imioughlad (1500m) - Col de Tacht (2200m) - Tiziane (1800m)",
+        "description": "Départ de Marrakech vers le village d'Imioughlad. Première journée de randonnée avec la traversée du col de Tacht et descente vers le village de Tiziane. 4h30 de marche ."
+      },
+      {
+        "day": 3,
+        "title": "Tiziane – Col Mzik (2400m) – Armed (1900m)",
+        "description": "Randonnée à travers des paysages magnifiques avec l'ascension du col Mzik offrant des vues panoramiques sur les vallées environnantes. Descente vers le village d'Armed. 5h30 de marche ."
+      },
+      {
+        "day": 4,
+        "title": "Armed – Sidi Chamharouch – Refuge de Toubkal (3207m)",
+        "description": "Journée d'approche vers le refuge du Toubkal en passant par le sanctuaire de Sidi Chamharouch, lieu de pèlerinage important dans la région. Nuit au refuge. 5h de marche ."
+      },
+      {
+        "day": 5,
+        "title": "Ascension du Sommet Toubkal (4167m) - Descente vers Armed",
+        "description": "Départ tôt le matin pour l'ascension du Jbel Toubkal (facultative). Vue panoramique exceptionnelle depuis le sommet. Descente vers le refuge puis continuation vers Armed. 8h de marche ."
+      },
+      {
+        "day": 6,
+        "title": "Armed – Tizi Tamaterte (2200m) – Ouanskra",
+        "description": "Traversée du col Tizi Tamaterte et découverte de nouveaux paysages. Arrivée au village d'Ouanskra pour la nuit. 5h de marche ."
+      },
+      {
+        "day": 7,
+        "title": "Ouanskra – Tamguiste - Ikis – Col Aguersiwal (2000m) - Retour à Marrakech",
+        "description": "Dernière journée de randonnée à travers les villages de Tamguiste et Ikis, avec la traversée du col Aguersiwal. Retour en véhicule vers Marrakech. 3h30 de marche ."
+      },
+      {
+        "day": 8,
+        "title": "Transfert à l'aéroport",
+        "description": "Petit-déjeuner et transfert à l'aéroport de Marrakech pour votre vol retour, avec de merveilleux souvenirs de cette aventure berbère."
+      }
+    ],
+    "included": [
+      "Prise en charge dès votre arrivée à l'aéroport",
+      "Les transferts Aéroport - Hôtel - Randonnée - Hôtel - Aéroport",
+      "L'assistance d'un guide diplômé et d'une équipe muletière",
+      "Les nuits en hôtel ou Riad à Marrakech",
+      "Les nuits sous tente et en gîte pendant la randonnée",
+      "La pension complète pendant le circuit"
+    ],
+    "notIncluded": [
+      "L'assurance annulation et assistance (Obligatoire!)",
+      "Les boissons et dépenses personnelles",
+      "Les repas en ville"
+    ],
+    "faqs": [
+      {
+        "question": "Quel est le niveau de difficulté de cette randonnée ?",
+        "answer": "Cette randonnée est de niveau moyen. Elle est accessible à toute personne en bonne condition physique, pratiquant une activité sportive régulière. Les journées de marche varient entre 3h30 et 8h, avec des dénivelés positifs et négatifs."
+      },
+      {
+        "question": "L'ascension du Toubkal est-elle obligatoire ?",
+        "answer": "Non, l'ascension du Toubkal est facultative. Les personnes qui ne souhaitent pas faire l'ascension peuvent rester au refuge ou faire une randonnée alternative dans les environs avec l'accompagnement d'un guide."
+      },
+      {
+        "question": "Quel équipement faut-il prévoir ?",
+        "answer": "Il est recommandé de prévoir : chaussures de randonnée, vêtements chauds (même en été), coupe-vent, sac à dos, lampe frontale, crème solaire, lunettes de soleil et gourde. Une liste d'équipement détaillée vous sera fournie à la réservation."
+      },
+      {
+        "question": "Quelle est la meilleure période pour cette randonnée ?",
+        "answer": "Cette randonnée est possible toute l'année, mais les périodes les plus agréables sont le printemps (avril-juin) et l'automne (septembre-novembre). En été, les températures peuvent être élevées, et en hiver, l'ascension du Toubkal peut nécessiter l'utilisation de crampons."
+      }
+    ]
+  },
+  {
+    "slug": "randonnee-dans-le-haut-atlas-central",
+    "path": "/randonnee-dans-le-haut-atlas-central",
+    "sourceUrl": "https://maroctreks.com/randonnee-dans-le-haut-atlas-central/",
+    "category": "mgoun",
+    "title": "Randonnée dans le Haut Atlas Central - Ascension du M'Goun",
+    "subtitle": "Traversée Nord-Sud du M'Goun - Ascension du 2ème plus haut sommet du Maroc",
+    "image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
+    "duration": "10 jours / 9 nuits",
+    "difficulty": "Moyen +",
+    "maxAltitude": "4 068 m",
+    "bestSeason": "Mai à Octobre",
+    "groupSize": "À partir de 2 personnes",
+    "tourType": "Traversée et ascension",
+    "price": "Sur demande",
+    "sectionHeadings": {
+      "description": "Description du Circuit",
+      "highlights": "Points Forts du Circuit",
+      "itinerary": "Itinéraire Détaillé - 10 Jours",
+      "included": "Ce Qui Est Inclus",
+      "details": "Détails du Circuit",
+      "faqs": "Questions Fréquentes",
+      "gallery": "Galerie Photo du Haut Atlas Central",
+      "price": "Prix du Circuit",
+      "request": "Demander Ce Circuit"
+    },
+    "detailLabels": {
+      "duration": "Durée",
+      "difficulty": "Niveau",
+      "bestSeason": "Période",
+      "groupSize": "Participants",
+      "tourType": "Type de Randonnée",
+      "price": "Prix"
+    },
+    "description": "Le Haut Atlas central est un massif essentiellement calcaire, morphologiquement dominé par des zones tabulaires culminant à 2 500 mètres d'altitude, qui s'étend d'Azilal à Ouarzazate. Les paysages contrastés y sont d'une beauté extraordinaire, révélant aux visiteurs de merveilleux sites avec des plateaux d'altitude, des gorges et des canyons encaissés, un chaos de cimes déchiquetées par l'érosion...\n\nLe Jbel M'Goun (4 068 mètres) est le sommet le plus haut de cette partie du Haut Atlas. Il est constitué d'une longue crête qui dépasse ou approche les 4000 mètres d'altitude sur une longueur de 10 km. En fait cette crête est un anticlinal. La roche à la surface est un calcaire dur. Son versant nord a été creusé par des glaciers lors des glaciations du Quaternaire si bien qu'aujourd'hui 14 combes s'y alignent perpendiculairement à la ligne de crête. L'Ighil M'Goun est une destination très prisée des randonneurs pratiquant le trekking.\n\nOn y rencontre une population berbère réputée pour son exceptionnelle hospitalité. La Vallée des Aït Bouguemez ou la \"Vallée heureuse\" est la vallée la plus centrale de la région, à une altitude de 1900 m au pied du majestueux M'goun 4068 m. Ses champs entretenus comme des jardins attirent au printemps et en été des oiseaux migrateurs de tous les coins du monde.",
+    "highlights": [
+      "Ascension du Jbel M'Goun (4068m), 2ème plus haut sommet du Maroc",
+      "Découverte de la Vallée Heureuse d'Aït Bouguemez",
+      "Traversée nord-sud complète du massif du M'Goun",
+      "Paysages extraordinaires : plateaux, gorges et canyons",
+      "Rencontre avec la population berbère et sa culture",
+      "Observation des empreintes de dinosaures Atlas-saures"
+    ],
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Arrivée à Marrakech",
+        "description": "Arrivée à l'aéroport de Marrakech, accueil et transfert vers votre hébergement. Installation et nuit à l'hôtel."
+      },
+      {
+        "day": 2,
+        "title": "Marrakech / Aït Bougmez (1800m)",
+        "description": "Départ de Marrakech vers la magnifique Vallée Heureuse d'Aït Bougmez. 300km - 5h de route . Première immersion dans cette vallée réputée pour sa beauté et son authenticité."
+      },
+      {
+        "day": 3,
+        "title": "Vallée d'Aït Bougmez / Arous (2400m)",
+        "description": "Première journée de randonnée à travers la vallée vers le village d'Arous. Découverte des paysages et de la culture locale. 5h de marche ."
+      },
+      {
+        "day": 4,
+        "title": "Azib Arous / Col Timanratine (3200m) / Plateau de Targdit (2900m)",
+        "description": "Journée d'approche vers le massif du M'Goun avec la traversée du col Timanratine et arrivée sur le magnifique plateau de Targdit. 4h30 de marche ."
+      },
+      {
+        "day": 5,
+        "title": "Targdit / Sommet de M'Goun (4068m) / Ifri (2700m)",
+        "description": "Journée d'ascension du sommet du M'Goun. Vue panoramique exceptionnelle depuis le toit du Haut Atlas Central. Descente vers Ifri. 7h de marche ."
+      },
+      {
+        "day": 6,
+        "title": "Ifri / Ameskar Tehtani (1800m)",
+        "description": "Descente vers la vallée d'Ameskar à travers des paysages variés et des villages traditionnels. 5h30 de marche ."
+      },
+      {
+        "day": 7,
+        "title": "Ameskar Tehtani / Boutagrar (1600m)",
+        "description": "Continuation de la randonnée vers la région de Boutagrar, découverte de nouveaux paysages et rencontres avec les habitants. 5h30 de marche ."
+      },
+      {
+        "day": 8,
+        "title": "Boutagrar / Hdida Tabarkhachte (1400m)",
+        "description": "Dernière journée complète de randonnée vers la région de Tabarkhachte. 5h de marche ."
+      },
+      {
+        "day": 9,
+        "title": "Tabarkhachte / Ouarzazate / Marrakech",
+        "description": "Retour en véhicule vers Marrakech en passant par Ouarzazate. 350km - 6h de route . Dernière nuit à Marrakech."
+      },
+      {
+        "day": 10,
+        "title": "Marrakech / Départ",
+        "description": "Petit-déjeuner et transfert à l'aéroport de Marrakech pour votre vol retour, avec de merveilleux souvenirs de cette aventure dans le Haut Atlas Central."
+      }
+    ],
+    "included": [
+      "Prise en charge dès votre arrivée à l'aéroport",
+      "Les transferts Aéroport - Hôtel - Randonnée - Hôtel - Aéroport",
+      "L'assistance d'un guide diplômé et d'une équipe muletière",
+      "Les nuits en hôtel ou Riad à Marrakech",
+      "Les nuits sous tente et en gîte pendant la randonnée",
+      "La pension complète pendant le circuit"
+    ],
+    "notIncluded": [
+      "L'assurance annulation et assistance (Obligatoire!)",
+      "Les boissons et dépenses personnelles",
+      "Les repas en ville"
+    ],
+    "faqs": [
+      {
+        "question": "Quel est le niveau de difficulté de cette randonnée ?",
+        "answer": "Cette randonnée est de niveau moyen +. Elle nécessite une bonne condition physique et une certaine expérience de la randonnée en montagne. L'ascension du M'Goun (jour 5) est particulièrement exigeante avec 7h de marche et un dénivelé important."
+      },
+      {
+        "question": "L'ascension du M'Goun est-elle technique ?",
+        "answer": "L'ascension du M'Goun n'est pas technique au sens alpinisme du terme, mais elle est exigeante physiquement. Aucune compétence particulière n'est requise en dehors d'une bonne endurance et d'une acclimatation progressive à l'altitude."
+      },
+      {
+        "question": "Quelle est la meilleure période pour cette randonnée ?",
+        "answer": "La période recommandée est de mai à octobre. En mai-juin, les paysages sont encore verdoyants et les températures agréables. En septembre-octobre, l'air est très clair et les températures sont idéales pour la randonnée."
+      },
+      {
+        "question": "Quel équipement spécifique faut-il prévoir ?",
+        "answer": "Il est recommandé de prévoir des vêtements chauds (même en été), un bon sac de couchage, des chaussures de randonnée déjà rodées, des bâtons de marche, une lampe frontale et des vêtements de pluie. Une liste d'équipement détaillée vous sera fournie à la réservation."
+      }
+    ]
+  },
+  {
+    "slug": "randonnee-en-famille-vallee-heureuse-dait-bouguemez-8-jours",
+    "path": "/randonnee-en-famille-vallee-heureuse-dait-bouguemez-8-jours",
+    "sourceUrl": "https://maroctreks.com/randonnee-en-famille-vallee-heureuse-dait-bouguemez-8-jours/",
+    "category": "mgoun",
+    "title": "Randonnée en Famille - Vallée Heureuse d'Aït Bouguemez",
+    "subtitle": "Randonnée Familiale dans la Vallée Heureuse - 8 Jours",
+    "image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
+    "duration": "8 jours / 7 nuits",
+    "difficulty": "Facile",
+    "maxAltitude": "1 860 m",
+    "bestSeason": "Avril à Octobre",
+    "groupSize": "À partir de 2 personnes",
+    "tourType": "Familiale - En étoile",
+    "price": "Sur demande",
+    "sectionHeadings": {
+      "description": "Description du Circuit",
+      "highlights": "Points Forts du Circuit",
+      "itinerary": "Itinéraire Détaillé - 8 Jours",
+      "included": "Ce Qui Est Inclus",
+      "details": "Détails du Circuit",
+      "faqs": "Questions Fréquentes",
+      "gallery": "Galerie Photo de la Vallée Heureuse",
+      "price": "Prix du Circuit",
+      "request": "Demander Ce Circuit"
+    },
+    "detailLabels": {
+      "duration": "Durée",
+      "difficulty": "Niveau",
+      "bestSeason": "Période",
+      "groupSize": "Participants",
+      "tourType": "Type de Randonnée",
+      "price": "Prix"
+    },
+    "description": "Le Haut Atlas central est un massif essentiellement calcaire, morphologiquement dominé par des zones tabulaires culminant à 2 500 mètres d'altitude, qui s'étend d'Azilal à Ouarzazate. Les paysages contrastés y sont d'une beauté extraordinaire, révélant aux visiteurs de merveilleux sites avec des plateaux d'altitude, des gorges et des canyons encaissés, un chaos de cimes déchiquetées par l'érosion...\n\nOn y rencontre une population berbère réputée pour son exceptionnelle hospitalité. La Vallée des Aït Bouguemez ou la \"Vallée heureuse\" est la vallée la plus centrale de la région, à une altitude de 1900 m au pied du majestueux M'goun 4068 m. Ses champs entretenus comme des jardins attirent au printemps et en été des oiseaux migrateurs de tous les coins du monde.\n\nN'oublions pas les habitants du vieux lac, les plus grands dinosaures découverts jusqu'ici : les fameux Atlas-saures, nous ont bien laissé leurs traces que nous pouvons admirer en nous promenant dans la Vallée possibilité de visiter les dalles calcaires sous formes de grandes empreintes de leurs pattes.\n\nDans cette superbe Vallée nous vous proposons des randonnées en famille . Les programmes sont flexibles et adaptables à vos attentes, à votre niveau et à celui de vos enfants. Une invitation à découvrir une des plus belles régions de haut Atlas à pied, à dos de mules...",
+    "highlights": [
+      "Randonnée spécialement adaptée aux familles avec enfants",
+      "Découverte des magnifiques cascades d'Ouzoud",
+      "Visite des traces de dinosaures Atlas-saures",
+      "Immersion dans la culture berbère authentique",
+      "Exploration de la Vallée Heureuse d'Aït Bouguemez",
+      "Hébergement en gîtes d'étape confortables"
+    ],
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Arrivée et transfert dans un hôtel",
+        "description": "Arrivée à l'aéroport de Marrakech, accueil et transfert vers votre hébergement. Installation et nuit à l'hôtel."
+      },
+      {
+        "day": 2,
+        "title": "Marrakech – Cascades d'Ouzoud – Agouti (1800m)",
+        "description": "Départ de Marrakech vers les magnifiques cascades d'Ouzoud, parmi les plus belles du Maroc. Continuation vers le village d'Agouti dans la Vallée Heureuse. 5h de route ."
+      },
+      {
+        "day": 3,
+        "title": "Vallée d'Arous Aït Saïd (retour)",
+        "description": "Première journée de randonnée facile dans la vallée d'Arous. Découverte des paysages et des villages traditionnels. Retour au gîte en fin de journée. 4h de marche ."
+      },
+      {
+        "day": 4,
+        "title": "Agouti – Vallée – Irf n'Ighirir (1860m)",
+        "description": "Randonnée en remontant la vallée vers Irf n'Ighirir. Panoramas magnifiques sur la Vallée Heureuse et le massif du M'Goun. 4h30 de marche ."
+      },
+      {
+        "day": 5,
+        "title": "Promenade dans la Haute Vallée des Bouguemez",
+        "description": "Journée d'exploration de la haute vallée, découverte de la faune, la flore et des traditions locales. Rencontres avec les habitants. 5h de marche ."
+      },
+      {
+        "day": 6,
+        "title": "Visite des traces de dinosaures par le centre de Bouguemez (Tabante)",
+        "description": "Journée dédiée à la découverte des fameuses empreintes de dinosaures Atlas-saures. Visite du centre de Bouguemez et des dalles calcaires. 4h30 de marche ."
+      },
+      {
+        "day": 7,
+        "title": "Transfert par Azilal - Marrakech",
+        "description": "Retour vers Marrakech en passant par Azilal. Dernière nuit à l'hôtel à Marrakech. 5h de voiture ."
+      },
+      {
+        "day": 8,
+        "title": "Transfert à l'aéroport",
+        "description": "Petit-déjeuner et transfert à l'aéroport de Marrakech pour votre vol retour, avec de merveilleux souvenirs de cette aventure familiale dans la Vallée Heureuse."
+      }
+    ],
+    "included": [
+      "Prise en charge dès votre arrivée à l'aéroport",
+      "Les transferts Aéroport - Hôtel - Randonnée - Hôtel - Aéroport",
+      "L'assistance d'un guide diplômé et d'une équipe muletière",
+      "Les nuits en hôtel ou Riad à Marrakech",
+      "Les nuits en gîte d'étape pendant la randonnée",
+      "La pension complète pendant le circuit"
+    ],
+    "notIncluded": [
+      "L'assurance annulation et assistance (Obligatoire!)",
+      "Les boissons et dépenses personnelles",
+      "Les pourboires pour l'équipe locale",
+      "Les repas en ville"
+    ],
+    "faqs": [
+      {
+        "question": "Cette randonnée est-elle vraiment adaptée aux enfants ?",
+        "answer": "Absolument ! Ce circuit a été spécialement conçu pour les familles avec enfants. Les journées de marche sont courtes (4 à 5 heures maximum), les dénivelés sont faibles, et le rythme est adapté aux plus jeunes. Les enfants peuvent également faire une partie du trajet à dos de mulets si nécessaire."
+      },
+      {
+        "question": "À partir de quel âge les enfants peuvent-ils participer ?",
+        "answer": "Les enfants à partir de 6-7 ans peuvent participer à cette randonnée, à condition qu'ils soient habitués à marcher. Pour les plus jeunes, nous pouvons prévoir des mulets pour les porter sur certaines sections. N'hésitez pas à nous consulter pour adapter le programme à l'âge de vos enfants."
+      },
+      {
+        "question": "Quelle est la meilleure période pour cette randonnée en famille ?",
+        "answer": "La période d'avril à octobre est idéale. Le printemps (avril-juin) offre des paysages verdoyants et des températures agréables. L'automne (septembre-octobre) bénéficie d'un air très clair et de températures douces. L'été peut être chaud mais reste supportable en altitude."
+      },
+      {
+        "question": "Quel type d'hébergement pendant la randonnée ?",
+        "answer": "Pendant la randonnée, vous serez hébergé dans des gîtes d'étape confortables, adaptés aux familles. Ces hébergements offrent tout le nécessaire pour un séjour agréable. À Marrakech, vous logerez dans un Riad traditionnel ou un hôtel."
+      }
+    ]
+  },
+  {
+    "slug": "randonnee-moyen-atlas",
+    "path": "/randonnee-moyen-atlas",
+    "sourceUrl": "https://maroctreks.com/randonnee-moyen-atlas/",
+    "category": "moyen-atlas",
+    "title": "Randonnée Moyen Atlas : Circuit de 8 Jours dans les Plateaux d'Altitude",
+    "subtitle": "Circuit Moyen Atlas de 8 Jours – Randonnée dans les Plateaux d'Altitude",
+    "image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
+    "duration": "8 jours",
+    "difficulty": "Randonnée facile",
+    "maxAltitude": "1 769 m",
+    "bestSeason": "Octobre – Mai",
+    "groupSize": "À partir de 2 personnes",
+    "tourType": "Circuit Moyen Atlas",
+    "price": "Sur demande",
+    "sectionHeadings": {
+      "description": "Description du Circuit",
+      "highlights": "Points Forts du Circuit",
+      "itinerary": "Itinéraire Détaillé de la Randonnée de 8 Jours",
+      "included": "Ce Qui Est Inclus",
+      "details": "Détails Supplémentaires du Circuit",
+      "faqs": "Questions Fréquemment Posées",
+      "gallery": "Galerie Photo du Moyen Atlas",
+      "price": "Prix du Circuit",
+      "request": "Demander Ce Circuit"
+    },
+    "detailLabels": {
+      "duration": "Durée de la Randonnée",
+      "difficulty": "Difficulté de la Randonnée",
+      "bestSeason": "Meilleure Saison",
+      "groupSize": "Taille du Groupe",
+      "tourType": "Type de Randonnée",
+      "price": "Prix de la Randonnée"
+    },
+    "description": "Le Moyen Atlas est un massif montagneux allongé sur quelques 350 km, du sud-ouest au nord-est du Maroc, situé entre le Rif et le Haut Atlas, et couvrant une superficie totale de 2,3 millions d'hectares, soit 18 % du domaine altimontain de ce pays.\n\nIl est formé des vastes plateaux d'altitude de la haute Moulouya. Ces plateaux s'étendent de Midelt (province de Khnifra), abritant le Jbel Ayachi (3 747 m) — à Imilchil. Cette chaîne appartient au massif de l'Atlas, et plus précisément, à l'un des trois éléments de l'Atlas marocaine — les deux autres étant le Haut Atlas et l'Anti-Atlas.\n\nNotre circuit de 8 jours vous emmène à la découverte de cette région préservée, caractérisée par ses lacs naturels (aguelmanes), ses forêts de cèdres majestueuses et ses vastes plateaux où la nature règne en maître. Une expérience authentique au cœur d'un écosystème unique.",
+    "highlights": [
+      "Découverte du Moyen Atlas, massif montagneux aux vastes plateaux d'altitude.",
+      "Exploration des lacs naturels (aguelmanes) d'Azigza et Ouiaouene aux eaux émeraude.",
+      "Randonnée à travers les forêts de cèdres majestueuses et paysages préservés.",
+      "Visite des \"40 sources\", site naturel exceptionnel aux multiples résurgences.",
+      "Immersion dans la région de Khnifra, cœur authentique du Moyen Atlas.",
+      "Forfait tout inclus avec guides de montagne certifiés, soutien muletier et pension complète."
+    ],
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Arrivée et transfert à l'hôtel",
+        "description": "Arrivée au Maroc, accueil à l'aéroport et transfert vers un Riad traditionnel à Marrakech. Installation et nuit à Marrakech."
+      },
+      {
+        "day": 2,
+        "title": "Marrakech – Khnifra – Aguelmane Azigza (1550m)",
+        "description": "Départ de Marrakech en direction du Moyen Atlas. Traversée de paysages variés et arrivée à la région de Khnifra. Continuation vers le magnifique lac naturel d'Aguelmane Azigza pour l'installation du camp. 5 à 6 heures de route (400km)."
+      },
+      {
+        "day": 3,
+        "title": "Aguelmane Azigza – Les 40 sources (1400m)",
+        "description": "Journée de randonnée à la découverte du site exceptionnel des \"40 sources\", un lieu magique où l'eau jaillit de multiples résurgences au cœur de la forêt. Retour au camp près du lac Azigza. 5 à 6 heures de marche."
+      },
+      {
+        "day": 4,
+        "title": "Les 40 sources – Aguelmane Ouiaouene (1769m)",
+        "description": "Randonnée à travers les paysages préservés du Moyen Atlas vers un autre joyau naturel : le lac Ouiaouene. Découverte de la faune et flore locales et installation du camp près du lac. 5 à 6 heures de marche."
+      },
+      {
+        "day": 5,
+        "title": "Ouiaouene – Zaouiate Ifrane (1260m)",
+        "description": "Continuation de la randonnée à travers les forêts de cèdres et plateaux du Moyen Atlas. Arrivée dans la région de Zaouiate Ifrane et installation du camp. 5 à 6 heures de marche."
+      },
+      {
+        "day": 6,
+        "title": "Zaouit Ifrane – Ain Louh (1600m)",
+        "description": "Dernière journée de randonnée à travers des paysages variés du Moyen Atlas. Arrivée à Ain Louh et installation du camp pour la nuit. 6 heures de marche."
+      },
+      {
+        "day": 7,
+        "title": "Ain Louh – Marrakech",
+        "description": "Départ du Moyen Atlas et retour vers Marrakech. Traversée de paysages magnifiques et arrivée à Marrakech en fin de journée. Installation à l'hôtel et soirée libre."
+      },
+      {
+        "day": 8,
+        "title": "Transfert à l'aéroport",
+        "description": "Petit-déjeuner à l'hôtel puis transfert à l'aéroport pour votre vol de retour selon vos horaires."
+      }
+    ],
+    "included": [
+      "Prise en charge dès votre arrivée à l'aéroport",
+      "Les transferts Aéroport - Hôtel - Rando - Hôtel - Aéroport",
+      "L'assistance d'un guide diplômé et d'une équipe muletière",
+      "Les nuits en hôtel ou Riad à Marrakech",
+      "Les nuits sous tente et chez l'habitant",
+      "La pension complète pendant le circuit"
+    ],
+    "notIncluded": [
+      "L'assurance annulation et assistance (Obligatoire!)",
+      "Les boissons et dépenses personnelles",
+      "Les repas en ville"
+    ],
+    "faqs": [
+      {
+        "question": "Quel est le niveau de difficulté de ce circuit ?",
+        "answer": "Il s'agit d'une randonnée de niveau facile. Les journées de marche varient de 5 à 6 heures maximum, sur des sentiers bien tracés sans dénivelés importants. Accessible à toute personne en bonne condition physique générale, même sans expérience préalable de la randonnée en montagne."
+      },
+      {
+        "question": "Qu'est-ce qu'un \"aguelmane\" ?",
+        "answer": "Un \"aguelmane\" est un lac naturel d'origine karstique caractéristique du Moyen Atlas. Ces lacs se forment dans des dépressions naturelles et sont alimentés par les eaux de pluie et les sources souterraines. Les aguelmanes d'Azigza et Ouiaouene que nous visitons sont particulièrement réputés pour la beauté de leurs eaux émeraude et leur cadre préservé."
+      },
+      {
+        "question": "Quelle est la meilleure période pour visiter le Moyen Atlas ?",
+        "answer": "La meilleure saison pour ce circuit est d'octobre à mai. L'automne offre des paysages aux couleurs magnifiques, l'hiver peut apporter de la neige sur les hauteurs créant des paysages féeriques, et le printemps est idéal avec la nature en fleurs et des températures agréables. L'été est également possible mais peut être plus chaud."
+      },
+      {
+        "question": "Quel type de paysages traverse-t-on dans le Moyen Atlas ?",
+        "answer": "Le Moyen Atlas présente des paysages très variés : vastes plateaux d'altitude (jusqu'à 2000m), forêts de cèdres majestueuses (certains arbres ont plus de 800 ans), lacs naturels (aguelmanes), sources et rivières, et des paysages pastoraux où l'on peut observer des troupeaux de moutons et des nomades. La région est beaucoup plus verte et boisée que l'Anti-Atlas ou certaines parties du Haut Atlas."
+      }
+    ]
+  },
+  {
+    "slug": "randonnee-jbel-saghro",
+    "path": "/randonnee-jbel-saghro",
+    "sourceUrl": "https://maroctreks.com/randonnee-jbel-saghro/",
+    "category": "anti-atlas",
+    "title": "Randonnée Jbel Saghro : Circuit de 8 Jours dans l'Anti-Atlas",
+    "subtitle": "Circuit Jbel Saghro de 8 Jours – Randonnée dans l'Anti-Atlas",
+    "image": "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&q=80&w=1600",
+    "duration": "8 jours",
+    "difficulty": "Randonnée facile",
+    "maxAltitude": "2 260 m",
+    "bestSeason": "Octobre – Mai",
+    "groupSize": "À partir de 2 personnes",
+    "tourType": "Circuit Jbel Saghro",
+    "price": "Sur demande",
+    "sectionHeadings": {
+      "description": "Description du Circuit",
+      "highlights": "Points Forts du Circuit",
+      "itinerary": "Itinéraire Détaillé de la Randonnée de 8 Jours",
+      "included": "Ce Qui Est Inclus",
+      "details": "Détails Supplémentaires du Circuit",
+      "faqs": "Questions Fréquemment Posées",
+      "gallery": "Galerie Photo du Jbel Saghro",
+      "price": "Prix du Circuit",
+      "request": "Demander Ce Circuit"
+    },
+    "detailLabels": {
+      "duration": "Durée de la Randonnée",
+      "difficulty": "Difficulté de la Randonnée",
+      "bestSeason": "Meilleure Saison",
+      "groupSize": "Taille du Groupe",
+      "tourType": "Type de Randonnée",
+      "price": "Prix de la Randonnée"
+    },
+    "description": "À moins de 100 km au sud du Haut Atlas central, au Maroc, dominant les vallées du Draâ et du Dadès, se dresse le Jbel Saghro ou Sarhro, partie orientale de l'Anti-Atlas, culminant à 2 612 m d'altitude. Le Djabel Sahgro constitue la zone la plus aride de la chaîne de l'Anti-Atlas.\n\nDécouvrez des paysages lunaires de plateaux, de pics, de canyons, de forêt des pitons, immensité des espaces. Dans ce chaos de roches noires, les villages peu nombreux, se réduisent à quelques petites maisons entourées d'un bouquet de palmiers ou d'amandiers.\n\nC'est le pays des Aït Atta (ou Hatta), éleveurs de moutons et chèvres qui changent de pâturages une ou deux fois par mois pour pratiquer la transhumance, surtout en période estivale où ils quittent ces terres minérales transformées en désert brûlant, pour remonter vers le nord et séjourner dans les khaïma , tente nomade traditionnelle, faite de fines bandelettes en poils de chèvre.",
+    "highlights": [
+      "Découverte des paysages lunaires uniques du Jbel Saghro, partie orientale de l'Anti-Atlas.",
+      "Immersion dans la culture des Aït Atta, peuple nomade berbère aux traditions ancestrales.",
+      "Randonnée à travers des plateaux, pics, canyons et forêts de pitons spectaculaires.",
+      "Observation de la vie nomade avec les khaïma (tentes traditionnelles en poils de chèvre).",
+      "Forfait tout inclus avec guides de montagne certifiés, soutien muletier et pension complète pendant la randonnée."
+    ],
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Arrivée au Maroc – Transfert à l'hôtel",
+        "description": "Arrivée au Maroc et transfert à votre hôtel pour la nuit."
+      },
+      {
+        "day": 2,
+        "title": "Marrakech – Col de Tichka (2260m) – Ouarzazate – Ait Youl",
+        "description": "Départ de Marrakech, traversée du col de Tichka offrant des vues spectaculaires sur l'Atlas, puis descente vers Ouarzazate et continuation vers Ait Youl pour la nuit."
+      },
+      {
+        "day": 3,
+        "title": "Ait Youl – Titkit – Elmers (6 heures de randonnée)",
+        "description": "Première journée de randonnée à travers les paysages arides du Jbel Saghro. Passage par Titkit et arrivée à Elmers pour la nuit."
+      },
+      {
+        "day": 4,
+        "title": "Elmers – Tizi n Tagmout – Tagmout – Ait Ouzine – Tajalachte (5h30 de randonnée)",
+        "description": "Randonnée à travers le col Tizi n Tagmout, découverte des villages de Tagmout et Ait Ouzine, puis arrivée à Tajalachte pour la nuit."
+      },
+      {
+        "day": 5,
+        "title": "Tajalachte – Tifdacine – Irazoun (5h30 de randonnée)",
+        "description": "Continuation à travers les paysages lunaires du Saghro, passage par Tifdacine et arrivée à Irazoun pour la nuit."
+      },
+      {
+        "day": 6,
+        "title": "Irazoun – Tassaounte – Handor – Nkob (6 heures de randonnée)",
+        "description": "Dernière journée de randonnée à travers Tassaounte et Handor, arrivée à Nkob pour la nuit."
+      },
+      {
+        "day": 7,
+        "title": "Nkob – Vallée du Draa – Ouarzazate – Marrakech",
+        "description": "Départ de Nkob, traversée de la magnifique vallée du Draa, retour vers Ouarzazate puis Marrakech pour la nuit à l'hôtel."
+      },
+      {
+        "day": 8,
+        "title": "Transfert à l'aéroport",
+        "description": "Transfert à l'aéroport pour votre vol de retour."
+      }
+    ],
+    "included": [
+      "Prise en charge dès votre arrivée à l'aéroport",
+      "Les transferts Aéroport - Hôtel - Randonnée - Hôtel - Aéroport",
+      "L'assistance d'un guide diplômé et d'une équipe muletière",
+      "Les nuits en hôtel ou Riad à Marrakech",
+      "Les nuits sous tente et chez l'habitant",
+      "La pension complète pendant le circuit"
+    ],
+    "notIncluded": [
+      "L'assurance annulation et assistance (Obligatoire!)",
+      "Les boissons et dépenses personnelles",
+      "Les repas en ville"
+    ],
+    "faqs": [
+      {
+        "question": "Quel est le niveau de difficulté du circuit Jbel Saghro ?",
+        "answer": "Il s'agit d'une randonnée de niveau facile. Les journées de marche sont de 5 à 6 heures maximum, sur des sentiers bien tracés sans dénivelés importants. Accessible à toute personne en bonne condition physique générale."
+      },
+      {
+        "question": "Quelle est la meilleure période pour la randonnée dans le Jbel Saghro ?",
+        "answer": "La meilleure saison pour cette randonnée est d'octobre à mai. Pendant ces mois, les températures sont agréables pour la randonnée. L'été (juin à septembre) est à éviter car les températures peuvent être très élevées dans cette région aride."
+      },
+      {
+        "question": "Quel type d'hébergement pendant le circuit ?",
+        "answer": "Le circuit alterne entre nuits en hôtel/riad à Marrakech, nuits sous tente pendant la randonnée, et nuits chez l'habitant dans les villages pour une immersion authentique dans la culture locale."
+      },
+      {
+        "question": "Faut-il un visa pour le Maroc ?",
+        "answer": "Les formalités d’entrée dépendent de votre nationalité et peuvent évoluer. Avant le départ, vérifiez les exigences de passeport, de visa ou d’autorisation électronique auprès des autorités marocaines et du consulat compétent."
+      }
+    ]
+  },
+  {
+    "slug": "randonnee-jbel-siroua",
+    "path": "/randonnee-jbel-siroua",
+    "sourceUrl": "https://maroctreks.com/randonnee-jbel-siroua/",
+    "category": "anti-atlas",
+    "title": "Randonnée Jbel Siroua : Circuit de 15 Jours Siroua-Toubkal",
+    "subtitle": "Circuit Siroua-Toubkal de 15 Jours – Randonnée dans l'Atlas",
+    "image": "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&q=80&w=1600",
+    "duration": "15 jours",
+    "difficulty": "Randonnée moyenne",
+    "maxAltitude": "4 167 m",
+    "bestSeason": "Mai – Octobre",
+    "groupSize": "À partir de 6 personnes",
+    "tourType": "Circuit Siroua-Toubkal",
+    "price": "Sur demande",
+    "sectionHeadings": {
+      "description": "Description du Circuit",
+      "highlights": "Points Forts du Circuit",
+      "itinerary": "Itinéraire Détaillé de la Randonnée de 15 Jours",
+      "included": "Ce Qui Est Inclus",
+      "details": "Détails Supplémentaires du Circuit",
+      "faqs": "Questions Fréquemment Posées",
+      "gallery": "Galerie Photo du Jbel Siroua",
+      "price": "Prix du Circuit",
+      "request": "Demander Ce Circuit"
+    },
+    "detailLabels": {
+      "duration": "Durée de la Randonnée",
+      "difficulty": "Difficulté de la Randonnée",
+      "bestSeason": "Meilleure Saison",
+      "groupSize": "Taille du Groupe",
+      "tourType": "Type de Randonnée",
+      "price": "Prix de la Randonnée"
+    },
+    "description": "Situé au sud du massif du Toubkal, le Jbel Siroua (3 305 m) est un ancien massif volcanique, où se succèdent des Kasbahs, Douars et villages de terres avec leurs greniers collectifs fortifiés appelés Igoudars (greniers-citadelles), symboles d'une tradition très forte.\n\nAu pied de ces villages, dans les champs irrigués par les torrents, poussent l'orge, le blé et le pays du Safran, ainsi que les amandiers. Les femmes tissent des très beaux tapis et les vendent au Souk de Taznaght. L'élevage ovin constitue une autre importante ressource pour la population locale.\n\nDe nombreuses bergeries appelées azib ponctuent les vastes espaces du massif. Celles-ci ne sont occupées par les berbères qu'une partie de l'année, les troupeaux ne venant paître qu'au printemps et en été dans les pâturages d'altitude.\n\nC'est le pays de la randonnée pédestre ou équestre, à travers des paysages fantastiques où s'opposent un monde lapidifié et désert, et de profondes vallées ouvragées. De belles escalades peuvent être entreprises sur les pitons de basalte qui hérissent le paysage.",
+    "highlights": [
+      "Ascension du Jbel Siroua, ancien massif volcanique culminant à 3 305 mètres.",
+      "Ascension du Jbel Toubkal, plus haut sommet d'Afrique du Nord (4 167 m).",
+      "Découverte des Igoudars, greniers collectifs fortifiés symboles de la tradition berbère.",
+      "Immersion dans la culture berbère authentique à travers villages et marchés locaux.",
+      "Randonnée à travers des paysages volcaniques uniques et des vallées profondes.",
+      "Forfait tout inclus avec guides de montagne certifiés, soutien muletier et pension complète."
+    ],
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Arrivée à Marrakech",
+        "description": "Accueil et transfert à l'hôtel. Nuit à Marrakech."
+      },
+      {
+        "day": 2,
+        "title": "Marrakech – Tichka (2260 m) – Anzal – Tamlakout (1700 m)",
+        "description": "Départ de Marrakech, traversée du col de Tichka offrant des vues spectaculaires, puis descente vers Anzal et Tamlakout pour la nuit."
+      },
+      {
+        "day": 3,
+        "title": "Tamlakout – Ait Tigua (1947m) - 4h de marche",
+        "description": "Première journée de randonnée à travers les paysages du Siroua vers le village d'Ait Tigua."
+      },
+      {
+        "day": 4,
+        "title": "Ait Tigua – Ait Irmour – Source à 2600m - 4h30 de marche",
+        "description": "Randonnée vers Ait Irmour et découverte d'une source naturelle à 2600m d'altitude."
+      },
+      {
+        "day": 5,
+        "title": "Ascension du Siroua (3 305 m) - Descente et nuit près des bergeries Iferd (2700m) - 6h de marche",
+        "description": "Journée d'ascension du Jbel Siroua offrant des vues panoramiques sur le massif volcanique, puis descente vers les bergeries d'Iferd."
+      },
+      {
+        "day": 6,
+        "title": "Iferd n'Magous (2700 m) – Tizi n'Isdrm (2800 m) – Azib ouzlim (2500 m) - 6h de marche",
+        "description": "Traversée du col Tizi n'Isdrm et descente vers Azib ouzlim à travers des paysages variés."
+      },
+      {
+        "day": 7,
+        "title": "Ouzlim – Camp au plateau d'Ifanouane (2400m) - 5h de marche",
+        "description": "Randonnée vers le magnifique plateau d'Ifanouane pour y établir le camp."
+      },
+      {
+        "day": 8,
+        "title": "Ifanouane – Anmid – Camp Essabt n'Assarag - 5h30",
+        "description": "Deux jours pour rejoindre Essabt n'Assarag avec une journée de repos dédiée à la visite du marché local et à l'immersion culturelle."
+      },
+      {
+        "day": 9,
+        "title": "Journée de repos et visite du marché",
+        "description": "Journée de repos à Sebt n’Assarag avec visite du marché local."
+      },
+      {
+        "day": 10,
+        "title": "Sebt n'Assarag – Imlil – Amsouzarte – Camp au lac Ifni (2400m) - 6h de marche",
+        "description": "Randonnée vers la région du Toubkal, passage par Imlil et Amsouzarte avant d'atteindre le magnifique lac Ifni."
+      },
+      {
+        "day": 11,
+        "title": "Lac d'Ifni – Col Ouanoums (3700m) – Nuit près du Refuge Toubkal à 3207m",
+        "description": "Ascension exigeante du col Ouanoums offrant des vues spectaculaires, puis descente vers le Refuge du Toubkal."
+      },
+      {
+        "day": 12,
+        "title": "Ascension du Sommet Toubkal (4167 m) – Descente vers Armed Gîte (1900 m) - 8h de marche",
+        "description": "Journée mémorable avec l'ascension du plus haut sommet d'Afrique du Nord, offrant une vue à 360°, puis descente vers Armed."
+      },
+      {
+        "day": 13,
+        "title": "Descente de 45mn pour rejoindre le transport vers Marrakech",
+        "description": "Courte descente pour rejoindre le véhicule qui nous ramène à Marrakech. Nuit à l'hôtel."
+      },
+      {
+        "day": 14,
+        "title": "Journée libre pour la visite de Marrakech",
+        "description": "Journée de détente pour explorer les souks animés, la place Jemaa el-Fnaa et les trésors de Marrakech."
+      },
+      {
+        "day": 15,
+        "title": "Transfert à l'aéroport",
+        "description": "Transfert à l'aéroport pour votre vol de retour."
+      }
+    ],
+    "included": [
+      "Prise en charge dès votre arrivée à l'aéroport",
+      "Les transferts Aéroport - Hôtel - Rando - Hôtel - Aéroport",
+      "L'assistance d'un guide diplômé et d'une équipe muletière",
+      "Les nuits en hôtel ou Riad à Marrakech",
+      "Les nuits en Gîte d'étape et sous tente",
+      "La pension complète pendant le circuit"
+    ],
+    "notIncluded": [
+      "L'assurance annulation et assistance (Obligatoire!)",
+      "Les boissons et dépenses personnelles",
+      "Les repas en ville"
+    ],
+    "faqs": [
+      {
+        "question": "Quel est le niveau de difficulté du circuit Siroua-Toubkal ?",
+        "answer": "Il s'agit d'une randonnée de niveau moyen. Le circuit combine l'ascension de deux sommets importants (Siroua 3 305m et Toubkal 4 167m) avec des journées de marche de 4 à 8 heures. Une bonne condition physique est nécessaire, mais aucune compétence technique d'escalade n'est requise."
+      },
+      {
+        "question": "Quelle est la meilleure période pour cette randonnée ?",
+        "answer": "La meilleure saison pour ce circuit est de mai à octobre. Pendant ces mois, les conditions météorologiques sont optimales avec des températures agréables pour la randonnée et peu de risques de neige sur les sommets."
+      },
+      {
+        "question": "Qu'est-ce que les Igoudars ?",
+        "answer": "Les Igoudars sont des greniers collectifs fortifiés, symboles de la tradition berbère très forte dans la région du Siroua. Ces structures uniques servaient à stocker les récoltes et les biens précieux des communautés, offrant une protection contre les pillages."
+      },
+      {
+        "question": "Le mal d'altitude est-il un risque lors de cette randonnée ?",
+        "answer": "Notre itinéraire est conçu avec une acclimatation progressive pour minimiser les risques de mal aigu des montagnes. Nous passons plusieurs nuits à des altitudes intermédiaires avant les ascensions principales. Il est important de bien s'hydrater et d'informer votre guide de tout symptôme."
+      }
+    ]
+  },
+  {
+    "slug": "randonnee-jbel-siroua-circuit-de-8-jours-dans-lanti-atlas",
+    "path": "/randonnee-jbel-siroua-circuit-de-8-jours-dans-lanti-atlas",
+    "sourceUrl": "https://maroctreks.com/randonnee-jbel-siroua-circuit-de-8-jours-dans-lanti-atlas/",
+    "category": "anti-atlas",
+    "title": "Randonnée Jbel Siroua : Circuit de 8 Jours dans l'Anti-Atlas",
+    "subtitle": "Circuit Jbel Siroua de 8 Jours – Randonnée Facile dans l'Anti-Atlas",
+    "image": "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&q=80&w=1600",
+    "duration": "8 jours",
+    "difficulty": "Randonnée facile",
+    "maxAltitude": "3 305 m",
+    "bestSeason": "Avril – Octobre",
+    "groupSize": "À partir de 2 personnes",
+    "tourType": "Circuit Jbel Siroua",
+    "price": "Sur demande",
+    "sectionHeadings": {
+      "description": "Description du Circuit",
+      "highlights": "Points Forts du Circuit",
+      "itinerary": "Itinéraire Détaillé de la Randonnée de 8 Jours",
+      "included": "Ce Qui Est Inclus",
+      "details": "Détails Supplémentaires du Circuit",
+      "faqs": "Questions Fréquemment Posées",
+      "gallery": "Galerie Photo du Jbel Siroua",
+      "price": "Prix du Circuit",
+      "request": "Demander Ce Circuit"
+    },
+    "detailLabels": {
+      "duration": "Durée de la Randonnée",
+      "difficulty": "Difficulté de la Randonnée",
+      "bestSeason": "Meilleure Saison",
+      "groupSize": "Taille du Groupe",
+      "tourType": "Type de Randonnée",
+      "price": "Prix de la Randonnée"
+    },
+    "description": "Situé au sud du massif du Toubkal, le Jbel Siroua est un ancien massif volcanique culminant à 3 305 mètres, où se succèdent des Kasbahs, Douars et villages de terres avec leurs greniers collectifs fortifiés appelés Igoudars (greniers-citadelles), symboles d'une tradition très forte.\n\nAu pied de ces villages, dans les champs irrigués par les torrents, poussent l'orge, le blé et le pays du Safran, ainsi que les amandiers. Les femmes tissent des très beaux tapis et les vendent au Souk de Taznaght. L'élevage ovin constitue une autre importante ressource pour la population locale.\n\nCe circuit de 8 jours vous offre une immersion complète dans cet environnement unique, avec des randonnées adaptées aux marcheurs de niveau facile et l'opportunité d'atteindre le sommet du Siroua à 3 305 m d'altitude pour des vues panoramiques exceptionnelles sur l'Anti-Atlas.",
+    "highlights": [
+      "Ascension du Jbel Siroua à 3 305 m, ancien massif volcanique aux paysages lunaires.",
+      "Découverte des Igoudars, greniers collectifs fortifiés symboles de la tradition berbère.",
+      "Randonnée de niveau facile accessible à tous les marcheurs en bonne condition physique.",
+      "Immersion dans la culture berbère authentique à travers villages et paysages préservés.",
+      "Traversée du col de Tichka (2260m) offrant des vues spectaculaires sur l'Atlas.",
+      "Forfait tout inclus avec guides de montagne certifiés, soutien muletier et pension complète."
+    ],
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Arrivée à Marrakech",
+        "description": "Accueil à l'aéroport et transfert à votre hôtel ou Riad traditionnel à Marrakech. Installation et nuit à l'hôtel."
+      },
+      {
+        "day": 2,
+        "title": "Marrakech – Tichka (2260m) – Anzal – Tamlakout (1700m)",
+        "description": "Départ de Marrakech et traversée du magnifique col de Tichka offrant des vues spectaculaires sur l'Atlas. Descente vers la région du Siroua et arrivée à Tamlakout pour la nuit."
+      },
+      {
+        "day": 3,
+        "title": "Tamlakout – Ait Tigua (1947m) - 4h de marche",
+        "description": "Première journée de randonnée à travers les paysages uniques du Siroua. Découverte des premiers villages berbères et arrivée à Ait Tigua pour la nuit."
+      },
+      {
+        "day": 4,
+        "title": "Ait Tigua – Ait Irmour – Source à 2600m - 4h30 de marche",
+        "description": "Randonnée vers le village d'Ait Irmour et découverte d'une source naturelle à 2600m d'altitude. Panoramas exceptionnels sur le massif volcanique."
+      },
+      {
+        "day": 5,
+        "title": "Ascension Siroua (3 305 m) – Bergeries Iriri (2600m) - 6h de marche",
+        "description": "Journée mémorable avec l'ascension du sommet du Jbel Siroua offrant des vues à 360° sur l'Anti-Atlas. Descente vers les bergeries traditionnelles d'Iriri pour la nuit."
+      },
+      {
+        "day": 6,
+        "title": "Bergerie Iriri – Tamazirte (1730m) - 5h30 de marche",
+        "description": "Dernière journée de randonnée à travers des paysages variés, descente vers le village de Tamazirte pour une immersion dans la vie locale berbère."
+      },
+      {
+        "day": 7,
+        "title": "Transfert à Marrakech",
+        "description": "Départ de la région du Siroua et retour vers Marrakech. Installation à l'hôtel et soirée libre pour découvrir la ville ocre."
+      },
+      {
+        "day": 8,
+        "title": "Transfert à l'aéroport",
+        "description": "Petit-déjeuner à l'hôtel puis transfert à l'aéroport pour votre vol de retour selon vos horaires."
+      }
+    ],
+    "included": [
+      "Prise en charge dès votre arrivée à l'aéroport",
+      "Les transferts Aéroport - Hôtel - Rando - Hôtel - Aéroport",
+      "L'assistance d'un guide diplômé et d'une équipe muletière",
+      "Les nuits en hôtel ou Riad à Marrakech",
+      "Les nuits sous tente et en gîte d'étape",
+      "La pension complète pendant le circuit"
+    ],
+    "notIncluded": [
+      "L'assurance annulation et assistance (Obligatoire!)",
+      "Les boissons et dépenses personnelles",
+      "Les repas en ville"
+    ],
+    "faqs": [
+      {
+        "question": "Quel est le niveau de difficulté réel de ce circuit ?",
+        "answer": "Il s'agit d'une randonnée de niveau facile. Les journées de marche varient de 4 à 6 heures maximum, sur des sentiers bien tracés sans difficultés techniques. Accessible à toute personne en bonne condition physique générale, même sans expérience préalable de la randonnée en montagne."
+      },
+      {
+        "question": "Quelle est la meilleure période pour cette randonnée ?",
+        "answer": "La meilleure saison pour ce circuit est d'avril à octobre. Le printemps (avril-juin) offre des paysages fleuris et des températures idéales. L'été (juillet-août) peut être chaud mais reste supportable en altitude. L'automne (septembre-octobre) présente des couleurs magnifiques et des températures agréables."
+      },
+      {
+        "question": "Quel type d'hébergement pendant le circuit ?",
+        "answer": "Le circuit alterne entre nuits en hôtel/riad à Marrakech, nuits sous tente pendant la randonnée avec équipement fourni, et nuits en gîte d'étape dans les villages pour une immersion authentique dans la culture locale. Tous les hébergements sont confortables et adaptés au contexte de la randonnée."
+      },
+      {
+        "question": "Faut-il un équipement particulier pour cette randonnée ?",
+        "answer": "Un équipement de randonnée standard est suffisant : bonnes chaussures de marche, vêtements adaptés aux variations de température, sac à dos, lampe frontale. L'équipement de camping (tentes, matelas) est fourni. Nous pouvons vous conseiller sur la liste complète de l'équipement recommandé."
+      }
+    ]
+  },
+  {
+    "slug": "randonnee-region-de-tafraout-circuit-de-8-jours-dans-lanti-atlas",
+    "path": "/randonnee-region-de-tafraout-circuit-de-8-jours-dans-lanti-atlas",
+    "sourceUrl": "https://maroctreks.com/randonnee-region-de-tafraout-circuit-de-8-jours-dans-lanti-atlas/",
+    "category": "anti-atlas",
+    "title": "Randonnée Région de Tafraout : Circuit de 8 Jours dans l'Anti-Atlas",
+    "subtitle": "Circuit Tafraout de 8 Jours – Randonnée dans l'Anti-Atlas",
+    "image": "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&q=80&w=1600",
+    "duration": "8 jours",
+    "difficulty": "Randonnée facile",
+    "maxAltitude": "2 374 m",
+    "bestSeason": "Octobre – Mai",
+    "groupSize": "À partir de 2 personnes",
+    "tourType": "Circuit Tafraout",
+    "price": "Sur demande",
+    "sectionHeadings": {
+      "description": "Description du Circuit",
+      "highlights": "Points Forts du Circuit",
+      "itinerary": "Itinéraire Détaillé de la Randonnée de 8 Jours",
+      "included": "Ce Qui Est Inclus",
+      "details": "Détails Supplémentaires du Circuit",
+      "faqs": "Questions Fréquemment Posées",
+      "gallery": "Galerie Photo de la Région de Tafraout",
+      "price": "Prix du Circuit",
+      "request": "Demander Ce Circuit"
+    },
+    "detailLabels": {
+      "duration": "Durée de la Randonnée",
+      "difficulty": "Difficulté de la Randonnée",
+      "bestSeason": "Meilleure Saison",
+      "groupSize": "Taille du Groupe",
+      "tourType": "Type de Randonnée",
+      "price": "Prix de la Randonnée"
+    },
+    "description": "L'Anti-Atlas de Tafraout est le massif le plus exposé au sud-ouest, on y accède soit par Agadir à l'ouest ou Taroudant au Nord par les montagnes du Haut Atlas occidental (Tizi N-Test 2090m).\n\nNotre randonnée commence de village en village au pays Berbères de l'Anti-Atlas, nous partons à la découverte d'un autre monde. Un trekking plein de couleurs et de rencontres avec les Berbères avec qui nous partagerons une façon de vivre qui n'a pas changé depuis des siècles.\n\nLa nature nous comblera également de ses merveilles avec ses fraîches vallées, ses décors de roches extravagants et ses palmeraies hauts lieux de l'agriculture locale. Sur les grands sentiers des amandiers et de l'arganier, arbres fruitiers magiques dans cette région où la femme occupe une place primordiale dans la famille par ses occupations quotidiennes.\n\nLes amandiers fleurissent en janvier, février et donnent le fruit en juillet. L'équipe sera composée d'un guide, cuisinier et d'un chauffeur d'un 4x4 qui transporte les bagages au bivouac le soir, car dans ces régions les mules sont très rares.",
+    "highlights": [
+      "Découverte de la région de Tafraout, massif le plus exposé au sud-ouest de l'Anti-Atlas.",
+      "Immersion dans la culture berbère authentique avec rencontres dans les villages.",
+      "Randonnée à travers les fraîches vallées, décors de roches extravagants et palmeraies.",
+      "Ascension du Djebel Lekst (2374m) offrant des vues panoramiques exceptionnelles.",
+      "Découverte des amandiers et arganiers, arbres emblématiques de la région.",
+      "Forfait tout inclus avec guide diplômé, cuisinier et transport 4x4 pour les bagages."
+    ],
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Arrivée à Marrakech",
+        "description": "Accueil à l'aéroport, transfert et nuit à l'hôtel à Marrakech. Installation et préparation pour le début de l'aventure."
+      },
+      {
+        "day": 2,
+        "title": "Marrakech – Tizi n'Test (2092m) – Taroudante – Ait Baha – Targa Touchka (360km)",
+        "description": "Départ de Marrakech et traversée du magnifique col de Tizi n'Test offrant des vues spectaculaires. Passage par Taroudante et Ait Baha avant d'arriver à Targa Touchka pour la nuit."
+      },
+      {
+        "day": 3,
+        "title": "Taga n'Toucha – Imzi – Tagdichte (1100m) - 5h de marche",
+        "description": "Première journée de randonnée à travers les paysages uniques de l'Anti-Atlas. Découverte des premiers villages berbères et arrivée à Tagdichte pour la nuit."
+      },
+      {
+        "day": 4,
+        "title": "Tagdichte – Inzgarne – Tirouft (1500m) - 5h30 de marche",
+        "description": "Randonnée vers le village de Tirouft à travers des paysages variés de l'Anti-Atlas. Rencontres avec les populations locales et immersion dans la culture berbère."
+      },
+      {
+        "day": 5,
+        "title": "Tirouft – Tamza – Isli – Ait Iftane (1450m) - 4h de marche",
+        "description": "Journée de randonnée plus courte à travers plusieurs villages typiques de la région. Découverte des modes de vie traditionnels et des paysages agricoles."
+      },
+      {
+        "day": 6,
+        "title": "Ait Iftanne – Djebel Lekst (2374m) – Anerguie – Tafraout (1100m) - 8h de marche",
+        "description": "Journée mémorable avec l'ascension du Djebel Lekst offrant des vues à 360° sur l'Anti-Atlas. Descente vers Anerguie puis arrivée à Tafraout pour la nuit."
+      },
+      {
+        "day": 7,
+        "title": "Tafraout – Ait Abdellah – Ait Baha – Ait Mloul – Chichaoua – Marrakech",
+        "description": "Départ de Tafraout et retour vers Marrakech en traversant plusieurs villages typiques. Installation à l'hôtel et soirée libre à Marrakech."
+      },
+      {
+        "day": 8,
+        "title": "Marrakech – Transfert à l'aéroport",
+        "description": "Petit-déjeuner à l'hôtel puis transfert à l'aéroport pour votre vol de retour avec plein de souvenirs inoubliables."
+      }
+    ],
+    "included": [
+      "Prise en charge dès votre arrivée à l'aéroport",
+      "Les transferts Aéroport - Hôtel - Rando - Hôtel - Aéroport",
+      "L'assistance d'un guide diplômé et d'une équipe pour le transport (4x4)",
+      "Les nuits en hôtel ou Riad à Marrakech",
+      "Les nuits sous tente pendant la randonnée",
+      "La pension complète pendant le circuit"
+    ],
+    "notIncluded": [
+      "L'assurance annulation et assistance (Obligatoire!)",
+      "Les boissons et dépenses personnelles",
+      "Les repas en ville"
+    ],
+    "faqs": [
+      {
+        "question": "Quel est le niveau de difficulté de ce circuit ?",
+        "answer": "Il s'agit d'une randonnée de niveau facile. Les journées de marche varient de 4 à 8 heures, avec une journée plus longue pour l'ascension du Djebel Lekst. Accessible à toute personne en bonne condition physique générale, même sans expérience préalable de la randonnée en montagne."
+      },
+      {
+        "question": "Comment se passe le transport des bagages ?",
+        "answer": "Dans cette région où les mules sont très rares, nous utilisons un 4x4 pour transporter les bagages et l'intendance jusqu'au lieu de bivouac chaque soir. Vous ne portez que votre sac à dos de journée pendant les randonnées."
+      },
+      {
+        "question": "Quelle est la meilleure période pour visiter Tafraout ?",
+        "answer": "La meilleure saison pour ce circuit est d'octobre à mai. L'automne et le printemps offrent des températures idéales pour la randonnée. En janvier-février, vous pourrez admirer les amandiers en fleurs, un spectacle magnifique. L'été est à éviter car les températures peuvent être très élevées."
+      },
+      {
+        "question": "Quels sont les repas pendant la randonnée ?",
+        "answer": "La plupart des repas de midi sont des pique-niques préparés par notre cuisinier, car le 4x4 ne peut pas nous rejoindre dans certains endroits. Les petits-déjeuners et dîners sont préparés au bivouac. La pension est complète pendant tout le circuit."
+      }
+    ]
+  },
+  {
+    "slug": "randonnee-desert-marocain-circuit-de-8-jours-vallee-du-draa",
+    "path": "/randonnee-desert-marocain-circuit-de-8-jours-vallee-du-draa",
+    "sourceUrl": "https://maroctreks.com/randonnee-desert-marocain-circuit-de-8-jours-vallee-du-draa/",
+    "category": "desert",
+    "title": "Randonnée Désert Marocain : Circuit de 8 Jours Vallée du Draa",
+    "subtitle": "Circuit Désert Marocain de 8 Jours – Randonnée Vallée du Draa",
+    "image": "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&q=80&w=1600",
+    "duration": "8 jours",
+    "difficulty": "Randonnée moyen",
+    "maxAltitude": "Selon l’itinéraire",
+    "bestSeason": "Octobre - Avril",
+    "groupSize": "À partir de 2 personnes",
+    "tourType": "Circuit Désert Vallée du Draa",
+    "price": "Sur demande",
+    "sectionHeadings": {
+      "description": "Description du Circuit",
+      "highlights": "Points Forts du Circuit",
+      "itinerary": "Itinéraire Détaillé de la Randonnée de 8 Jours",
+      "included": "Ce Qui Est Inclus",
+      "details": "Détails Supplémentaires du Circuit",
+      "faqs": "Questions Fréquemment Posées",
+      "gallery": "Galerie Photo du Désert Marocain",
+      "price": "Prix du Circuit",
+      "request": "Demander Ce Circuit"
+    },
+    "detailLabels": {
+      "duration": "Durée de la Randonnée",
+      "difficulty": "Difficulté de la Randonnée",
+      "bestSeason": "Meilleure Saison",
+      "groupSize": "Taille du Groupe",
+      "tourType": "Type de Randonnée",
+      "price": "Prix de la Randonnée"
+    },
+    "description": "Le Maroc dispose d'un désert riche et varié: oasis et palmeraies verdoyantes, plateaux arides et caillouteux, dunes de sable magiques, kasbahs et ksours fortifiés. La randonnée chamelière, la méharée, la découverte, le bivouac dans les dunes pour le lever et le coucher du soleil sont les activités les plus répandues.\n\nVous verrez ainsi à la fois, la vie des oasis, paradis de verdure et la vie inoubliable avec un ciel étoilé dans le désert, au milieu des dunes. Vous comprendrez ainsi l'importance de l'eau et l'art de l'économiser. Vous verrez aussi d'incroyables villages fortifiés à l'intérieur des beaux passages secrets et frais, habités par semi-nomades AIT ATTA, et descendants des tribus arabes et berbère d'Afrique sub saharienne.\n\nCes circuits sont également réalisables en méharée, randonnée pédestre, VTT, 4x4.\n\nL'équipe sera composée d'un guide diplômé et d'une équipe chamelier pour le transport de l'intendance et les bagages.",
+    "highlights": [
+      "Découverte du désert marocain riche et varié avec ses oasis et palmeraies verdoyantes.",
+      "Randonnée chamelière à travers les dunes magiques et plateaux arides.",
+      "Bivouac dans les dunes pour admirer les levers et couchers de soleil spectaculaires.",
+      "Immersion dans la vie des oasis et compréhension de l'importance de l'eau.",
+      "Découverte des villages fortifiés habités par les semi-nomades AIT ATTA.",
+      "Nuits sous les étoiles dans le désert avec ciel étoilé exceptionnel."
+    ],
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Arrivée puis transfert à l'hôtel",
+        "description": "Accueil à l'aéroport, transfert et nuit à l'hôtel à Marrakech. Installation et préparation pour le début de l'aventure dans le désert."
+      },
+      {
+        "day": 2,
+        "title": "Marrakech - Col Tichka - Ouarzazate - Zagora - Zawiat Sidi Saleh Tidri - Camp (440 km)",
+        "description": "Départ de Marrakech et traversée du magnifique col de Tichka. Passage par Ouarzazate et Zagora avant d'arriver à Zawiat Sidi Saleh Tidri pour la première nuit en camp dans le désert."
+      },
+      {
+        "day": 3,
+        "title": "Tidri - Oued Draa - Dunes Rgabi - Environ 5h de marche - Camp",
+        "description": "Première journée de randonnée dans le désert. Traversée de l'Oued Draa et découverte des magnifiques dunes de Rgabi. Nuit en camp au milieu des dunes."
+      },
+      {
+        "day": 4,
+        "title": "Dunes de Rgabi - Dunes Mzouria - Environ 4h30 de marche",
+        "description": "Continuation de la randonnée vers les dunes de Mzouria. Découverte des paysages désertiques variés et immersion dans l'ambiance magique du désert."
+      },
+      {
+        "day": 5,
+        "title": "Dunes Mzouria - Dunes Oued Naam - 4h de marche",
+        "description": "Randonnée vers les dunes d'Oued Naam. Expérience unique de la vie nomade et découverte des techniques de survie dans le désert."
+      },
+      {
+        "day": 6,
+        "title": "Oued Naam - Palmeraie de Mhamid - 4h30 de marche",
+        "description": "Dernière journée de randonnée vers la magnifique palmeraie de Mhamid. Retour à la civilisation après cette immersion totale dans le désert."
+      },
+      {
+        "day": 7,
+        "title": "Transfert à Marrakech",
+        "description": "Départ de Mhamid et retour vers Marrakech. Installation à l'hôtel et soirée libre pour partager les souvenirs de cette aventure désertique."
+      },
+      {
+        "day": 8,
+        "title": "Transfert à l'aéroport",
+        "description": "Petit-déjeuner à l'hôtel puis transfert à l'aéroport pour votre vol de retour avec plein de souvenirs inoubliables du désert marocain."
+      }
+    ],
+    "included": [
+      "Prise en charge dès votre arrivée à l'aéroport",
+      "Les transferts Aéroport - Hôtel - Rando - Hôtel - Aéroport",
+      "L'assistance d'un guide diplômé et d'une équipe chamelier pour le transport de l'intendance et les bagages",
+      "Les nuits en hôtel ou Riad en ville",
+      "Les nuits sous tente dans le désert",
+      "La pension complète pendant le circuit"
+    ],
+    "notIncluded": [
+      "L'assurance annulation et assistance (Obligatoire!)",
+      "Les boissons et dépenses personnelles",
+      "Les pourboires pour l'équipe locale",
+      "Les repas en ville"
+    ],
+    "faqs": [
+      {
+        "question": "Quel est le niveau de difficulté de ce circuit dans le désert ?",
+        "answer": "Il s'agit d'une randonnée de niveau moyen. Les journées de marche varient de 4 à 5 heures dans le désert. Les dénivelés sont généralement faibles, mais la marche dans le sable peut être plus exigeante. Accessible à toute personne en bonne condition physique générale."
+      },
+      {
+        "question": "Comment se passe le transport des bagages dans le désert ?",
+        "answer": "Nous utilisons une équipe chamelier avec des dromadaires pour transporter les bagages et l'intendance jusqu'au lieu de bivouac chaque soir. Vous ne portez que votre sac à dos de journée pendant les randonnées."
+      },
+      {
+        "question": "Quelle est la meilleure période pour visiter le désert marocain ?",
+        "answer": "La meilleure saison pour ce circuit est d'octobre à avril. Les températures sont agréables pendant la journée et fraîches la nuit. L'été est à éviter car les températures peuvent être extrêmement élevées dans le désert."
+      },
+      {
+        "question": "Quels sont les repas pendant la randonnée dans le désert ?",
+        "answer": "La pension est complète pendant tout le circuit. Les repas sont préparés par notre équipe et comprennent des spécialités marocaines. La plupart des repas de midi sont des pique-niques et les dîners sont préparés au bivouac. Nous pouvons adapter aux régimes alimentaires spécifiques sur demande."
+      }
+    ]
+  },
+  {
+    "slug": "randonnee-dunes-de-chegaga-circuit-de-8-jours-desert-marocain",
+    "path": "/randonnee-dunes-de-chegaga-circuit-de-8-jours-desert-marocain",
+    "sourceUrl": "https://maroctreks.com/randonnee-dunes-de-chegaga-circuit-de-8-jours-desert-marocain/",
+    "category": "desert",
+    "title": "Randonnée Dunes de Chegaga : Circuit de 8 Jours Désert Marocain",
+    "subtitle": "Circuit Dunes de Chegaga de 8 Jours – Randonnée Désert Marocain",
+    "image": "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&q=80&w=1600",
+    "duration": "8 jours",
+    "difficulty": "Randonnée facile",
+    "maxAltitude": "Selon l’itinéraire",
+    "bestSeason": "Octobre - Mai",
+    "groupSize": "À partir de 2 personnes",
+    "tourType": "Circuit Dunes de Chegaga",
+    "price": "Sur demande",
+    "sectionHeadings": {
+      "description": "Description du Circuit",
+      "highlights": "Points Forts du Circuit",
+      "itinerary": "Itinéraire Détaillé de la Randonnée de 8 Jours",
+      "included": "Ce Qui Est Inclus",
+      "details": "Détails Supplémentaires du Circuit",
+      "faqs": "Questions Fréquemment Posées",
+      "gallery": "Galerie Photo des Dunes de Chegaga",
+      "price": "Prix du Circuit",
+      "request": "Demander Ce Circuit"
+    },
+    "detailLabels": {
+      "duration": "Durée de la Randonnée",
+      "difficulty": "Difficulté de la Randonnée",
+      "bestSeason": "Meilleure Saison",
+      "groupSize": "Taille du Groupe",
+      "tourType": "Type de Randonnée",
+      "price": "Prix de la Randonnée"
+    },
+    "description": "Le Maroc dispose d'un désert riche et varié: oasis et palmeraies verdoyantes, plateaux arides et caillouteux, dunes de sable magiques, kasbahs et ksours fortifiés. La randonnée chamelière, la méharée, la découverte, le bivouac dans les dunes pour le lever et le coucher du soleil sont les activités les plus répandues.\n\nCe circuit vous emmène à la découverte des magnifiques dunes de Chegaga, parmi les plus belles et les plus étendues du Maroc. Vous vivrez une expérience unique au cœur du désert, avec des nuits sous les étoiles et des randonnées à travers des paysages désertiques variés.\n\nVous verrez ainsi à la fois, la vie des oasis, paradis de verdure et la vie inoubliable avec un ciel étoilé dans le désert, au milieu des dunes. Vous comprendrez ainsi l'importance de l'eau et l'art de l'économiser.\n\nL'équipe sera composée d'un guide diplômé et d'une équipe chamelier pour le transport de l'intendance et les bagages.",
+    "highlights": [
+      "Découverte des magnifiques dunes de Chegaga, parmi les plus belles du Maroc.",
+      "Randonnée chamelière à travers des paysages désertiques variés et préservés.",
+      "Bivouac au pied des dunes pour admirer les levers et couchers de soleil spectaculaires.",
+      "Nuits sous les étoiles avec ciel étoilé exceptionnel du désert marocain.",
+      "Découverte des dunes de Bougarn et Oued Naam, paysages désertiques uniques.",
+      "Forfait tout inclus avec guide diplômé, équipe chamelier et hébergement varié."
+    ],
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Arrivée et transfert à l'hôtel",
+        "description": "Accueil à l'aéroport, transfert et nuit à l'hôtel à Marrakech. Installation et préparation pour le début de l'aventure dans le désert."
+      },
+      {
+        "day": 2,
+        "title": "Marrakech - Col de Tichka - Ouarzazate - Zagora - Elfaija (440km)",
+        "description": "Départ de Marrakech et traversée du magnifique col de Tichka. Passage par Ouarzazate et Zagora avant d'arriver à Elfaija pour la première approche du désert."
+      },
+      {
+        "day": 3,
+        "title": "Plateau Elfaija - Jbel Bani - Col Oum Laachar - Oued Lemhasser - 5h30 de marche - Camp",
+        "description": "Première journée de randonnée dans le désert. Traversée du plateau Elfaija, découverte du Jbel Bani et du col Oum Laachar avant d'arriver à Oued Lemhasser pour la nuit en camp."
+      },
+      {
+        "day": 4,
+        "title": "Oued Lemhasser - Dunes de Chegaga - Bivouac au pied des dunes - 6h de marche",
+        "description": "Journée mémorable vers les magnifiques dunes de Chegaga. Arrivée au pied des dunes pour un bivouac inoubliable avec coucher de soleil spectaculaire."
+      },
+      {
+        "day": 5,
+        "title": "Dunes de Chegaga - Dunes de Bougarn - Camp - 5h de marche",
+        "description": "Continuation de la randonnée vers les dunes de Bougarn. Découverte de paysages désertiques variés et immersion dans l'ambiance magique du désert."
+      },
+      {
+        "day": 6,
+        "title": "Dunes de Bougarn - Dunes de Oued Naam - Camp - 5h30 de marche",
+        "description": "Randonnée vers les dunes d'Oued Naam. Expérience unique de la vie nomade et découverte des techniques de survie dans le désert."
+      },
+      {
+        "day": 7,
+        "title": "Oued Naam - Dunes de Mhamid fin - Zagora - Hôtel - 3h de marche puis transfert à Marrakech",
+        "description": "Dernière matinée de randonnée vers les dunes de Mhamid. Retour à la civilisation et transfert vers Zagora puis Marrakech. Installation à l'hôtel et soirée libre."
+      },
+      {
+        "day": 8,
+        "title": "Transfert à l'aéroport",
+        "description": "Petit-déjeuner à l'hôtel puis transfert à l'aéroport pour votre vol de retour avec plein de souvenirs inoubliables des dunes de Chegaga."
+      }
+    ],
+    "included": [
+      "Prise en charge dès votre arrivée à l'aéroport",
+      "Les transferts Aéroport - Hôtel - Rando - Hôtel - Aéroport",
+      "L'assistance d'un guide diplômé et d'une équipe chamelier pour le transport de l'intendance et les bagages",
+      "Les nuits en hôtel ou Riad en ville",
+      "Les nuits sous tente dans le désert",
+      "La pension complète pendant le circuit"
+    ],
+    "notIncluded": [
+      "L'assurance annulation et assistance (Obligatoire!)",
+      "Les boissons et dépenses personnelles",
+      "Les repas en ville"
+    ],
+    "faqs": [
+      {
+        "question": "Quel est le niveau de difficulté de ce circuit dans les dunes ?",
+        "answer": "Il s'agit d'une randonnée de niveau facile. Les journées de marche varient de 3 à 6 heures dans le désert. Les dénivelés sont généralement faibles. Accessible à toute personne en bonne condition physique générale, même sans expérience préalable de la randonnée en désert."
+      },
+      {
+        "question": "Comment se passe le transport des bagages dans le désert ?",
+        "answer": "Nous utilisons une équipe chamelier avec des dromadaires pour transporter les bagages et l'intendance jusqu'au lieu de bivouac chaque soir. Vous ne portez que votre sac à dos de journée pendant les randonnées."
+      },
+      {
+        "question": "Quelle est la meilleure période pour visiter les dunes de Chegaga ?",
+        "answer": "La meilleure saison pour ce circuit est d'octobre à mai. Les températures sont agréables pendant la journée et fraîches la nuit. L'été est à éviter car les températures peuvent être extrêmement élevées dans le désert."
+      },
+      {
+        "question": "Quels sont les repas pendant la randonnée dans le désert ?",
+        "answer": "La pension est complète pendant tout le circuit. Les repas sont préparés par notre équipe et comprennent des spécialités marocaines. La plupart des repas de midi sont des pique-niques et les dîners sont préparés au bivouac. Nous pouvons adapter aux régimes alimentaires spécifiques sur demande."
+      }
+    ]
+  },
+  {
+    "slug": "randonnee-cote-atlantique-circuit-de-8-jours-essaouira",
+    "path": "/randonnee-cote-atlantique-circuit-de-8-jours-essaouira",
+    "sourceUrl": "https://maroctreks.com/randonnee-cote-atlantique-circuit-de-8-jours-essaouira/",
+    "category": "atlantique",
+    "title": "Randonnée Côte Atlantique : Circuit de 8 Jours Essaouira",
+    "subtitle": "Circuit Côte Atlantique de 8 Jours – Randonnée Essaouira",
+    "image": "https://images.unsplash.com/photo-1539650116574-8efeb43e2750?auto=format&fit=crop&q=80&w=1600",
+    "duration": "8 jours",
+    "difficulty": "Randonnée moyen",
+    "maxAltitude": "Selon l’itinéraire",
+    "bestSeason": "Toute l'année",
+    "groupSize": "À partir de 4 personnes",
+    "tourType": "Circuit Côte Atlantique",
+    "price": "Sur demande",
+    "sectionHeadings": {
+      "description": "Description du Circuit",
+      "highlights": "Points Forts du Circuit",
+      "itinerary": "Itinéraire Détaillé de la Randonnée de 8 Jours",
+      "included": "Ce Qui Est Inclus",
+      "details": "Détails Supplémentaires du Circuit",
+      "faqs": "Questions Fréquemment Posées",
+      "gallery": "Galerie Photo de la Côte Atlantique",
+      "price": "Prix du Circuit",
+      "request": "Demander Ce Circuit"
+    },
+    "detailLabels": {
+      "duration": "Durée de la Randonnée",
+      "difficulty": "Difficulté de la Randonnée",
+      "bestSeason": "Meilleure Saison",
+      "groupSize": "Taille du Groupe",
+      "tourType": "Type de Randonnée",
+      "price": "Prix de la Randonnée"
+    },
+    "description": "La côte marocaine reste une fenêtre réservée aux amateurs de la nature surtout les randonneurs pédestres grâce à ses variétés des paysages et des longues plages sauvages bordées de dunes. Villes blanches aux portes bleues, des minuscules villages de pêcheurs à l'architecture blanche entourés des arganiers.\n\nCe séjour se déroule le long de la côte Atlantique, dans la région d'Essaouira. Nous découvrions de beaux rivages aux paysages très variés : dunes, plateaux d'arganiers, cultures en terrasses des plages sauvages, des falaises boisées d'arganiers. La population berbère mène une double vie de pêcheurs et d'agriculture - récolte de l'argane.\n\nHospitalité chaleureuse, thé à la menthe et pain avec l'huile d'argan (et Amlou) est une spécialité du coin à base des amandes et à l'huile d'argan vous ne le manquez pas à le goûter.\n\nL'équipe sera composée d'un guide diplômé et d'une équipe chamelier pour le transport de l'intendance et les bagages.",
+    "highlights": [
+      "Découverte de la côte atlantique marocaine avec ses plages sauvages bordées de dunes.",
+      "Immersion dans la culture berbère authentique avec villages de pêcheurs à l'architecture blanche.",
+      "Randonnée à travers les plateaux d'arganiers, cultures en terrasses et falaises boisées.",
+      "Dégustation de spécialités locales : thé à la menthe, pain avec huile d'argan et Amlou.",
+      "Découverte d'Essaouira, ville blanche aux portes bleues classée au patrimoine de l'UNESCO.",
+      "Forfait tout inclus avec guide diplômé, équipe chamelier et hébergement varié."
+    ],
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Arrivée - Accueil et transfert à l'hôtel",
+        "description": "Accueil à l'aéroport, transfert et nuit à l'hôtel à Marrakech. Installation et préparation pour le début de l'aventure."
+      },
+      {
+        "day": 2,
+        "title": "Marrakech (250 km) - Tafdna - 3h de marche",
+        "description": "Départ de Marrakech vers la côte atlantique. Arrivée à Tafdna et première randonnée de 3 heures pour découvrir les paysages côtiers. Nuit à Tafdna."
+      },
+      {
+        "day": 3,
+        "title": "Tafdna - Sidi Ahmed Saih - 5h de marche",
+        "description": "Randonnée de 5 heures le long de la côte vers Sidi Ahmed Saih. Découverte des paysages variés : dunes, plateaux d'arganiers et plages sauvages."
+      },
+      {
+        "day": 4,
+        "title": "Sidi Ahmed Saih - Plage de Sidi Mbark - 5h de marche",
+        "description": "Continuation de la randonnée côtière vers la magnifique plage de Sidi Mbark. Rencontres avec les populations locales et immersion dans la culture berbère."
+      },
+      {
+        "day": 5,
+        "title": "Sidi Mbark - Sidi Kaouki - 4h30 de marche",
+        "description": "Randonnée de 4h30 vers Sidi Kaouki, spot de surf réputé. Découverte des modes de vie traditionnels et des paysages côtiers préservés."
+      },
+      {
+        "day": 6,
+        "title": "Sidi Kaouki - Essaouira - 6h de marche",
+        "description": "Dernière journée de randonnée vers Essaouira, la ville blanche aux portes bleues. Arrivée en fin de journée et installation en appartement."
+      },
+      {
+        "day": 7,
+        "title": "Transfert à Marrakech et nuit dans un hôtel",
+        "description": "Départ d'Essaouira et retour vers Marrakech. Installation à l'hôtel et soirée libre pour découvrir la ville ocre."
+      },
+      {
+        "day": 8,
+        "title": "Transfert à l'aéroport",
+        "description": "Petit-déjeuner à l'hôtel puis transfert à l'aéroport pour votre vol de retour avec plein de souvenirs inoubliables de la côte atlantique marocaine."
+      }
+    ],
+    "included": [
+      "Prise en charge dès votre arrivée à l'aéroport",
+      "Les transferts Aéroport - Hôtel - Rando - Hôtel - Aéroport",
+      "L'assistance d'un guide diplômé et d'une équipe chamelier pour le transport de l'intendance et les bagages",
+      "Les nuits en hôtel ou Riad à Marrakech",
+      "Les nuits sous tente et appartement à Essaouira",
+      "La pension complète pendant le circuit"
+    ],
+    "notIncluded": [
+      "L'assurance annulation et assistance (Obligatoire!)",
+      "Les boissons et dépenses personnelles",
+      "Les pourboires pour l'équipe locale",
+      "Les repas en ville"
+    ],
+    "faqs": [
+      {
+        "question": "Quel est le niveau de difficulté de ce circuit ?",
+        "answer": "Il s'agit d'une randonnée de niveau moyen. Les journées de marche varient de 3 à 6 heures, avec des dénivelés modérés. Accessible à toute personne en bonne condition physique générale, ayant une certaine expérience de la randonnée."
+      },
+      {
+        "question": "Comment se passe le transport des bagages ?",
+        "answer": "Nous utilisons une équipe chamelier pour transporter les bagages et l'intendance jusqu'au lieu de bivouac chaque soir. Vous ne portez que votre sac à dos de journée pendant les randonnées."
+      },
+      {
+        "question": "Quelle est la meilleure période pour visiter la côte atlantique ?",
+        "answer": "Ce circuit peut être réalisé toute l'année. Le printemps (mars-mai) et l'automne (septembre-novembre) offrent des températures idéales pour la randonnée. L'été peut être venteux sur la côte, ce qui est appréciable quand il fait chaud à l'intérieur des terres."
+      },
+      {
+        "question": "Quels sont les repas pendant la randonnée ?",
+        "answer": "La pension est complète pendant tout le circuit. La plupart des repas de midi sont des pique-niques préparés par notre équipe. Les petits-déjeuners et dîners sont préparés au bivouac ou à l'hébergement. Nous pouvons adapter aux régimes alimentaires spécifiques sur demande."
+      }
+    ]
+  },
+  {
+    "slug": "grande-traversee-de-latlas-marocain-circuit-de-22-jours",
+    "path": "/grande-traversee-de-latlas-marocain-circuit-de-22-jours",
+    "sourceUrl": "https://maroctreks.com/grande-traversee-de-latlas-marocain-circuit-de-22-jours/",
+    "category": "grande-traversee",
+    "title": "Grande Traversée de l'Atlas Marocain : Circuit de 22 Jours",
+    "subtitle": "Grande Traversée de l'Atlas Marocain - 22 Jours d'Expédition",
+    "image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
+    "duration": "22 jours",
+    "difficulty": "Randonnée difficile",
+    "maxAltitude": "4 167 m",
+    "bestSeason": "Mai à Octobre",
+    "groupSize": "À partir de 6 personnes",
+    "tourType": "Grande Traversée Atlas",
+    "price": "Sur demande",
+    "sectionHeadings": {
+      "description": "Description du Circuit",
+      "highlights": "Points Forts du Circuit",
+      "itinerary": "Itinéraire Détaillé de la Grande Traversée (22 Jours)",
+      "included": "Ce Qui Est Inclus",
+      "details": "Détails Supplémentaires du Circuit",
+      "faqs": "Questions Fréquemment Posées",
+      "gallery": "Galerie Photo de l'Atlas Marocain",
+      "price": "Prix du Circuit",
+      "request": "Demander Ce Circuit"
+    },
+    "detailLabels": {
+      "duration": "Durée de la Randonnée",
+      "difficulty": "Difficulté de la Randonnée",
+      "bestSeason": "Meilleure Saison",
+      "groupSize": "Taille du Groupe",
+      "tourType": "Type de Randonnée",
+      "price": "Prix de la Randonnée"
+    },
+    "description": "De l'Atlas central à l'Atlas occidental, du M'goun au Toubkal, le voyageur gravit deux sommets à plus de 4000m et découvre une grande diversité de paysages : vallées, villages, sommets, lacs et gorges se succédant tout au long du parcours.\n\nCette grande traversée vous emmène à la découverte des plus beaux paysages de l'Atlas Marocain, des transhumants qui y trouvent un paradis pour leurs grands troupeaux, aux plus hautes vallées de l'Atlas, du col du Tichka jusqu'au sommet le plus culminant : le toit du Maghreb, le Toubkal à 4167m.\n\nCette expédition de 22 jours représente le trekking le plus complet au Maroc, combinant l'ascension des deux plus hauts sommets du pays avec la traversée des régions les plus authentiques de l'Atlas. Une aventure exceptionnelle pour les randonneurs expérimentés cherchant un défi à la mesure de leurs ambitions.\n\nL'équipe sera composée d'un guide diplômé de haute montagne et d'une équipe muletière pour le transport de l'intendance et des bagages.",
+    "highlights": [
+      "Ascension du M'goun (4068m) et du Toubkal (4167m), les deux plus hauts sommets du Maroc.",
+      "Grande traversée complète de l'Atlas central à l'Atlas occidental.",
+      "Découverte d'une grande diversité de paysages : vallées, villages, sommets, lacs et gorges.",
+      "Rencontre avec les populations berbères et observation de la vie pastorale traditionnelle.",
+      "Expédition de 22 jours, le trekking le plus complet au Maroc.",
+      "Encadrement par un guide diplômé de haute montagne et équipe muletière expérimentée."
+    ],
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Arrivée et transfert à l'hôtel",
+        "description": "Accueil à l'aéroport, transfert et nuit à l'hôtel à Marrakech. Briefing sur l'expédition et préparation du matériel."
+      },
+      {
+        "day": 2,
+        "title": "Marrakech - Azilal - Ait Bouguemmaz - Azib n'Ikkis",
+        "description": "Départ vers l'Atlas central. Route vers Azilal et Ait Bouguemmaz avant la première marche d'approche vers Azib n'Ikkis. 3h de marche / 5h30 de route."
+      },
+      {
+        "day": 3,
+        "title": "Azib n'Ikkis (2300m) - Col Tarkeddit (3450m) - Plateau de Tarkeddit (2900m)",
+        "description": "Première journée d'acclimatation avec ascension du col Tarkeddit offrant des vues spectaculaires sur l'Atlas central. 5h30 de marche."
+      },
+      {
+        "day": 4,
+        "title": "Plateau de Tarkeddit (2900m) - Sommet du M'goun (4068m) - Retour",
+        "description": "Journée mémorable avec l'ascension du M'goun, deuxième plus haut sommet du Maroc. Vues panoramiques exceptionnelles. 8h30 de marche."
+      },
+      {
+        "day": 5,
+        "title": "Plateau de Tarkedit - Sources de Tassaoute - Col de Sdremt (3200m) - Tazgaiwalt - Amezri Imi n'Ikkis",
+        "description": "Traversée des hauts plateaux et découverte des sources de Tassaoute. 6h de marche."
+      },
+      {
+        "day": 6,
+        "title": "Imin Ikkis (2100m) - Ichebbaken - Ait Hamza - Ait Ali n'Itto",
+        "description": "Descente vers les vallées habitées et rencontre avec les populations locales. 5h30 de marche."
+      },
+      {
+        "day": 7,
+        "title": "Ait Ali n Itto - Megdaz - Col de 2400m - Tagought - Tizin Fedghat (2500m)",
+        "description": "Nouvelle ascension vers les hauts plateaux et traversée de villages traditionnels. 6h de marche."
+      },
+      {
+        "day": 8,
+        "title": "Tizi n Fedghat - Tamzrit - Col Ineghmar (2800m) - Lac Tamda - Azib Anfergal (2600m)",
+        "description": "Découverte du magnifique lac Tamda et traversée du col Ineghmar. 6h de marche."
+      },
+      {
+        "day": 9,
+        "title": "Azib n'Anefergal - Tighza n'Ouaourikt - Vers Anemiter - Camp au pied de Tizin Telouat",
+        "description": "Traversée de paysages alpins préservés et approche de l'Atlas occidental. 5h30 de marche."
+      },
+      {
+        "day": 10,
+        "title": "Tizi n'Telouat - Bergeries - Titoula - Environ de Taddert",
+        "description": "Descente vers les vallées de l'Atlas occidental et découverte des bergeries traditionnelles. 6h de marche."
+      },
+      {
+        "day": 11,
+        "title": "Taddert - Plateau Afra - Village Afra - Camp près de l'Assif n Zat",
+        "description": "Traversée du plateau Afra et approche des gorges de l'Assif n Zat. 5h de marche."
+      },
+      {
+        "day": 12,
+        "title": "Afra - Assats - Assif n Zat - Gorges - Azgour",
+        "description": "Exploration des magnifiques gorges de l'Assif n Zat et descente vers Azgour. 6h de marche."
+      },
+      {
+        "day": 13,
+        "title": "Azgour - Ouarzast Villages et bergeries - Plateau de Yagour",
+        "description": "Traversée des villages traditionnels et ascension vers le plateau de Yagour. 6h de marche."
+      },
+      {
+        "day": 14,
+        "title": "Yagour - Bou Iguerane - Taddert n'Aghbalou - Puis Setti Fadma - Près d'Agadir n'Ait",
+        "description": "Descente vers la vallée de l'Ourika et approche du massif du Toubkal."
+      },
+      {
+        "day": 15,
+        "title": "Agadir 'Ait Boulemane - Anefli - Gorges Kissaria - Azib n'likkemt (2500m)",
+        "description": "Traversée des gorges de Kissaria et remontée vers les hauts pâturages. 6h30 de marche."
+      },
+      {
+        "day": 16,
+        "title": "Azib n'Likkemt (2500m) - Col Tifni (2900m) - Azib n Tifni - Taghbaloute",
+        "description": "Ascension du col Tifni offrant des vues sur le massif du Toubkal. 6h30 de marche."
+      },
+      {
+        "day": 17,
+        "title": "Taghbaloute - Tissaldai - Amsouzart - Ait Iguerane - Lac d'Ifni (2400m)",
+        "description": "Approche du lac d'Ifni, magnifique lac de montagne au pied du Toubkal. 5h30 de marche."
+      },
+      {
+        "day": 18,
+        "title": "Lac d'Ifni - Col Ouanoums (3700m) - Camp de base Toubkal (3200m)",
+        "description": "Ascension du col Ouanoums et arrivée au camp de base du Toubkal. 6h de marche."
+      },
+      {
+        "day": 19,
+        "title": "Camp (3200m) - Sommet Toubkal (4167m) - Retour au camp (5h) - Armed (2000m)",
+        "description": "Journée historique avec l'ascension du Toubkal, toit de l'Afrique du Nord. Descente vers Armed. 8h de marche."
+      },
+      {
+        "day": 20,
+        "title": "Armed Imlil (1750m) - Asni - Retour à Marrakech",
+        "description": "Descente finale vers Imlil et retour à Marrakech. Célébration de l'expédition réussie. 1h30 de transport."
+      },
+      {
+        "day": 21,
+        "title": "Visite libre de Marrakech",
+        "description": "Journée de détente pour explorer Marrakech, ses souks, places et jardins. Repas de célébration."
+      },
+      {
+        "day": 22,
+        "title": "Départ à l'aéroport",
+        "description": "Transfert à l'aéroport pour le vol retour avec des souvenirs inoubliables de cette grande traversée de l'Atlas."
+      }
+    ],
+    "included": [
+      "Prise en charge dès votre arrivée à l'aéroport",
+      "Les transferts Aéroport - Hôtel - Rando - Hôtel - Aéroport",
+      "L'assistance d'un guide diplômé de haute montagne et d'une équipe muletière",
+      "Les nuits en hôtel ou Riad à Marrakech",
+      "Les nuits sous tente et en gîte pendant le trek",
+      "La pension complète pendant le circuit"
+    ],
+    "notIncluded": [
+      "L'assurance annulation et assistance (Obligatoire!)",
+      "Les boissons et dépenses personnelles",
+      "Les repas en ville"
+    ],
+    "faqs": [
+      {
+        "question": "Quel est le niveau requis pour cette grande traversée ?",
+        "answer": "Cette expédition est réservée aux randonneurs expérimentés en excellente condition physique. Il est nécessaire d'avoir une expérience préalable de la randonnée en haute montagne, de l'endurance pour des journées de 5 à 8 heures de marche avec dénivelés importants, et une bonne acclimatation à l'altitude."
+      },
+      {
+        "question": "Comment se passe l'acclimatation à l'altitude ?",
+        "answer": "L'itinéraire est spécialement conçu pour une acclimatation progressive. Les premières journées se déroulent à des altitudes modérées avant les ascensions des sommets. Nous respectons des règles strictes de montée lente et incluons des journées d'acclimatation. Notre guide est formé pour détecter et gérer les problèmes d'altitude."
+      },
+      {
+        "question": "Quel équipement est nécessaire pour cette expédition ?",
+        "answer": "Un équipement technique de haute montagne est nécessaire : chaussures de trekking imperméables, vêtements techniques (couches), sac de couchage adapté aux températures négatives, bâtons de marche, frontale, et matériel de sécurité. Une liste d'équipement détaillée sera fournie lors de l'inscription."
+      },
+      {
+        "question": "Comment sont gérés les bagages pendant le trek ?",
+        "answer": "Les mules transportent l'intendance et les bagages personnels entre les camps. Vous portez uniquement un sac à dos de journée avec l'équipement nécessaire pour la marche (eau, vêtements de protection, appareil photo, etc.). Le poids des bagages transportés par les mules est limité à 12kg par personne."
+      }
+    ]
+  }
+]

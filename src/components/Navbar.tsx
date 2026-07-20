@@ -37,6 +37,7 @@ export default function Navbar() {
   ];
 
   const circuits = [
+    { name: "Tous les circuits", href: "/circuits" },
     { name: "Haut Atlas Toubkal", href: "/haut-atlas-toubkal" },
     { name: "Haut Atlas Mgoun", href: "/haut-atlas-mgoun" },
     { name: "Anti Atlas", href: "/antis-atlas" },

@@ -2,6 +2,13 @@ import Image from "next/image";
 import { Mountain, Award, Heart, Shield } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { createMetadata } from "@/lib/seo";
+
+export const metadata = createMetadata({
+  title: "Mohamed Ait Tadrart, guide au Maroc",
+  description: "Découvrez Maroc Treks et Mohamed Ait Tadrart, guide professionnel marocain : plus de 20 ans d’expérience et une équipe locale.",
+  path: "/qui-sommes-nous",
+});
 
 export default function QuiSommesNous() {
   const values = [

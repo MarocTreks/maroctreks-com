@@ -6,6 +6,7 @@ export default function Footer() {
 
   const fastLinks = [
     { name: "Accueil", href: "/" },
+    { name: "Tous les circuits", href: "/circuits" },
     { name: "Qui sommes nous ?", href: "/qui-sommes-nous" },
     { name: "Informations Pratiques", href: "/informations-pratiques" },
     { name: "Excursions", href: "/excursions" },
@@ -13,10 +14,10 @@ export default function Footer() {
   ];
 
   const popularTreks = [
-    { name: "Ascension du Toubkal (4167m)", href: "/haut-atlas-toubkal" },
-    { name: "Traversée du Mgoun (4068m)", href: "/haut-atlas-mgoun" },
-    { name: "Trek de l'Anti-Atlas (Siroua)", href: "/antis-atlas" },
-    { name: "Aventure au Sahara / Désert", href: "/le-desert" },
+    { name: "Tour du Toubkal – 15 jours", href: "/randonnee-dans-latlas" },
+    { name: "M'Goun – 10 jours", href: "/randonnee-dans-le-haut-atlas-central" },
+    { name: "Jbel Saghro – 8 jours", href: "/randonnee-jbel-saghro" },
+    { name: "Dunes de Chegaga – 8 jours", href: "/randonnee-dunes-de-chegaga-circuit-de-8-jours-desert-marocain" },
     { name: "La Grande Traversée de l'Atlas", href: "/grande-traversee-de-latlas-marocain-circuit-de-22-jours" },
   ];
 
@@ -39,32 +40,6 @@ export default function Footer() {
             <p className="text-sm leading-relaxed text-slate-300">
               Votre agence locale de trekking et randonnée au Maroc. Fondée par Mohamed Ait Tadrart, guide professionnel breveté avec plus de 20 ans d'expérience. Trek Toubkal, excursions désert, et immersion culturelle authentique.
             </p>
-            <div className="flex items-center gap-4 text-slate-400">
-              <a
-                href="https://facebook.com"
-                target="_blank"
-                rel="noreferrer"
-                className="hover:text-brand-orange transition-colors"
-                aria-label="Facebook"
-              >
-                <svg className="h-5 w-5 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c4.56-.93 8-4.96 8-9.75z" />
-                </svg>
-              </a>
-              <a
-                href="https://instagram.com"
-                target="_blank"
-                rel="noreferrer"
-                className="hover:text-brand-orange transition-colors"
-                aria-label="Instagram"
-              >
-                <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg">
-                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
-                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
-                </svg>
-              </a>
-            </div>
           </div>
 
           {/* Column 2: Navigation Links */}
@@ -108,7 +83,7 @@ export default function Footer() {
               <li className="flex items-start gap-3">
                 <MapPin className="h-5 w-5 shrink-0 text-brand-orange mt-0.5" />
                 <span className="text-sm text-slate-300">
-                  Imlil, Atlas Mountains, Maroc
+                  Douar Armed, Imlil, Asni 42152, Maroc
                 </span>
               </li>
               <li className="flex items-center gap-3">
@@ -147,10 +122,10 @@ export default function Footer() {
           <p>© {currentYear} Maroc Treks. Tous droits réservés.</p>
           <div className="flex gap-6">
             <Link href="/qui-sommes-nous" className="hover:text-brand-orange">
-              Mentions Légales
+              À propos
             </Link>
             <Link href="/contact" className="hover:text-brand-orange">
-              Confidentialité
+              Contact
             </Link>
           </div>
         </div>

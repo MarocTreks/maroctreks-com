@@ -10,6 +10,19 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  async redirects() {
+    return [
+      { source: "/acceuil", destination: "/", permanent: true },
+      { source: "/tous-les-circuits", destination: "/circuits", permanent: true },
+      {
+        source: "/randonnee-dans-le-moyen-atlas-8-jours",
+        destination: "/randonnee-moyen-atlas",
+        permanent: true,
+      },
+      { source: "/:locale(en|es|nl)", destination: "/", permanent: true },
+      { source: "/:locale(en|es|nl)/:path*", destination: "/:path*", permanent: true },
+    ];
+  },
   async headers() {
     return [
       {

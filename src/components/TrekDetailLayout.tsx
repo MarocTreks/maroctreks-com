@@ -1,8 +1,10 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Check, X, ArrowLeft, ArrowRight, ShieldCheck } from "lucide-react";
+import { Check, X, ArrowLeft, ArrowRight, ShieldCheck, Route, BadgeDollarSign } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { JsonLd, SITE_URL } from "@/lib/seo";
+import type { TourDetailLabels, TourSectionHeadings } from "@/lib/tours";
 
 export interface ItineraryDay {
   day: number;
@@ -11,6 +13,7 @@ export interface ItineraryDay {
 }
 
 export interface TrekDetailProps {
+  path: string;
   title: string;
   subtitle?: string;
   bannerImage: string;
@@ -23,9 +26,18 @@ export interface TrekDetailProps {
   itinerary: ItineraryDay[];
   included: string[];
   notIncluded: string[];
+  groupSize?: string;
+  tourType?: string;
+  price?: string;
+  sectionHeadings: TourSectionHeadings;
+  detailLabels: TourDetailLabels;
+  faqs?: { question: string; answer: string }[];
+  categoryPath?: string;
+  categoryTitle?: string;
 }
 
 export default function TrekDetailLayout({
+  path,
   title,
   subtitle,
   bannerImage,
@@ -38,26 +50,72 @@ export default function TrekDetailLayout({
   itinerary,
   included,
   notIncluded,
+  groupSize,
+  tourType,
+  price,
+  sectionHeadings,
+  detailLabels,
+  faqs = [],
+  categoryPath = "/circuits",
+  categoryTitle = "Tous les circuits",
 }: TrekDetailProps) {
+  const tripSchema = {
+    "@context": "https://schema.org",
+    "@type": "TouristTrip",
+    "@id": `${SITE_URL}${path}#trip`,
+    url: `${SITE_URL}${path}`,
+    name: title,
+    description,
+    touristType: ["Trekking", "Randonnée", "Tourisme d’aventure"],
+    provider: { "@id": `${SITE_URL}/#organization` },
+    tripOrigin: { "@type": "Place", name: "Marrakech, Maroc" },
+    itinerary: {
+      "@type": "ItemList",
+      numberOfItems: itinerary.length,
+      itemListElement: itinerary.map((item, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        name: `Jour ${item.day} – ${item.title}`,
+        description: item.description,
+      })),
+    },
+    additionalProperty: [
+      { "@type": "PropertyValue", name: "Durée", value: duration },
+      { "@type": "PropertyValue", name: "Difficulté", value: difficulty },
+      { "@type": "PropertyValue", name: "Altitude maximale", value: maxAltitude },
+      { "@type": "PropertyValue", name: "Meilleure saison", value: bestSeason },
+    ],
+  };
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Accueil", item: SITE_URL },
+      { "@type": "ListItem", position: 2, name: categoryTitle, item: `${SITE_URL}${categoryPath}` },
+      { "@type": "ListItem", position: 3, name: title, item: `${SITE_URL}${path}` },
+    ],
+  };
+
   return (
     <>
+      <JsonLd data={[tripSchema, breadcrumbSchema]} />
       <Navbar />
 
       <main className="flex-grow bg-brand-sand">
         {/* Trek Hero Banner */}
         <section className="relative py-24 sm:py-32 bg-brand-slate text-white overflow-hidden">
           <div className="absolute inset-0 opacity-30">
-            <Image src={bannerImage} alt="" fill priority sizes="100vw" className="object-cover" />
+            <Image src={bannerImage} alt={`Paysage du circuit ${title} au Maroc`} fill priority sizes="100vw" className="object-cover" />
           </div>
           <div className="absolute inset-0 bg-gradient-to-t from-brand-sand via-transparent to-brand-slate/90 z-10" />
           
           <div className="relative z-20 max-w-5xl mx-auto px-4 text-center space-y-6">
             <Link
-              href="/"
+              href={categoryPath}
               className="inline-flex items-center gap-1 text-sm font-semibold text-brand-gold hover:text-white transition-colors"
             >
               <ArrowLeft className="h-4 w-4" />
-              <span>Retour à l'accueil</span>
+              <span>Retour : {categoryTitle}</span>
             </Link>
             
             <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-tight">
@@ -72,19 +130,19 @@ export default function TrekDetailLayout({
             {/* Quick Specs */}
             <div className="mx-auto max-w-4xl grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 bg-slate-900/60 backdrop-blur-md p-5 sm:p-6 rounded-3xl border border-white/10 mt-10">
               <div className="text-center">
-                <span className="block text-xs uppercase font-bold tracking-wider text-slate-400">Durée</span>
+                <span className="block text-xs uppercase font-bold tracking-wider text-slate-400">{detailLabels.duration}</span>
                 <span className="block text-base sm:text-lg font-bold text-brand-gold mt-1">{duration}</span>
               </div>
               <div className="text-center border-l border-white/10">
-                <span className="block text-xs uppercase font-bold tracking-wider text-slate-400">Difficulté</span>
+                <span className="block text-xs uppercase font-bold tracking-wider text-slate-400">{detailLabels.difficulty}</span>
                 <span className="block text-base sm:text-lg font-bold text-brand-gold mt-1">{difficulty}</span>
               </div>
               <div className="text-center border-l border-white/10">
-                <span className="block text-xs uppercase font-bold tracking-wider text-slate-400">Altitude Max</span>
-                <span className="block text-base sm:text-lg font-bold text-brand-gold mt-1">{maxAltitude}</span>
+                <span className="block text-xs uppercase font-bold tracking-wider text-slate-400">{detailLabels.groupSize}</span>
+                <span className="block text-base sm:text-lg font-bold text-brand-gold mt-1">{groupSize}</span>
               </div>
               <div className="text-center border-l border-white/10">
-                <span className="block text-xs uppercase font-bold tracking-wider text-slate-400">Meilleure Saison</span>
+                <span className="block text-xs uppercase font-bold tracking-wider text-slate-400">{detailLabels.bestSeason}</span>
                 <span className="block text-base sm:text-lg font-bold text-brand-gold mt-1">{bestSeason}</span>
               </div>
             </div>
@@ -99,7 +157,7 @@ export default function TrekDetailLayout({
             <div className="lg:col-span-8 space-y-12">
               {/* Overview */}
               <div className="bg-white rounded-3xl p-8 border border-brand-orange/5 shadow-lg space-y-4">
-                <h2 className="font-display text-2xl font-bold text-brand-slate">Présentation du circuit</h2>
+                <h2 className="font-display text-2xl font-bold text-brand-slate">{sectionHeadings.description}</h2>
                 <div className="h-1 w-12 bg-brand-orange rounded-full" />
                 <p className="text-slate-600 leading-relaxed font-light whitespace-pre-line">
                   {description}
@@ -108,7 +166,7 @@ export default function TrekDetailLayout({
 
               {/* Highlights */}
               <div className="bg-white rounded-3xl p-8 border border-brand-orange/5 shadow-lg space-y-6">
-                <h2 className="font-display text-2xl font-bold text-brand-slate">Les Points Forts</h2>
+                <h2 className="font-display text-2xl font-bold text-brand-slate">{sectionHeadings.highlights}</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   {highlights.map((hl, idx) => (
                     <div key={idx} className="flex items-start gap-3">
@@ -121,9 +179,31 @@ export default function TrekDetailLayout({
                 </div>
               </div>
 
+              {(tourType || price) && (
+                <section>
+                  <h2 className="mb-6 font-display text-2xl font-bold text-brand-slate">{sectionHeadings.details}</h2>
+                  <div className="grid gap-4 sm:grid-cols-2">
+                    {tourType && (
+                      <div className="rounded-2xl border border-brand-orange/10 bg-white p-5 shadow-sm">
+                        <Route className="h-5 w-5 text-brand-orange" />
+                        <span className="mt-3 block text-xs font-bold uppercase tracking-wider text-slate-400">{detailLabels.tourType}</span>
+                        <span className="mt-1 block font-bold text-brand-slate">{tourType}</span>
+                      </div>
+                    )}
+                    {price && (
+                      <div className="rounded-2xl border border-brand-orange/10 bg-white p-5 shadow-sm">
+                        <BadgeDollarSign className="h-5 w-5 text-brand-orange" />
+                        <span className="mt-3 block text-xs font-bold uppercase tracking-wider text-slate-400">{detailLabels.price}</span>
+                        <span className="mt-1 block font-bold text-brand-slate">{price}</span>
+                      </div>
+                    )}
+                  </div>
+                </section>
+              )}
+
               {/* Day-by-Day Itinerary */}
               <div className="space-y-6">
-                <h2 className="font-display text-2xl font-bold text-brand-slate px-2">Programme jour par jour</h2>
+                <h2 className="font-display text-2xl font-bold text-brand-slate px-2">{sectionHeadings.itinerary}</h2>
                 
                 <div className="relative border-l-2 border-brand-orange/20 ml-4 space-y-10 pl-6 sm:pl-8">
                   {itinerary.map((day) => (
@@ -146,6 +226,22 @@ export default function TrekDetailLayout({
                   ))}
                 </div>
               </div>
+
+              {faqs.length > 0 && (
+                <section className="rounded-3xl border border-brand-orange/5 bg-white p-8 shadow-lg">
+                  <h2 className="font-display text-2xl font-bold text-brand-slate">{sectionHeadings.faqs}</h2>
+                  <div className="mt-6 divide-y divide-slate-100">
+                    {faqs.map((faq) => (
+                      <details key={faq.question} className="group py-5 first:pt-0 last:pb-0">
+                        <summary className="cursor-pointer list-none pr-6 font-bold text-brand-slate marker:hidden">
+                          {faq.question}
+                        </summary>
+                        <p className="mt-3 text-sm leading-relaxed text-slate-600">{faq.answer}</p>
+                      </details>
+                    ))}
+                  </div>
+                </section>
+              )}
             </div>
 
             {/* Right Side: Quick Booking & What's included */}
@@ -153,16 +249,20 @@ export default function TrekDetailLayout({
               
               {/* Quick Booking CTA */}
               <div className="rounded-3xl bg-gradient-to-br from-brand-orange to-brand-gold p-8 text-white shadow-xl text-center space-y-6">
-                <h3 className="font-display text-2xl font-black">Réserver ce trek</h3>
+                <div>
+                  <h2 className="font-display text-lg font-bold">{sectionHeadings.price}</h2>
+                  <p className="mt-1 font-display text-2xl font-black">{price || "Sur demande"}</p>
+                </div>
+                <h2 className="font-display text-2xl font-black">{sectionHeadings.request}</h2>
                 <p className="text-sm text-orange-50 font-light leading-relaxed">
-                  Envoyez-nous vos dates, le nombre de personnes et vos préférences. Nous ajusterons l'itinéraire pour vous.
+                  Prix disponible sur demande. Contactez-nous pour un devis personnalisé.
                 </p>
                 <div className="space-y-3">
                   <Link
                     href="/contact"
                     className="flex w-full items-center justify-center gap-2 rounded-xl bg-brand-slate p-4 text-sm font-bold text-white shadow-lg hover:scale-102 transition-all duration-300"
                   >
-                    <span>Faire une demande de devis</span>
+                    <span>Demander Ce Circuit</span>
                     <ArrowRight className="h-4 w-4" />
                   </Link>
                   <a
@@ -176,17 +276,17 @@ export default function TrekDetailLayout({
                 </div>
                 <div className="pt-2 flex items-center justify-center gap-2 text-xs text-orange-100">
                   <ShieldCheck className="h-4 w-4 text-white" />
-                  <span>Prix juste, direct guide local</span>
+                  <span>{price || "Sur demande"}</span>
                 </div>
               </div>
 
               {/* Inclusions Card */}
               <div className="rounded-3xl bg-white border border-brand-orange/5 p-8 shadow-lg space-y-6">
-                <h4 className="font-display font-bold text-brand-slate text-lg">Inclus / Non Inclus</h4>
+                <h2 className="font-display font-bold text-brand-slate text-lg">{sectionHeadings.included}</h2>
                 
                 {/* Included */}
                 <div className="space-y-3">
-                  <span className="text-xs font-bold uppercase tracking-wider text-green-600 block">Compris dans le tarif :</span>
+                  <h3 className="text-xs font-bold uppercase tracking-wider text-green-600">Inclus</h3>
                   <ul className="space-y-2.5">
                     {included.map((inc, i) => (
                       <li key={i} className="flex items-start gap-2.5 text-sm text-slate-600">
@@ -199,7 +299,7 @@ export default function TrekDetailLayout({
 
                 {/* Not Included */}
                 <div className="space-y-3 border-t border-slate-100 pt-6">
-                  <span className="text-xs font-bold uppercase tracking-wider text-red-500 block">Non compris dans le tarif :</span>
+                  <h3 className="text-xs font-bold uppercase tracking-wider text-red-500">Non Inclus</h3>
                   <ul className="space-y-2.5">
                     {notIncluded.map((notInc, i) => (
                       <li key={i} className="flex items-start gap-2.5 text-sm text-slate-600">

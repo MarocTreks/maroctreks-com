@@ -2,6 +2,13 @@ import Image from "next/image";
 import { ShieldAlert, Compass, CalendarRange, Briefcase, HelpCircle, HeartHandshake } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { createMetadata } from "@/lib/seo";
+
+export const metadata = createMetadata({
+  title: "Préparer un trek au Maroc : guide pratique",
+  description: "Conseils pour préparer votre trek au Maroc : équipement, climat, meilleures saisons, formalités, santé et assurance voyage.",
+  path: "/informations-pratiques",
+});
 
 export default function InformationsPratiques() {
   const sections = [
@@ -34,19 +41,23 @@ export default function InformationsPratiques() {
       description: "Informations administratives utiles avant de décoller.",
       icon: Compass,
       items: [
-        "Passeport en cours de validité (obligatoire, valable au moins 3 mois après la date de retour).",
-        "Pas de visa requis pour les ressortissants de l'UE, du Canada et de Suisse pour un séjour < 90 jours.",
-        "Devise : Le Dirham Marocain (MAD). 1 EUR ≈ 10.8 MAD. Il est conseillé de retirer des espèces dans les villes majeures.",
+        "Munissez-vous d’un passeport en cours de validité couvrant au minimum toute la durée de votre séjour.",
+        "Les exigences de visa ou d’autorisation électronique dépendent de votre nationalité : vérifiez-les auprès des autorités marocaines avant le départ.",
+        "Devise : le dirham marocain (MAD). Des bureaux de change et distributeurs sont disponibles dans les aéroports et les principales villes.",
         "Pourboires : Il est d'usage de remercier l'équipe locale (muletiers, cuisinier, guide) par un pourboire à la fin du trek.",
       ],
+      source: {
+        href: "https://www.visitmorocco.com/fr/formalit%C3%A9s",
+        label: "Consulter les formalités officielles de voyage au Maroc",
+      },
     },
     {
       title: "Santé & Assurances",
       description: "Conseils pour voyager l'esprit tranquille.",
       icon: ShieldAlert,
       items: [
-        "Une assurance assistance-rapatriement couvrant la recherche et le sauvetage en montagne (jusqu'à 4200m) est obligatoire.",
-        "Aucun vaccin spécifique n'est exigé, mais assurez-vous que vos vaccins classiques (Tétanos, Polio, Hépatite A) sont à jour.",
+        "Pour participer à nos treks, votre assurance doit couvrir l’assistance-rapatriement ainsi que la recherche et le sauvetage en montagne jusqu’à 4 200 m.",
+        "Demandez à votre médecin ou à un centre de vaccination les recommandations adaptées à votre santé, votre itinéraire et votre date de voyage.",
         "Évitez de boire l'eau du robinet en dehors des grandes villes, privilégiez l'eau bouillie par l'équipe de cuisine ou l'eau capsulée.",
       ],
     },
@@ -107,6 +118,16 @@ export default function InformationsPratiques() {
                       </li>
                     ))}
                   </ul>
+                  {sec.source && (
+                    <a
+                      href={sec.source.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex text-sm font-semibold text-brand-orange underline-offset-4 hover:underline"
+                    >
+                      {sec.source.label}
+                    </a>
+                  )}
                 </div>
               );
             })}
