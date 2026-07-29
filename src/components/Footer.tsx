@@ -41,8 +41,8 @@ export default function Footer() {
                 alt="Maroc Treks — Explore the magic of Morocco"
                 width={1137}
                 height={544}
-                sizes="210px"
-                className="h-24 w-auto object-contain"
+                sizes="160px"
+                className="h-16 w-auto object-contain"
               />
             </Link>
             <p className="text-sm leading-relaxed text-slate-300">
