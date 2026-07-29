@@ -1,8 +1,17 @@
 import toursJson from "@/data/tours.generated.json";
 import { createMetadata } from "@/lib/seo";
 import { sourceSitePages, type SourceCollectionItem } from "@/lib/site-content";
+import { cloudinaryImage, tourMediaBySlug, type TourMediaImage } from "@/lib/tour-media";
 
-export type TourCategory = "toubkal" | "mgoun" | "moyen-atlas" | "anti-atlas" | "desert" | "atlantique" | "grande-traversee";
+export type TourCategory =
+  | "toubkal"
+  | "mgoun"
+  | "dades-roses"
+  | "moyen-atlas"
+  | "anti-atlas"
+  | "desert"
+  | "atlantique"
+  | "grande-traversee";
 
 export type TourFaq = { question: string; answer: string };
 export type TourItineraryDay = { day: number; title: string; description: string };
@@ -34,6 +43,8 @@ export type Tour = {
   title: string;
   subtitle: string;
   image: string;
+  imageAlt: string;
+  gallery: TourMediaImage[];
   duration: string;
   difficulty: string;
   maxAltitude: string;
@@ -67,13 +78,25 @@ export type TourCategoryDefinition = {
   image: string;
 };
 
-export const tours = toursJson as Tour[];
+type ImportedTour = Omit<Tour, "imageAlt" | "gallery">;
+
+export const tours: Tour[] = (toursJson as ImportedTour[]).map((tour) => {
+  const media = tourMediaBySlug[tour.slug];
+
+  return {
+    ...tour,
+    image: media?.hero.src ?? tour.image,
+    imageAlt: media?.hero.alt ?? `Paysage du circuit ${tour.title} au Maroc`,
+    gallery: media?.gallery ?? [],
+  };
+});
 
 const tourSeoTitles: Record<string, string> = {
   "randonnee-dans-latlas": "Tour du Toubkal en 15 jours",
   "randonnee-berbere-avec-ascension-du-toubkal-8-jours": "Villages amazighs et Toubkal en 8 jours",
   "randonnee-dans-le-haut-atlas-central": "Ascension du M’Goun – trek de 10 jours",
   "randonnee-en-famille-vallee-heureuse-dait-bouguemez-8-jours": "Aït Bouguemez en famille – trek de 8 jours",
+  "vallee-dades-vallee-des-roses-8-jours": "Dadès et Vallée des Roses – trek de 8 jours",
   "randonnee-moyen-atlas": "Randonnée dans le Moyen Atlas – 8 jours",
   "randonnee-jbel-saghro": "Trek du Jbel Saghro – circuit de 8 jours",
   "randonnee-jbel-siroua": "Traversée Siroua–Toubkal – 15 jours",
@@ -86,10 +109,14 @@ const tourSeoTitles: Record<string, string> = {
 };
 
 const categoryImages: Record<string, string> = {
-  toubkal: "https://images.unsplash.com/photo-1542401886-65d6c61db217?auto=format&fit=crop&q=80&w=1600",
-  mgoun: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
-  "anti-atlas": "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&q=80&w=1600",
-  desert: "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&q=80&w=1600",
+  toubkal: cloudinaryImage("4796C7E6-F03B-4847-B866-107C876E9AD7_nfgfpq"),
+  mgoun: cloudinaryImage("2edbc427-c275-4e87-a012-e720aa814429_gloz1y"),
+  "dades-roses": cloudinaryImage("63bb0096-69cb-4c96-a100-fa99c9876ec4_f6n0vm"),
+  "moyen-atlas": cloudinaryImage("57930de4-d20a-4f25-983c-d0d95832500a_n5kysm"),
+  "anti-atlas": cloudinaryImage("3319651f-4731-4457-bfb9-5d33298c7fda_yc4ita"),
+  desert: cloudinaryImage("a467fd77-11d7-40a9-af7c-7e6bf5b231cb_op5wf0"),
+  atlantique: cloudinaryImage("6b215ab4-8a0b-43b7-bde6-9e191be10ba8_fvnbz2"),
+  "grande-traversee": cloudinaryImage("27694bd0-9d47-4bf1-9c36-6261bb2aca7b_sqykn5"),
 };
 
 export const tourCategories: TourCategoryDefinition[] = sourceSitePages.categories.map((category) => ({

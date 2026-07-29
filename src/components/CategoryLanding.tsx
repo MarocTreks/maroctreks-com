@@ -39,10 +39,10 @@ export default function CategoryLanding({ category }: { category: TourCategoryDe
       <Navbar />
       <main className="flex-grow bg-brand-sand">
         <header className="relative overflow-hidden bg-brand-slate py-24 text-white sm:py-32">
-          <Image src={category.image} alt={`Paysage de ${category.title}`} fill priority sizes="100vw" className="object-cover opacity-30" />
-          <div className="absolute inset-0 bg-gradient-to-t from-brand-slate via-brand-slate/70 to-brand-slate/30" />
+          <Image src={category.image} alt={`Paysage de ${category.title}`} fill priority sizes="100vw" className="object-cover" />
+          <div className="absolute inset-0 bg-gradient-to-t from-slate-950/65 via-slate-950/35 to-slate-950/15" />
           <div className="relative mx-auto max-w-5xl px-4 text-center sm:px-6">
-            <Link href="/circuits" className="inline-flex items-center gap-2 text-sm font-bold text-brand-gold hover:text-white">
+            <Link href="/circuits" className="theme-button-on-dark min-h-10 px-4 py-2">
               <ArrowLeft className="h-4 w-4" /> Tous les circuits
             </Link>
             <h1 className="mt-8 font-display text-4xl font-black tracking-tight sm:text-6xl">{category.title}</h1>
@@ -53,7 +53,7 @@ export default function CategoryLanding({ category }: { category: TourCategoryDe
         </header>
 
         <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
-          <div className="mx-auto max-w-4xl rounded-3xl border border-brand-orange/5 bg-white p-8 shadow-lg sm:p-12">
+          <div className="mx-auto max-w-4xl border-y border-slate-300 py-10 sm:py-12">
             <h2 className="font-display text-3xl font-black text-brand-slate">{category.introHeading}</h2>
             <div className="mt-6 space-y-5 text-base leading-relaxed text-slate-600">
               {category.introParagraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}

@@ -1,5 +1,6 @@
+import Image from "next/image";
 import Link from "next/link";
-import { Mountain, Mail, Phone, MapPin, ShieldCheck } from "lucide-react";
+import { Mail, Phone, MapPin, ShieldCheck } from "lucide-react";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -29,13 +30,20 @@ export default function Footer() {
           
           {/* Column 1: About Maroc Treks */}
           <div className="space-y-6">
-            <Link href="/" className="flex items-center gap-2.5">
-              <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-brand-orange to-brand-gold text-white shadow-md shadow-brand-orange/20">
-                <Mountain className="h-5.5 w-5.5" />
-              </div>
-              <span className="font-display text-xl font-extrabold tracking-tight text-white">
-                Maroc<span className="text-brand-orange">Treks</span>
-              </span>
+            <Link
+              href="/"
+              translate="no"
+              aria-label="Maroc Treks — Accueil"
+              className="notranslate inline-flex rounded-lg bg-white/95 px-3 py-2 shadow-lg shadow-black/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 focus-visible:ring-offset-brand-slate"
+            >
+              <Image
+                src="/logo.png"
+                alt="Maroc Treks — Explore the magic of Morocco"
+                width={1137}
+                height={544}
+                sizes="210px"
+                className="h-24 w-auto object-contain"
+              />
             </Link>
             <p className="text-sm leading-relaxed text-slate-300">
               Votre agence locale de trekking et randonnée au Maroc. Fondée par Mohamed Ait Tadrart, guide professionnel breveté avec plus de 20 ans d'expérience. Trek Toubkal, excursions désert, et immersion culturelle authentique.
@@ -105,7 +113,7 @@ export default function Footer() {
                 </a>
               </li>
             </ul>
-            <div className="mt-6 flex items-center gap-2 rounded-xl bg-slate-800/80 p-3 border border-slate-700/50">
+            <div className="mt-6 flex items-center gap-2 rounded-lg border border-slate-700/50 bg-slate-800/80 p-3">
               <ShieldCheck className="h-5 w-5 shrink-0 text-green-400" />
               <span className="text-xs font-semibold text-slate-300 leading-tight">
                 Licence de guide professionnel certifiée par l'État Marocain.

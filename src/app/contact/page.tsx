@@ -5,6 +5,7 @@ import Image from "next/image";
 import { Mail, Phone, MapPin, Send, CheckCircle, ShieldCheck } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { cloudinaryImage } from "@/lib/tour-media";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -28,7 +29,7 @@ export default function Contact() {
     { value: "desert", label: "Le Désert (Sahara)" },
     { value: "traversee", label: "La Grande Traversée" },
     { value: "excursion", label: "Excursion d'une journée" },
-    { value: "sur-mesure", label: "Projet sur-mesure" },
+    { value: "sur-mesure", label: "Séjour sur mesure" },
   ];
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -60,15 +61,17 @@ export default function Contact() {
       <main className="flex-grow bg-brand-sand">
         {/* Banner Section */}
         <section className="relative py-20 bg-brand-slate text-white overflow-hidden">
-          <div className="absolute inset-0 opacity-20">
+          <div className="absolute inset-0">
             <Image
-              src="https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&q=80&w=1920"
+              src={cloudinaryImage("a13ae920-abb1-41d7-abd9-18cc92bada6e_ov6j0q")}
               alt=""
               fill
+              unoptimized
               sizes="100vw"
               className="h-full w-full object-cover"
             />
           </div>
+          <div className="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-slate-950/35 to-slate-950/15" />
           <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
             <h1 className="font-display text-4xl sm:text-5xl font-black tracking-tight">
               Contact & Réservations
@@ -97,9 +100,9 @@ export default function Contact() {
               <div className="space-y-4">
                 <a
                   href="tel:+212667591933"
-                  className="flex items-center gap-4 rounded-3xl border border-brand-orange/5 bg-white p-6 shadow-md hover:border-brand-orange/20 transition-all"
+                  className="theme-panel flex items-center gap-4 p-6 transition-[border-color,box-shadow] hover:border-orange-300 hover:shadow-[0_12px_32px_rgba(15,23,42,0.1)]"
                 >
-                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-brand-orange/10 text-brand-orange">
+                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-md bg-orange-100 text-orange-700">
                     <Phone className="h-6 w-6" />
                   </div>
                   <div>
@@ -110,9 +113,9 @@ export default function Contact() {
 
                 <a
                   href="mailto:tadrartmed@gmail.com"
-                  className="flex items-center gap-4 rounded-3xl border border-brand-orange/5 bg-white p-6 shadow-md hover:border-brand-orange/20 transition-all"
+                  className="theme-panel flex items-center gap-4 p-6 transition-[border-color,box-shadow] hover:border-orange-300 hover:shadow-[0_12px_32px_rgba(15,23,42,0.1)]"
                 >
-                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-brand-orange/10 text-brand-orange">
+                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-md bg-orange-100 text-orange-700">
                     <Mail className="h-6 w-6" />
                   </div>
                   <div>
@@ -121,8 +124,8 @@ export default function Contact() {
                   </div>
                 </a>
 
-                <div className="flex items-center gap-4 rounded-3xl border border-brand-orange/5 bg-white p-6 shadow-md">
-                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-brand-orange/10 text-brand-orange">
+                <div className="theme-panel flex items-center gap-4 p-6">
+                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-md bg-orange-100 text-orange-700">
                     <MapPin className="h-6 w-6" />
                   </div>
                   <div>
@@ -133,8 +136,8 @@ export default function Contact() {
               </div>
 
               {/* Guarantees */}
-              <div className="rounded-3xl bg-slate-900 text-white p-6 border border-white/5 space-y-4">
-                <div className="flex items-center gap-2 text-brand-gold">
+              <div className="space-y-4 rounded-lg border border-slate-700 bg-slate-900 p-6 text-white shadow-[0_10px_30px_rgba(15,23,42,0.16)]">
+                <div className="flex items-center gap-2 text-orange-300">
                   <ShieldCheck className="h-5 w-5" />
                   <span className="font-display font-bold text-sm">Garanties Maroc Treks</span>
                 </div>
@@ -147,7 +150,7 @@ export default function Contact() {
             </div>
 
             {/* Right Column: Contact/Booking Form */}
-            <div className="lg:col-span-7 bg-white rounded-3xl p-8 border border-brand-orange/5 shadow-xl">
+            <div className="theme-panel p-8 lg:col-span-7">
               {submitted ? (
                 <div className="py-12 text-center space-y-6">
                   <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-green-100 text-green-600">
@@ -161,7 +164,7 @@ export default function Contact() {
                   </div>
                   <button
                     onClick={() => setSubmitted(false)}
-                    className="rounded-xl border border-brand-orange/20 px-6 py-2.5 text-sm font-bold text-brand-orange hover:bg-brand-orange/5 transition-colors"
+                    className="theme-button-secondary"
                   >
                     Préparer une autre demande
                   </button>
@@ -184,7 +187,7 @@ export default function Contact() {
                         placeholder="Ex: Jean Dupont"
                         value={formData.name}
                         onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                        className="w-full rounded-xl border border-slate-200 bg-slate-50 p-3 text-sm text-brand-slate focus:border-brand-orange focus:bg-white focus:outline-none transition-colors"
+                        className="theme-field"
                       />
                     </div>
 
@@ -198,7 +201,7 @@ export default function Contact() {
                         placeholder="Ex: jean.dupont@gmail.com"
                         value={formData.email}
                         onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                        className="w-full rounded-xl border border-slate-200 bg-slate-50 p-3 text-sm text-brand-slate focus:border-brand-orange focus:bg-white focus:outline-none transition-colors"
+                        className="theme-field"
                       />
                     </div>
                   </div>
@@ -214,7 +217,7 @@ export default function Contact() {
                         placeholder="Ex: +33 6 12 34 56 78"
                         value={formData.phone}
                         onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                        className="w-full rounded-xl border border-slate-200 bg-slate-50 p-3 text-sm text-brand-slate focus:border-brand-orange focus:bg-white focus:outline-none transition-colors"
+                        className="theme-field"
                       />
                     </div>
 
@@ -225,7 +228,7 @@ export default function Contact() {
                         id="trek"
                         value={formData.trek}
                         onChange={(e) => setFormData({ ...formData, trek: e.target.value })}
-                        className="w-full rounded-xl border border-slate-200 bg-slate-50 p-3 text-sm text-brand-slate focus:border-brand-orange focus:bg-white focus:outline-none transition-colors"
+                        className="theme-field"
                       >
                         {treksList.map((tk) => (
                           <option key={tk.value} value={tk.value}>{tk.label}</option>
@@ -244,7 +247,7 @@ export default function Contact() {
                         min="1"
                         value={formData.travelers}
                         onChange={(e) => setFormData({ ...formData, travelers: e.target.value })}
-                        className="w-full rounded-xl border border-slate-200 bg-slate-50 p-3 text-sm text-brand-slate focus:border-brand-orange focus:bg-white focus:outline-none transition-colors"
+                        className="theme-field"
                       />
                     </div>
 
@@ -256,7 +259,7 @@ export default function Contact() {
                         id="date"
                         value={formData.date}
                         onChange={(e) => setFormData({ ...formData, date: e.target.value })}
-                        className="w-full rounded-xl border border-slate-200 bg-slate-50 p-3 text-sm text-brand-slate focus:border-brand-orange focus:bg-white focus:outline-none transition-colors"
+                        className="theme-field"
                       />
                     </div>
                   </div>
@@ -270,14 +273,14 @@ export default function Contact() {
                       placeholder="Indiquez ici vos préférences physiques, demandes de repas spécifiques (végétarien, allergies) ou questions diverses..."
                       value={formData.message}
                       onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                      className="w-full rounded-xl border border-slate-200 bg-slate-50 p-3 text-sm text-brand-slate focus:border-brand-orange focus:bg-white focus:outline-none transition-colors"
+                      className="theme-field"
                     />
                   </div>
 
                   {/* Submit Button */}
                   <button
                     type="submit"
-                    className="flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-brand-orange to-brand-gold p-4 text-base font-bold text-white shadow-xl shadow-brand-orange/30 hover:scale-[1.01] hover:shadow-brand-orange/40 transition-all duration-300 cursor-pointer"
+                    className="theme-button-primary min-h-12 w-full cursor-pointer text-base"
                   >
                     <Send className="h-4.5 w-4.5" />
                     <span>Envoyer ma demande</span>

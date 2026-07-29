@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800;900&display=swap');
 @import "tailwindcss";
+@source "../components";
 
 :root {
   --background: #fffdf7;
@@ -24,6 +25,36 @@ body {
   top: 0 !important;
 }
 
+@layer components {
+  .theme-button-primary {
+    @apply inline-flex min-h-11 items-center justify-center gap-2 rounded-md bg-orange-600 px-5 py-3 text-sm font-extrabold text-white shadow-[0_6px_16px_rgba(194,65,12,0.18)] transition-[background-color,box-shadow,transform] hover:bg-orange-700 hover:shadow-[0_8px_20px_rgba(194,65,12,0.24)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-600 focus-visible:ring-offset-2 active:translate-y-px;
+  }
+
+  .theme-button-dark {
+    @apply inline-flex min-h-11 items-center justify-center gap-2 rounded-md bg-slate-900 px-5 py-3 text-sm font-extrabold text-white shadow-[0_6px_16px_rgba(15,23,42,0.16)] transition-[background-color,box-shadow,transform] hover:bg-orange-700 hover:shadow-[0_8px_20px_rgba(194,65,12,0.2)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-600 focus-visible:ring-offset-2 active:translate-y-px;
+  }
+
+  .theme-button-secondary {
+    @apply inline-flex min-h-11 items-center justify-center gap-2 rounded-md border border-slate-300 bg-white px-5 py-3 text-sm font-extrabold text-slate-800 shadow-sm transition-[border-color,background-color,color,transform] hover:border-orange-500 hover:bg-orange-50 hover:text-orange-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-600 focus-visible:ring-offset-2 active:translate-y-px;
+  }
+
+  .theme-button-on-dark {
+    @apply inline-flex min-h-11 items-center justify-center gap-2 rounded-md border border-white/45 bg-slate-950/30 px-5 py-3 text-sm font-extrabold text-white shadow-sm backdrop-blur-sm transition-[border-color,background-color,color,transform] hover:border-white hover:bg-white hover:text-slate-950 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950 active:translate-y-px;
+  }
+
+  .theme-panel {
+    @apply rounded-lg border border-slate-200 bg-white shadow-[0_10px_30px_rgba(15,23,42,0.07)];
+  }
+
+  .theme-panel-muted {
+    @apply rounded-lg border border-slate-200 bg-slate-50 shadow-[0_8px_24px_rgba(15,23,42,0.05)];
+  }
+
+  .theme-field {
+    @apply w-full rounded-md border border-slate-300 bg-white px-3.5 py-3 text-sm text-slate-900 shadow-sm outline-none transition-[border-color,box-shadow] placeholder:text-slate-400 focus:border-orange-600 focus:ring-2 focus:ring-orange-600/20;
+  }
+}
+
 .translation-engine {
   position: fixed;
   width: 1px;
@@ -36,6 +67,53 @@ body {
 
 .skiptranslate,
 .goog-te-banner-frame,
-.goog-te-balloon-frame {
+.goog-te-balloon-frame,
+.goog-te-gadget-icon,
+.goog-logo-link,
+.goog-tooltip,
+.goog-tooltip:hover,
+.goog-te-spinner-pos,
+#goog-gt-tt,
+iframe.goog-te-menu-frame,
+.VIpgJd-ZVi9od-ORHb-OEVmcd,
+.VIpgJd-ZVi9od-aZ2wEe-wOHMyf,
+.VIpgJd-yAWNEb-L7lbkb {
   display: none !important;
+  visibility: hidden !important;
+}
+
+.goog-text-highlight,
+.VIpgJd-yAWNEb-VIpgJd-fmcmS-sn54Q {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(234, 88, 12, 0.4);
+  }
+  50% {
+    transform: scale(1.03);
+    box-shadow: 0 0 16px 4px rgba(234, 88, 12, 0.2);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) forwards;
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 2.5s infinite ease-in-out;
 }

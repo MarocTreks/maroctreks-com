@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { DEFAULT_DESCRIPTION, JsonLd, SITE_NAME, SITE_URL } from "@/lib/seo";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -28,6 +29,13 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     "@id": `${SITE_URL}/#organization`,
     name: SITE_NAME,
     url: SITE_URL,
+    logo: {
+      "@type": "ImageObject",
+      url: `${SITE_URL}/logo-mark.png`,
+      width: 512,
+      height: 512,
+    },
+    image: `${SITE_URL}/logo.png`,
     email: "tadrartmed@gmail.com",
     telephone: "+212667591933",
     description: DEFAULT_DESCRIPTION,
@@ -49,10 +57,16 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   };
 
   return (
-    <html lang="fr" className="h-full antialiased font-sans">
+    <html
+      lang="fr"
+      translate="no"
+      suppressHydrationWarning
+      className="notranslate h-full antialiased font-sans"
+    >
       <body className="min-h-full flex flex-col bg-brand-sand text-brand-slate">
         <JsonLd data={[organization, website]} />
         {children}
+        <WhatsAppButton />
       </body>
     </html>
   );

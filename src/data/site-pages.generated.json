@@ -63,6 +63,29 @@
       ]
     },
     {
+      "key": "dades-roses",
+      "path": "/vallees-dades-roses",
+      "heroTitle": "Randonnée dans les Vallées du Dadès et des Roses",
+      "heroSubtitle": "Kasbahs, villages en terre, gorges et vallées cultivées du Sud marocain",
+      "heroParagraphs": [
+        "Des itinéraires à pied entre la vallée du Dadès, la vallée du M’Goun et la Vallée des Roses."
+      ],
+      "introHeading": "Dadès et Vallée des Roses",
+      "introParagraphs": [
+        "Entre Ouarzazate et le versant sud du Haut Atlas, les vallées du Dadès et du M’Goun dessinent un paysage de kasbahs, de villages en terre, de jardins et de gorges encaissées.",
+        "La randonnée relie les villages par des sentiers muletiers et des plateaux autrefois empruntés par les familles nomades. Dans la Vallée des Roses, les champs cultivés bordent les villages d’Alemdoun, Boutaghrar et Tabarkhacht.",
+        "Les étapes se parcourent avec un guide et une équipe muletière. Selon l’itinéraire, les nuits ont lieu en gîte, chez l’habitant ou en bivouac."
+      ],
+      "collectionHeading": "Randonnée dans les Vallées du Dadès et des Roses",
+      "collectionDescription": "Un circuit itinérant de huit jours entre Marrakech, le Dadès, le M’Goun et la Vallée des Roses.",
+      "collectionItems": [
+        {
+          "slug": "vallee-dades-vallee-des-roses-8-jours",
+          "title": "Vallée du Dadès et Vallée des Roses en 8 jours"
+        }
+      ]
+    },
+    {
       "key": "anti-atlas",
       "path": "/antis-atlas",
       "heroTitle": "Randonnée dans l'Anti-Atlas Marocain",
@@ -131,19 +154,19 @@
     "key": "circuits",
     "path": "/circuits",
     "heroTitle": "Tous nos circuits de randonnée au Maroc",
-    "heroSubtitle": "Ascension du Toubkal, trek au M'Goun, randonnées dans l'Anti-Atlas et expériences uniques dans le désert marocain.",
+    "heroSubtitle": "Ascension du Toubkal, trek au M'Goun, vallées du Dadès et des Roses, Anti-Atlas et désert marocain.",
     "heroParagraphs": [
-      "Ascension du Toubkal, trek au M'Goun, randonnées dans l'Anti-Atlas et expériences uniques dans le désert marocain.",
+      "Ascension du Toubkal, trek au M'Goun, vallées du Dadès et des Roses, Anti-Atlas et désert marocain.",
       "Voyages trekking, méharées et séjours sur mesure avec guides et équipes berbères."
     ],
-    "introHeading": "Randonnées et Treks au Maroc : Toubkal, M'Goun, Anti-Atlas & Désert",
+    "introHeading": "Randonnées et Treks au Maroc : Atlas, Dadès, Vallée des Roses et Désert",
     "introParagraphs": [
-      "Spécialiste de la randonnée au Maroc , nous proposons une sélection complète de circuits trekking dans le Haut Atlas , le Moyen Atlas , l' Anti-Atlas et le désert marocain . De l' ascension du Toubkal 4167m au Jbel M'Goun 4068m , en passant par les massifs du Jbel Saghro , du Siroua et les dunes de Chegaga , nos voyages s'adressent aux amoureux de nature , de montagne et de désert .",
+      "Spécialiste de la randonnée au Maroc, nous proposons des circuits dans le Haut Atlas, le Moyen Atlas, les vallées du Dadès et des Roses, l'Anti-Atlas et le désert marocain. De l'ascension du Toubkal à celle du Jbel M'Goun, en passant par le Jbel Saghro, le Siroua et les dunes de Chegaga, nos voyages s'adressent aux amoureux de nature, de montagne et de désert.",
       "Vous marcherez à la rencontre des villages berbères , des vallées verdoyantes , des gorges spectaculaires , des plateaux d'altitude et des palmeraies du sud marocain. Nos circuits de randonnée au Maroc sont accompagnés de guides de montagne , muletiers et équipes locales, avec hébergement en gîtes berbères , bivouacs ou maisons d'hôtes .",
-      "Que vous recherchiez un trek sportif comme l' ascension du Toubkal ou du M'Goun , une randonnée en famille dans la Vallée Heureuse d'Aït Bouguemez , un circuit dans l' Anti-Atlas (Tafraout, Jbel Saghro , Siroua ) ou une méharée dans le désert marocain aux dunes de Chegaga et dans la Vallée du Draa , nous créons des voyages sur mesure adaptés à votre niveau et à vos envies."
+      "Que vous recherchiez un trek sportif comme l'ascension du Toubkal ou du M'Goun, une randonnée dans les vallées du Dadès et des Roses, un circuit dans l'Anti-Atlas ou une méharée dans le désert marocain, nous créons des voyages sur mesure adaptés à votre niveau et à vos envies."
     ],
     "collectionHeading": "Tous nos circuits de randonnée",
-    "collectionDescription": "Retrouvez ici l'ensemble de nos treks et randonnées au Maroc : Atlas, Anti-Atlas et désert.",
+    "collectionDescription": "Retrouvez ici l'ensemble de nos treks et randonnées au Maroc : Atlas, Dadès, Vallée des Roses, Anti-Atlas, côte Atlantique et désert.",
     "collectionItems": [
       {
         "slug": "randonnee-dans-latlas",
@@ -164,6 +187,10 @@
       {
         "slug": "randonnee-en-famille-vallee-heureuse-dait-bouguemez-8-jours",
         "title": "Randonnée en Famille - Vallée Heureuse d'Aït Bouguemez"
+      },
+      {
+        "slug": "vallee-dades-vallee-des-roses-8-jours",
+        "title": "Vallée du Dadès et Vallée des Roses en 8 jours"
       },
       {
         "slug": "randonnee-jbel-saghro",

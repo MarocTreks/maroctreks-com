@@ -1,8 +1,10 @@
 import Image from "next/image";
-import { ShieldAlert, Compass, CalendarRange, Briefcase, HelpCircle, HeartHandshake } from "lucide-react";
+import { ShieldAlert, Compass, CalendarRange, Briefcase, HelpCircle } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { WhatsAppIcon } from "@/components/WhatsAppButton";
 import { createMetadata } from "@/lib/seo";
+import { cloudinaryImage } from "@/lib/tour-media";
 
 export const metadata = createMetadata({
   title: "Préparer un trek au Maroc : guide pratique",
@@ -70,15 +72,17 @@ export default function InformationsPratiques() {
       <main className="flex-grow bg-brand-sand">
         {/* Banner Section */}
         <section className="relative py-20 bg-brand-slate text-white overflow-hidden">
-          <div className="absolute inset-0 opacity-20">
+          <div className="absolute inset-0">
             <Image
-              src="https://images.unsplash.com/photo-1539650116574-8efeb43e2750?auto=format&fit=crop&q=80&w=1920"
+              src={cloudinaryImage("58897216-87b3-488c-ba10-2914b95e69f1_qztmlj")}
               alt=""
               fill
+              unoptimized
               sizes="100vw"
               className="object-cover"
             />
           </div>
+          <div className="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-slate-950/35 to-slate-950/15" />
           <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
             <h1 className="font-display text-4xl sm:text-5xl font-black tracking-tight">
               Informations Pratiques
@@ -97,10 +101,10 @@ export default function InformationsPratiques() {
               return (
                 <div
                   key={sec.title}
-                  className="rounded-3xl border border-brand-orange/5 bg-white p-8 shadow-lg space-y-6"
+                  className="theme-panel space-y-6 p-8"
                 >
                   <div className="flex items-center gap-4">
-                    <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-brand-orange/10 text-brand-orange">
+                    <div className="flex h-12 w-12 items-center justify-center rounded-md bg-orange-100 text-orange-700">
                       <IconComponent className="h-6 w-6" />
                     </div>
                     <div>
@@ -134,7 +138,7 @@ export default function InformationsPratiques() {
           </div>
 
           {/* FAQ Link / Quick Contact CTA */}
-          <div className="mt-16 rounded-3xl bg-gradient-to-r from-brand-orange to-brand-gold p-8 sm:p-12 text-white shadow-xl flex flex-col md:flex-row items-center justify-between gap-8">
+          <div className="mt-16 flex flex-col items-center justify-between gap-8 rounded-lg border border-slate-700 border-t-4 border-t-orange-500 bg-slate-900 p-8 text-white shadow-[0_12px_32px_rgba(15,23,42,0.16)] sm:p-12 md:flex-row">
             <div className="space-y-3">
               <div className="flex items-center gap-2">
                 <HelpCircle className="h-6 w-6 text-white" />
@@ -148,9 +152,9 @@ export default function InformationsPratiques() {
               href="https://wa.me/212667591933"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2.5 rounded-xl bg-brand-slate px-6 py-4 text-sm font-bold text-white shadow-lg hover:scale-105 hover:bg-slate-900 transition-all duration-300 shrink-0"
+              className="inline-flex min-h-12 shrink-0 items-center gap-2.5 rounded-md bg-[#128C7E] px-6 py-4 text-sm font-extrabold text-white shadow-[0_6px_16px_rgba(18,140,126,0.22)] transition-colors duration-300 hover:bg-[#0f766e] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#25D366] focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900"
             >
-              <HeartHandshake className="h-4.5 w-4.5 text-brand-orange" />
+              <WhatsAppIcon className="h-5 w-5" />
               <span>Nous contacter sur WhatsApp</span>
             </a>
           </div>

@@ -6,7 +6,7 @@
     "category": "toubkal",
     "title": "Randonnée dans l'Atlas : Le Circuit Complet du Tour du Toubkal en 15 Jours",
     "subtitle": "Tour du Toubkal Complet en 15 Jours – Randonnée dans le Haut Atlas",
-    "image": "https://images.unsplash.com/photo-1542401886-65d6c61db217?auto=format&fit=crop&q=80&w=1600",
+    "image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
     "duration": "15 jours",
     "difficulty": "Randonnée modérée",
     "maxAltitude": "4 167 m",
@@ -157,7 +157,7 @@
     "category": "toubkal",
     "title": "Les villages berbères avec ascension du Toubkal en 8 jours",
     "subtitle": "Randonnée Berbère avec Ascension du Toubkal - 8 Jours",
-    "image": "https://images.unsplash.com/photo-1542401886-65d6c61db217?auto=format&fit=crop&q=80&w=1600",
+    "image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
     "duration": "8 jours / 7 nuits",
     "difficulty": "Moyen",
     "maxAltitude": "4 167 m",
@@ -767,7 +767,7 @@
       "included": "Ce Qui Est Inclus",
       "details": "Détails Supplémentaires du Circuit",
       "faqs": "Questions Fréquemment Posées",
-      "gallery": "Galerie Photo du Jbel Siroua",
+      "gallery": "Galerie Photo du Siroua et du Toubkal",
       "price": "Prix du Circuit",
       "request": "Demander Ce Circuit"
     },
@@ -1668,6 +1668,124 @@
       {
         "question": "Comment sont gérés les bagages pendant le trek ?",
         "answer": "Les mules transportent l'intendance et les bagages personnels entre les camps. Vous portez uniquement un sac à dos de journée avec l'équipement nécessaire pour la marche (eau, vêtements de protection, appareil photo, etc.). Le poids des bagages transportés par les mules est limité à 12kg par personne."
+      }
+    ]
+  },
+  {
+    "slug": "vallee-dades-vallee-des-roses-8-jours",
+    "path": "/vallee-dades-vallee-des-roses-8-jours",
+    "sourceUrl": "",
+    "category": "dades-roses",
+    "title": "Vallée du Dadès et Vallée des Roses en 8 jours",
+    "subtitle": "Randonnée itinérante du Dadès à la Vallée des Roses",
+    "image": "https://res.cloudinary.com/s0d4bpze/image/upload/f_auto,q_auto,c_limit,w_1800/2edbc427-c275-4e87-a012-e720aa814429_gloz1y",
+    "duration": "8 jours / 7 nuits",
+    "difficulty": "Moyen",
+    "maxAltitude": "2 260 m au col du Tichka",
+    "bestSeason": "Mars à juin et septembre à novembre",
+    "groupSize": "À partir de 4 personnes",
+    "tourType": "Randonnée itinérante",
+    "price": "Sur demande",
+    "sectionHeadings": {
+      "description": "Vallées du Dadès et des Roses",
+      "highlights": "Les temps forts du circuit",
+      "itinerary": "Programme jour par jour",
+      "included": "Ce qui est inclus",
+      "details": "Détails du circuit",
+      "faqs": "Questions fréquentes",
+      "gallery": "Photos des vallées",
+      "price": "Prix du circuit",
+      "request": "Demander ce circuit"
+    },
+    "detailLabels": {
+      "duration": "Durée",
+      "difficulty": "Niveau",
+      "bestSeason": "Période",
+      "groupSize": "Groupe",
+      "tourType": "Type de randonnée",
+      "price": "Prix"
+    },
+    "description": "Ce circuit relie la vallée du Dadès, la vallée du M’Goun et la Vallée des Roses à travers des plateaux, des villages en terre et des gorges encaissées. Après la route du col du Tichka, Ouarzazate, Skoura et Kelaa M’Gouna, la randonnée commence à Aït Youl dans la vallée du Dadès.\n\nPendant quatre jours de marche, l’itinéraire traverse Aït Mraou, Alemdoun, les gorges d’Agouti, Boutaghrar et Tabarkhacht. Les nuits se passent en gîte, chez l’habitant ou en bivouac selon l’étape et les conditions. Une équipe muletière transporte l’intendance et les bagages pendant la randonnée.\n\nDans la vallée du M’Goun, certains passages demandent de traverser la rivière à pied. Une paire de chaussures pouvant aller dans l’eau est recommandée.",
+    "highlights": [
+      "Route panoramique par le col du Tichka, Ouarzazate et la palmeraie de Skoura",
+      "Découverte des kasbahs et villages en terre de la vallée du Dadès",
+      "Traversée à pied de la vallée du M’Goun et de la Vallée des Roses",
+      "Passage par les gorges d’Agouti et les villages d’Aït Mraou, Alemdoun et Boutaghrar",
+      "Rencontres dans les villages et nuits en gîte, chez l’habitant ou en bivouac",
+      "Randonnée accompagnée par un guide et une équipe muletière locale"
+    ],
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Arrivée à Marrakech",
+        "description": "Accueil à l’aéroport de Marrakech et transfert à votre hôtel."
+      },
+      {
+        "day": 2,
+        "title": "Marrakech – Col du Tichka – Ouarzazate – Vallée du Dadès",
+        "description": "Départ vers le col du Tichka à 2 260 m, le plus haut col routier du Maroc. La route offre de grands panoramas sur les forêts de chênes verts et de pins ainsi que sur les villages amazighs accrochés aux falaises. Après le col, descente vers les paysages semi-arides du Sud marocain. Déjeuner à Ouarzazate, puis continuation par Skoura et sa palmeraie, Kelaa M’Gouna et la vallée du Dadès avec ses kasbahs. Arrivée à Aït Youl en fin d’après-midi. Bivouac ou nuit chez l’habitant. Environ 330 km et 6 heures de route."
+      },
+      {
+        "day": 3,
+        "title": "Vallée du Dadès – Vallée du M’Goun – Aït Mraou",
+        "description": "Rencontre avec l’équipe muletière et départ vers 8 h 30. Nous quittons la vallée du Dadès pour rejoindre la vallée verdoyante du M’Goun par un plateau, des sentiers muletiers et une piste dominant plusieurs villages. Descente vers Aït Mraou. Nuit en gîte ou en bivouac selon les conditions climatiques. Environ 5 heures de marche."
+      },
+      {
+        "day": 4,
+        "title": "Vallée du M’Goun – Vallée des Roses – Alemdoun",
+        "description": "Nous quittons la vallée du M’Goun pour rejoindre la Vallée des Roses et ses villages aux couleurs de la terre. L’itinéraire traverse un plateau fréquenté par quelques familles nomades. Repas de midi en chemin, puis installation près du village d’Alemdoun. Environ 5 heures de marche."
+      },
+      {
+        "day": 5,
+        "title": "Alemdoun – Gorges d’Agouti – Boutaghrar",
+        "description": "Descente de la Vallée des Roses à travers de belles gorges et plusieurs villages. Après le repas de midi, poursuite de la marche vers la vallée du M’Goun et le village de Boutaghrar. Environ 5 h 30 de marche."
+      },
+      {
+        "day": 6,
+        "title": "Boutaghrar – Hdida – Tabarkhacht",
+        "description": "Descente de la vallée du M’Goun, également appelée Vallée des Roses. La rivière doit être traversée à plusieurs reprises, de préférence avec des chaussures pouvant aller dans l’eau. Passage par Tourbiste n’Aït Saïd et Hdida avant l’arrivée à Tabarkhacht. Nuit en gîte. Environ 6 heures de marche."
+      },
+      {
+        "day": 7,
+        "title": "Vallée des Roses – Marrakech",
+        "description": "Transfert à Marrakech, environ 360 km et 5 h 30 de route. Nuit en hôtel ou riad dans le centre, à proximité de la place Jemaa el-Fna, des monuments historiques et des souks."
+      },
+      {
+        "day": 8,
+        "title": "Marrakech – Aéroport",
+        "description": "Transfert à l’aéroport de Marrakech pour votre vol retour."
+      }
+    ],
+    "included": [
+      "Accueil et transferts depuis et vers l’aéroport de Marrakech",
+      "Transports entre Marrakech, la vallée du Dadès et la Vallée des Roses",
+      "Accompagnement par un guide et une équipe muletière",
+      "Nuits en hôtel ou riad à Marrakech",
+      "Nuits en gîte, chez l’habitant ou en bivouac pendant la randonnée",
+      "Pension complète pendant les journées de randonnée"
+    ],
+    "notIncluded": [
+      "L’assurance annulation et assistance",
+      "Les boissons et dépenses personnelles",
+      "Les repas à Marrakech",
+      "Les pourboires pour l’équipe locale"
+    ],
+    "faqs": [
+      {
+        "question": "Quel niveau faut-il pour ce circuit ?",
+        "answer": "Le circuit est de niveau moyen, avec quatre journées de 5 à 6 heures de marche. Il convient aux personnes en bonne condition physique habituées à marcher plusieurs jours de suite."
+      },
+      {
+        "question": "Faut-il prévoir des chaussures pour traverser la rivière ?",
+        "answer": "Oui. La sixième journée comprend plusieurs traversées de la rivière du M’Goun. Prévoyez une paire de chaussures légères ou de baskets pouvant aller dans l’eau."
+      },
+      {
+        "question": "Où dort-on pendant la randonnée ?",
+        "answer": "Selon les étapes et les conditions, les nuits se passent en gîte, chez l’habitant ou en bivouac. Les nuits à Marrakech sont prévues en hôtel ou en riad."
+      },
+      {
+        "question": "Quelle est la meilleure période pour découvrir la Vallée des Roses ?",
+        "answer": "Le printemps est particulièrement apprécié, notamment pendant la floraison des rosiers. Le circuit est également agréable au début de l’été et en automne, hors périodes de fortes chaleurs."
       }
     ]
   }
