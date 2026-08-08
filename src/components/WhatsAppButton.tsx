@@ -18,10 +18,10 @@ export default function WhatsAppButton() {
       target="_blank"
       rel="noreferrer"
       aria-label="Contact MarocTreks Team sur WhatsApp"
-      className="fixed bottom-3 right-3 z-50 inline-flex h-12 items-center justify-center gap-2 rounded-full bg-[#128C7E] px-3.5 text-white shadow-[0_10px_30px_rgba(15,23,42,0.28)] ring-3 ring-white/90 transition-[transform,background-color] hover:scale-[1.02] hover:bg-[#0f766e] focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[#25D366] sm:bottom-7 sm:right-7 sm:h-14 sm:px-4 sm:ring-4"
+      className="fixed bottom-3 right-3 z-40 inline-flex h-12 w-12 items-center justify-center rounded-full bg-[#0f766e] p-0 text-white shadow-[0_10px_30px_rgba(15,23,42,0.28)] ring-3 ring-white/90 transition-[transform,background-color] hover:scale-[1.02] hover:bg-[#0b5f59] focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[#25D366] md:bottom-7 md:right-7 lg:h-14 lg:w-auto lg:gap-2 lg:px-4 lg:ring-4"
     >
       <WhatsAppIcon className="h-5 w-5 sm:h-6 sm:w-6" />
-      <span className="whitespace-nowrap text-[0.6875rem] font-extrabold sm:text-xs">
+      <span className="hidden whitespace-nowrap text-xs font-extrabold lg:inline">
         Contact MarocTreks Team
       </span>
     </a>

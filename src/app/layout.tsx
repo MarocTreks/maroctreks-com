@@ -1,7 +1,20 @@
 import type { Metadata } from "next";
+import { Inter, Outfit } from "next/font/google";
 import "./globals.css";
 import { DEFAULT_DESCRIPTION, JsonLd, SITE_NAME, SITE_URL } from "@/lib/seo";
 import WhatsAppButton from "@/components/WhatsAppButton";
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+  display: "swap",
+});
+
+const outfit = Outfit({
+  subsets: ["latin"],
+  variable: "--font-outfit",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -61,7 +74,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       lang="fr"
       translate="no"
       suppressHydrationWarning
-      className="notranslate h-full antialiased font-sans"
+      className={`${inter.variable} ${outfit.variable} notranslate h-full antialiased font-sans`}
     >
       <body className="min-h-full flex flex-col bg-brand-sand text-brand-slate">
         <JsonLd data={[organization, website]} />

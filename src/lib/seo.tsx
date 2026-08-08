@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-export const SITE_URL = "https://maroctreks.com";
+export const SITE_URL = "https://www.maroctreks.com";
 export const SITE_NAME = "Maroc Treks";
 export const DEFAULT_DESCRIPTION =
   "Treks et randonnées au Maroc avec un guide local : Toubkal, M’Goun, Atlas, Sahara et circuits sur mesure au départ de Marrakech.";
@@ -33,4 +33,3 @@ export function JsonLd({ data }: { data: Record<string, unknown> | Record<string
     />
   );
 }
-

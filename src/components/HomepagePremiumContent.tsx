@@ -194,7 +194,7 @@ function RegionAdviceCard({ className = "" }: { className?: string }) {
       className={`${className} rounded-lg border border-orange-200 bg-orange-50 p-5`}
     >
       <div className="flex items-start gap-3">
-        <span className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-md bg-orange-600 text-white">
+        <span className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-md bg-orange-700 text-white">
           <MessageCircle className="h-5 w-5" aria-hidden="true" />
         </span>
         <div>
@@ -302,7 +302,6 @@ export default function HomepagePremiumContent() {
             alt={heroSlide === index ? slide.alt : ""}
             fill
             priority={index === 0}
-            unoptimized
             sizes="100vw"
             className={`object-cover object-center transition-opacity duration-700 motion-reduce:transition-none ${
               heroSlide === index ? "opacity-100" : "opacity-0"
@@ -345,7 +344,7 @@ export default function HomepagePremiumContent() {
             </div>
             <div
               className="mt-7 flex items-center gap-2"
-              aria-label={`Photo ${heroSlide + 1} sur ${heroSlides.length}`}
+              aria-hidden="true"
             >
               {heroSlides.map((slide, index) => (
                 <span
@@ -434,7 +433,7 @@ export default function HomepagePremiumContent() {
                   aria-hidden="true"
                 />
                 <span className="min-w-0">
-                  <span className="block text-xs font-bold uppercase tracking-[0.14em] text-slate-500">
+                  <span className="block text-xs font-bold uppercase tracking-[0.14em] text-slate-600">
                     Haut Atlas
                   </span>
                   <span className="mt-1 flex items-center gap-2 font-display text-base font-extrabold text-slate-950">
@@ -456,7 +455,7 @@ export default function HomepagePremiumContent() {
                   aria-hidden="true"
                 />
                 <span className="min-w-0">
-                  <span className="block text-xs font-bold uppercase tracking-[0.14em] text-slate-500">
+                  <span className="block text-xs font-bold uppercase tracking-[0.14em] text-slate-600">
                     Atlas central
                   </span>
                   <span className="mt-1 flex items-center gap-2 font-display text-base font-extrabold text-slate-950">
@@ -478,7 +477,7 @@ export default function HomepagePremiumContent() {
                   aria-hidden="true"
                 />
                 <span className="min-w-0">
-                  <span className="block text-xs font-bold uppercase tracking-[0.14em] text-slate-500">
+                  <span className="block text-xs font-bold uppercase tracking-[0.14em] text-slate-600">
                     Sud du Haut Atlas
                   </span>
                   <span className="mt-1 flex items-center gap-2 font-display text-base font-extrabold text-slate-950">
@@ -500,7 +499,7 @@ export default function HomepagePremiumContent() {
                   aria-hidden="true"
                 />
                 <span className="min-w-0">
-                  <span className="block text-xs font-bold uppercase tracking-[0.14em] text-slate-500">
+                  <span className="block text-xs font-bold uppercase tracking-[0.14em] text-slate-600">
                     Désert marocain
                   </span>
                   <span className="mt-1 flex items-center gap-2 font-display text-base font-extrabold text-slate-950">
@@ -534,7 +533,6 @@ export default function HomepagePremiumContent() {
               src={images.team}
               alt="Mohamed Ait Tadrart et l’équipe locale de Maroc Treks"
               fill
-              unoptimized
               sizes="(min-width: 1024px) 50vw, 100vw"
               className="object-cover"
             />
@@ -645,7 +643,7 @@ export default function HomepagePremiumContent() {
                     onClick={() => setActiveRegion(item.id)}
                     className={`inline-flex min-h-11 shrink-0 cursor-pointer items-center gap-2 rounded-md border px-4 py-2.5 text-sm font-bold shadow-sm transition-[transform,box-shadow,border-color,background-color,color] duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-600 focus-visible:ring-offset-2 motion-safe:hover:-translate-y-0.5 ${
                       active
-                        ? "border-orange-600 bg-orange-600 text-white shadow-[0_6px_16px_rgba(234,88,12,0.28)]"
+                        ? "border-orange-700 bg-orange-700 text-white shadow-[0_6px_16px_rgba(194,65,12,0.28)]"
                         : "border-slate-300 bg-white text-slate-700 hover:border-orange-500 hover:bg-orange-50 hover:text-orange-800 hover:shadow-md"
                     }`}
                   >
@@ -666,7 +664,7 @@ export default function HomepagePremiumContent() {
               onClick={() => scrollRegionTabs(1)}
               disabled={!canScrollRegionsRight}
               aria-label="Afficher les régions suivantes"
-              className="absolute right-0 top-1/2 z-10 inline-flex h-9 w-9 -translate-y-[calc(50%+0.375rem)] items-center justify-center rounded-full border border-orange-600 bg-orange-600 text-white shadow-md transition-[opacity,background-color] hover:bg-orange-700 disabled:cursor-default disabled:border-slate-300 disabled:bg-white disabled:text-slate-800 disabled:opacity-30 lg:hidden"
+              className="absolute right-0 top-1/2 z-10 inline-flex h-9 w-9 -translate-y-[calc(50%+0.375rem)] items-center justify-center rounded-full border border-orange-700 bg-orange-700 text-white shadow-md transition-[opacity,background-color] hover:bg-orange-800 disabled:cursor-default disabled:border-slate-300 disabled:bg-white disabled:text-slate-800 disabled:opacity-30 lg:hidden"
             >
               <ChevronRight className="h-5 w-5" aria-hidden="true" />
             </button>
@@ -796,7 +794,6 @@ export default function HomepagePremiumContent() {
             src={images.cta}
             alt="Bivouac dans les dunes du Sahara"
             fill
-            unoptimized
             sizes="(min-width: 1280px) 1280px, 100vw"
             className="object-cover"
           />

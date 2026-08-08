@@ -219,6 +219,34 @@ export const tourMediaBySlug: Record<string, TourMedia> = {
       },
     ],
   },
+  "randonnee-moyen-atlas": {
+    hero: {
+      src: cloudinaryImage("e4b35ebc-bb68-483e-a8cc-592393d7b51c_kfv0yq"),
+      alt: "Randonneurs marchant au bord d'un lac d'altitude (aguelmane) dans le Moyen Atlas",
+    },
+    gallery: [
+      {
+        src: cloudinaryImage("08f2c6cd-9129-41d2-b0a6-1375f0444200_qxlxcu"),
+        alt: "Groupe de randonneurs posant devant le lac d'Aguelmane Azigza avec ses reflets de montagne et de forêt",
+      },
+      {
+        src: cloudinaryImage("717c00e6-a5d3-4adf-b80c-0dce2b3daa2d_elp0p5"),
+        alt: "Vue panoramique sur un grand lac naturel (aguelmane) niché au milieu des collines boisées du Moyen Atlas",
+      },
+      {
+        src: cloudinaryImage("57eddc24-2ba5-42e6-8c23-2d1face68519_tjgnzb"),
+        alt: "Maison traditionnelle en pisé au cœur d'une vaste vallée verdoyante du Moyen Atlas sous un ciel nuageux",
+      },
+      {
+        src: cloudinaryImage("af07fc3f-272d-4fcc-9feb-a85471efd313_qm4dtr"),
+        alt: "Macaques de Barbarie (singes magots) sur un rocher dans la région du Moyen Atlas",
+      },
+      {
+        src: cloudinaryImage("8fbd49eb-c729-49bf-bf73-1d9ff3481d8b_zdxyhk"),
+        alt: "Groupe de randonneurs traversant un champ fleuri de coquelicots rouges dans le Moyen Atlas",
+      },
+    ],
+  },
   "randonnee-jbel-saghro": {
     hero: {
       src: cloudinaryImage("3319651f-4731-4457-bfb9-5d33298c7fda_yc4ita"),

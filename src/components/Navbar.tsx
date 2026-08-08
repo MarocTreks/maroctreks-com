@@ -228,12 +228,9 @@ export default function Navbar() {
         loadGoogleTranslate(() => selectGoogleLanguage(savedLanguage));
       } else {
         preventPageTranslation();
-        // Warm the translator while the visitor browses so a later language
-        // choice can be applied without waiting for the script to download.
-        loadGoogleTranslate(() => {});
       }
     }, 0);
-    // The translator loader is intentionally initialized once after hydration.
+    // Restore the visitor's saved language once after hydration.
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
@@ -303,7 +300,7 @@ export default function Navbar() {
                 onClick={() => setLanguageDropdownOpen(false)}
                 className={`shrink-0 whitespace-nowrap rounded-lg px-2.5 py-2 text-sm font-semibold tracking-wide transition-all duration-200 ${
                   isActive(link.href)
-                    ? "bg-orange-600 text-white shadow-sm"
+                    ? "bg-orange-700 text-white shadow-sm"
                     : "text-brand-slate hover:bg-brand-orange/10 hover:text-brand-orange"
                 }`}
               >
@@ -324,7 +321,7 @@ export default function Navbar() {
                 aria-controls="circuits-navigation"
                 className={`flex shrink-0 cursor-pointer items-center gap-1.5 whitespace-nowrap rounded-lg px-2.5 py-2 text-sm font-semibold tracking-wide transition-all duration-200 ${
                   isCircuitActive()
-                    ? "bg-orange-600 text-white shadow-sm"
+                    ? "bg-orange-700 text-white shadow-sm"
                     : "text-brand-slate hover:bg-brand-orange/10 hover:text-brand-orange"
                 }`}
               >
@@ -361,7 +358,7 @@ export default function Navbar() {
               onClick={() => setLanguageDropdownOpen(false)}
               className={`shrink-0 whitespace-nowrap rounded-lg px-2.5 py-2 text-sm font-semibold tracking-wide transition-all duration-200 ${
                 isActive("/excursions")
-                  ? "bg-orange-600 text-white shadow-sm"
+                  ? "bg-orange-700 text-white shadow-sm"
                   : "text-brand-slate hover:bg-brand-orange/10 hover:text-brand-orange"
               }`}
             >
@@ -375,7 +372,7 @@ export default function Navbar() {
               onClick={() => setLanguageDropdownOpen(false)}
               className={`shrink-0 whitespace-nowrap rounded-lg px-2.5 py-2 text-sm font-semibold tracking-wide transition-all duration-200 ${
                 isActive("/contact")
-                  ? "bg-orange-600 text-white shadow-sm"
+                  ? "bg-orange-700 text-white shadow-sm"
                   : "text-brand-slate hover:bg-brand-orange/10 hover:text-brand-orange"
               }`}
             >
@@ -396,7 +393,10 @@ export default function Navbar() {
             <div className="relative">
               <button
                 type="button"
-                onClick={() => setLanguageDropdownOpen(!languageDropdownOpen)}
+                onClick={() => {
+                  if (!languageDropdownOpen) loadGoogleTranslate(() => {});
+                  setLanguageDropdownOpen(!languageDropdownOpen);
+                }}
                 translate="no"
                 className="notranslate theme-button-secondary h-10 min-h-10 w-10 p-0 xl:h-11 xl:w-auto xl:gap-2 xl:px-3"
                 aria-expanded={languageDropdownOpen}
@@ -419,7 +419,7 @@ export default function Navbar() {
                       onClick={() => applyLanguage(language.code)}
                       className={`flex w-full items-center justify-between rounded-md px-3 py-2.5 text-left text-sm font-semibold transition-colors ${
                         selectedLanguage === language.code
-                          ? "bg-orange-600 text-white"
+                          ? "bg-orange-700 text-white"
                           : "text-brand-slate hover:bg-brand-orange/10 hover:text-brand-orange"
                       }`}
                     >
@@ -449,7 +449,10 @@ export default function Navbar() {
             <div className="relative">
               <button
                 type="button"
-                onClick={() => setLanguageDropdownOpen(!languageDropdownOpen)}
+                onClick={() => {
+                  if (!languageDropdownOpen) loadGoogleTranslate(() => {});
+                  setLanguageDropdownOpen(!languageDropdownOpen);
+                }}
                 translate="no"
                 className="notranslate theme-button-secondary h-10 min-h-10 gap-1.5 px-2.5 py-0"
                 aria-expanded={languageDropdownOpen}
@@ -471,7 +474,7 @@ export default function Navbar() {
                       onClick={() => applyLanguage(language.code)}
                       className={`flex w-full items-center justify-between rounded-md px-3 py-2.5 text-sm font-semibold ${
                         selectedLanguage === language.code
-                          ? "bg-orange-600 text-white"
+                          ? "bg-orange-700 text-white"
                           : "text-brand-slate hover:bg-brand-orange/10 hover:text-brand-orange"
                       }`}
                     >
