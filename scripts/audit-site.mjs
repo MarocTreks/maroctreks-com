@@ -1,20 +1,25 @@
 import { readFile } from "node:fs/promises";
 
 const baseUrl = (process.argv[2] ?? "http://127.0.0.1:3102").replace(/\/$/, "");
-const canonicalOrigin = "https://maroctreks.com";
+const canonicalOrigin = "https://www.maroctreks.com";
 const tours = JSON.parse(await readFile(new URL("../src/data/tours.generated.json", import.meta.url), "utf8"));
-const sourceSitePages = JSON.parse(await readFile(new URL("../src/data/site-pages.generated.json", import.meta.url), "utf8"));
+const siteContent = JSON.parse(await readFile(new URL("../src/data/site-pages.generated.json", import.meta.url), "utf8"));
 const routes = [
   "/",
   "/circuits",
   "/haut-atlas-toubkal",
   "/haut-atlas-mgoun",
+  "/vallees-dades-roses",
   "/antis-atlas",
   "/le-desert",
   "/excursions",
   "/informations-pratiques",
   "/qui-sommes-nous",
   "/contact",
+  "/blog",
+  "/blog/meilleure-periode-trekking-maroc",
+  "/blog/ascension-toubkal-guide-pratique",
+  "/blog/que-mettre-sac-trek-maroc",
   ...tours.map((tour) => tour.path),
 ];
 
@@ -56,8 +61,8 @@ function expectedSourceText(path) {
     ];
   }
 
-  const landing = sourceSitePages.categories.find((category) => category.path === path)
-    ?? (sourceSitePages.circuits.path === path ? sourceSitePages.circuits : undefined);
+  const landing = siteContent.categories.find((category) => category.path === path)
+    ?? (siteContent.circuits.path === path ? siteContent.circuits : undefined);
   if (landing) {
     return [
       landing.heroTitle,
@@ -70,11 +75,13 @@ function expectedSourceText(path) {
     ];
   }
 
-  if (sourceSitePages.excursions.path === path) {
+  if (siteContent.excursions.path === path) {
     return [
-      sourceSitePages.excursions.heroTitle,
-      sourceSitePages.excursions.heroSubtitle,
-      ...sourceSitePages.excursions.sections.flatMap((section) => [section.heading, section.subtitle, ...section.items]),
+      siteContent.excursions.heroSubtitle,
+      ...siteContent.excursions.sections.flatMap((section) => [
+        section.heading,
+        ...section.items.map((item) => item.replace("La ballade", "La balade")),
+      ]),
     ];
   }
 

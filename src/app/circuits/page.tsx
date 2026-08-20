@@ -3,11 +3,11 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import TourCard from "@/components/TourCard";
 import { createMetadata, JsonLd, SITE_URL } from "@/lib/seo";
-import { sourceSitePages } from "@/lib/site-content";
+import { siteContent } from "@/lib/site-content";
 import { getTour } from "@/lib/tours";
 import { cloudinaryImage } from "@/lib/tour-media";
 
-const page = sourceSitePages.circuits;
+const page = siteContent.circuits;
 
 export const metadata = createMetadata({
   title: page.heroTitle,

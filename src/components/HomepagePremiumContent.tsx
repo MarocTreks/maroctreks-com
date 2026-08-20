@@ -253,7 +253,7 @@ export default function HomepagePremiumContent() {
 
     const timer = window.setInterval(() => {
       setHeroSlide((current) => (current + 1) % heroSlides.length);
-    }, 2000);
+    }, 5000);
 
     return () => window.clearInterval(timer);
   }, []);
@@ -294,7 +294,7 @@ export default function HomepagePremiumContent() {
 
   return (
     <main className="flex-grow overflow-x-clip bg-white">
-      <section className="relative flex min-h-[calc(100svh-4.5rem)] items-end overflow-hidden bg-slate-950 pb-16 pt-28 text-white sm:min-h-[680px] sm:pb-24">
+      <section className="relative flex min-h-[610px] items-end overflow-hidden bg-slate-800 pb-16 pt-28 text-white sm:min-h-[660px] sm:pb-20">
         {heroSlides.map((slide, index) => (
           <Image
             key={slide.id}
@@ -302,14 +302,16 @@ export default function HomepagePremiumContent() {
             alt={heroSlide === index ? slide.alt : ""}
             fill
             priority={index === 0}
+            loading={index === 0 ? undefined : "eager"}
+            unoptimized
             sizes="100vw"
             className={`object-cover object-center transition-opacity duration-700 motion-reduce:transition-none ${
               heroSlide === index ? "opacity-100" : "opacity-0"
             }`}
           />
         ))}
-        <div className="absolute inset-0 bg-gradient-to-r from-slate-950/55 via-slate-950/25 to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-t from-slate-950/35 via-transparent to-slate-950/5" />
+        <div className="absolute inset-0 bg-gradient-to-r from-slate-950/48 via-slate-900/18 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-slate-950/25 via-transparent to-white/5" />
 
         <div className="relative mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
@@ -317,8 +319,8 @@ export default function HomepagePremiumContent() {
               <Compass className="h-4 w-4" aria-hidden="true" />
               Guide de montagne breveté
             </p>
-            <h1 className="mt-5 max-w-3xl font-display text-4xl font-black leading-[1.04] sm:text-6xl lg:text-7xl">
-              Maroc Treks
+            <h1 className="mt-5 max-w-4xl font-display text-4xl font-black leading-[1.04] sm:text-6xl lg:text-7xl">
+              Trekking au Maroc avec un guide local
             </h1>
             <p className="mt-5 max-w-2xl font-display text-2xl font-bold leading-tight text-white sm:text-3xl">
               Le Maroc à pied, avec ceux qui y vivent.
@@ -715,29 +717,29 @@ export default function HomepagePremiumContent() {
         </div>
       </section>
 
-      <section className="bg-slate-950 py-16 text-white sm:py-24">
+      <section className="border-y border-stone-200 bg-[#f6f1e8] py-16 text-slate-950 sm:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:items-start">
             <div>
-              <p className="text-xs font-extrabold uppercase tracking-[0.18em] text-orange-300">
+              <p className="text-xs font-extrabold uppercase tracking-[0.18em] text-orange-700">
                 Sur le terrain
               </p>
               <h2 className="mt-3 font-display text-3xl font-black leading-tight sm:text-4xl">
                 Une organisation simple, locale et expérimentée
               </h2>
-              <p className="mt-5 text-base leading-7 text-slate-300">
+              <p className="mt-5 text-base leading-7 text-slate-600">
                 Du premier échange au retour à Marrakech, la même équipe prépare
                 votre itinéraire et vous accompagne sur place.
               </p>
             </div>
-            <div className="grid gap-px overflow-hidden rounded-lg bg-white/15 sm:grid-cols-2">
+            <div className="grid gap-4 sm:grid-cols-2">
               {reasons.map(({ title, description, icon: Icon }) => (
-                <article key={title} className="bg-slate-900 p-6">
-                  <Icon className="h-6 w-6 text-orange-400" aria-hidden="true" />
+                <article key={title} className="rounded-xl border border-stone-200 bg-white p-6 shadow-[0_8px_24px_rgba(15,23,42,0.05)]">
+                  <Icon className="h-6 w-6 text-orange-600" aria-hidden="true" />
                   <h3 className="mt-4 font-display text-lg font-extrabold">
                     {title}
                   </h3>
-                  <p className="mt-2 text-sm leading-6 text-slate-400">
+                  <p className="mt-2 text-sm leading-6 text-slate-600">
                     {description}
                   </p>
                 </article>
@@ -797,7 +799,7 @@ export default function HomepagePremiumContent() {
             sizes="(min-width: 1280px) 1280px, 100vw"
             className="object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-slate-950/65 via-slate-950/35 to-slate-950/5" />
+          <div className="absolute inset-0 bg-gradient-to-r from-slate-950/52 via-slate-950/22 to-transparent" />
           <div className="relative flex min-h-[400px] items-center px-6 py-12 sm:px-12 lg:px-16">
             <div className="max-w-2xl">
               <p className="text-xs font-extrabold uppercase tracking-[0.18em] text-orange-300">

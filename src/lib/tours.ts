@@ -1,6 +1,6 @@
 import toursJson from "@/data/tours.generated.json";
 import { createMetadata } from "@/lib/seo";
-import { sourceSitePages, type SourceCollectionItem } from "@/lib/site-content";
+import { siteContent, type CollectionItem } from "@/lib/site-content";
 import { cloudinaryImage, tourMediaBySlug, type TourMediaImage } from "@/lib/tour-media";
 
 export type TourCategory =
@@ -38,7 +38,6 @@ export type TourDetailLabels = {
 export type Tour = {
   slug: string;
   path: string;
-  sourceUrl: string;
   category: TourCategory;
   title: string;
   subtitle: string;
@@ -74,7 +73,7 @@ export type TourCategoryDefinition = {
   introParagraphs: string[];
   collectionHeading: string;
   collectionDescription: string;
-  collectionItems: SourceCollectionItem[];
+  collectionItems: CollectionItem[];
   image: string;
 };
 
@@ -119,7 +118,7 @@ const categoryImages: Record<string, string> = {
   "grande-traversee": cloudinaryImage("27694bd0-9d47-4bf1-9c36-6261bb2aca7b_sqykn5"),
 };
 
-export const tourCategories: TourCategoryDefinition[] = sourceSitePages.categories.map((category) => ({
+export const tourCategories: TourCategoryDefinition[] = siteContent.categories.map((category) => ({
   key: category.key as TourCategory,
   path: category.path,
   title: category.heroTitle,

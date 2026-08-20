@@ -100,6 +100,7 @@ export default function Navbar() {
     { name: "Accueil", href: "/" },
     { name: "Qui sommes-nous ?", href: "/qui-sommes-nous" },
     { name: "Infos pratiques", href: "/informations-pratiques" },
+    { name: "Blog", href: "/blog" },
   ];
 
   const isActive = (href: string) => pathname === href;
@@ -282,8 +283,8 @@ export default function Navbar() {
             <Image
               src="/logo-header.png"
               alt="Maroc Treks"
-              width={720}
-              height={305}
+              width={360}
+              height={153}
               loading="eager"
               sizes="(min-width: 1280px) 132px, 113px"
               className="h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-[1.02] xl:h-14"
@@ -540,8 +541,8 @@ export default function Navbar() {
             <Image
               src="/logo-header.png"
               alt="Maroc Treks"
-              width={720}
-              height={305}
+              width={360}
+              height={153}
               sizes="113px"
               className="h-12 w-auto object-contain"
             />

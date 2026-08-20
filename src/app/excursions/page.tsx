@@ -14,10 +14,10 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { WhatsAppIcon } from "@/components/WhatsAppButton";
 import { createMetadata } from "@/lib/seo";
-import { sourceSitePages } from "@/lib/site-content";
+import { siteContent } from "@/lib/site-content";
 import { cloudinaryImage } from "@/lib/tour-media";
 
-const page = sourceSitePages.excursions;
+const page = siteContent.excursions;
 
 const excursionImages = {
   hero: {

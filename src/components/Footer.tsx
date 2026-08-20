@@ -10,6 +10,7 @@ export default function Footer() {
     { name: "Tous les circuits", href: "/circuits" },
     { name: "Qui sommes nous ?", href: "/qui-sommes-nous" },
     { name: "Informations Pratiques", href: "/informations-pratiques" },
+    { name: "Conseils & Blog", href: "/blog" },
     { name: "Excursions", href: "/excursions" },
     { name: "Contact", href: "/contact" },
   ];
@@ -39,8 +40,8 @@ export default function Footer() {
               <Image
                 src="/logo.png"
                 alt="Maroc Treks — Explore the magic of Morocco"
-                width={1137}
-                height={544}
+                width={480}
+                height={229}
                 sizes="160px"
                 className="h-16 w-auto object-contain"
               />

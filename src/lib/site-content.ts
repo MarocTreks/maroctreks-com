@@ -1,7 +1,7 @@
 import sitePagesJson from "@/data/site-pages.generated.json";
 
-export type SourceCollectionItem = { slug: string; title: string };
-export type SourceLandingPage = {
+export type CollectionItem = { slug: string; title: string };
+export type LandingPageContent = {
   key: string;
   path: string;
   heroTitle: string;
@@ -11,19 +11,20 @@ export type SourceLandingPage = {
   introParagraphs: string[];
   collectionHeading: string;
   collectionDescription: string;
-  collectionItems: SourceCollectionItem[];
+  collectionItems: CollectionItem[];
 };
-export type SourceExcursionSection = { heading: string; subtitle: string; items: string[] };
-export type SourceExcursionsPage = {
+export type ExcursionSectionContent = { heading: string; subtitle: string; items: string[] };
+export type ExcursionsPageContent = {
   path: string;
   heroTitle: string;
   heroSubtitle: string;
-  sections: SourceExcursionSection[];
+  sections: ExcursionSectionContent[];
 };
-export type SourceSitePages = {
-  categories: SourceLandingPage[];
-  circuits: SourceLandingPage;
-  excursions: SourceExcursionsPage;
+export type SiteContent = {
+  categories: LandingPageContent[];
+  circuits: LandingPageContent;
+  excursions: ExcursionsPageContent;
 };
 
-export const sourceSitePages = sitePagesJson as SourceSitePages;
+/** Local editorial content bundled with the application. */
+export const siteContent = sitePagesJson as SiteContent;

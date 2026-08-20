@@ -104,14 +104,14 @@ const markRegion = {
 
 await sourceImage()
   .extract(fullRegion)
-  .resize({ width: 1200, withoutEnlargement: true })
-  .png({ compressionLevel: 9, adaptiveFiltering: true })
+  .resize({ width: 480, withoutEnlargement: true })
+  .png({ compressionLevel: 9, adaptiveFiltering: true, palette: true, quality: 90 })
   .toFile(fullLogoPath);
 
 await sourceImage()
   .extract(headerRegion)
-  .resize({ width: 720, withoutEnlargement: true })
-  .png({ compressionLevel: 9, adaptiveFiltering: true })
+  .resize({ width: 360, withoutEnlargement: true })
+  .png({ compressionLevel: 9, adaptiveFiltering: true, palette: true, quality: 90 })
   .toFile(headerLogoPath);
 
 await sourceImage()
@@ -120,7 +120,7 @@ await sourceImage()
     fit: "contain",
     background: { r: 0, g: 0, b: 0, alpha: 0 },
   })
-  .png({ compressionLevel: 9, adaptiveFiltering: true })
+  .png({ compressionLevel: 9, adaptiveFiltering: true, palette: true, quality: 90 })
   .toFile(markPath);
 
 await sharp(markPath)
