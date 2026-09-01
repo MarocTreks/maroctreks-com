@@ -9,6 +9,7 @@ export type BlogSection = {
 export type BlogPost = {
   slug: string;
   title: string;
+  seoTitle?: string;
   excerpt: string;
   description: string;
   category: string;
@@ -24,8 +25,84 @@ export type BlogPost = {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "trek-imlil-1-jour-depuis-marrakech",
+    title: "Trek Imlil 1 Jour | Randonnée dans le Haut Atlas depuis Marrakech",
+    seoTitle: "Trek Imlil 1 jour depuis Marrakech",
+    excerpt: "Découvrez Imlil en une journée depuis Marrakech : villages amazighs, cascades, panoramas sur l’Atlas et déjeuner traditionnel.",
+    description: "Découvrez Imlil en une journée depuis Marrakech : randonnée dans le Haut Atlas, villages amazighs, cascades et déjeuner traditionnel avec Maroc Treks.",
+    category: "Imlil et Toubkal",
+    publishedAt: "2026-09-01",
+    updatedAt: "2026-09-01",
+    readingTime: "8 min",
+    image: cloudinaryImage("631113d0-7567-4608-8b87-3ee7c1e8a69a_vsfw6h"),
+    imageAlt: "Randonneurs traversant les cultures en terrasses près des villages d’Imlil dans le Haut Atlas",
+    relatedHref: "/contact",
+    relatedLabel: "Réserver votre randonnée à Imlil",
+    sections: [
+      {
+        heading: "Découvrez les montagnes de l’Atlas en une journée",
+        paragraphs: [
+          "Vous souhaitez participer à une randonnée à Imlil depuis Marrakech ? Profitez d’une journée exceptionnelle au cœur du Haut Atlas marocain et découvrez ses paysages spectaculaires, ses villages amazighs traditionnels ainsi que les magnifiques vallées qui entourent Imlil.",
+          "Cette excursion d’une journée à Imlil est idéale pour les voyageurs souhaitant découvrir les montagnes marocaines sans entreprendre un trek de plusieurs jours.",
+        ],
+      },
+      {
+        heading: "Une journée de randonnée au cœur du Haut Atlas",
+        paragraphs: [
+          "Depuis Marrakech, vous rejoindrez Imlil, l’un des principaux points de départ des randonnées vers le mont Toubkal. Accompagné de votre guide local, vous emprunterez les sentiers de montagne à travers des villages amazighs, des cultures en terrasses et des paysages offrant de magnifiques panoramas sur les sommets de l’Atlas.",
+          "L’itinéraire vous conduira notamment à Aremd et aux cascades d’Imlil, deux sites incontournables de la région. Vous profiterez ensuite d’un déjeuner traditionnel marocain et découvrirez l’hospitalité des habitants de la montagne avant d’emprunter le chemin du retour.",
+        ],
+      },
+      {
+        heading: "Pourquoi choisir cette randonnée ?",
+        paragraphs: ["Une formule privée et adaptable pour découvrir les incontournables d’Imlil à votre rythme."],
+        bullets: [
+          "Trek d’une journée à Imlil accompagné d’un guide local",
+          "Découverte du Haut Atlas marocain et de ses communautés amazighes",
+          "Visite des cascades d’Imlil et panoramas sur les montagnes de l’Atlas",
+          "Déjeuner traditionnel marocain",
+          "Transport disponible depuis Marrakech",
+          "Trek privé adaptable aux familles, couples et petits groupes",
+        ],
+      },
+      {
+        heading: "Programme du trek Imlil d’une journée",
+        paragraphs: [
+          "Le départ de votre hôtel ou riad à Marrakech est prévu à 7 h 30. Après un trajet offrant de premières vues sur le Haut Atlas, vous arriverez à Imlil vers 9 h 30 pour rencontrer votre guide local et préparer la randonnée.",
+          "La marche commence vers 10 h en direction des villages traditionnels et d’Aremd. Une pause aux cascades d’Imlil est prévue vers 12 h 30, suivie d’un déjeuner dans un restaurant ou chez l’habitant vers 13 h 30.",
+          "Vous reprendrez tranquillement les sentiers à travers les villages et les vallées vers 15 h. Le départ d’Imlil pour Marrakech est prévu vers 16 h. Les horaires peuvent être adaptés à votre rythme, à la météo et aux conditions du trek.",
+        ],
+        bullets: ["7 h 30 : départ de Marrakech", "9 h 30 : arrivée à Imlil et accueil par le guide", "10 h : début de la randonnée vers Aremd", "12 h 30 : découverte des cascades d’Imlil", "13 h 30 : déjeuner traditionnel", "16 h : départ pour Marrakech"],
+      },
+      {
+        heading: "Niveau, durée et altitude",
+        paragraphs: ["De niveau facile à modéré, cette randonnée convient aux voyageurs disposant d’une condition physique normale. L’itinéraire peut être adapté aux familles, aux couples et aux petits groupes."],
+        bullets: ["Durée de marche : environ 4 à 6 heures", "Durée totale : 1 journée", "Altitude d’Imlil : environ 1 740 mètres"],
+      },
+      {
+        heading: "Tarif du trek à Imlil",
+        paragraphs: ["Le tarif est proposé à partir de 45 € par personne. Il varie selon le nombre de participants, le transport depuis Marrakech et les prestations sélectionnées.", "Contactez Maroc Treks pour recevoir une offre personnalisée adaptée à votre groupe et à vos besoins."],
+      },
+      {
+        heading: "Prestations incluses",
+        paragraphs: ["La formule standard réunit les services essentiels pour profiter sereinement de votre journée dans le Haut Atlas."],
+        bullets: ["Guide local professionnel", "Randonnée privée ou en petit groupe", "Déjeuner traditionnel", "Assistance pendant le trek"],
+      },
+      {
+        heading: "Prestations non incluses",
+        paragraphs: ["Les éléments suivants restent à votre charge, sauf mention contraire dans l’offre personnalisée."],
+        bullets: ["Transport depuis Marrakech, sauf dans la formule sélectionnée", "Boissons et dépenses personnelles", "Pourboires", "Toute prestation non mentionnée dans le programme"],
+      },
+      {
+        heading: "Réservez votre randonnée à Imlil",
+        paragraphs: ["Une seule journée suffit pour découvrir une autre facette du Maroc. Au départ de Marrakech, explorez les montagnes, les villages amazighs et les paysages exceptionnels du Haut Atlas avec Maroc Treks.", "Réservez dès maintenant votre trek d’une journée à Imlil avec Maroc Treks, votre spécialiste des treks et randonnées au Maroc."],
+      },
+    ],
+  },
+  {
     slug: "meilleure-periode-trekking-maroc",
     title: "Quelle est la meilleure période pour faire un trek au Maroc ?",
+    seoTitle: "Meilleure période pour un trek au Maroc",
     excerpt: "Atlas, Toubkal, M’Goun ou Sahara : choisissez votre saison selon la région, l’altitude et le type de randonnée recherché.",
     description: "Guide des saisons pour préparer un trek au Maroc : météo, températures, enneigement et meilleures périodes pour l’Atlas et le Sahara.",
     category: "Préparer son trek",
@@ -71,6 +148,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "ascension-toubkal-guide-pratique",
     title: "Ascension du Toubkal : guide pratique avant de partir",
+    seoTitle: "Ascension du Toubkal : itinéraire et conseils",
     excerpt: "Durée, difficulté, altitude, équipement et accompagnement : l’essentiel pour préparer l’ascension du plus haut sommet d’Afrique du Nord.",
     description: "Préparez votre ascension du Toubkal : difficulté, itinéraire depuis Imlil, altitude, équipement, guide et conseils d’acclimatation.",
     category: "Toubkal",
@@ -115,6 +193,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "que-mettre-sac-trek-maroc",
     title: "Que mettre dans son sac pour un trek au Maroc ?",
+    seoTitle: "Équipement trek Maroc : la liste complète",
     excerpt: "Une liste simple et réaliste pour voyager léger tout en restant protégé du soleil, du froid, du vent et de la pluie.",
     description: "Liste d’équipement pour un trek au Maroc : vêtements, chaussures, sac de journée, protection solaire et matériel selon la saison.",
     category: "Équipement",

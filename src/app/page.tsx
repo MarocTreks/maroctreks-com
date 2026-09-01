@@ -4,8 +4,8 @@ import HomepagePremiumContent from "@/components/HomepagePremiumContent";
 import { createMetadata, JsonLd, SITE_URL } from "@/lib/seo";
 
 export const metadata = createMetadata({
-  title: "Trekking au Maroc avec guide local | Maroc Treks",
-  description: "Explorez le Toubkal, le M’Goun, l’Atlas et le Sahara avec Mohamed Ait Tadrart, guide local. Treks authentiques et circuits sur mesure au Maroc.",
+  title: "Trekking au Maroc avec guide local",
+  description: "Treks privés au Maroc avec Mohamed Ait Tadrart, guide local : Toubkal, M’Goun, Atlas, Sahara et circuits sur mesure adaptés à votre niveau.",
   path: "/",
 });
 

@@ -5,8 +5,8 @@ import { getCategory } from "@/lib/tours";
 const category = getCategory("anti-atlas")!;
 
 export const metadata = createMetadata({
-  title: category.title,
-  description: category.description,
+  title: category.seoTitle,
+  description: category.seoDescription,
   path: category.path,
 });
 

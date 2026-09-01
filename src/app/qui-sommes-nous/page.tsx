@@ -74,9 +74,9 @@ const values = [
 ];
 
 export const metadata = createMetadata({
-  title: "Mohamed Ait Tadrart, guide au Maroc",
+  title: "Mohamed Ait Tadrart, guide de montagne au Maroc",
   description:
-    "Découvrez Mohamed Ait Tadrart, guide certifié originaire du Haut Atlas et fondateur de Maroc Treks.",
+    "Rencontrez Mohamed Ait Tadrart, guide de montagne certifié et fondateur de Maroc Treks, avec plus de 20 ans d’expérience dans l’Atlas et le Sahara.",
   path: "/qui-sommes-nous",
 });
 

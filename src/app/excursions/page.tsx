@@ -51,8 +51,8 @@ function excursionIcon(item: string, isDesertSection: boolean) {
 }
 
 export const metadata = createMetadata({
-  title: "Excursions Professionnelles au Maroc",
-  description: `${page.heroSubtitle}. ${page.sections.map((section) => section.heading).join(". ")}.`,
+  title: "Excursions depuis Marrakech et randonnées à la journée",
+  description: "Réservez une excursion privée depuis Marrakech : Imlil, Toubkal, vallées de l’Atlas, cascades et désert avec guide local et programme sur mesure.",
   path: page.path,
 });
 

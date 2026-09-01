@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const SITE_URL = "https://www.maroctreks.com";
 export const SITE_NAME = "Maroc Treks";
 export const DEFAULT_DESCRIPTION =
-  "Treks et randonnées au Maroc avec un guide local : Toubkal, M’Goun, Atlas, Sahara et circuits sur mesure au départ de Marrakech.";
+  "Treks privés au Maroc avec guide local : Toubkal, M’Goun, Haut Atlas, Anti-Atlas, Sahara et circuits sur mesure adaptés à votre niveau.";
 
 type PageMetadata = { title: string; description: string; path: string; image?: string };
 

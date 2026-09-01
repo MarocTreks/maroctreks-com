@@ -10,8 +10,8 @@ import { cloudinaryImage } from "@/lib/tour-media";
 const page = siteContent.circuits;
 
 export const metadata = createMetadata({
-  title: page.heroTitle,
-  description: page.heroSubtitle,
+  title: "Circuits trekking au Maroc avec guide local",
+  description: "Comparez nos treks au Maroc : Toubkal, M’Goun, Anti-Atlas, Sahara et côte Atlantique. Circuits privés et sur mesure avec une équipe locale.",
   path: page.path,
 });
 

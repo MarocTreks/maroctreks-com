@@ -7,8 +7,8 @@ import { createMetadata } from "@/lib/seo";
 import { cloudinaryImage } from "@/lib/tour-media";
 
 export const metadata = createMetadata({
-  title: "Préparer un trek au Maroc : guide pratique",
-  description: "Conseils pour préparer votre trek au Maroc : équipement, climat, meilleures saisons, formalités, santé et assurance voyage.",
+  title: "Préparer un trek au Maroc : équipement et conseils",
+  description: "Préparez votre trek au Maroc : équipement, chaussures, climat, meilleures saisons, altitude, santé, assurance et conseils pratiques de guides locaux.",
   path: "/informations-pratiques",
 });
 
