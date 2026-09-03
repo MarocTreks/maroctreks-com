@@ -17,6 +17,7 @@ import {
   MapPin,
   MessageCircle,
   Mountain,
+  Quote,
   Route,
   ShieldCheck,
   Star,
@@ -189,6 +190,25 @@ const heroSlides = [
   },
 ];
 
+const googleReviews = [
+  {
+    author: "Eve Tondeur",
+    text: "J’ai fait 6 treks avec Mohammed en une vingtaine d’années (Djebel Sahro, Djebel Siroua, Désert et Merzouga, Mgoun, Le long de la côte, Toubkal) et je peux témoigner de son professionnalisme. Les treks sont très bien organisés, tout confort, portage des bagages, une nourriture excellente et surtout, un guide sympathique et attentionné et une équipe toujours prête à faire plaisir.\nJuste un petit conseil: un matelas léger gonflable est un plus pour compléter ceux fournis.\nBon trek avec Mohammed!",
+  },
+  {
+    author: "Fabienne Joveneau",
+    text: "J'ai l énorme chance d avoir déjà fais 6 treck avec Mohamed et son équipe. C'est un pur bonheur, que de la bienveillance. Sécurité complète. Paysages paradisiaques.\nMais surtout les petits détails spontané s qui montrent toutes la gentillesse  ,la générosité. Mes plus beaux souvenirs de voyages c'est sans aucune hésitation avec eux. Dès que possible je recommence",
+  },
+  {
+    author: "Marie Christine Wall",
+    text: "Séjour d'une semaine avec le CAFGI  en Juin 2025. Cuisine savoureuse, muletiers efficaces. Mohamed, le guide, impose un rythme régulier et plutôt lent qui a permis à l'ensemble du groupe d'atteindre le sommet du Toubkal sans difficulté. Merci à toute l'équipe.",
+  },
+  {
+    author: "Gorete Matias",
+    text: "Mohamed et son équipe sont d'excellents professionnels. Tout le treck au Toubkal a été super bien organisé.\nUne expérience mémorable !",
+  },
+];
+
 function RegionAdviceCard({ className = "" }: { className?: string }) {
   return (
     <aside
@@ -237,6 +257,7 @@ function RegionAdviceCard({ className = "" }: { className?: string }) {
 
 export default function HomepagePremiumContent() {
   const [heroSlide, setHeroSlide] = useState(0);
+  const [reviewSlide, setReviewSlide] = useState(0);
   const [activeRegion, setActiveRegion] = useState(regions[0].id);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
   const [canScrollRegionsLeft, setCanScrollRegionsLeft] = useState(false);
@@ -255,6 +276,19 @@ export default function HomepagePremiumContent() {
     const timer = window.setInterval(() => {
       setHeroSlide((current) => (current + 1) % heroSlides.length);
     }, 5000);
+
+    return () => window.clearInterval(timer);
+  }, []);
+
+  useEffect(() => {
+    const motionPreference = window.matchMedia(
+      "(prefers-reduced-motion: reduce)",
+    );
+    if (motionPreference.matches) return;
+
+    const timer = window.setInterval(() => {
+      setReviewSlide((current) => (current + 1) % googleReviews.length);
+    }, 7000);
 
     return () => window.clearInterval(timer);
   }, []);
@@ -440,6 +474,83 @@ export default function HomepagePremiumContent() {
                 </Link>{" "}
                 sont également proposées sur demande.
               </p>
+            </div>
+          </div>
+
+          <div
+            aria-label="Avis de voyageurs sur Google"
+            aria-live="polite"
+            className="mt-10 overflow-hidden rounded-xl border border-slate-300 bg-white shadow-[0_8px_24px_rgba(15,23,42,0.05)]"
+          >
+            <div className="grid lg:grid-cols-[12rem_1fr_auto] lg:items-stretch">
+              <div className="flex items-center gap-3 border-b border-slate-200 px-5 py-4 lg:border-b-0 lg:border-r">
+                <span
+                  className="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-slate-200 bg-white text-lg font-black shadow-sm"
+                  aria-hidden="true"
+                >
+                  <span className="text-[#4285f4]">G</span>
+                </span>
+                <span>
+                  <span className="block text-[0.65rem] font-extrabold uppercase tracking-[0.14em] text-slate-500">
+                    Avis Google
+                  </span>
+                  <span className="mt-1 flex text-amber-400" aria-label="5 étoiles sur 5">
+                    {Array.from({ length: 5 }).map((_, index) => (
+                      <Star key={index} className="h-3.5 w-3.5 fill-current" aria-hidden="true" />
+                    ))}
+                  </span>
+                </span>
+              </div>
+
+              <article className="relative px-5 py-5 sm:px-7">
+                <Quote className="absolute right-5 top-5 h-5 w-5 text-orange-200" aria-hidden="true" />
+                <p className="pr-8 text-sm leading-6 text-slate-700">
+                  {googleReviews[reviewSlide].text}
+                </p>
+                <p className="mt-3 font-display text-sm font-extrabold text-slate-950">
+                  {googleReviews[reviewSlide].author}
+                </p>
+              </article>
+
+              <div className="flex items-center justify-between gap-3 border-t border-slate-200 px-5 py-3 lg:flex-col lg:justify-center lg:border-l lg:border-t-0">
+                <span className="text-xs font-bold tabular-nums text-slate-500">
+                  {reviewSlide + 1} / {googleReviews.length}
+                </span>
+                <div className="flex gap-2">
+                  <button
+                    type="button"
+                    onClick={() =>
+                      setReviewSlide((current) =>
+                        (current - 1 + googleReviews.length) % googleReviews.length,
+                      )
+                    }
+                    aria-label="Avis précédent"
+                    className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-700 transition hover:border-orange-700 hover:text-orange-700"
+                  >
+                    <ChevronLeft className="h-4 w-4" aria-hidden="true" />
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() =>
+                      setReviewSlide((current) =>
+                        (current + 1) % googleReviews.length,
+                      )
+                    }
+                    aria-label="Avis suivant"
+                    className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-700 transition hover:border-orange-700 hover:text-orange-700"
+                  >
+                    <ChevronRight className="h-4 w-4" aria-hidden="true" />
+                  </button>
+                </div>
+                <a
+                  href="https://maps.app.goo.gl/eSpjkypgBswEaiW7A?g_st=com.google.maps.preview.copy"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hidden text-xs font-bold text-orange-700 hover:text-orange-800 lg:block"
+                >
+                  Tous les avis
+                </a>
+              </div>
             </div>
           </div>
 
