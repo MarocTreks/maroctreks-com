@@ -28,7 +28,7 @@ export default function TourCard({
 
   return (
     <article className="group relative flex h-full flex-col overflow-hidden rounded-xl border border-slate-200/80 bg-white shadow-[0_4px_20px_rgba(15,23,42,0.05)] transition-[transform,box-shadow,border-color] duration-300 motion-safe:hover:-translate-y-1.5 hover:border-orange-200/80 hover:shadow-[0_20px_35px_rgba(15,23,42,0.1)] focus-within:border-orange-400 focus-within:ring-2 focus-within:ring-orange-700 focus-within:ring-offset-2 motion-reduce:transition-none">
-      <div className="relative aspect-[16/10] overflow-hidden bg-slate-100">
+      <div className="relative aspect-[16/9] overflow-hidden bg-slate-100 sm:aspect-[16/10]">
         <Image
           src={tour.image}
           alt={tour.imageAlt}
@@ -43,7 +43,7 @@ export default function TourCard({
         </span>
       </div>
 
-      <div className="flex flex-1 flex-col p-5">
+      <div className="flex flex-1 flex-col p-4 sm:p-5">
         <Heading className="line-clamp-2 font-display text-[1.0625rem] font-extrabold leading-snug text-brand-slate transition-colors group-hover:text-orange-800 group-focus-within:text-orange-800">
           {title}
         </Heading>
@@ -70,12 +70,12 @@ export default function TourCard({
           )}
         </div>
 
-        <p className="mt-3 line-clamp-2 text-sm leading-relaxed text-slate-500">
+        <p className="mt-3 hidden line-clamp-2 text-sm leading-relaxed text-slate-500 sm:block">
           {tour.subtitle || tour.description}
         </p>
 
         {/* Footer info & Link */}
-        <div className="mt-auto pt-4 border-t border-slate-100 flex items-center justify-between">
+        <div className="mt-3 flex items-center justify-between border-t border-slate-100 pt-3 sm:mt-auto sm:pt-4">
           <div className="flex flex-col">
             <span className="text-[0.625rem] font-bold uppercase tracking-wider text-slate-400 leading-none">Tarif</span>
             <span className="text-xs sm:text-sm font-extrabold text-slate-700 mt-1">{tour.price}</span>

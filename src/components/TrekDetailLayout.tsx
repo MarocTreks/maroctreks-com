@@ -122,7 +122,7 @@ export default function TrekDetailLayout({
 
       <main className="flex-grow bg-brand-sand">
         {/* Trek Hero Banner */}
-        <section className="relative overflow-hidden bg-brand-slate py-24 text-white sm:py-32">
+        <section className="relative overflow-hidden bg-brand-slate py-14 text-white sm:py-32">
           <Image
             src={bannerImage}
             alt={bannerImageAlt}
@@ -134,7 +134,7 @@ export default function TrekDetailLayout({
           />
           <div className="absolute inset-0 z-10 bg-gradient-to-t from-slate-950/65 via-slate-950/35 to-slate-950/15" />
           
-          <div className="relative z-20 max-w-5xl mx-auto px-4 text-center space-y-6">
+          <div className="relative z-20 mx-auto max-w-5xl space-y-4 px-4 text-center sm:space-y-6">
             <Link
               href={categoryPath}
               className="theme-button-on-dark min-h-10 px-4 py-2"
@@ -143,32 +143,32 @@ export default function TrekDetailLayout({
               <span>Retour : {categoryTitle}</span>
             </Link>
             
-            <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-tight">
+            <h1 className="font-display text-3xl font-black leading-tight tracking-tight sm:text-5xl lg:text-6xl">
               {title}
             </h1>
             {subtitle && (
-              <p className="text-lg sm:text-xl text-slate-300 font-light max-w-3xl mx-auto">
+              <p className="mx-auto max-w-3xl text-base font-light leading-6 text-slate-200 sm:text-xl sm:leading-normal">
                 {subtitle}
               </p>
             )}
 
             {/* Quick Specs */}
-            <div className="mx-auto mt-10 grid max-w-4xl grid-cols-2 gap-4 rounded-lg border border-white/15 bg-slate-950/65 p-5 shadow-[0_12px_32px_rgba(15,23,42,0.22)] backdrop-blur-md sm:gap-6 sm:p-6 md:grid-cols-4">
+            <div className="mx-auto mt-6 grid max-w-4xl grid-cols-2 gap-x-2 gap-y-4 rounded-lg border border-white/15 bg-slate-950/65 p-4 shadow-[0_12px_32px_rgba(15,23,42,0.22)] backdrop-blur-md sm:mt-10 sm:gap-6 sm:p-6 md:grid-cols-4">
               <div className="text-center">
-                <span className="block text-xs uppercase font-bold tracking-wider text-slate-400">{detailLabels.duration}</span>
-                <span className="block text-base sm:text-lg font-bold text-brand-gold mt-1">{duration}</span>
+                <span className="block text-[0.65rem] font-bold uppercase tracking-wider text-slate-400 sm:text-xs">{detailLabels.duration}</span>
+                <span className="mt-1 block text-sm font-bold text-brand-gold sm:text-lg">{duration}</span>
               </div>
               <div className="text-center border-l border-white/10">
-                <span className="block text-xs uppercase font-bold tracking-wider text-slate-400">{detailLabels.difficulty}</span>
-                <span className="block text-base sm:text-lg font-bold text-brand-gold mt-1">{difficulty}</span>
+                <span className="block text-[0.65rem] font-bold uppercase tracking-wider text-slate-400 sm:text-xs">{detailLabels.difficulty}</span>
+                <span className="mt-1 block text-sm font-bold text-brand-gold sm:text-lg">{difficulty}</span>
               </div>
               <div className="text-center border-l border-white/10">
-                <span className="block text-xs uppercase font-bold tracking-wider text-slate-400">{detailLabels.groupSize}</span>
-                <span className="block text-base sm:text-lg font-bold text-brand-gold mt-1">{groupSize}</span>
+                <span className="block text-[0.65rem] font-bold uppercase tracking-wider text-slate-400 sm:text-xs">{detailLabels.groupSize}</span>
+                <span className="mt-1 block text-sm font-bold text-brand-gold sm:text-lg">{groupSize}</span>
               </div>
               <div className="text-center border-l border-white/10">
-                <span className="block text-xs uppercase font-bold tracking-wider text-slate-400">{detailLabels.bestSeason}</span>
-                <span className="block text-base sm:text-lg font-bold text-brand-gold mt-1">{bestSeason}</span>
+                <span className="block text-[0.65rem] font-bold uppercase tracking-wider text-slate-400 sm:text-xs">{detailLabels.bestSeason}</span>
+                <span className="mt-1 block text-sm font-bold text-brand-gold sm:text-lg">{bestSeason}</span>
               </div>
             </div>
           </div>
@@ -206,13 +206,13 @@ export default function TrekDetailLayout({
         </div>
 
         {/* Details and Itinerary */}
-        <section className="py-16 sm:py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <section className="mx-auto max-w-7xl px-4 py-10 sm:px-6 sm:py-24 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
             
             {/* Left Side: Overview & Timeline */}
-            <div className="lg:col-span-8 space-y-12">
+            <div className="space-y-8 sm:space-y-12 lg:col-span-8">
               {/* Overview */}
-              <section id="description" className="theme-panel scroll-mt-28 space-y-4 p-8">
+              <section id="description" className="theme-panel scroll-mt-28 space-y-4 p-5 sm:p-8">
                 <h2 className="font-display text-2xl font-bold text-brand-slate">{sectionHeadings.description}</h2>
                 <div className="h-1 w-12 bg-brand-orange rounded-full" />
                 <p className="text-slate-600 leading-relaxed font-light whitespace-pre-line">
@@ -222,7 +222,7 @@ export default function TrekDetailLayout({
               </section>
 
               {/* Highlights */}
-              <div className="theme-panel space-y-6 p-8">
+              <div className="theme-panel space-y-5 p-5 sm:space-y-6 sm:p-8">
                 <h2 className="font-display text-2xl font-bold text-brand-slate">{sectionHeadings.highlights}</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   {highlights.map((hl, idx) => (
@@ -271,7 +271,7 @@ export default function TrekDetailLayout({
                       </div>
 
                       {/* Day Content Card */}
-                      <div className="theme-panel p-6 transition-[border-color,box-shadow] duration-300 hover:border-orange-200 hover:shadow-[0_12px_32px_rgba(15,23,42,0.1)] sm:p-8">
+                      <div className="theme-panel p-5 transition-[border-color,box-shadow] duration-300 hover:border-orange-200 hover:shadow-[0_12px_32px_rgba(15,23,42,0.1)] sm:p-8">
                         <h3 className="font-display text-lg sm:text-xl font-bold text-brand-slate">
                           {day.title}
                         </h3>

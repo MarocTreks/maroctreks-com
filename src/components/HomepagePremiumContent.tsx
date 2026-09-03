@@ -19,6 +19,7 @@ import {
   Mountain,
   Route,
   ShieldCheck,
+  Star,
   TentTree,
   Trees,
   Waves,
@@ -329,6 +330,27 @@ export default function HomepagePremiumContent() {
               Treks dans l’Atlas, traversées du désert et circuits à pied
               organisés par Mohamed Ait Tadrart et son équipe locale.
             </p>
+            <a
+              href="https://maps.app.goo.gl/eSpjkypgBswEaiW7A?g_st=com.google.maps.preview.copy"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Consulter les avis Google de Maroc Treks"
+              className="mt-5 inline-flex items-center gap-3 rounded-lg border border-white/20 bg-slate-950/35 px-3.5 py-2.5 text-white shadow-lg backdrop-blur-md transition hover:border-white/40 hover:bg-slate-950/55 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-400"
+            >
+              <span className="flex h-8 w-8 items-center justify-center rounded-full bg-white text-lg font-black" aria-hidden="true">
+                <span className="text-[#4285f4]">G</span>
+              </span>
+              <span className="text-left">
+                <span className="block text-[0.65rem] font-bold uppercase tracking-[0.14em] text-slate-300">Avis Google</span>
+                <span className="mt-0.5 flex items-center gap-2">
+                  <span className="flex text-amber-400" aria-hidden="true">
+                    {Array.from({ length: 5 }).map((_, index) => <Star key={index} className="h-3.5 w-3.5 fill-current" />)}
+                  </span>
+                  <span className="text-xs font-extrabold">Voir les avis de nos voyageurs</span>
+                </span>
+              </span>
+              <ArrowRight className="ml-1 h-4 w-4 text-slate-300" aria-hidden="true" />
+            </a>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <Link
                 href="#treks"
