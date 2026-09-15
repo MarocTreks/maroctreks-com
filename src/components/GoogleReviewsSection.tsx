@@ -110,7 +110,7 @@ export default function GoogleReviewsSection() {
   };
 
   return (
-    <section className="border-y border-amber-200/60 bg-[#faf6ee] py-16 sm:py-24 overflow-hidden">
+    <section className="overflow-hidden border-y border-amber-200/60 bg-[#faf6ee] pb-16 pt-10 sm:pb-24 sm:pt-16">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="flex flex-col items-center text-center">
