@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -254,6 +254,18 @@ export default function Navbar() {
     return () => desktopViewport.removeEventListener("change", closeMobileMenuOnDesktop);
   }, []);
 
+  const circuitsRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    function handleClickOutside(event: MouseEvent) {
+      if (circuitsRef.current && !circuitsRef.current.contains(event.target as Node)) {
+        setCircuitsDropdownOpen(false);
+      }
+    }
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
   useEffect(() => {
     function closeMenus(event: KeyboardEvent) {
       if (event.key !== "Escape") return;
@@ -311,13 +323,14 @@ export default function Navbar() {
 
             {/* Dropdown for Circuits */}
             <div
+              ref={circuitsRef}
               className="relative"
               onMouseEnter={() => setCircuitsDropdownOpen(true)}
               onMouseLeave={() => setCircuitsDropdownOpen(false)}
             >
               <button
                 type="button"
-                onClick={() => setCircuitsDropdownOpen(!circuitsDropdownOpen)}
+                onClick={() => setCircuitsDropdownOpen((prev) => !prev)}
                 aria-expanded={circuitsDropdownOpen}
                 aria-controls="circuits-navigation"
                 className={`flex shrink-0 cursor-pointer items-center gap-1.5 whitespace-nowrap rounded-lg px-2.5 py-2 text-sm font-semibold tracking-wide transition-all duration-200 ${
@@ -331,23 +344,30 @@ export default function Navbar() {
               </button>
 
               {circuitsDropdownOpen && (
-                <div id="circuits-navigation" className="absolute left-0 mt-1 w-80 rounded-lg border border-slate-200 bg-white p-2.5 shadow-[0_12px_32px_rgba(15,23,42,0.12)] animate-in fade-in slide-in-from-top-2 duration-200">
-                  {circuits.map((item) => (
-                    <Link
-                      key={item.href}
-                      href={item.href}
-                      aria-current={isActive(item.href) ? "page" : undefined}
-                      onClick={() => setCircuitsDropdownOpen(false)}
-                      className={`flex items-center rounded-md px-4 py-3 text-sm font-medium transition-colors duration-200 ${
-                        isActive(item.href)
-                          ? "bg-orange-50 text-orange-700"
-                          : "text-brand-slate hover:bg-brand-orange/5 hover:text-brand-orange"
-                      }`}
-                    >
-                      <Mountain className="mr-3 h-4 w-4 text-brand-orange/70" />
-                      {item.name}
-                    </Link>
-                  ))}
+                <div
+                  id="circuits-navigation"
+                  className="absolute left-0 top-full w-80 z-50"
+                >
+                  <div className="pt-1.5">
+                  <div className="rounded-lg border border-slate-200 bg-white p-2.5 shadow-[0_12px_32px_rgba(15,23,42,0.12)] animate-in fade-in slide-in-from-top-2 duration-200">
+                    {circuits.map((item) => (
+                      <Link
+                        key={item.href}
+                        href={item.href}
+                        aria-current={isActive(item.href) ? "page" : undefined}
+                        onClick={() => setCircuitsDropdownOpen(false)}
+                        className={`flex items-center rounded-md px-4 py-3 text-sm font-medium transition-colors duration-200 ${
+                          isActive(item.href)
+                            ? "bg-orange-50 text-orange-700 font-bold"
+                            : "text-brand-slate hover:bg-brand-orange/5 hover:text-brand-orange"
+                        }`}
+                      >
+                        <Mountain className="mr-3 h-4 w-4 text-brand-orange/70" />
+                        {item.name}
+                      </Link>
+                    ))}
+                  </div>
+                  </div>
                 </div>
               )}
             </div>

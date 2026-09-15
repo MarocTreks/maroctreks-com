@@ -4,8 +4,9 @@ import HomepagePremiumContent from "@/components/HomepagePremiumContent";
 import { createMetadata, JsonLd, SITE_URL } from "@/lib/seo";
 
 export const metadata = createMetadata({
-  title: "Trekking au Maroc avec guide local",
-  description: "Treks privés au Maroc avec Mohamed Ait Tadrart, guide local : Toubkal, M’Goun, Atlas, Sahara et circuits sur mesure adaptés à votre niveau.",
+  title: "Trek au Maroc avec Guide Local Diplômé | Atlas & Sahara",
+  description:
+    "Organisez votre trek au Maroc en direct avec Mohamed, guide certifié à Imlil : Toubkal, M'Goun, Sahara. Circuits sur mesure sans intermédiaire. Devis gratuit !",
   path: "/",
 });
 
@@ -15,9 +16,9 @@ export default function Home() {
     "@type": "WebPage",
     "@id": `${SITE_URL}/#webpage`,
     url: SITE_URL,
-    name: "Trekking au Maroc avec guide local",
+    name: "Trek au Maroc avec Guide Local Diplômé",
     description:
-      "Treks guidés dans l’Atlas, ascension du Toubkal, massif du M’Goun et randonnées dans le désert marocain.",
+      "Treks privés et randonnées accompagnées dans le Haut Atlas, ascension du Toubkal (4 167 m), massif du M’Goun et désert du Sahara.",
     inLanguage: "fr-FR",
     isPartOf: { "@id": `${SITE_URL}/#website` },
     about: { "@id": `${SITE_URL}/#organization` },

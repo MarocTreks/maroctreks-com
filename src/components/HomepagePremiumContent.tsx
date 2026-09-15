@@ -26,6 +26,7 @@ import {
   Waves,
 } from "lucide-react";
 import TourCard from "@/components/TourCard";
+import GoogleReviewsSection from "@/components/GoogleReviewsSection";
 import { cloudinaryImage } from "@/lib/tour-media";
 import { getToursByCategory } from "@/lib/tours";
 
@@ -849,6 +850,8 @@ export default function HomepagePremiumContent() {
           </div>
         </div>
       </section>
+
+      <GoogleReviewsSection />
 
       <section className="border-y border-stone-200 bg-[#f6f1e8] py-16 text-slate-950 sm:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">

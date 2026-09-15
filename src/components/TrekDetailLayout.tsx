@@ -115,9 +115,22 @@ export default function TrekDetailLayout({
     ],
   };
 
+  const faqSchema = faqs.length > 0 ? {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: faq.answer,
+      },
+    })),
+  } : null;
+
   return (
     <>
-      <JsonLd data={[tripSchema, breadcrumbSchema]} />
+      <JsonLd data={[tripSchema, breadcrumbSchema, ...(faqSchema ? [faqSchema] : [])]} />
       <Navbar />
 
       <main className="flex-grow bg-brand-sand">
