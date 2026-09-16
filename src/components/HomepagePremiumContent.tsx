@@ -239,6 +239,7 @@ export default function HomepagePremiumContent() {
   const [heroSlide, setHeroSlide] = useState(0);
   const [activeRegion, setActiveRegion] = useState(regions[0].id);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
+  const [isIntroductionExpanded, setIsIntroductionExpanded] = useState(false);
   const [canScrollRegionsLeft, setCanScrollRegionsLeft] = useState(false);
   const [canScrollRegionsRight, setCanScrollRegionsRight] = useState(true);
   const regionTabsRef = useRef<HTMLDivElement>(null);
@@ -388,58 +389,105 @@ export default function HomepagePremiumContent() {
 
       <section
         aria-labelledby="homepage-introduction"
-        className="border-y border-slate-200 bg-[#edf3f1] py-16 sm:py-20"
+        className="relative overflow-hidden border-y border-slate-200 bg-[#edf3f1] py-14 sm:py-20"
       >
+        <div
+          className="pointer-events-none absolute -right-24 -top-24 h-80 w-80 rounded-full bg-white/45 blur-3xl"
+          aria-hidden="true"
+        />
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid gap-8 lg:grid-cols-[0.85fr_1.65fr] lg:gap-20">
+          <div className="relative grid gap-10 lg:grid-cols-[0.9fr_1.55fr] lg:gap-20">
             <div>
               <p className="flex items-center gap-2 text-xs font-extrabold uppercase tracking-[0.18em] text-orange-700">
                 <Compass className="h-4 w-4" aria-hidden="true" />
-                Voyages à pied au Maroc
+                Trekking et randonnée au Maroc
               </p>
               <h2
                 id="homepage-introduction"
                 className="mt-4 max-w-md font-display text-3xl font-black leading-tight text-slate-950 sm:text-4xl"
               >
-                Des sentiers de l’Atlas aux dunes du Sahara
+                Des treks au Maroc sur mesure, guidés par une équipe locale
               </h2>
               <div className="mt-7 h-1 w-16 bg-orange-600" aria-hidden="true" />
-              <p className="mt-6 max-w-sm text-sm font-semibold leading-6 text-slate-700">
-                Circuits privés ou en petit groupe, accompagnés et organisés
-                directement par une équipe locale.
-              </p>
+              <div className="mt-7 grid max-w-md grid-cols-2 gap-3">
+                <div className="rounded-lg border border-white/80 bg-white/60 p-4 shadow-[0_6px_20px_rgba(15,23,42,0.04)]">
+                  <BadgeCheck className="h-5 w-5 text-orange-700" aria-hidden="true" />
+                  <p className="mt-2 text-sm font-extrabold text-slate-900">Guide diplômé</p>
+                  <p className="mt-1 text-xs leading-5 text-slate-600">Plus de 20 ans de terrain</p>
+                </div>
+                <div className="rounded-lg border border-white/80 bg-white/60 p-4 shadow-[0_6px_20px_rgba(15,23,42,0.04)]">
+                  <Route className="h-5 w-5 text-orange-700" aria-hidden="true" />
+                  <p className="mt-2 text-sm font-extrabold text-slate-900">100% sur mesure</p>
+                  <p className="mt-1 text-xs leading-5 text-slate-600">À votre rythme, sans intermédiaire</p>
+                </div>
+              </div>
             </div>
 
-            <div className="max-w-3xl space-y-5 text-base leading-7 text-slate-700 sm:text-lg sm:leading-8">
-              <p>
-                Maroc Treks est une équipe locale spécialisée dans le{" "}
+            <div className="max-w-3xl text-base leading-7 text-slate-700 sm:text-lg sm:leading-8">
+              <p className="text-lg font-medium leading-8 text-slate-800 sm:text-xl sm:leading-9">
+                Maroc Treks est une agence locale de trekking basée à
+                Marrakech. Nous créons et accompagnons des randonnées privées
+                et des circuits sur mesure dans tout le Maroc. Vous préparez
+                directement votre voyage avec{" "}
                 <Link
-                  href="/circuits"
+                  href="/qui-sommes-nous"
                   className="font-semibold text-slate-950 underline decoration-orange-500 decoration-2 underline-offset-4 transition-colors hover:text-orange-700"
                 >
-                  trekking et la randonnée au Maroc
+                  Mohamed Ait Tadrart
                 </Link>
-                . Depuis Marrakech, Mohamed Ait Tadrart, guide de montagne
-                diplômé originaire du Haut Atlas, conçoit et accompagne des
-                itinéraires dans le massif du Toubkal, le Haut Atlas central et
-                le M’Goun, les vallées du Dadès et des Roses, l’Anti-Atlas, le
-                Moyen Atlas, le désert marocain et la côte atlantique.
+                , guide de montagne diplômé, originaire du Haut Atlas et fort
+                de plus de 20 ans d’expérience sur le terrain.
               </p>
-              <p>
-                Chaque voyage est préparé selon votre niveau, vos dates et le
-                rythme de votre groupe. L’équipe organise les transferts, les
-                gîtes et maisons d’hôtes, les bivouacs, les repas ainsi que le
-                transport des bagages par mules ou dromadaires selon la région.
-                Vous pouvez choisir une ascension, une traversée itinérante, une
-                randonnée en famille ou demander un circuit sur mesure. Des{" "}
-                <Link
-                  href="/excursions"
-                  className="font-semibold text-slate-950 underline decoration-orange-500 decoration-2 underline-offset-4 transition-colors hover:text-orange-700"
-                >
-                  excursions depuis Marrakech
-                </Link>{" "}
-                sont également proposées sur demande.
-              </p>
+
+              <div
+                id="homepage-introduction-details"
+                className={`${isIntroductionExpanded ? "block" : "hidden"} mt-5 space-y-5 sm:block`}
+              >
+                <p>
+                  Des sommets du Toubkal et du M’Goun aux vallées amazighes,
+                  de l’Anti-Atlas aux dunes du Sahara et à la côte atlantique,
+                  chaque{" "}
+                  <Link
+                    href="/circuits"
+                    className="font-semibold text-slate-950 underline decoration-orange-500 decoration-2 underline-offset-4 transition-colors hover:text-orange-700"
+                  >
+                    circuit de trekking au Maroc
+                  </Link>{" "}
+                  est adapté à votre niveau, à vos dates et au rythme de votre
+                  groupe. Ascension du Toubkal, traversée du Haut Atlas,
+                  randonnée dans le M’Goun ou trek dans le désert : vous marchez
+                  avec des guides et une équipe issus des régions traversées.
+                </p>
+                <p>
+                  Transferts, hébergements, bivouacs, repas et transport des
+                  bagages par mules ou dromadaires : la logistique est prise en
+                  charge du départ au retour. Que vous voyagiez en couple, en
+                  famille, entre amis ou avec un club de randonnée, l’itinéraire
+                  peut être personnalisé. Des{" "}
+                  <Link
+                    href="/excursions"
+                    className="font-semibold text-slate-950 underline decoration-orange-500 decoration-2 underline-offset-4 transition-colors hover:text-orange-700"
+                  >
+                    excursions privées depuis Marrakech
+                  </Link>
+                  {" "}sont également proposées pour découvrir Imlil et les
+                  vallées de l’Atlas à la journée.
+                </p>
+              </div>
+
+              <button
+                type="button"
+                aria-expanded={isIntroductionExpanded}
+                aria-controls="homepage-introduction-details"
+                onClick={() => setIsIntroductionExpanded((current) => !current)}
+                className="mt-5 inline-flex min-h-11 items-center gap-2 rounded-md border border-slate-300 bg-white/70 px-4 text-sm font-extrabold text-slate-900 transition hover:border-orange-300 hover:bg-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-500 sm:hidden"
+              >
+                {isIntroductionExpanded ? "Réduire" : "Lire la suite"}
+                <ChevronDown
+                  className={`h-4 w-4 transition-transform ${isIntroductionExpanded ? "rotate-180" : ""}`}
+                  aria-hidden="true"
+                />
+              </button>
             </div>
           </div>
 
