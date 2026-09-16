@@ -128,7 +128,7 @@
     "notIncluded": [
       "Assurance voyage (obligatoire).",
       "Dépenses personnelles et boissons non alcoolisées.",
-      "Pourboires pour le guide et l'équipe de muletiers."
+      "Pourboires"
     ],
     "faqs": [
       {
@@ -486,7 +486,7 @@
     "notIncluded": [
       "L'assurance annulation et assistance (Obligatoire!)",
       "Les boissons et dépenses personnelles",
-      "Les pourboires pour l'équipe locale",
+      "Pourboires",
       "Les repas en ville"
     ],
     "faqs": [
@@ -1217,7 +1217,7 @@
     "notIncluded": [
       "L'assurance annulation et assistance (Obligatoire!)",
       "Les boissons et dépenses personnelles",
-      "Les pourboires pour l'équipe locale",
+      "Pourboires",
       "Les repas en ville"
     ],
     "faqs": [
@@ -1450,7 +1450,7 @@
     "notIncluded": [
       "L'assurance annulation et assistance (Obligatoire!)",
       "Les boissons et dépenses personnelles",
-      "Les pourboires pour l'équipe locale",
+      "Pourboires",
       "Les repas en ville"
     ],
     "faqs": [
@@ -1754,7 +1754,7 @@
       "L’assurance annulation et assistance",
       "Les boissons et dépenses personnelles",
       "Les repas à Marrakech",
-      "Les pourboires pour l’équipe locale"
+      "Pourboires"
     ],
     "faqs": [
       {
