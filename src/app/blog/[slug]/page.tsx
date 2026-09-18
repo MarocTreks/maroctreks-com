@@ -88,6 +88,16 @@ export default async function BlogPostPage({ params }: Props) {
                       {section.bullets.map((bullet) => <li key={bullet} className="flex gap-3 text-[0.95rem] font-semibold leading-6 text-slate-700"><span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-orange-600 text-white"><Check className="h-3.5 w-3.5" /></span>{bullet}</li>)}
                     </ul>
                   )}
+                  {section.links && (
+                    <div className="mt-7 flex flex-wrap gap-3">
+                      {section.links.map((link) => (
+                        <Link key={link.href} href={link.href} className="inline-flex items-center gap-2 rounded-full border border-orange-200 bg-white px-4 py-2.5 text-sm font-extrabold text-orange-700 shadow-sm transition hover:border-orange-400 hover:bg-orange-50">
+                          {link.label}
+                          <ArrowRight className="h-4 w-4" aria-hidden="true" />
+                        </Link>
+                      ))}
+                    </div>
+                  )}
                 </section>
               ))}
 
