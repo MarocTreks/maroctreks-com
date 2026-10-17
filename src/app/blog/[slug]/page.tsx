@@ -19,7 +19,13 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const post = getBlogPost((await params).slug);
   const title = post?.seoTitle ?? post?.title;
-  return post && title ? createMetadata({ title, description: post.description, path: `/blog/${post.slug}`, image: post.image }) : {};
+  return post && title ? createMetadata({
+    title,
+    description: post.description,
+    path: `/blog/${post.slug}`,
+    image: post.image,
+    article: { publishedTime: post.publishedAt, modifiedTime: post.updatedAt, authors: [`${SITE_URL}/qui-sommes-nous`] },
+  }) : {};
 }
 
 function sectionId(heading: string) {
@@ -30,8 +36,13 @@ export default async function BlogPostPage({ params }: Props) {
   const post = getBlogPost((await params).slug);
   if (!post) notFound();
 
-  const articleSchema = { "@context": "https://schema.org", "@type": "BlogPosting", "@id": `${SITE_URL}/blog/${post.slug}#article`, headline: post.title, description: post.description, image: post.image, datePublished: post.publishedAt, dateModified: post.updatedAt, inLanguage: "fr-FR", author: { "@id": `${SITE_URL}/#organization` }, publisher: { "@id": `${SITE_URL}/#organization` }, mainEntityOfPage: `${SITE_URL}/blog/${post.slug}` };
+  const articleSchema = { "@context": "https://schema.org", "@type": "BlogPosting", "@id": `${SITE_URL}/blog/${post.slug}#article`, headline: post.title, description: post.description, image: post.image, datePublished: post.publishedAt, dateModified: post.updatedAt, inLanguage: "fr-FR", author: { "@id": `${SITE_URL}/qui-sommes-nous#person`, name: "Mohamed Ait Tadrart", url: `${SITE_URL}/qui-sommes-nous` }, publisher: { "@id": `${SITE_URL}/#organization` }, mainEntityOfPage: `${SITE_URL}/blog/${post.slug}` };
   const breadcrumbSchema = { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: "Accueil", item: SITE_URL }, { "@type": "ListItem", position: 2, name: "Blog", item: `${SITE_URL}/blog` }, { "@type": "ListItem", position: 3, name: post.title, item: `${SITE_URL}/blog/${post.slug}` }] };
+  const relatedPosts = [
+    ...blogPosts.filter((candidate) => candidate.slug !== post.slug && candidate.category === post.category),
+    ...blogPosts.filter((candidate) => candidate.slug !== post.slug && candidate.category !== post.category),
+  ].slice(0, 2);
+  const formatDate = (date: string) => new Intl.DateTimeFormat("fr-FR", { day: "numeric", month: "long", year: "numeric", timeZone: "UTC" }).format(new Date(date));
 
   return (
     <>
@@ -50,8 +61,9 @@ export default async function BlogPostPage({ params }: Props) {
                 <h1 className="mt-4 font-display text-3xl font-black leading-[1.04] tracking-tight sm:mt-6 sm:text-6xl lg:text-7xl">{post.title}</h1>
                 <p className="mt-3 line-clamp-3 max-w-3xl text-sm leading-6 text-slate-200 sm:mt-6 sm:block sm:text-xl sm:leading-8">{post.excerpt}</p>
                 <div className="mt-4 flex flex-wrap items-center gap-x-4 gap-y-2 border-t border-white/20 pt-4 text-xs font-semibold text-slate-300 sm:mt-8 sm:gap-x-6 sm:gap-y-3 sm:pt-6 sm:text-sm">
-                  <span className="inline-flex items-center gap-2"><UserRound className="h-4 w-4 text-orange-400" />L’équipe Maroc Treks</span>
+                  <Link href="/qui-sommes-nous" className="inline-flex items-center gap-2 transition hover:text-white"><UserRound className="h-4 w-4 text-orange-400" />Mohamed Ait Tadrart</Link>
                   <span className="inline-flex items-center gap-2"><Clock3 className="h-4 w-4 text-orange-400" />{post.readingTime} de lecture</span>
+                  <span>Publié le <time dateTime={post.publishedAt}>{formatDate(post.publishedAt)}</time></span>
                   <span className="hidden items-center gap-2 sm:inline-flex"><Compass className="h-4 w-4 text-orange-400" />Conseils de guides locaux</span>
                 </div>
               </div>
@@ -100,6 +112,20 @@ export default async function BlogPostPage({ params }: Props) {
                   )}
                 </section>
               ))}
+
+              <section className="mt-14 border-t border-stone-300 pt-10" aria-labelledby="related-guides-heading">
+                <p className="text-xs font-black uppercase tracking-[0.18em] text-orange-700">Continuer à préparer votre voyage</p>
+                <h2 id="related-guides-heading" className="mt-3 font-display text-3xl font-black text-slate-950">Guides pratiques associés</h2>
+                <div className="mt-6 grid gap-4 sm:grid-cols-2">
+                  {relatedPosts.map((related) => (
+                    <Link key={related.slug} href={`/blog/${related.slug}`} className="group rounded-2xl border border-stone-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:border-orange-300">
+                      <span className="text-xs font-black uppercase tracking-[0.14em] text-orange-700">{related.category}</span>
+                      <h3 className="mt-2 font-display text-xl font-black leading-tight text-slate-950 group-hover:text-orange-700">{related.title}</h3>
+                      <span className="mt-4 inline-flex items-center gap-2 text-sm font-extrabold text-orange-700">Lire le guide <ArrowRight className="h-4 w-4" /></span>
+                    </Link>
+                  ))}
+                </div>
+              </section>
 
               <aside className="relative mt-16 overflow-hidden rounded-[1.75rem] bg-slate-950 p-8 text-white shadow-[0_24px_60px_rgba(15,23,42,0.22)] sm:p-11">
                 <div className="absolute -right-16 -top-16 h-56 w-56 rounded-full border border-orange-400/20" />

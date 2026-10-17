@@ -13,13 +13,20 @@ const routes = [
   "/qui-sommes-nous",
   "/contact",
   "/blog",
-  ...blogPosts.map((post) => `/blog/${post.slug}`),
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  return [...new Set(routes)].map((path, index) => ({
+  const sitePages = [...new Set(routes)].map((path) => ({
     url: `${SITE_URL}${path}`,
-    changeFrequency: index === 0 ? "weekly" : index < 8 ? "monthly" : "yearly",
-    priority: index === 0 ? 1 : index < 8 ? 0.8 : 0.6,
+    changeFrequency: path === "" || path === "/blog" ? "weekly" as const : "monthly" as const,
+    priority: path === "" ? 1 : path === "/blog" || tourCategories.some((category) => category.path === path) ? 0.8 : 0.7,
   }));
+  const articles = blogPosts.map((post) => ({
+    url: `${SITE_URL}/blog/${post.slug}`,
+    lastModified: new Date(post.updatedAt),
+    changeFrequency: "monthly" as const,
+    priority: 0.7,
+  }));
+
+  return [...sitePages, ...articles];
 }

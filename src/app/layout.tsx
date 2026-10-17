@@ -32,11 +32,6 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: "/",
-    languages: {
-      "fr-FR": "/",
-      "fr-BE": "/",
-      "fr-CH": "/",
-    },
   },
   openGraph: { type: "website", locale: "fr_FR", url: SITE_URL, siteName: SITE_NAME, title: "Trekking au Maroc avec guide local | Maroc Treks", description: DEFAULT_DESCRIPTION },
   twitter: { card: "summary_large_image", title: "Trekking au Maroc avec guide local | Maroc Treks", description: DEFAULT_DESCRIPTION },
@@ -59,7 +54,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     email: "tadrartmed@gmail.com",
     telephone: "+212667591933",
     description: DEFAULT_DESCRIPTION,
-    founder: { "@type": "Person", name: "Mohamed Ait Tadrart" },
+    founder: { "@id": `${SITE_URL}/qui-sommes-nous#person` },
     address: {
       "@type": "PostalAddress",
       streetAddress: "Douar Armed, Imlil",
@@ -70,59 +65,35 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     },
     areaServed: { "@type": "Country", name: "Maroc" },
     contactPoint: { "@type": "ContactPoint", telephone: "+212667591933", email: "tadrartmed@gmail.com", contactType: "reservations", availableLanguage: ["fr", "en", "es", "nl"] },
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: "5.0",
-      reviewCount: "5",
-      bestRating: "5",
-      worstRating: "1",
-    },
-    review: [
-      {
-        "@type": "Review",
-        author: { "@type": "Person", name: "Fabienne Joveneau" },
-        reviewRating: { "@type": "Rating", ratingValue: "5" },
-        reviewBody: "I'm incredibly lucky to have already done six treks with Mohamed and his team. It's pure bliss, nothing but kindness. Complete safety. Paradise-like landscapes.",
-      },
-      {
-        "@type": "Review",
-        author: { "@type": "Person", name: "Eve Tondeur" },
-        reviewRating: { "@type": "Rating", ratingValue: "5" },
-        reviewBody: "I've done six treks with Mohammed over the past twenty years (Jebel Sahro, Jebel Siroua, the desert and Merzouga, Mgoun, along the coast, and Toubkal), and I can attest to his professionalism.",
-      },
-      {
-        "@type": "Review",
-        author: { "@type": "Person", name: "Marie Christine Wall" },
-        reviewRating: { "@type": "Rating", ratingValue: "5" },
-        reviewBody: "A week-long trip with CAFGI in June 2025. Delicious food, efficient muleteers. Mohamed, the guide, set a steady and rather slow pace which allowed the entire group to reach the summit of Toubkal without difficulty.",
-      },
-      {
-        "@type": "Review",
-        author: { "@type": "Person", name: "Gorete Matias" },
-        reviewRating: { "@type": "Rating", ratingValue: "5" },
-        reviewBody: "Mohamed and his team are excellent professionals. The entire trek to Toubkal was superbly organized. A memorable experience!",
-      },
-      {
-        "@type": "Review",
-        author: { "@type": "Person", name: "Luisa Piccinini" },
-        reviewRating: { "@type": "Rating", ratingValue: "5" },
-        reviewBody: "Went on a trek two years ago with a CAF group. Great experience. Thanks to the whole team. Luisa",
-      },
+    sameAs: [
+      "https://maps.app.goo.gl/f91WPmdf9oBbfjFD6?g_st=ic",
+      "https://www.tripadvisor.co.uk/Attraction_Review-g293734-d34037482-Reviews-Maroc_Treks-Marrakech_Marrakech_Safi.html",
     ],
+  };
+  const person = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "@id": `${SITE_URL}/qui-sommes-nous#person`,
+    name: "Mohamed Ait Tadrart",
+    url: `${SITE_URL}/qui-sommes-nous`,
+    jobTitle: "Guide de montagne diplômé",
+    worksFor: { "@id": `${SITE_URL}/#organization` },
+    knowsAbout: ["Trekking au Maroc", "Haut Atlas", "Toubkal", "M'Goun", "Sahara marocain"],
   };
   const website = {
     "@context": "https://schema.org", "@type": "WebSite", "@id": `${SITE_URL}/#website`,
-    url: SITE_URL, name: SITE_NAME, inLanguage: "fr-FR", publisher: { "@id": `${SITE_URL}/#organization` },
+    url: SITE_URL, name: SITE_NAME, alternateName: ["MarocTreks", "maroctreks.com"], inLanguage: "fr-FR", publisher: { "@id": `${SITE_URL}/#organization` },
   };
 
   return (
     <html
       lang="fr"
+      translate="no"
       suppressHydrationWarning
-      className={`${inter.variable} ${outfit.variable} h-full antialiased font-sans`}
+      className={`${inter.variable} ${outfit.variable} notranslate h-full antialiased font-sans`}
     >
       <body className="min-h-full flex flex-col bg-brand-sand text-brand-slate">
-        <JsonLd data={[organization, website]} />
+        <JsonLd data={[organization, person, website]} />
         {children}
         <WhatsAppButton />
       </body>

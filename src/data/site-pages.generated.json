@@ -15,11 +15,15 @@
         "La population, principalement berbère (amazigh) , vit du pastoralisme et de l'agriculture. Le Haut Atlas occidental est le massif le plus ancien, constitué de formations jurassiques ou crétacées entaillées de vallées profondes.",
         "Son point culminant est le Jbel Toubkal à 4 167 mètres, visible de Marrakech ce qui constitue un attrait supplémentaire pour cette ville. Le Parc national de Toubkal fut créé en 1942, compte tenu de la biodiversité et de la richesse naturelle du Jbel Toubkal .",
         "L'ascension du Toubkal est une randonnée de haute montagne à 4 167 mètres. Elle demande une bonne condition physique, une acclimatation progressive et un équipement adapté aux conditions. Le mal aigu des montagnes peut toucher les personnes non acclimatées, et la neige ou les névés peuvent persister selon la saison et les conditions météorologiques. L'accompagnement d'un guide qualifié permet d'adapter l'itinéraire et l'équipement.",
-        "Les villages berbères sont accessibles aux randonneurs toute l'année. Les itinéraires proposés sont de 8 à 15 jours avec possibilité de modifier ces itinéraires sur le nombre de jours choisi, allant de 3 à 11 jours de marche . Détails d' itinéraire sur demande."
+        "Les villages berbères sont accessibles aux randonneurs toute l'année. Les itinéraires proposés vont de 6 à 15 jours, avec la possibilité d’adapter la durée et le nombre de jours de marche. Détails d’itinéraire sur demande."
       ],
       "collectionHeading": "Expériences de Voyage Haut Atlas Toubkal",
       "collectionDescription": "Réservez votre prochaine aventure avec nos circuits exclusifs de randonnée dans l'Atlas",
       "collectionItems": [
+        {
+          "slug": "circuit-toubkal-6-jours-lac-ifni",
+          "title": "Circuit du Toubkal en 6 jours par Tacheddirt et le lac d’Ifni"
+        },
         {
           "slug": "randonnee-dans-latlas",
           "title": "Randonnée dans l'Atlas - Ascension du Toubkal"

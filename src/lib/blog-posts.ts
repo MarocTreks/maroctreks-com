@@ -1,4 +1,5 @@
 import { cloudinaryImage } from "@/lib/tour-media";
+import { trekBlogPosts } from "@/lib/trek-blog-posts";
 
 export type BlogSection = {
   heading: string;
@@ -25,6 +26,104 @@ export type BlogPost = {
 };
 
 export const blogPosts: BlogPost[] = [
+  {
+    slug: "trek-vallee-ait-bouguemez-4-5-jours",
+    title: "Trek dans la vallée des Aït Bouguemez : 4 ou 5 jours au cœur de la Vallée Heureuse",
+    seoTitle: "Trek Aït Bouguemez 4 ou 5 jours | Vallée Heureuse",
+    excerpt: "Villages amazighs, champs cultivés et montagnes du Haut Atlas : deux formules faciles de 4 ou 5 jours, au départ de Marrakech.",
+    description: "Découvrez notre trek dans la vallée des Aït Bouguemez au départ de Marrakech : itinéraires de 4 ou 5 jours, randonnées faciles, nuits en gîte et rencontres locales.",
+    category: "Aït Bouguemez",
+    publishedAt: "2026-10-17",
+    updatedAt: "2026-10-17",
+    readingTime: "9 min",
+    image: cloudinaryImage("190c02b9-9459-4a76-996a-1bccabd3f975_gcdjdh"),
+    imageAlt: "Maisons en terre dans un village de la vallée des Aït Bouguemez",
+    relatedHref: "/contact",
+    relatedLabel: "Demander un devis personnalisé",
+    sections: [
+      {
+        heading: "La vallée des Aït Bouguemez, un joyau du Haut Atlas",
+        paragraphs: [
+          "Située dans le Haut Atlas central, la vallée des Aït Bouguemez est l’une des plus belles destinations de randonnée du Maroc. Surnommée la Vallée Heureuse, elle offre des paysages de champs et de vergers, des villages traditionnels en terre et de magnifiques panoramas sur les montagnes environnantes.",
+          "Ce séjour est idéal pour les voyageurs qui souhaitent découvrir le Maroc rural, marcher à leur rythme et partager des moments avec les habitants. Au départ de Marrakech, vous explorez la vallée à pied avec un guide local et profitez de repas préparés pendant les randonnées.",
+        ],
+        bullets: [
+          "Formule de 4 jours et 3 nuits avec deux journées complètes de randonnée",
+          "Formule de 5 jours et 4 nuits avec trois journées complètes de randonnée",
+          "Hébergement en gîte traditionnel dans la Vallée Heureuse",
+          "Randonnées faciles d’environ 3 à 5 heures, adaptées au groupe",
+        ],
+      },
+      {
+        heading: "Formule 1 : 4 jours et 3 nuits au départ de Marrakech",
+        paragraphs: [
+          "Cette formule concentre l’essentiel de la Vallée Heureuse en quatre jours. Après le trajet depuis Marrakech, deux journées de marche permettent de découvrir des secteurs différents avant le retour.",
+          "Les temps de marche sont indicatifs. Le guide ajuste les parcours au niveau du groupe, à la saison et aux conditions du jour.",
+        ],
+        bullets: [
+          "Jour 1 — Marrakech – vallée des Aït Bouguemez. Départ le matin via Azilal pour environ 241 km et 4 h 30 de route. Installation dans un gîte traditionnel, puis petite promenade selon l’heure d’arrivée. Dîner et nuit au gîte.",
+          "Jour 2 — Première randonnée dans la Vallée Heureuse. Marche de 4 à 5 heures à travers villages amazighs, champs cultivés et vergers. Déjeuner préparé en pleine nature, puis retour au gîte.",
+          "Jour 3 — Randonnée et patrimoine amazigh. Nouvel itinéraire entre villages, chemins agricoles et environs de Sidi Moussa. Déjeuner pendant la marche et retour au gîte après 4 à 5 heures de randonnée.",
+          "Jour 4 — Vallée des Aït Bouguemez – Marrakech. Petit-déjeuner, trajet de retour à travers le Haut Atlas et arrivée à Marrakech.",
+        ],
+      },
+      {
+        heading: "Formule 2 : 5 jours et 4 nuits au départ de Marrakech",
+        paragraphs: [
+          "La formule de cinq jours ajoute une journée complète de randonnée. Elle laisse davantage de temps pour explorer les sentiers reliant les villages et profiter de l’atmosphère paisible de la vallée.",
+          "Le dernier parcours est choisi avec le guide en fonction de vos envies et de votre niveau, ce qui rend cette formule particulièrement souple.",
+        ],
+        bullets: [
+          "Jour 1 — Marrakech – vallée des Aït Bouguemez. Environ 241 km et 4 h 30 de route, installation au gîte et promenade facultative dans les environs.",
+          "Jour 2 — Randonnée de 4 à 5 heures à travers villages traditionnels, cultures et vergers. Déjeuner préparé pendant la marche, dîner et nuit au gîte.",
+          "Jour 3 — Deuxième randonnée de 4 à 5 heures dans un autre secteur, entre sentiers villageois, terres agricoles, patrimoine local et points de vue sur les montagnes.",
+          "Jour 4 — Troisième randonnée de 3 à 5 heures, adaptée à la saison et au groupe. Déjeuner pendant la marche et dernière nuit au gîte.",
+          "Jour 5 — Retour à Marrakech par la vallée d’Aït Bou Oulli et Demnate, environ 185 km et 4 heures de route.",
+        ],
+      },
+      {
+        heading: "Des nuits en gîte traditionnel",
+        paragraphs: [
+          "Pendant le séjour, vous êtes accueillis dans un gîte traditionnel de la vallée. Cet hébergement simple et chaleureux permet de découvrir l’hospitalité locale et de partager des repas marocains préparés avec des produits de la région.",
+          "La formule de quatre jours comprend trois nuits en gîte ; celle de cinq jours en comprend quatre. L’hébergement exact est confirmé selon les disponibilités et l’itinéraire retenu.",
+        ],
+      },
+      {
+        heading: "Niveau de randonnée et accompagnement",
+        paragraphs: [
+          "Ces circuits s’adressent aux personnes qui souhaitent découvrir la montagne à pied sans entreprendre une ascension technique. Le niveau est facile, sous réserve de choisir un itinéraire adapté à la condition physique du groupe.",
+          "Un guide professionnel local accompagne les randonnées. Les repas de midi sont préparés par un cuisinier, avec l’aide d’un muletier lorsque l’organisation le prévoit. Distances, dénivelés et temps de marche définitifs sont confirmés après le choix des parcours.",
+        ],
+        bullets: [
+          "Temps de marche : environ 3 à 5 heures par journée de randonnée",
+          "Dénivelé : variable selon le parcours choisi",
+          "Accompagnement : guide professionnel local",
+          "Repas en randonnée : cuisinier et, selon l’organisation, muletier",
+        ],
+        links: [{ href: "/blog/que-mettre-sac-trek-maroc", label: "Préparer son sac pour le Haut Atlas" }],
+      },
+      {
+        heading: "Pourquoi choisir Maroc Treks ?",
+        paragraphs: [
+          "Avec Maroc Treks, vous découvrez le Haut Atlas au rythme de la marche et des rencontres. Le programme met en valeur les villages amazighs, les paysages de la Vallée Heureuse et le patrimoine rural, tout en restant adaptable à vos envies.",
+          "La durée, les itinéraires de marche et le rythme peuvent être ajustés selon votre groupe. Notre connaissance du terrain nous permet de proposer un séjour cohérent avec la saison et votre expérience.",
+        ],
+        links: [
+          { href: "/haut-atlas-mgoun", label: "Découvrir les treks du Haut Atlas central" },
+          { href: "/randonnee-en-famille-vallee-heureuse-dait-bouguemez-8-jours", label: "Voir aussi le trek famille de 8 jours" },
+        ],
+      },
+      {
+        heading: "Réserver votre trek dans la Vallée Heureuse",
+        paragraphs: [
+          "Choisissez la formule de 4 jours et 3 nuits pour une première découverte avec deux journées complètes de randonnée, ou la formule de 5 jours et 4 nuits pour profiter de trois journées complètes de marche.",
+          "Contactez Maroc Treks avec vos dates, le nombre de participants et votre expérience de la randonnée. Nous vous aiderons à choisir les parcours et vous enverrons un devis personnalisé.",
+        ],
+        links: [{ href: "/contact", label: "Organiser votre trek aux Aït Bouguemez" }],
+      },
+    ],
+  },
+  ...trekBlogPosts,
   {
     slug: "haut-atlas-maroc-guide-complet",
     title: "Haut Atlas au Maroc : le guide complet pour randonner au cœur des montagnes",
@@ -101,6 +200,7 @@ export const blogPosts: BlogPost[] = [
           "Pour ceux qui ne recherchent pas absolument un sommet, les vallées voisines offrent une expérience plus culturelle : plusieurs villages, des gîtes, des cols et un rythme plus progressif.",
         ],
         links: [
+          { href: "/circuit-toubkal-6-jours-lac-ifni", label: "Grande boucle du Toubkal par le lac d’Ifni" },
           { href: "/randonnee-dans-latlas", label: "Voir le Tour complet du Toubkal" },
           { href: "/randonnee-berbere-avec-ascension-du-toubkal-8-jours", label: "Villages amazighs et Toubkal" },
         ],

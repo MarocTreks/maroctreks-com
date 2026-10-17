@@ -20,6 +20,10 @@ const routes = [
   "/blog/meilleure-periode-trekking-maroc",
   "/blog/ascension-toubkal-guide-pratique",
   "/blog/que-mettre-sac-trek-maroc",
+  "/blog/trek-vallee-ait-bouguemez-4-5-jours",
+  "/blog/haut-atlas-maroc-guide-complet",
+  "/blog/trek-imlil-1-jour-depuis-marrakech",
+  "/blog/circuit-toubkal-6-jours-lac-ifni-guide",
   ...tours.map((tour) => tour.path),
 ];
 

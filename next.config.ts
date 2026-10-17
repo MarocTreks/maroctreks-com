@@ -24,8 +24,8 @@ const nextConfig: NextConfig = {
         destination: "/randonnee-moyen-atlas",
         permanent: true,
       },
-      { source: "/:locale(en|es|nl)", destination: "/", permanent: true },
-      { source: "/:locale(en|es|nl)/:path*", destination: "/:path*", permanent: true },
+      { source: "/:locale(fr|en|es|nl)", destination: "/", permanent: true },
+      { source: "/:locale(fr|en|es|nl)/:path*", destination: "/:path*", permanent: true },
     ];
   },
   async headers() {

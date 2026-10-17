@@ -29,6 +29,7 @@ export default async function TourPage({ params }: Props) {
       bannerImage={tour.image}
       bannerImageAlt={tour.imageAlt}
       gallery={tour.gallery}
+      atAGlanceImages={tour.atAGlanceImages}
       duration={tour.duration}
       difficulty={tour.difficulty}
       maxAltitude={tour.maxAltitude}

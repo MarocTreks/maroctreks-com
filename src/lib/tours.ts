@@ -44,6 +44,7 @@ export type Tour = {
   image: string;
   imageAlt: string;
   gallery: TourMediaImage[];
+  atAGlanceImages: TourMediaImage[];
   duration: string;
   difficulty: string;
   maxAltitude: string;
@@ -79,7 +80,7 @@ export type TourCategoryDefinition = {
   seoDescription: string;
 };
 
-type ImportedTour = Omit<Tour, "imageAlt" | "gallery">;
+type ImportedTour = Omit<Tour, "imageAlt" | "gallery" | "atAGlanceImages">;
 
 export const tours: Tour[] = (toursJson as ImportedTour[]).map((tour) => {
   const media = tourMediaBySlug[tour.slug];
@@ -89,10 +90,12 @@ export const tours: Tour[] = (toursJson as ImportedTour[]).map((tour) => {
     image: media?.hero.src ?? tour.image,
     imageAlt: media?.hero.alt ?? `Paysage du circuit ${tour.title} au Maroc`,
     gallery: media?.gallery ?? [],
+    atAGlanceImages: media?.atAGlance ?? [],
   };
 });
 
 const tourSeoTitles: Record<string, string> = {
+  "circuit-toubkal-6-jours-lac-ifni": "Circuit Toubkal 6 Jours par le Lac d’Ifni",
   "randonnee-dans-latlas": "Tour du Toubkal 15 Jours | Trek avec Guide Local",
   "randonnee-berbere-avec-ascension-du-toubkal-8-jours": "Ascension Toubkal 8 Jours | Guide Local Certifié",
   "randonnee-dans-le-haut-atlas-central": "Ascension du M'Goun 10 Jours | Trek Haut Atlas",
@@ -110,6 +113,7 @@ const tourSeoTitles: Record<string, string> = {
 };
 
 const tourSeoDescriptions: Record<string, string> = {
+  "circuit-toubkal-6-jours-lac-ifni": "Trek du Toubkal en 6 jours depuis Imlil par Tacheddirt, Azib Likemt, Amsouzart et le lac d’Ifni. Grande boucle guidée et sommet à 4 167 m.",
   "randonnee-dans-latlas": "Tour du Toubkal en 15 jours avec Mohamed, guide certifié à Imlil. Vallées amazighes, cols d'altitude, lac d'Ifni et ascension du sommet. Devis direct.",
   "randonnee-berbere-avec-ascension-du-toubkal-8-jours": "Ascension du Toubkal (4 167 m) et villages berbères en 8 jours. Guide certifié à Imlil, équipe muletière & pension complète en direct sans intermédiaire.",
   "randonnee-dans-le-haut-atlas-central": "Ascension du M'Goun (4 071 m) et vallées d'Aït Bouguemez en 10 jours. Trek guidé au cœur du Haut Atlas central avec bivouacs et hauts plateaux.",

@@ -10,7 +10,6 @@ export interface GoogleReview {
   avatarBg: string;
   reviewCount: string;
   rating: number;
-  date: string;
   text: string;
 }
 
@@ -20,9 +19,8 @@ export const googleReviews: GoogleReview[] = [
     author: "Fabienne Joveneau",
     initial: "F",
     avatarBg: "bg-[#004D40]",
-    reviewCount: "1 review",
+    reviewCount: "1 avis publié",
     rating: 5,
-    date: "2 weeks ago",
     text: "I'm incredibly lucky to have already done six treks with Mohamed and his team. It's pure bliss, nothing but kindness. Complete safety. Paradise-like landscapes.\n\nBut above all, the spontaneous little details that showcase their kindness and generosity. My most cherished travel memories are undoubtedly with them. I'll be back as soon as possible.",
   },
   {
@@ -30,9 +28,8 @@ export const googleReviews: GoogleReview[] = [
     author: "Eve Tondeur",
     initial: "E",
     avatarBg: "bg-[#D84315]",
-    reviewCount: "6 reviews",
+    reviewCount: "6 avis publiés",
     rating: 5,
-    date: "a month ago",
     text: "I've done six treks with Mohammed over the past twenty years (Jebel Sahro, Jebel Siroua, the desert and Merzouga, Mgoun, along the coast, and Toubkal), and I can attest to his professionalism. The treks are very well organized, comfortable, with luggage transport, excellent food, and above all, a friendly and attentive guide and a team always ready to please.\n\nJust a little tip: a lightweight inflatable mattress is a great addition to the ones provided. Enjoy your trek with Mohammed!",
   },
   {
@@ -40,9 +37,8 @@ export const googleReviews: GoogleReview[] = [
     author: "Marie Christine Wall",
     initial: "M",
     avatarBg: "bg-[#455A64]",
-    reviewCount: "3 reviews",
+    reviewCount: "3 avis publiés",
     rating: 5,
-    date: "2 weeks ago",
     text: "A week-long trip with CAFGI in June 2025. Delicious food, efficient muleteers. Mohamed, the guide, set a steady and rather slow pace which allowed the entire group to reach the summit of Toubkal without difficulty. Thank you to the whole team.",
   },
   {
@@ -50,9 +46,8 @@ export const googleReviews: GoogleReview[] = [
     author: "Gorete Matias",
     initial: "G",
     avatarBg: "bg-[#4A148C]",
-    reviewCount: "9 reviews",
+    reviewCount: "9 avis publiés",
     rating: 5,
-    date: "3 weeks ago",
     text: "Mohamed and his team are excellent professionals. The entire trek to Toubkal was superbly organized.\n\nA memorable experience!",
   },
   {
@@ -60,17 +55,13 @@ export const googleReviews: GoogleReview[] = [
     author: "Luisa Piccinini",
     initial: "L",
     avatarBg: "bg-[#8D6E63]",
-    reviewCount: "2 reviews",
+    reviewCount: "2 avis publiés",
     rating: 5,
-    date: "3 weeks ago",
     text: "Went on a trek two years ago with a CAF group. Great experience. Thanks to the whole team. Luisa",
   },
 ];
 
 export const GOOGLE_MAPS_LINK = "https://maps.app.goo.gl/f91WPmdf9oBbfjFD6?g_st=ic";
-
-// Duplicated list to enable smooth infinite loop sliding
-const carouselReviews = [...googleReviews, ...googleReviews];
 
 export default function GoogleReviewsSection() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -108,6 +99,10 @@ export default function GoogleReviewsSection() {
   const nextSlide = () => {
     setCurrentIndex((prev) => (prev + 1) % googleReviews.length);
   };
+  const visibleReviews = Array.from(
+    { length: visibleCount },
+    (_, offset) => googleReviews[(currentIndex + offset) % googleReviews.length],
+  );
 
   return (
     <section className="overflow-hidden border-y border-amber-200/60 bg-[#faf6ee] pb-16 pt-10 sm:pb-24 sm:pt-16">
@@ -192,18 +187,13 @@ export default function GoogleReviewsSection() {
             <ChevronRight className="h-6 w-6" />
           </button>
 
-          {/* Carousel Track */}
+          {/* The visible cards are rotated without duplicating review text in the page. */}
           <div className="overflow-hidden rounded-2xl py-4">
-            <div
-              className="flex transition-transform duration-700 ease-in-out"
-              style={{
-                transform: `translateX(-${currentIndex * (100 / visibleCount)}%)`,
-              }}
-            >
-              {carouselReviews.map((review, idx) => (
+            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+              {visibleReviews.map((review) => (
                 <div
-                  key={`${review.id}-${idx}`}
-                  className="w-full shrink-0 px-3 sm:w-1/2 lg:w-1/3"
+                  key={review.id}
+                  className="h-full"
                 >
                   <article className="flex h-full flex-col rounded-2xl border border-stone-200 bg-white p-6 shadow-[0_10px_30px_rgba(15,23,42,0.06)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_20px_40px_rgba(15,23,42,0.1)]">
                     <div>
@@ -228,14 +218,13 @@ export default function GoogleReviewsSection() {
                         </div>
                       </div>
 
-                      {/* Stars & Date */}
                       <div className="mt-4 flex items-center justify-between border-b border-stone-100 pb-3">
                         <div className="flex text-amber-400">
                           {[...Array(review.rating)].map((_, i) => (
                             <Star key={i} className="h-4 w-4 fill-amber-400 text-amber-400" />
                           ))}
                         </div>
-                        <span className="text-xs font-semibold text-slate-400">{review.date}</span>
+                        <span className="text-xs font-semibold text-slate-400">Publié sur Google</span>
                       </div>
 
                       {/* Review Text */}

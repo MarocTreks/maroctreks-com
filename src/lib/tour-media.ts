@@ -6,6 +6,7 @@ export type TourMediaImage = {
 export type TourMedia = {
   hero: TourMediaImage;
   gallery: TourMediaImage[];
+  atAGlance?: TourMediaImage[];
 };
 
 const cloudinaryBase = "https://res.cloudinary.com/s0d4bpze/image/upload";
@@ -19,6 +20,27 @@ export function isCloudinaryImage(src: string) {
 }
 
 export const tourMediaBySlug: Record<string, TourMedia> = {
+  "circuit-toubkal-6-jours-lac-ifni": {
+    hero: {
+      src: cloudinaryImage("f724a9e7-fff1-4b97-9283-b5f6e4683053_ocnmib"),
+      alt: "Lac d’Ifni aux eaux turquoise sur la grande boucle du Toubkal",
+    },
+    gallery: [],
+    atAGlance: [
+      {
+        src: cloudinaryImage("f724a9e7-fff1-4b97-9283-b5f6e4683053_ocnmib"),
+        alt: "Lac d’Ifni aux eaux turquoise au cœur du massif du Toubkal",
+      },
+      {
+        src: cloudinaryImage("4796C7E6-F03B-4847-B866-107C876E9AD7_nfgfpq"),
+        alt: "Randonneurs montant vers les sommets enneigés du massif du Toubkal",
+      },
+      {
+        src: cloudinaryImage("a8d4d94f-942f-497a-a703-02cc997f161f_c5fqte"),
+        alt: "Village amazigh au pied des sommets du Haut Atlas",
+      },
+    ],
+  },
   "randonnee-dans-latlas": {
     hero: {
       src: cloudinaryImage("4796C7E6-F03B-4847-B866-107C876E9AD7_nfgfpq"),
@@ -389,8 +411,8 @@ export const tourMediaBySlug: Record<string, TourMedia> = {
   },
   "grande-traversee-de-latlas-marocain-circuit-de-22-jours": {
     hero: {
-      src: cloudinaryImage("f724a9e7-fff1-4b97-9283-b5f6e4683053_ocnmib"),
-      alt: "Lac d’Ifni aux eaux turquoise sur l’itinéraire de la grande traversée de l’Atlas",
+      src: cloudinaryImage("57930de4-d20a-4f25-983c-d0d95832500a_n5kysm"),
+      alt: "Groupe de randonneurs suivant une rivière dans une vallée du Haut Atlas",
     },
     gallery: [
       {

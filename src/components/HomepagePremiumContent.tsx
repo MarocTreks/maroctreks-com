@@ -167,6 +167,27 @@ const faqs = [
   },
 ];
 
+const editorialGuides = [
+  {
+    href: "/blog/haut-atlas-maroc-guide-complet",
+    title: "Haut Atlas : le guide complet pour préparer son trek",
+    description: "Massifs, vallées, saisons et niveaux : les repères essentiels avant de choisir votre itinéraire.",
+    image: cloudinaryImage("57930de4-d20a-4f25-983c-d0d95832500a_n5kysm"),
+  },
+  {
+    href: "/blog/meilleure-periode-trekking-maroc",
+    title: "Quelle est la meilleure période pour un trek au Maroc ?",
+    description: "Climat, altitude et régions conseillées mois par mois par une équipe locale.",
+    image: cloudinaryImage("96df8436-dbed-4334-a6b4-30cb99570173_lpcbna"),
+  },
+  {
+    href: "/blog/ascension-toubkal-guide-pratique",
+    title: "Ascension du Toubkal : itinéraire et conseils pratiques",
+    description: "Durée, difficulté, acclimatation et équipement pour atteindre le sommet dans de bonnes conditions.",
+    image: cloudinaryImage("0ac3fa52-5129-4287-83c6-8a0bf8bcdfd0_aosoyg"),
+  },
+];
+
 const images = {
   team: cloudinaryImage("0ac3fa52-5129-4287-83c6-8a0bf8bcdfd0_aosoyg"),
   cta: cloudinaryImage("a467fd77-11d7-40a9-af7c-7e6bf5b231cb_op5wf0"),
@@ -322,7 +343,7 @@ export default function HomepagePremiumContent() {
               Guide de montagne breveté
             </p>
             <h1 className="mt-5 max-w-4xl font-display text-4xl font-black leading-[1.04] sm:text-6xl lg:text-7xl">
-              Trekking au Maroc avec un guide local
+              Maroc Treks, trekking au Maroc avec un guide local
             </h1>
             <p className="mt-5 max-w-2xl font-display text-2xl font-bold leading-tight text-white sm:text-3xl">
               Le Maroc à pied, avec ceux qui y vivent.
@@ -825,7 +846,7 @@ export default function HomepagePremiumContent() {
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <p className="text-xs font-extrabold uppercase tracking-[0.18em] text-orange-700">
-              Conseils de nos guides
+              Questions fréquentes
             </p>
             <h2 className="mt-3 font-display text-3xl font-black text-slate-900 sm:text-4xl">
               Préparer votre trek
@@ -859,6 +880,31 @@ export default function HomepagePremiumContent() {
               );
             })}
           </div>
+        </div>
+      </section>
+
+      <section className="bg-white py-16 sm:py-24" aria-labelledby="editorial-guides-heading">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="max-w-3xl">
+            <p className="text-xs font-extrabold uppercase tracking-[0.18em] text-orange-700">Conseils de nos guides</p>
+            <h2 id="editorial-guides-heading" className="mt-3 font-display text-3xl font-black text-slate-950 sm:text-4xl">Préparer votre trek au Maroc</h2>
+            <p className="mt-4 leading-7 text-slate-600">Des guides écrits à partir de notre expérience du terrain pour choisir une région, une saison et un itinéraire adaptés.</p>
+          </div>
+          <div className="mt-9 grid gap-6 md:grid-cols-3">
+            {editorialGuides.map((guide) => (
+              <article key={guide.href} className="group relative overflow-hidden rounded-2xl border border-stone-200 bg-[#fbf8f1] shadow-sm">
+                <div className="relative aspect-[16/10] overflow-hidden">
+                  <Image src={guide.image} alt="" fill sizes="(max-width: 767px) 100vw, 33vw" className="object-cover transition duration-500 group-hover:scale-105" />
+                </div>
+                <div className="p-6">
+                  <h3 className="font-display text-xl font-black leading-tight text-slate-950">{guide.title}</h3>
+                  <p className="mt-3 text-sm leading-6 text-slate-600">{guide.description}</p>
+                  <Link href={guide.href} className="mt-5 inline-flex items-center gap-2 text-sm font-extrabold text-orange-700 after:absolute after:inset-0">Lire le guide <ArrowRight className="h-4 w-4" /></Link>
+                </div>
+              </article>
+            ))}
+          </div>
+          <Link href="/blog" className="mt-8 inline-flex items-center gap-2 font-extrabold text-orange-700">Voir tous les conseils <ArrowRight className="h-4 w-4" /></Link>
         </div>
       </section>
 

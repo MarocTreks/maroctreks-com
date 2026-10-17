@@ -1,5 +1,117 @@
 [
   {
+    "slug": "circuit-toubkal-6-jours-lac-ifni",
+    "path": "/circuit-toubkal-6-jours-lac-ifni",
+    "category": "toubkal",
+    "title": "Circuit du Toubkal en 6 jours par Tacheddirt et le lac d’Ifni",
+    "subtitle": "Grande boucle du Toubkal : villages, hauts cols, lac d’Ifni et sommet à 4 167 m",
+    "image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
+    "duration": "6 jours / 5 nuits",
+    "difficulty": "Soutenu",
+    "maxAltitude": "4 167 m",
+    "bestSeason": "Mai – Octobre",
+    "groupSize": "À partir de 2 personnes",
+    "tourType": "Grande boucle du Toubkal",
+    "price": "Sur demande",
+    "sectionHeadings": {
+      "description": "Description du circuit",
+      "highlights": "Points forts du trek",
+      "itinerary": "Itinéraire détaillé des 6 jours",
+      "included": "Ce qui est inclus",
+      "details": "Détails du circuit",
+      "faqs": "Questions fréquentes",
+      "gallery": "Galerie du trek",
+      "price": "Prix du circuit",
+      "request": "Demander ce circuit"
+    },
+    "detailLabels": {
+      "duration": "Durée du trek",
+      "difficulty": "Niveau",
+      "bestSeason": "Meilleure saison",
+      "groupSize": "Taille du groupe",
+      "tourType": "Type de trek",
+      "price": "Prix"
+    },
+    "description": "Cette grande boucle de 6 jours relie Imlil au sommet du Jbel Toubkal en traversant une partie plus sauvage du massif. L’itinéraire passe par la vallée de l’Imnane et Tacheddirt, franchit les hauts cols de Likemt et d’Ououraine, rejoint le village d’Amsouzart puis le lac d’Ifni avant de monter au refuge par le col de Tizi n’Ouanoums.\n\nContrairement à l’ascension directe depuis Imlil, ce trek permet de contourner le massif et d’en découvrir les versants est et sud. Villages amazighs, pâturages d’altitude, bivouac au bord du lac et trois cols à plus de 3 000 mètres rythment la progression avant l’ascension finale du Toubkal à 4 167 mètres.\n\nCe circuit s’adresse aux marcheurs entraînés, habitués aux journées de 5 à 8 heures et aux dénivelés importants. Il est accompagné par un guide de montagne diplômé et une équipe locale chargée des repas et du transport des bagages lorsque les conditions du sentier le permettent.",
+    "highlights": [
+      "Grande boucle de 6 jours autour du massif du Toubkal au départ d’Imlil",
+      "Traversée de Tacheddirt et des pâturages d’altitude d’Azib Likemt",
+      "Franchissement des cols de Tizi Likemt, Tizi n’Ououraine et Tizi n’Ouanoums",
+      "Nuit près du lac d’Ifni, au pied du versant sud du Toubkal",
+      "Ascension du Jbel Toubkal à 4 167 mètres avec un guide local diplômé",
+      "Gîtes, bivouacs, refuge, pension complète et transport des bagages pendant le trek"
+    ],
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Marrakech – Imlil – Tizi n’Tamatert – Tacheddirt (5 à 6 heures de marche)",
+        "description": "Transfert matinal de Marrakech à Imlil (1 740 m), rencontre avec le guide et l’équipe muletière, puis départ vers le col de Tizi n’Tamatert (2 279 m). La descente traverse la vallée de l’Imnane et le village d’Ouaneskra avant d’atteindre Tacheddirt, à environ 2 300 mètres. Nuit en gîte ou sous tente selon la saison."
+      },
+      {
+        "day": 2,
+        "title": "Tacheddirt – Tizi Likemt – Azib Likemt (6 à 7 heures de marche)",
+        "description": "Une montée soutenue conduit au col de Tizi Likemt (environ 3 550 m), qui offre un vaste panorama sur le massif du Toubkal et la vallée de Tacheddirt. Descente sur un terrain de montagne vers les bergeries et les pâturages d’Azib Likemt, où le camp est installé."
+      },
+      {
+        "day": 3,
+        "title": "Azib Likemt – Tizi n’Ououraine – Amsouzart (6 à 7 heures de marche)",
+        "description": "Le sentier franchit le col de Tizi n’Ououraine, à environ 3 120 mètres, avec des vues sur la face orientale du Toubkal et les reliefs entourant le lac d’Ifni. Une longue descente à travers la vallée mène au village amazigh d’Amsouzart. Nuit en gîte."
+      },
+      {
+        "day": 4,
+        "title": "Amsouzart – villages de la vallée d’Islani – Lac d’Ifni (4 à 5 heures de marche)",
+        "description": "Étape plus progressive à travers les villages et les cultures du versant sud. Le chemin remonte vers le lac d’Ifni, installé dans un cirque minéral à environ 2 300 mètres d’altitude. Après-midi de repos et nuit en bivouac près du lac."
+      },
+      {
+        "day": 5,
+        "title": "Lac d’Ifni – Tizi n’Ouanoums – Refuge du Toubkal (6 à 7 heures de marche)",
+        "description": "L’une des étapes les plus exigeantes du circuit. Depuis le lac, la montée rejoint le col de Tizi n’Ouanoums (environ 3 660 m), passage élevé entre le versant sud et la haute vallée du Toubkal. Descente vers le refuge à 3 207 mètres pour le dîner et la nuit."
+      },
+      {
+        "day": 6,
+        "title": "Refuge – Sommet du Toubkal – Imlil – Marrakech (8 à 10 heures de marche)",
+        "description": "Départ avant l’aube pour l’ascension du Jbel Toubkal (4 167 m). Après le sommet et son panorama sur le Haut Atlas, retour au refuge puis longue descente par Sidi Chamharouch et Aremd jusqu’à Imlil. Transfert vers Marrakech en fin de journée."
+      }
+    ],
+    "included": [
+      "Transferts entre Marrakech et le point de départ du trek",
+      "Accompagnement par un guide de montagne diplômé",
+      "Cuisinier et équipe muletière pour la logistique",
+      "Transport des bagages pendant les étapes accessibles aux mules",
+      "Hébergement en gîte, bivouac et refuge selon les étapes",
+      "Pension complète pendant les 6 jours de trek",
+      "Tentes et matériel collectif de bivouac"
+    ],
+    "notIncluded": [
+      "Assurance voyage et assistance-rapatriement",
+      "Hébergement et repas à Marrakech",
+      "Boissons et dépenses personnelles",
+      "Pourboires"
+    ],
+    "faqs": [
+      {
+        "question": "Quel niveau faut-il pour ce circuit de 6 jours ?",
+        "answer": "Ce trek est de niveau soutenu. Il comprend plusieurs cols au-dessus de 3 000 mètres, des journées de 5 à 8 heures et une dernière étape particulièrement longue. Une bonne endurance et une pratique régulière de la randonnée sont nécessaires."
+      },
+      {
+        "question": "Quelle est la meilleure période pour faire la boucle du Toubkal par le lac d’Ifni ?",
+        "answer": "La période habituelle s’étend de mai à octobre, lorsque les hauts cols sont généralement praticables à pied. La date exacte dépend toutefois de l’enneigement, de la météo et de l’état des sentiers."
+      },
+      {
+        "question": "L’ascension du Toubkal est-elle obligatoire ?",
+        "answer": "Non. L’ascension reste soumise à votre condition physique, à l’acclimatation et aux conditions de montagne. Le guide peut proposer une solution adaptée si le sommet n’est pas raisonnablement accessible."
+      },
+      {
+        "question": "Où dort-on pendant le trek ?",
+        "answer": "Les nuits alternent entre gîte à Tacheddirt et Amsouzart, bivouac à Azib Likemt et près du lac d’Ifni, puis refuge de montagne au pied du Toubkal. L’organisation exacte peut varier selon la saison et les disponibilités."
+      },
+      {
+        "question": "Les bagages sont-ils transportés ?",
+        "answer": "Oui, une équipe muletière transporte les bagages et le matériel collectif sur les étapes accessibles. Vous marchez avec un sac de journée contenant l’eau, une couche chaude, la protection solaire et vos affaires personnelles."
+      }
+    ]
+  },
+  {
     "slug": "randonnee-dans-latlas",
     "path": "/randonnee-dans-latlas",
     "category": "toubkal",

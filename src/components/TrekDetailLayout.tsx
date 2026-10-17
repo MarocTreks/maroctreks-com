@@ -20,6 +20,14 @@ import { JsonLd, SITE_URL } from "@/lib/seo";
 import type { TourDetailLabels, TourSectionHeadings } from "@/lib/tours";
 import { isCloudinaryImage, type TourMediaImage } from "@/lib/tour-media";
 
+const trekGuides = {
+  season: { href: "/blog/meilleure-periode-trekking-maroc", title: "Quelle saison choisir pour un trek au Maroc ?" },
+  equipment: { href: "/blog/que-mettre-sac-trek-maroc", title: "Équipement de trek : la checklist complète" },
+  toubkal: { href: "/blog/ascension-toubkal-guide-pratique", title: "Ascension du Toubkal : le guide pratique" },
+  mgoun: { href: "/blog/trek-vallee-ait-bouguemez-4-5-jours", title: "Trek dans la vallée des Aït Bouguemez" },
+  atlas: { href: "/blog/haut-atlas-maroc-guide-complet", title: "Le guide complet du Haut Atlas" },
+};
+
 export interface ItineraryDay {
   day: number;
   title: string;
@@ -33,6 +41,7 @@ export interface TrekDetailProps {
   bannerImage: string;
   bannerImageAlt: string;
   gallery?: TourMediaImage[];
+  atAGlanceImages?: TourMediaImage[];
   duration: string;
   difficulty: string;
   maxAltitude: string;
@@ -59,6 +68,7 @@ export default function TrekDetailLayout({
   bannerImage,
   bannerImageAlt,
   gallery = [],
+  atAGlanceImages = [],
   duration,
   difficulty,
   maxAltitude,
@@ -77,6 +87,15 @@ export default function TrekDetailLayout({
   categoryPath = "/circuits",
   categoryTitle = "Tous les circuits",
 }: TrekDetailProps) {
+  const regionalGuide = categoryPath.includes("toubkal")
+    ? trekGuides.toubkal
+    : categoryPath.includes("mgoun")
+      ? trekGuides.mgoun
+      : categoryPath.includes("desert")
+        ? trekGuides.season
+        : trekGuides.atlas;
+  const practicalGuides = [regionalGuide, trekGuides.season, trekGuides.equipment]
+    .filter((guide, index, guides) => guides.findIndex((candidate) => candidate.href === guide.href) === index);
   const tripSchema = {
     "@context": "https://schema.org",
     "@type": "TouristTrip",
@@ -84,7 +103,11 @@ export default function TrekDetailLayout({
     url: `${SITE_URL}${path}`,
     name: title,
     description,
-    image: [bannerImage, ...gallery.map((image) => image.src)],
+    image: [
+      bannerImage,
+      ...gallery.map((image) => image.src),
+      ...atAGlanceImages.map((image) => image.src),
+    ],
     touristType: ["Trekking", "Randonnée", "Tourisme d’aventure"],
     provider: { "@id": `${SITE_URL}/#organization` },
     tripOrigin: { "@type": "Place", name: "Marrakech, Maroc" },
@@ -231,6 +254,36 @@ export default function TrekDetailLayout({
                 <p className="text-slate-600 leading-relaxed font-light whitespace-pre-line">
                   {description}
                 </p>
+                {atAGlanceImages.length === 3 && (
+                  <figure className="border-t border-slate-200 pt-6">
+                    <figcaption>
+                      <p className="text-xs font-extrabold uppercase tracking-[0.16em] text-orange-700">
+                        Le circuit en un coup d’œil
+                      </p>
+                      <h3 className="mt-1 font-display text-xl font-bold text-brand-slate">
+                        Lac d’Ifni, Toubkal et villages du Haut Atlas
+                      </h3>
+                    </figcaption>
+                    <div className="mt-4 grid aspect-square grid-cols-2 grid-rows-2 gap-2 overflow-hidden rounded-xl bg-slate-100 p-2 shadow-[0_12px_32px_rgba(15,23,42,0.1)] sm:gap-3 sm:p-3">
+                      {atAGlanceImages.map((image, index) => (
+                        <div
+                          key={image.src}
+                          className={`relative overflow-hidden rounded-lg ${index === 0 ? "row-span-2" : ""}`}
+                        >
+                          <Image
+                            src={image.src}
+                            alt={image.alt}
+                            fill
+                            unoptimized={isCloudinaryImage(image.src)}
+                            sizes={index === 0 ? "(max-width: 1023px) 45vw, 330px" : "(max-width: 1023px) 45vw, 330px"}
+                            className="object-cover"
+                          />
+                          <span className="absolute inset-0 bg-gradient-to-t from-slate-950/20 via-transparent to-transparent" aria-hidden="true" />
+                        </div>
+                      ))}
+                    </div>
+                  </figure>
+                )}
                 <TourGallery images={gallery} heading={sectionHeadings.gallery} />
               </section>
 
@@ -384,6 +437,19 @@ export default function TrekDetailLayout({
 
             </div>
 
+          </div>
+        </section>
+        <section className="border-t border-stone-200 bg-[#f6f1e8] py-12 sm:py-16" aria-labelledby="trek-guides-heading">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <p className="text-xs font-black uppercase tracking-[0.18em] text-orange-700">Avant de partir</p>
+            <h2 id="trek-guides-heading" className="mt-3 font-display text-3xl font-black text-brand-slate">Conseils pratiques pour ce trek</h2>
+            <div className="mt-7 grid gap-4 md:grid-cols-3">
+              {practicalGuides.map((guide) => (
+                <Link key={guide.href} href={guide.href} className="group flex items-center justify-between gap-4 rounded-2xl border border-stone-200 bg-white p-5 font-display text-lg font-black leading-tight text-brand-slate shadow-sm transition hover:border-orange-300 hover:text-orange-700">
+                  {guide.title}<ArrowRight className="h-5 w-5 shrink-0 text-orange-600" />
+                </Link>
+              ))}
+            </div>
           </div>
         </section>
       </main>

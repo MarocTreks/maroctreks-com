@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, ArrowUpRight } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import TourCard from "@/components/TourCard";
@@ -8,11 +8,24 @@ import { JsonLd, SITE_URL } from "@/lib/seo";
 import type { TourCategoryDefinition } from "@/lib/tours";
 import { getTour } from "@/lib/tours";
 
+const generalGuides = [
+  { href: "/blog/meilleure-periode-trekking-maroc", title: "Quand partir en trek au Maroc ?" },
+  { href: "/blog/que-mettre-sac-trek-maroc", title: "La checklist complète pour votre trek" },
+];
+
+const regionalGuides: Record<string, { href: string; title: string }[]> = {
+  "/haut-atlas-toubkal": [{ href: "/blog/ascension-toubkal-guide-pratique", title: "Préparer l’ascension du Toubkal" }],
+  "/haut-atlas-mgoun": [{ href: "/blog/trek-vallee-ait-bouguemez-4-5-jours", title: "Trek dans la vallée des Aït Bouguemez" }],
+  "/vallees-dades-roses": [{ href: "/blog/haut-atlas-maroc-guide-complet", title: "Guide complet du Haut Atlas" }],
+  "/antis-atlas": [{ href: "/blog/haut-atlas-maroc-guide-complet", title: "Comprendre les massifs du Maroc" }],
+};
+
 export default function CategoryLanding({ category }: { category: TourCategoryDefinition }) {
   const categoryTours = category.collectionItems.flatMap((item) => {
     const tour = getTour(item.slug);
     return tour ? [{ tour, displayTitle: item.title }] : [];
   });
+  const practicalGuides = [...(regionalGuides[category.path] ?? []), ...generalGuides].slice(0, 3);
   const schema = {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
@@ -67,6 +80,19 @@ export default function CategoryLanding({ category }: { category: TourCategoryDe
           <div className="grid gap-8 md:grid-cols-2">
             {categoryTours.map(({ tour, displayTitle }) => <TourCard key={tour.slug} tour={tour} displayTitle={displayTitle} />)}
           </div>
+
+          <section className="mt-16 border-t border-slate-300 pt-10" aria-labelledby="category-guides-heading">
+            <p className="text-xs font-black uppercase tracking-[0.18em] text-orange-700">Conseils de terrain</p>
+            <h2 id="category-guides-heading" className="mt-3 font-display text-3xl font-black text-brand-slate">Préparer votre trek dans cette région</h2>
+            <div className="mt-6 grid gap-4 md:grid-cols-3">
+              {practicalGuides.map((guide) => (
+                <Link key={guide.href} href={guide.href} className="group flex min-h-32 flex-col justify-between rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:border-orange-300">
+                  <h3 className="font-display text-xl font-black leading-tight text-brand-slate group-hover:text-orange-700">{guide.title}</h3>
+                  <span className="mt-4 inline-flex items-center gap-2 text-sm font-extrabold text-orange-700">Lire le guide <ArrowUpRight className="h-4 w-4" /></span>
+                </Link>
+              ))}
+            </div>
+          </section>
         </section>
       </main>
       <Footer />
