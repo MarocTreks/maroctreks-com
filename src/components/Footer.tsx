@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Mail, Phone, MapPin, ShieldCheck } from "lucide-react";
+import { BUSINESS_ADDRESS, BUSINESS_EMAIL, BUSINESS_PHONE_DISPLAY, BUSINESS_PHONE_E164 } from "@/lib/business";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -47,7 +48,7 @@ export default function Footer() {
               />
             </Link>
             <p className="text-sm leading-relaxed text-slate-300">
-              Votre agence locale de trekking et randonnée au Maroc. Fondée par Mohamed Ait Tadrart, guide professionnel breveté avec plus de 20 ans d'expérience. Trek Toubkal, excursions désert, et immersion culturelle authentique.
+              Équipe locale de trekking basée à Armed, dans la vallée d’Imlil. Mohamed Ait Tadrart prépare des treks sur mesure dans l’Atlas, l’Anti-Atlas, le désert et sur la côte.
             </p>
           </div>
 
@@ -92,32 +93,32 @@ export default function Footer() {
               <li className="flex items-start gap-3">
                 <MapPin className="h-5 w-5 shrink-0 text-brand-orange mt-0.5" />
                 <span className="text-sm text-slate-300">
-                  Douar Armed, Imlil, Asni 42152, Maroc
+                  {BUSINESS_ADDRESS}
                 </span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="h-5 w-5 shrink-0 text-brand-orange" />
                 <a
-                  href="tel:+212667591933"
+                  href={`tel:${BUSINESS_PHONE_E164}`}
                   className="text-sm text-slate-300 hover:text-brand-orange transition-colors"
                 >
-                  +212 667 591 933
+                  {BUSINESS_PHONE_DISPLAY}
                 </a>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="h-5 w-5 shrink-0 text-brand-orange" />
                 <a
-                  href="mailto:tadrartmed@gmail.com"
+                  href={`mailto:${BUSINESS_EMAIL}`}
                   className="text-sm text-slate-300 hover:text-brand-orange transition-colors break-all"
                 >
-                  tadrartmed@gmail.com
+                  {BUSINESS_EMAIL}
                 </a>
               </li>
             </ul>
             <div className="mt-6 flex items-center gap-2 rounded-lg border border-slate-700/50 bg-slate-800/80 p-3">
               <ShieldCheck className="h-5 w-5 shrink-0 text-green-400" />
               <span className="text-xs font-semibold text-slate-300 leading-tight">
-                Licence de guide professionnel certifiée par l'État Marocain.
+                Organisation directe avec Mohamed, guide de montagne professionnel.
               </span>
             </div>
           </div>
@@ -130,12 +131,9 @@ export default function Footer() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-slate-400">
           <p>© {currentYear} Maroc Treks. Tous droits réservés.</p>
           <div className="flex gap-6">
-            <Link href="/qui-sommes-nous" className="hover:text-brand-orange">
-              À propos
-            </Link>
-            <Link href="/contact" className="hover:text-brand-orange">
-              Contact
-            </Link>
+            <Link href="/mentions-legales" className="hover:text-brand-orange">Mentions légales</Link>
+            <Link href="/politique-confidentialite" className="hover:text-brand-orange">Confidentialité</Link>
+            <Link href="/conditions-reservation" className="hover:text-brand-orange">Conditions de réservation</Link>
           </div>
         </div>
       </div>

@@ -28,6 +28,7 @@ import TourCard from "@/components/TourCard";
 import GoogleReviewsSection from "@/components/GoogleReviewsSection";
 import { cloudinaryImage } from "@/lib/tour-media";
 import { getToursByCategory } from "@/lib/tours";
+import { GOOGLE_MAPS_URL } from "@/lib/business";
 
 const regions = [
   {
@@ -353,7 +354,7 @@ export default function HomepagePremiumContent() {
               organisés par Mohamed Ait Tadrart et son équipe locale.
             </p>
             <a
-              href="https://maps.app.goo.gl/eSpjkypgBswEaiW7A?g_st=com.google.maps.preview.copy"
+              href={GOOGLE_MAPS_URL}
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Consulter les avis Google de Maroc Treks"
@@ -446,9 +447,10 @@ export default function HomepagePremiumContent() {
 
             <div className="max-w-3xl text-base leading-7 text-slate-700 sm:text-lg sm:leading-8">
               <p className="text-lg font-medium leading-8 text-slate-800 sm:text-xl sm:leading-9">
-                Maroc Treks est une agence locale de trekking basée à
-                Marrakech. Nous créons et accompagnons des randonnées privées
-                et des circuits sur mesure dans tout le Maroc. Vous préparez
+                Maroc Treks est une équipe locale de trekking basée à Armed,
+                dans la vallée d’Imlil. Nous organisons les accueils et départs
+                depuis Marrakech, puis accompagnons des randonnées privées et
+                des circuits sur mesure dans tout le Maroc. Vous préparez
                 directement votre voyage avec{" "}
                 <Link
                   href="/qui-sommes-nous"

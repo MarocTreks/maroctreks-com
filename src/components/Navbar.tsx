@@ -451,6 +451,7 @@ export default function Navbar() {
                       <span className="text-xs opacity-70">{language.short}</span>
                     </button>
                   ))}
+                  <p className="border-t border-slate-100 px-3 pb-1 pt-2 text-[0.65rem] font-medium leading-4 text-slate-500">Traduction automatique, sauf le français original.</p>
                 </div>
               )}
             </div>
@@ -506,6 +507,7 @@ export default function Navbar() {
                       <span className="text-xs opacity-70">{language.short}</span>
                     </button>
                   ))}
+                  <p className="border-t border-slate-100 px-3 pb-1 pt-2 text-[0.65rem] font-medium leading-4 text-slate-500">Traduction automatique</p>
                 </div>
               )}
             </div>

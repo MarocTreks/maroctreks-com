@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { Star, ExternalLink, ShieldCheck, Quote, ChevronLeft, ChevronRight } from "lucide-react";
+import { GOOGLE_MAPS_URL } from "@/lib/business";
 
 export interface GoogleReview {
   id: string;
@@ -61,7 +62,7 @@ export const googleReviews: GoogleReview[] = [
   },
 ];
 
-export const GOOGLE_MAPS_LINK = "https://maps.app.goo.gl/f91WPmdf9oBbfjFD6?g_st=ic";
+export const GOOGLE_MAPS_LINK = GOOGLE_MAPS_URL;
 
 export default function GoogleReviewsSection() {
   const [currentIndex, setCurrentIndex] = useState(0);

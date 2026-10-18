@@ -15,7 +15,7 @@ type PageMetadata = {
 
 export function createMetadata({ title, description, path, image = "/opengraph-image", article }: PageMetadata): Metadata {
   return {
-    title,
+    title: path === "/" ? { absolute: title } : title,
     description,
     alternates: { canonical: path },
     openGraph: article ? {

@@ -69,7 +69,7 @@ const values = [
   {
     title: "Expérience du Maroc",
     description:
-      "Des centaines de circuits conduits dans l’Atlas, l’Anti-Atlas, le désert, les vallées du Sud et sur la côte.",
+      "Plus de 20 ans de circuits dans l’Atlas, l’Anti-Atlas, le désert, les vallées du Sud et sur la côte.",
     icon: Award,
   },
 ];
@@ -116,9 +116,9 @@ export default function QuiSommesNous() {
                 Treks.
               </p>
               <p className="mt-5 max-w-3xl text-base leading-7 text-slate-300 sm:text-lg">
-                Depuis Marrakech, Mohamed prépare et accompagne des voyages à
-                pied dans tout le Maroc avec une équipe issue des régions
-                traversées.
+                Depuis Armed, dans la vallée d’Imlil, Mohamed prépare et
+                accompagne des voyages à pied dans tout le Maroc, avec des
+                accueils et transferts organisés depuis Marrakech.
               </p>
 
               <div className="mt-7 flex flex-wrap gap-x-5 gap-y-3 border-t border-white/20 pt-5 text-sm font-bold text-slate-200">
@@ -141,7 +141,7 @@ export default function QuiSommesNous() {
                     className="h-4 w-4 text-orange-300"
                     aria-hidden="true"
                   />
-                  Des centaines de circuits
+                  Plus de 20 ans de terrain
                 </span>
               </div>
 
@@ -188,10 +188,11 @@ export default function QuiSommesNous() {
                   marcher avec les habitants, les muletiers et les voyageurs.
                 </p>
                 <p>
-                  Depuis, il a conduit des centaines de circuits et accompagné
-                  des milliers de marcheurs à travers le Maroc : sommets du
-                  Toubkal et du M’Goun, vallées amazighes, Anti-Atlas, Sahara,
-                  Dadès, Vallée des Roses et côte Atlantique.
+                  Depuis, il accompagne des groupes à travers le Maroc :
+                  sommets du Toubkal et du M’Goun, vallées amazighes,
+                  Anti-Atlas, Sahara, Dadès, Vallée des Roses et côte
+                  Atlantique. Des récits publiés par des clubs et associations
+                  documentent ces voyages depuis les années 1990.
                 </p>
                 <p>
                   Mohamed reste présent sur le terrain. En parcourant ce site,
@@ -211,7 +212,7 @@ export default function QuiSommesNous() {
                 </div>
                 <div>
                   <p className="font-display text-2xl font-black text-slate-900">
-                    Des centaines
+                    Plus de 20 ans
                   </p>
                   <p className="mt-1 text-sm text-slate-500">
                     de circuits conduits au Maroc
@@ -219,10 +220,10 @@ export default function QuiSommesNous() {
                 </div>
                 <div>
                   <p className="font-display text-2xl font-black text-slate-900">
-                    Des milliers
+                    Depuis les années 1990
                   </p>
                   <p className="mt-1 text-sm text-slate-500">
-                    de marcheurs accompagnés
+                    des groupes accompagnés au Maroc
                   </p>
                 </div>
               </div>
@@ -358,6 +359,7 @@ export default function QuiSommesNous() {
             <p className="text-xs font-extrabold uppercase tracking-[0.18em] text-orange-700">Expérience documentée</p>
             <h2 id="references-heading" className="mt-3 font-display text-3xl font-black text-slate-950">Des années de terrain, racontées aussi par nos voyageurs</h2>
             <p className="mt-5 max-w-3xl leading-7 text-slate-600">Des clubs et associations ont publié leurs propres récits de voyages accompagnés par Mohamed. Ces archives indépendantes permettent de retrouver une partie de l’histoire de l’équipe sur les sentiers du Maroc.</p>
+            <p className="mt-4 max-w-3xl rounded-xl border border-orange-200 bg-orange-50 p-4 text-sm leading-6 text-slate-700">Certaines archives anciennes citent le domaine singulier <strong>maroctrek.com</strong>, autrefois utilisé par Mohamed. Le site officiel actuel est exclusivement <strong>www.maroctreks.com</strong>. Cette précision aide les voyageurs à relier les récits historiques à l’équipe actuelle sans confondre les domaines.</p>
             <div className="mt-8 grid gap-4 md:grid-cols-3">
               {[
                 { label: "Club Alpin Français de Grenoble", href: "https://www.cafgrenoble.com/actualites-du-club/1396" },

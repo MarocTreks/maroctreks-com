@@ -3,6 +3,7 @@ import { Inter, Outfit } from "next/font/google";
 import "./globals.css";
 import { DEFAULT_DESCRIPTION, JsonLd, SITE_NAME, SITE_URL } from "@/lib/seo";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import { BUSINESS_EMAIL, BUSINESS_NAME, BUSINESS_OWNER, BUSINESS_PHONE_E164, GOOGLE_MAPS_URL, TRIPADVISOR_URL } from "@/lib/business";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -42,7 +43,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     "@context": "https://schema.org",
     "@type": ["Organization", "TravelAgency"],
     "@id": `${SITE_URL}/#organization`,
-    name: SITE_NAME,
+    name: BUSINESS_NAME,
     url: SITE_URL,
     logo: {
       "@type": "ImageObject",
@@ -51,8 +52,8 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       height: 512,
     },
     image: `${SITE_URL}/logo.png`,
-    email: "tadrartmed@gmail.com",
-    telephone: "+212667591933",
+    email: BUSINESS_EMAIL,
+    telephone: BUSINESS_PHONE_E164,
     description: DEFAULT_DESCRIPTION,
     founder: { "@id": `${SITE_URL}/qui-sommes-nous#person` },
     address: {
@@ -64,17 +65,14 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       addressCountry: "MA",
     },
     areaServed: { "@type": "Country", name: "Maroc" },
-    contactPoint: { "@type": "ContactPoint", telephone: "+212667591933", email: "tadrartmed@gmail.com", contactType: "reservations", availableLanguage: ["fr", "en", "es", "nl"] },
-    sameAs: [
-      "https://maps.app.goo.gl/f91WPmdf9oBbfjFD6?g_st=ic",
-      "https://www.tripadvisor.co.uk/Attraction_Review-g293734-d34037482-Reviews-Maroc_Treks-Marrakech_Marrakech_Safi.html",
-    ],
+    contactPoint: { "@type": "ContactPoint", telephone: BUSINESS_PHONE_E164, email: BUSINESS_EMAIL, contactType: "reservations", availableLanguage: ["fr", "en", "es", "nl"] },
+    sameAs: [GOOGLE_MAPS_URL, TRIPADVISOR_URL],
   };
   const person = {
     "@context": "https://schema.org",
     "@type": "Person",
     "@id": `${SITE_URL}/qui-sommes-nous#person`,
-    name: "Mohamed Ait Tadrart",
+    name: BUSINESS_OWNER,
     url: `${SITE_URL}/qui-sommes-nous`,
     jobTitle: "Guide de montagne diplômé",
     worksFor: { "@id": `${SITE_URL}/#organization` },

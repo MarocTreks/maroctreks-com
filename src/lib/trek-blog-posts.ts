@@ -2,6 +2,7 @@ import type { BlogPost } from "@/lib/blog-posts";
 import { getTour, type Tour } from "@/lib/tours";
 
 type TrekGuideConfig = {
+  status?: "draft" | "published";
   tourSlug: string;
   slug: string;
   title: string;
@@ -122,6 +123,7 @@ function buildTrekGuide(config: TrekGuideConfig): BlogPost {
 
 const trekGuideConfigs: TrekGuideConfig[] = [
   {
+    status: "published",
     tourSlug: "circuit-toubkal-6-jours-lac-ifni",
     slug: "circuit-toubkal-6-jours-lac-ifni-guide",
     title: "Circuit du Toubkal en 6 jours par Tacheddirt et le lac d’Ifni : le guide complet",
@@ -588,6 +590,8 @@ const trekGuideConfigs: TrekGuideConfig[] = [
   },
 ];
 
-// Publish the sample guide only. The remaining trek drafts stay offline until
-// their first-hand notes have been supplied and edited in the same local voice.
-export const trekBlogPosts: BlogPost[] = trekGuideConfigs.slice(0, 1).map(buildTrekGuide);
+// Only explicitly published guides are exposed. Drafts stay offline until
+// their first-hand notes have been reviewed in the same local voice.
+export const trekBlogPosts: BlogPost[] = trekGuideConfigs
+  .filter((config) => config.status === "published")
+  .map(buildTrekGuide);

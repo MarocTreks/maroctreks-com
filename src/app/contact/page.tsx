@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { Mail, Phone, MapPin, Send, CheckCircle, ShieldCheck } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -142,9 +143,9 @@ export default function Contact() {
                   <span className="font-display font-bold text-sm">Garanties Maroc Treks</span>
                 </div>
                 <ul className="text-xs text-slate-300 space-y-2.5 leading-relaxed">
-                  <li>• Pas d'intermédiaires : Vous payez le juste prix directement aux acteurs locaux.</li>
-                  <li>• Flexibilité : Modification de dates sans frais en cas de problème de vol.</li>
-                  <li>• Expérience certifiée par le ministère du tourisme marocain.</li>
+                  <li>• Échange direct avec Mohamed et l’équipe qui prépare le voyage.</li>
+                  <li>• Programme, prestations et prix détaillés par écrit avant confirmation.</li>
+                  <li>• Conditions de modification et d’annulation communiquées avec le devis.</li>
                 </ul>
               </div>
             </div>
@@ -168,6 +169,9 @@ export default function Contact() {
                   >
                     Préparer une autre demande
                   </button>
+                  <p className="text-center text-xs leading-5 text-slate-500">
+                    En préparant cette demande, vous acceptez que Maroc Treks utilise les informations saisies pour vous répondre. Consultez notre <Link href="/politique-confidentialite" className="font-semibold text-orange-700 underline underline-offset-2">politique de confidentialité</Link> et nos <Link href="/conditions-reservation" className="font-semibold text-orange-700 underline underline-offset-2">conditions de réservation</Link>.
+                  </p>
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-6">
@@ -276,6 +280,10 @@ export default function Contact() {
                       className="theme-field"
                     />
                   </div>
+
+                  <p className="text-xs leading-5 text-slate-500">
+                    Ce formulaire ouvre votre messagerie et ne crée pas de réservation automatique. Consultez notre <Link href="/politique-confidentialite" className="font-semibold text-orange-700 underline underline-offset-2">politique de confidentialité</Link> et nos <Link href="/conditions-reservation" className="font-semibold text-orange-700 underline underline-offset-2">conditions de réservation</Link>.
+                  </p>
 
                   {/* Submit Button */}
                   <button

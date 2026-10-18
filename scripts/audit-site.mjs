@@ -16,6 +16,9 @@ const routes = [
   "/informations-pratiques",
   "/qui-sommes-nous",
   "/contact",
+  "/mentions-legales",
+  "/politique-confidentialite",
+  "/conditions-reservation",
   "/blog",
   "/blog/meilleure-periode-trekking-maroc",
   "/blog/ascension-toubkal-guide-pratique",
@@ -30,6 +33,7 @@ const routes = [
 const titles = new Map();
 const descriptions = new Map();
 const internalLinks = new Set();
+const forbiddenLegacyText = ["info@maroctreks.com", "Mhamid 9 N° 1033", "jewelry Morocco", "50+ Local Guides", "5k+ Satisfied Travelers"];
 let failures = 0;
 
 function normalizeText(value) {
@@ -103,6 +107,7 @@ for (const path of routes) {
   const openGraphUrl = html.match(/<meta property="og:url" content="([^"]+)"/)?.[1] ?? "";
   const twitterCard = html.match(/<meta name="twitter:card" content="([^"]+)"/)?.[1] ?? "";
   const visibleText = normalizeText(html.replace(/<script\b[\s\S]*?<\/script>/gi, " ").replace(/<style\b[\s\S]*?<\/style>/gi, " ").replace(/<[^>]+>/g, " "));
+  const legacyMatches = forbiddenLegacyText.filter((value) => visibleText.toLowerCase().includes(value.toLowerCase()));
   const missingSourceText = expectedSourceText(path).filter((value) => !visibleText.includes(normalizeText(value)));
   const h1Count = html.match(/<h1\b/g)?.length ?? 0;
   const jsonLdBlocks = [...html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)];
@@ -127,11 +132,15 @@ for (const path of routes) {
     && openGraphUrl === expectedCanonical
     && twitterCard === "summary_large_image"
     && validJsonLd
-    && missingSourceText.length === 0;
+    && missingSourceText.length === 0
+    && legacyMatches.length === 0;
 
   process.stdout.write(`${valid ? "OK" : "BAD"} ${response.status} H1:${h1Count} ${path} | title:${title.length} description:${description.length}\n`);
   if (missingSourceText.length > 0) {
     process.stdout.write(`MISSING SOURCE TEXT: ${missingSourceText[0]}${missingSourceText.length > 1 ? ` (+${missingSourceText.length - 1} more)` : ""}\n`);
+  }
+  if (legacyMatches.length > 0) {
+    process.stdout.write(`LEGACY CONTENT: ${legacyMatches.join(", ")}\n`);
   }
   if (!valid) failures += 1;
 
@@ -174,6 +183,10 @@ const redirects = [
   ["/tous-les-circuits", "/circuits"],
   ["/randonnee-dans-le-moyen-atlas-8-jours", "/randonnee-moyen-atlas"],
   ["/en/haut-atlas-toubkal", "/haut-atlas-toubkal"],
+  ["/privacy-policy", "/politique-confidentialite"],
+  ["/terms-of-use", "/mentions-legales"],
+  ["/terms-conditions", "/conditions-reservation"],
+  ["/galleries", "/qui-sommes-nous"],
 ];
 
 for (const [source, destination] of redirects) {

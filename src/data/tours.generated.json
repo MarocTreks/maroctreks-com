@@ -294,7 +294,7 @@
       "tourType": "Type de Randonnée",
       "price": "Prix"
     },
-    "description": "Cette randonnée de 8 jours vous emmène à la découverte des villages berbères authentiques du Haut Atlas marocain, avec l' ascension du Jbel Toubkal , le plus haut sommet d'Afrique du Nord à 4 167 mètres d'altitude.\n\nVous traverserez des paysages montagneux spectaculaires, rencontrerez les habitants locaux et découvrirez leur mode de vie traditionnel. L'ascension du Toubkal, bien que facultative, constitue le point d'orgue de ce trek. Ce circuit de niveau moyen est accessible à toute personne en bonne condition physique.\n\nNotre équipe de guides diplômés et muletiers expérimentés vous accompagnera tout au long de ce périple pour une expérience authentique et sécurisée dans les montagnes de l'Atlas.",
+    "description": "Ce circuit de 8 jours relie les villages de la vallée d’Imlil avant de rejoindre le refuge et le sommet du Toubkal, à 4 167 m. Les premières étapes permettent de découvrir les cultures en terrasses, les maisons en terre et les chemins utilisés entre les villages du Haut Atlas.\n\nL’ascension finale reste facultative. Elle ne comporte pas de difficulté technique majeure en conditions estivales, mais l’altitude, la pente et la durée demandent une bonne condition physique. En hiver, l’itinéraire devient une course de montagne qui peut nécessiter crampons et piolet.\n\nMohamed et l’équipe muletière adaptent le rythme aux participants et aux conditions. Les bagages principaux sont transportés pendant les étapes ; chaque marcheur garde son sac de journée.",
     "highlights": [
       "Ascension du Jbel Toubkal (4 167 m), le plus haut sommet d'Afrique du Nord",
       "Immersion dans la culture berbère authentique",
@@ -326,7 +326,7 @@
       },
       {
         "day": 5,
-        "title": "Ascension du Sommet Toubkal (4167m) - Descente vers Armed",
+        "title": "Ascension du Toubkal (4 167 m) et descente vers Armed",
         "description": "Départ tôt le matin pour l'ascension du Jbel Toubkal (facultative). Vue panoramique exceptionnelle depuis le sommet. Descente vers le refuge puis continuation vers Armed. 8h de marche ."
       },
       {
@@ -410,7 +410,7 @@
       "tourType": "Type de Randonnée",
       "price": "Prix"
     },
-    "description": "Le Haut Atlas central est un massif essentiellement calcaire, morphologiquement dominé par des zones tabulaires culminant à 2 500 mètres d'altitude, qui s'étend d'Azilal à Ouarzazate. Les paysages contrastés y sont d'une beauté extraordinaire, révélant aux visiteurs de merveilleux sites avec des plateaux d'altitude, des gorges et des canyons encaissés, un chaos de cimes déchiquetées par l'érosion...\n\nLe Jbel M'Goun (4 068 mètres) est le sommet le plus haut de cette partie du Haut Atlas. Il est constitué d'une longue crête qui dépasse ou approche les 4000 mètres d'altitude sur une longueur de 10 km. En fait cette crête est un anticlinal. La roche à la surface est un calcaire dur. Son versant nord a été creusé par des glaciers lors des glaciations du Quaternaire si bien qu'aujourd'hui 14 combes s'y alignent perpendiculairement à la ligne de crête. L'Ighil M'Goun est une destination très prisée des randonneurs pratiquant le trekking.\n\nOn y rencontre une population berbère réputée pour son exceptionnelle hospitalité. La Vallée des Aït Bouguemez ou la \"Vallée heureuse\" est la vallée la plus centrale de la région, à une altitude de 1900 m au pied du majestueux M'goun 4068 m. Ses champs entretenus comme des jardins attirent au printemps et en été des oiseaux migrateurs de tous les coins du monde.",
+    "description": "Cette traversée du Haut Atlas central commence dans la vallée des Aït Bouguemez, autour de 1 900 m, puis gagne les pâturages d’altitude et le plateau de Tarkeddit. L’itinéraire change progressivement de caractère : villages et champs irrigués au départ, vastes plateaux, puis longue crête calcaire du M’Goun.\n\nAvec ses 4 068 m, le M’Goun est le deuxième sommet du Maroc. Son ascension est une randonnée soutenue plutôt qu’une escalade en conditions estivales, mais elle demande de l’endurance, une acclimatation progressive et une météo favorable. Le guide peut modifier le passage par la crête lorsque les conditions l’exigent.\n\nLes nuits alternent gîtes et bivouacs. Une équipe muletière transporte les bagages et le matériel collectif, tandis que chaque participant marche avec son sac de journée.",
     "highlights": [
       "Ascension du Jbel M'Goun (4068m), 2ème plus haut sommet du Maroc",
       "Découverte de la Vallée Heureuse d'Aït Bouguemez",
@@ -536,7 +536,7 @@
       "tourType": "Type de Randonnée",
       "price": "Prix"
     },
-    "description": "Le Haut Atlas central est un massif essentiellement calcaire, morphologiquement dominé par des zones tabulaires culminant à 2 500 mètres d'altitude, qui s'étend d'Azilal à Ouarzazate. Les paysages contrastés y sont d'une beauté extraordinaire, révélant aux visiteurs de merveilleux sites avec des plateaux d'altitude, des gorges et des canyons encaissés, un chaos de cimes déchiquetées par l'érosion...\n\nOn y rencontre une population berbère réputée pour son exceptionnelle hospitalité. La Vallée des Aït Bouguemez ou la \"Vallée heureuse\" est la vallée la plus centrale de la région, à une altitude de 1900 m au pied du majestueux M'goun 4068 m. Ses champs entretenus comme des jardins attirent au printemps et en été des oiseaux migrateurs de tous les coins du monde.\n\nN'oublions pas les habitants du vieux lac, les plus grands dinosaures découverts jusqu'ici : les fameux Atlas-saures, nous ont bien laissé leurs traces que nous pouvons admirer en nous promenant dans la Vallée possibilité de visiter les dalles calcaires sous formes de grandes empreintes de leurs pattes.\n\nDans cette superbe Vallée nous vous proposons des randonnées en famille . Les programmes sont flexibles et adaptables à vos attentes, à votre niveau et à celui de vos enfants. Une invitation à découvrir une des plus belles régions de haut Atlas à pied, à dos de mules...",
+    "description": "Ce séjour familial permet de découvrir la vallée des Aït Bouguemez sans changer d’hébergement chaque soir. Depuis le gîte d’Agouti, les randonnées rejoignent les villages, les champs irrigués et les vallées latérales au pied du M’Goun.\n\nLes journées sont modulables selon l’âge des enfants, leur habitude de la marche et la météo. Les traces fossiles de dinosaures, les rencontres dans les villages et les chemins agricoles donnent un fil conducteur concret aux étapes.\n\nLe programme privilégie un rythme souple et des retours au gîte. Les durées indiquées restent adaptables : avant le départ, Mohamed vérifie avec la famille le niveau de chacun et propose les promenades les mieux adaptées.",
     "highlights": [
       "Randonnée spécialement adaptée aux familles avec enfants",
       "Découverte des magnifiques cascades d'Ouzoud",
@@ -653,7 +653,7 @@
       "tourType": "Type de Randonnée",
       "price": "Prix de la Randonnée"
     },
-    "description": "Le Moyen Atlas est un massif montagneux allongé sur quelques 350 km, du sud-ouest au nord-est du Maroc, situé entre le Rif et le Haut Atlas, et couvrant une superficie totale de 2,3 millions d'hectares, soit 18 % du domaine altimontain de ce pays.\n\nIl est formé des vastes plateaux d'altitude de la haute Moulouya. Ces plateaux s'étendent de Midelt (province de Khnifra), abritant le Jbel Ayachi (3 747 m) — à Imilchil. Cette chaîne appartient au massif de l'Atlas, et plus précisément, à l'un des trois éléments de l'Atlas marocaine — les deux autres étant le Haut Atlas et l'Anti-Atlas.\n\nNotre circuit de 8 jours vous emmène à la découverte de cette région préservée, caractérisée par ses lacs naturels (aguelmanes), ses forêts de cèdres majestueuses et ses vastes plateaux où la nature règne en maître. Une expérience authentique au cœur d'un écosystème unique.",
+    "description": "Le Moyen Atlas offre une randonnée très différente des hauts sommets du Toubkal. L’itinéraire traverse les plateaux de la région de Khénifra, des forêts de cèdres, des sources et plusieurs lacs naturels appelés aguelmanes.\n\nLes étapes se déroulent à une altitude plus modérée, sur des pistes et sentiers entre pâturages, villages et zones forestières. Ce relief rend le circuit accessible à des marcheurs réguliers qui souhaitent privilégier les paysages, les rencontres et l’itinérance plutôt qu’une ascension.\n\nLes conditions varient fortement avec la saison. L’équipe confirme avant le départ l’état des pistes, les températures nocturnes et les hébergements prévus.",
     "highlights": [
       "Découverte du Moyen Atlas, massif montagneux aux vastes plateaux d'altitude.",
       "Exploration des lacs naturels (aguelmanes) d'Azigza et Ouiaouene aux eaux émeraude.",
@@ -1267,7 +1267,7 @@
       "tourType": "Type de Randonnée",
       "price": "Prix de la Randonnée"
     },
-    "description": "Le Maroc dispose d'un désert riche et varié: oasis et palmeraies verdoyantes, plateaux arides et caillouteux, dunes de sable magiques, kasbahs et ksours fortifiés. La randonnée chamelière, la méharée, la découverte, le bivouac dans les dunes pour le lever et le coucher du soleil sont les activités les plus répandues.\n\nVous verrez ainsi à la fois, la vie des oasis, paradis de verdure et la vie inoubliable avec un ciel étoilé dans le désert, au milieu des dunes. Vous comprendrez ainsi l'importance de l'eau et l'art de l'économiser. Vous verrez aussi d'incroyables villages fortifiés à l'intérieur des beaux passages secrets et frais, habités par semi-nomades AIT ATTA, et descendants des tribus arabes et berbère d'Afrique sub saharienne.\n\nCes circuits sont également réalisables en méharée, randonnée pédestre, VTT, 4x4.\n\nL'équipe sera composée d'un guide diplômé et d'une équipe chamelier pour le transport de l'intendance et les bagages.",
+    "description": "Cette randonnée suit la vallée du Drâa entre palmeraies, plateaux pierreux et dunes. La marche permet de comprendre comment les villages, les cultures et les points d’eau s’organisent aux portes du Sahara, avant de rejoindre des espaces plus ouverts pour les bivouacs.\n\nLes étapes sont généralement faciles sur le plan technique, mais la chaleur, le sable et les écarts de température demandent un équipement adapté. Nous privilégions la période d’octobre à avril et ajustons les heures de marche aux conditions du jour.\n\nUn guide et une équipe chamelière assurent l’orientation, les repas, le bivouac et le transport des bagages. Chaque participant ne porte que ses affaires utiles pendant la journée.",
     "highlights": [
       "Découverte du désert marocain riche et varié avec ses oasis et palmeraies verdoyantes.",
       "Randonnée chamelière à travers les dunes magiques et plateaux arides.",
@@ -1321,7 +1321,7 @@
     "included": [
       "Prise en charge dès votre arrivée à l'aéroport",
       "Les transferts Aéroport - Hôtel - Rando - Hôtel - Aéroport",
-      "L'assistance d'un guide diplômé et d'une équipe chamelier pour le transport de l'intendance et les bagages",
+      "L'assistance d'un guide et d'une équipe chamelière pour le transport de l'intendance et des bagages",
       "Les nuits en hôtel ou Riad en ville",
       "Les nuits sous tente dans le désert",
       "La pension complète pendant le circuit"
@@ -1339,7 +1339,7 @@
       },
       {
         "question": "Comment se passe le transport des bagages dans le désert ?",
-        "answer": "Nous utilisons une équipe chamelier avec des dromadaires pour transporter les bagages et l'intendance jusqu'au lieu de bivouac chaque soir. Vous ne portez que votre sac à dos de journée pendant les randonnées."
+        "answer": "Une équipe chamelière transporte les bagages et l'intendance jusqu'au lieu de bivouac. Vous ne portez que votre sac à dos de journée pendant la marche."
       },
       {
         "question": "Quelle est la meilleure période pour visiter le désert marocain ?",
@@ -1384,14 +1384,14 @@
       "tourType": "Type de Randonnée",
       "price": "Prix de la Randonnée"
     },
-    "description": "Le Maroc dispose d'un désert riche et varié: oasis et palmeraies verdoyantes, plateaux arides et caillouteux, dunes de sable magiques, kasbahs et ksours fortifiés. La randonnée chamelière, la méharée, la découverte, le bivouac dans les dunes pour le lever et le coucher du soleil sont les activités les plus répandues.\n\nCe circuit vous emmène à la découverte des magnifiques dunes de Chegaga, parmi les plus belles et les plus étendues du Maroc. Vous vivrez une expérience unique au cœur du désert, avec des nuits sous les étoiles et des randonnées à travers des paysages désertiques variés.\n\nVous verrez ainsi à la fois, la vie des oasis, paradis de verdure et la vie inoubliable avec un ciel étoilé dans le désert, au milieu des dunes. Vous comprendrez ainsi l'importance de l'eau et l'art de l'économiser.\n\nL'équipe sera composée d'un guide diplômé et d'une équipe chamelier pour le transport de l'intendance et les bagages.",
+    "description": "Ce trek rejoint les dunes de Chegaga à pied en traversant plusieurs visages du désert : oueds secs, regs pierreux, tamaris et cordons de dunes. L’itinérance et les bivouacs successifs donnent le temps d’observer les changements de lumière et le rythme du voyage dans le Sahara.\n\nLa marche ne présente pas de difficulté technique importante, mais elle demande de supporter le sable, le soleil et des nuits parfois froides. La saison conseillée va d’octobre à avril ; en cas de vent fort ou de chaleur inhabituelle, le guide adapte l’étape et l’heure de départ.\n\nL’équipe chamelière transporte l’intendance et les bagages, installe les bivouacs et travaille avec le cuisinier. Les participants gardent uniquement leur sac de journée.",
     "highlights": [
       "Découverte des magnifiques dunes de Chegaga, parmi les plus belles du Maroc.",
       "Randonnée chamelière à travers des paysages désertiques variés et préservés.",
       "Bivouac au pied des dunes pour admirer les levers et couchers de soleil spectaculaires.",
       "Nuits sous les étoiles avec ciel étoilé exceptionnel du désert marocain.",
       "Découverte des dunes de Bougarn et Oued Naam, paysages désertiques uniques.",
-      "Forfait tout inclus avec guide diplômé, équipe chamelier et hébergement varié."
+      "Organisation avec guide, équipe chamelière et hébergements prévus au programme."
     ],
     "itinerary": [
       {
@@ -1438,7 +1438,7 @@
     "included": [
       "Prise en charge dès votre arrivée à l'aéroport",
       "Les transferts Aéroport - Hôtel - Rando - Hôtel - Aéroport",
-      "L'assistance d'un guide diplômé et d'une équipe chamelier pour le transport de l'intendance et les bagages",
+      "L'assistance d'un guide et d'une équipe chamelière pour le transport de l'intendance et des bagages",
       "Les nuits en hôtel ou Riad en ville",
       "Les nuits sous tente dans le désert",
       "La pension complète pendant le circuit"
@@ -1455,7 +1455,7 @@
       },
       {
         "question": "Comment se passe le transport des bagages dans le désert ?",
-        "answer": "Nous utilisons une équipe chamelier avec des dromadaires pour transporter les bagages et l'intendance jusqu'au lieu de bivouac chaque soir. Vous ne portez que votre sac à dos de journée pendant les randonnées."
+        "answer": "Une équipe chamelière transporte les bagages et l'intendance jusqu'au lieu de bivouac. Vous ne portez que votre sac à dos de journée pendant la marche."
       },
       {
         "question": "Quelle est la meilleure période pour visiter les dunes de Chegaga ?",
@@ -1500,14 +1500,14 @@
       "tourType": "Type de Randonnée",
       "price": "Prix de la Randonnée"
     },
-    "description": "La côte marocaine reste une fenêtre réservée aux amateurs de la nature surtout les randonneurs pédestres grâce à ses variétés des paysages et des longues plages sauvages bordées de dunes. Villes blanches aux portes bleues, des minuscules villages de pêcheurs à l'architecture blanche entourés des arganiers.\n\nCe séjour se déroule le long de la côte Atlantique, dans la région d'Essaouira. Nous découvrions de beaux rivages aux paysages très variés : dunes, plateaux d'arganiers, cultures en terrasses des plages sauvages, des falaises boisées d'arganiers. La population berbère mène une double vie de pêcheurs et d'agriculture - récolte de l'argane.\n\nHospitalité chaleureuse, thé à la menthe et pain avec l'huile d'argan (et Amlou) est une spécialité du coin à base des amandes et à l'huile d'argan vous ne le manquez pas à le goûter.\n\nL'équipe sera composée d'un guide diplômé et d'une équipe chamelier pour le transport de l'intendance et les bagages.",
+    "description": "Cette randonnée suit la côte atlantique au sud d’Essaouira, entre plages, falaises, dunes et plateaux couverts d’arganiers. Les étapes relient de petits villages, des zones de pêche et des bivouacs installés à proximité de l’océan lorsque les conditions le permettent.\n\nLe relief est moins élevé que dans l’Atlas, mais marcher plusieurs jours sur le sable et les sentiers côtiers demande de l’endurance. Le vent, les marées et l’état des passages peuvent conduire le guide à adapter une portion d’étape.\n\nL’équipe locale transporte les bagages et prépare les repas. L’itinéraire permet aussi de découvrir l’huile d’argan et l’amlou, préparés dans la région, sans transformer les rencontres en visites imposées.",
     "highlights": [
       "Découverte de la côte atlantique marocaine avec ses plages sauvages bordées de dunes.",
       "Immersion dans la culture berbère authentique avec villages de pêcheurs à l'architecture blanche.",
       "Randonnée à travers les plateaux d'arganiers, cultures en terrasses et falaises boisées.",
       "Dégustation de spécialités locales : thé à la menthe, pain avec huile d'argan et Amlou.",
       "Découverte d'Essaouira, ville blanche aux portes bleues classée au patrimoine de l'UNESCO.",
-      "Forfait tout inclus avec guide diplômé, équipe chamelier et hébergement varié."
+      "Organisation avec guide, transport des bagages et hébergements prévus au programme."
     ],
     "itinerary": [
       {
@@ -1554,7 +1554,7 @@
     "included": [
       "Prise en charge dès votre arrivée à l'aéroport",
       "Les transferts Aéroport - Hôtel - Rando - Hôtel - Aéroport",
-      "L'assistance d'un guide diplômé et d'une équipe chamelier pour le transport de l'intendance et les bagages",
+      "L'assistance d'un guide et d'une équipe locale pour le transport de l'intendance et des bagages",
       "Les nuits en hôtel ou Riad à Marrakech",
       "Les nuits sous tente et appartement à Essaouira",
       "La pension complète pendant le circuit"
@@ -1572,7 +1572,7 @@
       },
       {
         "question": "Comment se passe le transport des bagages ?",
-        "answer": "Nous utilisons une équipe chamelier pour transporter les bagages et l'intendance jusqu'au lieu de bivouac chaque soir. Vous ne portez que votre sac à dos de journée pendant les randonnées."
+        "answer": "L'équipe locale transporte les bagages et l'intendance jusqu'à l'hébergement ou au bivouac. Vous ne portez que votre sac à dos de journée pendant la marche."
       },
       {
         "question": "Quelle est la meilleure période pour visiter la côte atlantique ?",
@@ -1617,9 +1617,9 @@
       "tourType": "Type de Randonnée",
       "price": "Prix de la Randonnée"
     },
-    "description": "De l'Atlas central à l'Atlas occidental, du M'goun au Toubkal, le voyageur gravit deux sommets à plus de 4000m et découvre une grande diversité de paysages : vallées, villages, sommets, lacs et gorges se succédant tout au long du parcours.\n\nCette grande traversée vous emmène à la découverte des plus beaux paysages de l'Atlas Marocain, des transhumants qui y trouvent un paradis pour leurs grands troupeaux, aux plus hautes vallées de l'Atlas, du col du Tichka jusqu'au sommet le plus culminant : le toit du Maghreb, le Toubkal à 4167m.\n\nCette expédition de 22 jours représente le trekking le plus complet au Maroc, combinant l'ascension des deux plus hauts sommets du pays avec la traversée des régions les plus authentiques de l'Atlas. Une aventure exceptionnelle pour les randonneurs expérimentés cherchant un défi à la mesure de leurs ambitions.\n\nL'équipe sera composée d'un guide diplômé de haute montagne et d'une équipe muletière pour le transport de l'intendance et des bagages.",
+    "description": "Cette traversée de 22 jours relie le Haut Atlas central au massif du Toubkal. Elle enchaîne vallées habitées, plateaux, gorges, cols et deux sommets de plus de 4 000 m : le M’Goun et le Toubkal. La durée permet une immersion rare, mais demande une véritable expérience de la randonnée itinérante.\n\nLes journées successives, l’altitude et l’éloignement rendent ce voyage exigeant. Une préparation d’endurance est indispensable et l’ascension de chaque sommet dépend des conditions, de l’acclimatation et de l’état du groupe. Le guide conserve toujours la possibilité d’adapter le programme.\n\nUne équipe muletière transporte l’intendance et les bagages sur les sections accessibles. Les nuits alternent gîtes, bivouacs, refuge et hébergements à Marrakech selon le programme.",
     "highlights": [
-      "Ascension du M'goun (4068m) et du Toubkal (4167m), les deux plus hauts sommets du Maroc.",
+      "Ascension du M’Goun (4 068 m) et du Toubkal (4 167 m), les deux plus hauts sommets du Maroc.",
       "Grande traversée complète de l'Atlas central à l'Atlas occidental.",
       "Découverte d'une grande diversité de paysages : vallées, villages, sommets, lacs et gorges.",
       "Rencontre avec les populations berbères et observation de la vie pastorale traditionnelle.",

@@ -4,7 +4,7 @@ import HomepagePremiumContent from "@/components/HomepagePremiumContent";
 import { createMetadata, JsonLd, SITE_URL } from "@/lib/seo";
 
 export const metadata = createMetadata({
-  title: "Trek au Maroc avec Guide Local Diplômé | Atlas & Sahara",
+  title: "Maroc Treks | Trekking au Maroc avec guide local",
   description:
     "Organisez votre trek au Maroc en direct avec Mohamed, guide certifié à Imlil : Toubkal, M'Goun, Sahara. Circuits sur mesure sans intermédiaire. Devis gratuit !",
   path: "/",
@@ -16,7 +16,7 @@ export default function Home() {
     "@type": "WebPage",
     "@id": `${SITE_URL}/#webpage`,
     url: SITE_URL,
-    name: "Trek au Maroc avec Guide Local Diplômé",
+    name: "Maroc Treks, trekking au Maroc avec guide local",
     description:
       "Treks privés et randonnées accompagnées dans le Haut Atlas, ascension du Toubkal (4 167 m), massif du M’Goun et désert du Sahara.",
     inLanguage: "fr-FR",
