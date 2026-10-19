@@ -22,6 +22,9 @@ export default function Contact() {
   const [submitted, setSubmitted] = useState(false);
 
   const treksList = [
+    { value: "atlas-2-jours", label: "Villages de l’Atlas — 2 jours" },
+    { value: "toubkal-3-jours", label: "Ascension du Toubkal — 3 jours" },
+    { value: "atlas-4-jours", label: "Vallées du Haut Atlas — 4 jours" },
     { value: "toubkal", label: "Haut Atlas Toubkal" },
     { value: "mgoun", label: "Haut Atlas Mgoun" },
     { value: "anti-atlas", label: "Anti Atlas & Siroua" },
@@ -143,7 +146,7 @@ export default function Contact() {
                   <span className="font-display font-bold text-sm">Garanties Maroc Treks</span>
                 </div>
                 <ul className="text-xs text-slate-300 space-y-2.5 leading-relaxed">
-                  <li>• Échange direct avec Mohamed et l’équipe qui prépare le voyage.</li>
+                  <li>• Échange direct avec l’équipe locale qui prépare votre voyage.</li>
                   <li>• Programme, prestations et prix détaillés par écrit avant confirmation.</li>
                   <li>• Conditions de modification et d’annulation communiquées avec le devis.</li>
                 </ul>

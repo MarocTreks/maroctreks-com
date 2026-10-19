@@ -6,7 +6,7 @@ import { createMetadata, JsonLd, SITE_URL } from "@/lib/seo";
 export const metadata = createMetadata({
   title: "Maroc Treks | Trekking au Maroc avec guide local",
   description:
-    "Organisez votre trek au Maroc en direct avec Mohamed, guide certifié à Imlil : Toubkal, M'Goun, Sahara. Circuits sur mesure sans intermédiaire. Devis gratuit !",
+    "Organisez votre trek au Maroc avec Maroc Treks, équipe locale de guides : Toubkal, M'Goun, Haut Atlas et Sahara. Circuits sur mesure et devis direct.",
   path: "/",
 });
 

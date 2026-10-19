@@ -116,9 +116,10 @@ export default function QuiSommesNous() {
                 Treks.
               </p>
               <p className="mt-5 max-w-3xl text-base leading-7 text-slate-300 sm:text-lg">
-                Depuis Armed, dans la vallée d’Imlil, Mohamed prépare et
-                accompagne des voyages à pied dans tout le Maroc, avec des
-                accueils et transferts organisés depuis Marrakech.
+                Depuis Armed, dans la vallée d’Imlil, Maroc Treks prépare et
+                accompagne des voyages à pied dans tout le Maroc. Mohamed a
+                fondé l’équipe et continue d’en coordonner l’expérience de
+                terrain avec des guides locaux qualifiés.
               </p>
 
               <div className="mt-7 flex flex-wrap gap-x-5 gap-y-3 border-t border-white/20 pt-5 text-sm font-bold text-slate-200">
@@ -328,8 +329,15 @@ export default function QuiSommesNous() {
                 Une équipe locale, un responsable sur le terrain
               </h2>
               <p className="mt-5 text-base leading-7 text-slate-600">
-                Mohamed organise chaque voyage avec les personnes qui vivent
-                dans les vallées et connaissent leurs sentiers.
+                Maroc Treks organise chaque voyage avec des guides, cuisiniers,
+                muletiers, chameliers et hébergeurs qui vivent dans les régions
+                traversées et connaissent leurs sentiers.
+              </p>
+              <p className="mt-3 text-sm leading-6 text-slate-500">
+                Mohamed accompagne certains départs, mais il n’est pas le guide
+                de chaque circuit. Le membre de l’équipe affecté à votre voyage
+                est confirmé avant le départ selon la région, les dates et le
+                niveau du groupe.
               </p>
             </div>
 

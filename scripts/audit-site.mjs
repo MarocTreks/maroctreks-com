@@ -7,6 +7,7 @@ const siteContent = JSON.parse(await readFile(new URL("../src/data/site-pages.ge
 const routes = [
   "/",
   "/circuits",
+  "/treks-courts-maroc",
   "/haut-atlas-toubkal",
   "/haut-atlas-mgoun",
   "/vallees-dades-roses",

@@ -136,7 +136,7 @@ export default function GoogleReviewsSection() {
             Ce que disent nos randonneurs
           </h2>
           <p className="mt-3 max-w-2xl text-base leading-relaxed text-slate-600 sm:text-lg">
-            Découvrez les retours authentiques publiés sur notre profil Google Maps par les voyageurs accompagnés par Mohamed et son équipe.
+            Découvrez les retours authentiques publiés sur notre profil Google Maps par les voyageurs accompagnés par les membres de notre équipe locale.
           </p>
 
           {/* Rating Badge */}

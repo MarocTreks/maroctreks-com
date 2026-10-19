@@ -114,7 +114,7 @@ const tourSeoTitles: Record<string, string> = {
 
 const tourSeoDescriptions: Record<string, string> = {
   "circuit-toubkal-6-jours-lac-ifni": "Trek du Toubkal en 6 jours depuis Imlil par Tacheddirt, Azib Likemt, Amsouzart et le lac d’Ifni. Grande boucle guidée et sommet à 4 167 m.",
-  "randonnee-dans-latlas": "Tour du Toubkal en 15 jours avec Mohamed, guide certifié à Imlil. Vallées amazighes, cols d'altitude, lac d'Ifni et ascension du sommet. Devis direct.",
+  "randonnee-dans-latlas": "Tour du Toubkal en 15 jours avec l’équipe locale Maroc Treks. Vallées amazighes, cols d'altitude, lac d'Ifni et ascension du sommet. Devis direct.",
   "randonnee-berbere-avec-ascension-du-toubkal-8-jours": "Ascension du Toubkal (4 167 m) et villages berbères en 8 jours. Guide certifié à Imlil, équipe muletière & pension complète en direct sans intermédiaire.",
   "randonnee-dans-le-haut-atlas-central": "Ascension du M'Goun (4 071 m) et vallées d'Aït Bouguemez en 10 jours. Trek guidé au cœur du Haut Atlas central avec bivouacs et hauts plateaux.",
   "randonnee-en-famille-vallee-heureuse-dait-bouguemez-8-jours": "Trek en famille à Aït Bouguemez (8 jours) adapté aux enfants. Randonnée guidée dans la Vallée Heureuse du Haut Atlas, villages et rencontres locales.",
@@ -131,7 +131,7 @@ const tourSeoDescriptions: Record<string, string> = {
 };
 
 const categorySeo: Record<TourCategory, { title: string; description: string }> = {
-  toubkal: { title: "Trek Toubkal & Haut Atlas avec Guide Local Imlil", description: "Réservez votre trek au Toubkal depuis Imlil avec Mohamed, guide certifié. Ascension du sommet (4 167m), villages berbères et pension complète." },
+  toubkal: { title: "Trek Toubkal & Haut Atlas avec Guide Local Imlil", description: "Réservez votre trek au Toubkal depuis Imlil avec l’équipe Maroc Treks. Guide local qualifié, ascension du sommet, villages amazighs et pension complète." },
   mgoun: { title: "Trek M’Goun & Vallée d’Aït Bouguemez | Haut Atlas", description: "Explorez le massif du M’Goun (4 071m) et la Vallée Heureuse avec un guide local. Gorges, hauts plateaux et circuits guidés sur mesure au Maroc." },
   "dades-roses": { title: "Trek Vallée du Dadès & Vallée des Roses | Sud Maroc", description: "Randonnées guidées dans les vallées du Dadès et des Roses. Kasbahs, gorges d'altitude, villages amazighs et circuits privés sans intermédiaire." },
   "moyen-atlas": { title: "Trek Moyen Atlas | Cèdres, Lacs & Guide Local Maroc", description: "Découvrez les forêts de cèdres, lacs et plateaux du Moyen Atlas lors d’un trek privé accompagné par un guide local certifié." },

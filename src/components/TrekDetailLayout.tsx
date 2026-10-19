@@ -395,7 +395,7 @@ export default function TrekDetailLayout({
                     className="flex min-h-12 w-full items-center justify-center gap-2 rounded-md bg-[#128C7E] p-4 text-sm font-extrabold text-white shadow-[0_6px_16px_rgba(18,140,126,0.22)] transition-colors duration-300 hover:bg-[#0f766e] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#25D366] focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900"
                   >
                     <WhatsAppIcon className="h-5 w-5" />
-                    <span>Contacter le guide (WhatsApp)</span>
+                    <span>Contacter l’équipe (WhatsApp)</span>
                   </a>
                 </div>
                 <div className="pt-2 flex items-center justify-center gap-2 text-xs text-orange-100">

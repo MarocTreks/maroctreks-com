@@ -255,7 +255,7 @@ export default function Excursions() {
                 Une idée, une durée, une date de départ
               </h2>
               <p className="mt-3 text-sm leading-6 text-slate-300 sm:text-base">
-                Parlez-nous de vos envies. Mohamed vous répond avec une
+                Parlez-nous de vos envies. Notre équipe vous répond avec une
                 proposition adaptée et son prix.
               </p>
             </div>

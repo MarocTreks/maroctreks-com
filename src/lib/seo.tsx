@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const SITE_URL = "https://www.maroctreks.com";
 export const SITE_NAME = "Maroc Treks";
 export const DEFAULT_DESCRIPTION =
-  "Treks privés au Maroc avec Mohamed Ait Tadrart, guide local certifié à Imlil : Toubkal, M'Goun, Haut Atlas, Anti-Atlas et Sahara. Devis direct sans intermédiaire !";
+  "Treks privés au Maroc avec une équipe locale de guides : Toubkal, M'Goun, Haut Atlas, Anti-Atlas et Sahara. Organisation directe et devis sur mesure.";
 
 type PageMetadata = {
   title: string;

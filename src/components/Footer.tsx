@@ -9,6 +9,7 @@ export default function Footer() {
   const fastLinks = [
     { name: "Accueil", href: "/" },
     { name: "Tous les circuits", href: "/circuits" },
+    { name: "Treks de 2 à 4 jours", href: "/treks-courts-maroc" },
     { name: "Qui sommes nous ?", href: "/qui-sommes-nous" },
     { name: "Informations Pratiques", href: "/informations-pratiques" },
     { name: "Conseils & Blog", href: "/blog" },
@@ -48,7 +49,7 @@ export default function Footer() {
               />
             </Link>
             <p className="text-sm leading-relaxed text-slate-300">
-              Équipe locale de trekking basée à Armed, dans la vallée d’Imlil. Mohamed Ait Tadrart prépare des treks sur mesure dans l’Atlas, l’Anti-Atlas, le désert et sur la côte.
+              Équipe locale de trekking fondée par Mohamed Ait Tadrart et basée à Armed, dans la vallée d’Imlil. Nous organisons des treks sur mesure dans tout le Maroc.
             </p>
           </div>
 
@@ -118,7 +119,7 @@ export default function Footer() {
             <div className="mt-6 flex items-center gap-2 rounded-lg border border-slate-700/50 bg-slate-800/80 p-3">
               <ShieldCheck className="h-5 w-5 shrink-0 text-green-400" />
               <span className="text-xs font-semibold text-slate-300 leading-tight">
-                Organisation directe avec Mohamed, guide de montagne professionnel.
+                Organisation directe avec l’équipe locale Maroc Treks.
               </span>
             </div>
           </div>

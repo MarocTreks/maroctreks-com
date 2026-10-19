@@ -86,6 +86,7 @@ export default function Navbar() {
 
   const circuits = [
     { name: "Tous les circuits", href: "/circuits" },
+    { name: "Treks courts · 2 à 4 jours", href: "/treks-courts-maroc" },
     { name: "Haut Atlas Toubkal", href: "/haut-atlas-toubkal" },
     { name: "Haut Atlas Mgoun", href: "/haut-atlas-mgoun" },
     { name: "Vallées du Dadès et des Roses", href: "/vallees-dades-roses" },
@@ -515,7 +516,7 @@ export default function Navbar() {
             <a
               href="tel:+212667591933"
               className="hidden h-10 w-10 items-center justify-center rounded-md border border-orange-200 bg-orange-50 text-orange-700 transition-colors hover:bg-orange-100 sm:flex"
-              aria-label="Appeler votre guide"
+              aria-label="Appeler l’équipe Maroc Treks"
             >
               <Phone className="h-5 w-5" />
             </a>

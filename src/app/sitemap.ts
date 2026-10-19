@@ -6,6 +6,7 @@ import { blogPosts } from "@/lib/blog-posts";
 const routes = [
   "",
   "/circuits",
+  "/treks-courts-maroc",
   ...tourCategories.map((category) => category.path),
   ...tours.map((tour) => tour.path),
   "/excursions",

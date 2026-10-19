@@ -36,7 +36,7 @@ export default async function BlogPostPage({ params }: Props) {
   const post = getBlogPost((await params).slug);
   if (!post) notFound();
 
-  const articleSchema = { "@context": "https://schema.org", "@type": "BlogPosting", "@id": `${SITE_URL}/blog/${post.slug}#article`, headline: post.title, description: post.description, image: post.image, datePublished: post.publishedAt, dateModified: post.updatedAt, inLanguage: "fr-FR", author: { "@id": `${SITE_URL}/qui-sommes-nous#person`, name: "Mohamed Ait Tadrart", url: `${SITE_URL}/qui-sommes-nous` }, publisher: { "@id": `${SITE_URL}/#organization` }, mainEntityOfPage: `${SITE_URL}/blog/${post.slug}` };
+  const articleSchema = { "@context": "https://schema.org", "@type": "BlogPosting", "@id": `${SITE_URL}/blog/${post.slug}#article`, headline: post.title, description: post.description, image: post.image, datePublished: post.publishedAt, dateModified: post.updatedAt, inLanguage: "fr-FR", author: { "@id": `${SITE_URL}/#organization`, name: "Équipe Maroc Treks", url: SITE_URL }, publisher: { "@id": `${SITE_URL}/#organization` }, mainEntityOfPage: `${SITE_URL}/blog/${post.slug}` };
   const breadcrumbSchema = { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: "Accueil", item: SITE_URL }, { "@type": "ListItem", position: 2, name: "Blog", item: `${SITE_URL}/blog` }, { "@type": "ListItem", position: 3, name: post.title, item: `${SITE_URL}/blog/${post.slug}` }] };
   const relatedPosts = [
     ...blogPosts.filter((candidate) => candidate.slug !== post.slug && candidate.category === post.category),
@@ -61,7 +61,7 @@ export default async function BlogPostPage({ params }: Props) {
                 <h1 className="mt-4 font-display text-3xl font-black leading-[1.04] tracking-tight sm:mt-6 sm:text-6xl lg:text-7xl">{post.title}</h1>
                 <p className="mt-3 line-clamp-3 max-w-3xl text-sm leading-6 text-slate-200 sm:mt-6 sm:block sm:text-xl sm:leading-8">{post.excerpt}</p>
                 <div className="mt-4 flex flex-wrap items-center gap-x-4 gap-y-2 border-t border-white/20 pt-4 text-xs font-semibold text-slate-300 sm:mt-8 sm:gap-x-6 sm:gap-y-3 sm:pt-6 sm:text-sm">
-                  <Link href="/qui-sommes-nous" className="inline-flex items-center gap-2 transition hover:text-white"><UserRound className="h-4 w-4 text-orange-400" />Mohamed Ait Tadrart</Link>
+                  <Link href="/qui-sommes-nous" className="inline-flex items-center gap-2 transition hover:text-white"><UserRound className="h-4 w-4 text-orange-400" />Équipe Maroc Treks</Link>
                   <span className="inline-flex items-center gap-2"><Clock3 className="h-4 w-4 text-orange-400" />{post.readingTime} de lecture</span>
                   <span>Publié le <time dateTime={post.publishedAt}>{formatDate(post.publishedAt)}</time></span>
                   <span className="hidden items-center gap-2 sm:inline-flex"><Compass className="h-4 w-4 text-orange-400" />Conseils de guides locaux</span>
@@ -133,7 +133,7 @@ export default async function BlogPostPage({ params }: Props) {
                 <div className="relative">
                   <p className="text-xs font-extrabold uppercase tracking-[0.2em] text-orange-300">Votre aventure commence ici</p>
                   <h2 className="mt-4 max-w-xl font-display text-3xl font-black leading-tight sm:text-4xl">Un itinéraire pensé pour vous, par ceux qui connaissent le terrain.</h2>
-                  <p className="mt-5 max-w-xl leading-7 text-slate-300">Mohamed et son équipe vous conseillent selon la saison, votre expérience et le rythme souhaité.</p>
+                  <p className="mt-5 max-w-xl leading-7 text-slate-300">Notre équipe vous conseille selon la saison, votre expérience et le rythme souhaité.</p>
                   <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                     <Link href={post.relatedHref} className="theme-button-primary">{post.relatedLabel}<ArrowRight className="h-4 w-4" /></Link>
                     <Link href="/contact" className="theme-button-on-dark">Parler à un guide</Link>

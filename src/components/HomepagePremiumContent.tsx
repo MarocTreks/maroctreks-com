@@ -225,8 +225,8 @@ function RegionAdviceCard({ className = "" }: { className?: string }) {
             Besoin d’aide pour choisir ?
           </h4>
           <p className="mt-1 text-sm leading-6 text-slate-600">
-            Mohamed vous conseille selon votre niveau, vos dates et le rythme
-            de votre groupe.
+            Notre équipe vous conseille selon votre niveau, vos dates et le
+            rythme de votre groupe.
           </p>
         </div>
       </div>
@@ -351,7 +351,7 @@ export default function HomepagePremiumContent() {
             </p>
             <p className="mt-5 max-w-2xl text-base leading-7 text-slate-200 sm:text-lg">
               Treks dans l’Atlas, traversées du désert et circuits à pied
-              organisés par Mohamed Ait Tadrart et son équipe locale.
+              organisés par l’équipe locale de Maroc Treks.
             </p>
             <a
               href={GOOGLE_MAPS_URL}
@@ -451,15 +451,17 @@ export default function HomepagePremiumContent() {
                 dans la vallée d’Imlil. Nous organisons les accueils et départs
                 depuis Marrakech, puis accompagnons des randonnées privées et
                 des circuits sur mesure dans tout le Maroc. Vous préparez
-                directement votre voyage avec{" "}
+                directement votre voyage avec l’équipe Maroc Treks, fondée
+                et coordonnée par{" "}
                 <Link
                   href="/qui-sommes-nous"
                   className="font-semibold text-slate-950 underline decoration-orange-500 decoration-2 underline-offset-4 transition-colors hover:text-orange-700"
                 >
                   Mohamed Ait Tadrart
                 </Link>
-                , guide de montagne diplômé, originaire du Haut Atlas et fort
-                de plus de 20 ans d’expérience sur le terrain.
+                , guide de montagne diplômé originaire du Haut Atlas. Selon
+                les dates et l’itinéraire, votre départ est accompagné par
+                Mohamed ou par un guide qualifié de l’équipe.
               </p>
 
               <div
@@ -636,7 +638,7 @@ export default function HomepagePremiumContent() {
                 Armed, vallée d’Imlil
               </p>
               <p className="mt-1 font-display text-xl font-extrabold">
-                Mohamed Ait Tadrart et son équipe
+                Maroc Treks, une équipe locale fondée par Mohamed
               </p>
             </div>
           </div>

@@ -145,7 +145,7 @@ export default function InformationsPratiques() {
                 <h3 className="font-display text-2xl font-bold">Une question spécifique ?</h3>
               </div>
               <p className="text-slate-100 text-sm sm:text-base font-light max-w-xl">
-                Niveau physique requis, logistique pour enfants, ou matériel d'alpinisme... Notre guide Mohamed vous répond en direct.
+                Niveau physique requis, logistique pour enfants ou matériel d’alpinisme : notre équipe locale vous répond directement.
               </p>
             </div>
             <a
