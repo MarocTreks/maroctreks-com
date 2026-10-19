@@ -10,6 +10,7 @@ import {
   ChevronLeft,
   ChevronRight,
   ChevronDown,
+  Clock3,
   Compass,
   Flower2,
   Heart,
@@ -191,6 +192,7 @@ const editorialGuides = [
 
 const images = {
   team: cloudinaryImage("0ac3fa52-5129-4287-83c6-8a0bf8bcdfd0_aosoyg"),
+  shortTreks: cloudinaryImage("4796C7E6-F03B-4847-B866-107C876E9AD7_nfgfpq"),
   cta: cloudinaryImage("a467fd77-11d7-40a9-af7c-7e6bf5b231cb_op5wf0"),
 };
 
@@ -698,6 +700,64 @@ export default function HomepagePremiumContent() {
               <ArrowRight className="h-4 w-4" aria-hidden="true" />
             </Link>
           </div>
+        </div>
+      </section>
+
+      <section className="border-b border-slate-200 bg-slate-950 py-14 text-white sm:py-20">
+        <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[1.05fr_0.95fr] lg:items-center lg:px-8">
+          <div>
+            <p className="flex items-center gap-2 text-xs font-extrabold uppercase tracking-[0.18em] text-orange-300">
+              <Clock3 className="h-4 w-4" aria-hidden="true" />
+              Vous avez peu de temps au Maroc ?
+            </p>
+            <h2 className="mt-4 max-w-2xl font-display text-3xl font-black leading-tight sm:text-5xl">
+              Découvrez l’Atlas en 2, 3 ou 4 jours
+            </h2>
+            <p className="mt-5 max-w-2xl text-base leading-7 text-slate-300 sm:text-lg">
+              Ces formats courts partent de Marrakech et permettent de choisir
+              entre les villages amazighs, une itinérance entre vallées ou
+              l’ascension du Toubkal. Chaque programme est adapté à votre
+              niveau, vos dates et la saison.
+            </p>
+
+            <div className="mt-7 grid gap-3 sm:grid-cols-3">
+              {[
+                ["2 jours", "Villages et Imlil"],
+                ["3 jours", "Ascension du Toubkal"],
+                ["4 jours", "Vallées du Haut Atlas"],
+              ].map(([duration, title]) => (
+                <div key={duration} className="rounded-lg border border-white/15 bg-white/5 p-4">
+                  <span className="text-sm font-black text-orange-300">{duration}</span>
+                  <span className="mt-1 block text-sm font-semibold text-white">{title}</span>
+                </div>
+              ))}
+            </div>
+
+            <Link href="/treks-courts-maroc" className="theme-button-primary mt-8 min-h-12 px-6">
+              Voir les treks courts
+              <ArrowRight className="h-4 w-4" aria-hidden="true" />
+            </Link>
+          </div>
+
+          <Link
+            href="/treks-courts-maroc"
+            aria-label="Découvrir les treks de 2, 3 et 4 jours dans le Haut Atlas"
+            className="group relative min-h-[300px] overflow-hidden rounded-xl border border-white/15 bg-slate-800 shadow-2xl sm:min-h-[390px]"
+          >
+            <Image
+              src={images.shortTreks}
+              alt="Randonneurs dans les montagnes du Haut Atlas"
+              fill
+              unoptimized
+              sizes="(min-width: 1024px) 45vw, 100vw"
+              className="object-cover transition-transform duration-500 group-hover:scale-[1.03] motion-reduce:transition-none"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent" />
+            <span className="absolute bottom-5 left-5 right-5 flex items-center justify-between font-display text-lg font-extrabold">
+              Un trek court, une vraie immersion
+              <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" aria-hidden="true" />
+            </span>
+          </Link>
         </div>
       </section>
 
