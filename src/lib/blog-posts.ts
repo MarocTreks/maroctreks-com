@@ -27,6 +27,99 @@ export type BlogPost = {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "trek-4-jours-haut-atlas-villages-cuisine",
+    title: "4 jours dans le Haut Atlas : de village en village, jusqu’à la cuisine d’Armed",
+    seoTitle: "Trek 4 jours Haut Atlas : villages et cuisine",
+    excerpt: "Deux cols, les vallées d’Azzaden et d’Aït Mizane, des nuits chez l’habitant et un atelier de cuisine : quatre jours pour vivre la montagne de l’intérieur.",
+    description: "Un trek de quatre jours au départ de Marrakech, entre Aguerssioual, Id Aïssa et Armed, avec des étapes accessibles, des nuits dans les villages et un cours de cuisine marocaine.",
+    category: "Haut Atlas",
+    publishedAt: "2026-10-27",
+    updatedAt: "2026-10-27",
+    readingTime: "8 min",
+    image: cloudinaryImage("a3cd32bb-7b0e-4131-8d50-8ed4c987ea9e_rshh71"),
+    imageAlt: "Village amazigh et cultures en terrasses dans une vallée du massif du Toubkal",
+    relatedHref: "/contact",
+    relatedLabel: "Organiser ce trek de 4 jours",
+    sections: [
+      {
+        heading: "Quatre jours pour entrer dans la vie du Haut Atlas",
+        paragraphs: [
+          "Il n’est pas toujours nécessaire de monter au sommet du Toubkal pour sentir la force du Haut Atlas. Sur cet itinéraire, le voyage se trouve ailleurs : dans les sentiers qui relient les villages, dans l’ombre des genévriers et des noyers, autour d’un repas préparé ensemble à Armed.",
+          "En quatre jours et trois nuits, nous traversons une partie du massif du Toubkal depuis Aguerssioual jusqu’à Armed. Les deux premières journées sont les plus sportives. Les deux suivantes ralentissent le pas pour laisser davantage de place aux rencontres, à la cuisine et à la vie du village.",
+        ],
+        bullets: [
+          "Durée : 4 jours et 3 nuits, au départ et au retour de Marrakech",
+          "Marche : environ 3 à 5 heures par jour",
+          "Point culminant : col de Tizi n’Mzik, 2 260 m",
+          "Hébergement : gîte puis logement chez l’habitant",
+          "Repas : pension complète pendant le séjour",
+          "Tarif : sur demande, selon les dates et la composition du groupe",
+        ],
+      },
+      {
+        heading: "Jour 1 — D’Aguerssioual à Id Aïssa par Tizi n’Oudid",
+        paragraphs: [
+          "Nous quittons Marrakech le matin en direction des montagnes. À Aguerssioual, vers 1 600 mètres, la route cède la place au sentier et le trek commence vraiment. Peu à peu, les villages s’éloignent et le regard s’ouvre sur les versants du Haut Atlas.",
+          "La montée nous conduit au col de Tizi n’Oudid, à environ 2 200 mètres. C’est le premier beau passage du voyage, avant une descente progressive vers Id Aïssa. Nous y retrouvons le calme du village pour le dîner et une première nuit en gîte.",
+        ],
+        bullets: [
+          "Distance : environ 8,68 km",
+          "Dénivelé : +600 m / −400 m",
+          "Temps de marche : environ 4 heures",
+          "Altitudes : Aguerssioual 1 600 m, Tizi n’Oudid 2 200 m, Id Aïssa 1 800 m",
+        ],
+      },
+      {
+        heading: "Jour 2 — La traversée vers Armed par Tizi n’Mzik",
+        paragraphs: [
+          "Après le petit-déjeuner, nous prenons la direction de Tizi Oussem, le dernier village de la vallée d’Azzaden. Le sentier monte à travers une forêt de genévriers jusqu’au col de Tizi n’Mzik. À 2 260 mètres, le point le plus haut du trek offre une vue magnifique sur les reliefs du massif et la vallée d’Aït Mizane.",
+          "Nous prenons le repas de midi à l’ombre des noyers lorsque les conditions le permettent, puis descendons dans l’après-midi vers Armed. Cette grande journée relie deux vallées et deux ambiances ; elle reste souvent le souvenir de marche le plus fort du séjour.",
+        ],
+        bullets: [
+          "Distance : environ 11,71 km",
+          "Dénivelé : +660 m / −360 m",
+          "Temps de marche : environ 5 heures",
+          "Altitudes : Id Aïssa 1 800 m, Tizi n’Mzik 2 260 m, Armed 1 900 m",
+          "Nuit et dîner chez l’habitant à Armed",
+        ],
+      },
+      {
+        heading: "Jour 3 — Armed, une promenade et un repas cuisiné ensemble",
+        paragraphs: [
+          "Après deux journées de traversée, nous restons à Armed. Une promenade choisie selon l’envie et l’énergie du groupe permet de regarder le village autrement : ses maisons, ses cultures en terrasses, ses chemins et le rythme quotidien de ses habitants.",
+          "Puis vient un moment plus rare dans un programme de trek : un cuisinier local nous ouvre sa cuisine. Nous découvrons les ingrédients, les gestes et les temps de préparation d’un tajine et du couscous. Le cours se termine naturellement autour de la table, avec le repas que nous avons contribué à préparer.",
+          "Cette journée n’a pas de distance imposée. Elle est volontairement souple afin que la rencontre et le partage ne soient pas chronométrés.",
+        ],
+      },
+      {
+        heading: "Jour 4 — Un dernier matin dans la montagne",
+        paragraphs: [
+          "Le dernier matin, nous marchons encore dans les environs d’Armed. La promenade s’adapte au temps disponible et aux jambes du groupe : elle peut rester tranquille ou prendre un peu de hauteur pour un dernier regard sur la vallée.",
+          "Après le retour au village, un véhicule nous ramène à Marrakech, avec une arrivée prévue en fin d’après-midi. Le passage des sentiers de montagne à l’animation de la ville marque toujours une vraie fin de voyage.",
+        ],
+      },
+      {
+        heading: "Ce que représentent les deux grandes étapes",
+        paragraphs: [
+          "Les chiffres des deux premières journées donnent une bonne idée de l’effort : environ 20,39 km, 1 260 mètres de montée cumulée et 760 mètres de descente. Le terrain de montagne et le passage des cols comptent toutefois davantage que la distance seule.",
+          "Ce trek convient à des marcheurs en bonne santé, capables d’enchaîner quatre à cinq heures de marche et plusieurs centaines de mètres de dénivelé. Nous adaptons le rythme, les pauses et les promenades des jours 3 et 4 à chaque groupe.",
+        ],
+        links: [{ href: "/blog/que-mettre-sac-trek-maroc", label: "Préparer son sac pour le Haut Atlas" }],
+      },
+      {
+        heading: "Pourquoi ce voyage reste différent",
+        paragraphs: [
+          "Ce programme ne cherche pas à accumuler les kilomètres. Il associe une vraie traversée de montagne à une expérience plus intime du Haut Atlas. Dormir dans les villages, s’arrêter sous les noyers et cuisiner avec une personne d’ici donnent du sens au chemin parcouru.",
+          "Les distances et les dénivelés restent indicatifs. La météo, l’état des sentiers et le niveau du groupe peuvent amener le guide à ajuster une étape. Pour recevoir un tarif et confirmer les conditions correspondant à vos dates, dites-nous simplement quand vous souhaitez partir et combien de personnes marcheront avec vous.",
+        ],
+        links: [
+          { href: "/haut-atlas-toubkal", label: "Découvrir nos treks dans le massif du Toubkal" },
+          { href: "/contact", label: "Demander le programme et un devis" },
+        ],
+      },
+    ],
+  },
+  {
     slug: "trek-vallee-ait-bouguemez-4-5-jours",
     title: "Trek dans la vallée des Aït Bouguemez : 4 ou 5 jours au cœur de la Vallée Heureuse",
     seoTitle: "Trek Aït Bouguemez 4 ou 5 jours | Vallée Heureuse",

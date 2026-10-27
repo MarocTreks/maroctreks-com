@@ -9,6 +9,7 @@ import { blogPosts, getBlogPost } from "@/lib/blog-posts";
 import { createMetadata, JsonLd, SITE_URL } from "@/lib/seo";
 
 type Props = { params: Promise<{ slug: string }> };
+const BLOG_AUTHOR = "Mohammed";
 
 export const dynamicParams = false;
 
@@ -36,7 +37,7 @@ export default async function BlogPostPage({ params }: Props) {
   const post = getBlogPost((await params).slug);
   if (!post) notFound();
 
-  const articleSchema = { "@context": "https://schema.org", "@type": "BlogPosting", "@id": `${SITE_URL}/blog/${post.slug}#article`, headline: post.title, description: post.description, image: post.image, datePublished: post.publishedAt, dateModified: post.updatedAt, inLanguage: "fr-FR", author: { "@id": `${SITE_URL}/#organization`, name: "Équipe Maroc Treks", url: SITE_URL }, publisher: { "@id": `${SITE_URL}/#organization` }, mainEntityOfPage: `${SITE_URL}/blog/${post.slug}` };
+  const articleSchema = { "@context": "https://schema.org", "@type": "BlogPosting", "@id": `${SITE_URL}/blog/${post.slug}#article`, headline: post.title, description: post.description, image: post.image, datePublished: post.publishedAt, dateModified: post.updatedAt, inLanguage: "fr-FR", author: { "@type": "Person", name: BLOG_AUTHOR, url: `${SITE_URL}/qui-sommes-nous` }, publisher: { "@id": `${SITE_URL}/#organization` }, mainEntityOfPage: `${SITE_URL}/blog/${post.slug}` };
   const breadcrumbSchema = { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: "Accueil", item: SITE_URL }, { "@type": "ListItem", position: 2, name: "Blog", item: `${SITE_URL}/blog` }, { "@type": "ListItem", position: 3, name: post.title, item: `${SITE_URL}/blog/${post.slug}` }] };
   const relatedPosts = [
     ...blogPosts.filter((candidate) => candidate.slug !== post.slug && candidate.category === post.category),
@@ -61,7 +62,7 @@ export default async function BlogPostPage({ params }: Props) {
                 <h1 className="mt-4 font-display text-3xl font-black leading-[1.04] tracking-tight sm:mt-6 sm:text-6xl lg:text-7xl">{post.title}</h1>
                 <p className="mt-3 line-clamp-3 max-w-3xl text-sm leading-6 text-slate-200 sm:mt-6 sm:block sm:text-xl sm:leading-8">{post.excerpt}</p>
                 <div className="mt-4 flex flex-wrap items-center gap-x-4 gap-y-2 border-t border-white/20 pt-4 text-xs font-semibold text-slate-300 sm:mt-8 sm:gap-x-6 sm:gap-y-3 sm:pt-6 sm:text-sm">
-                  <Link href="/qui-sommes-nous" className="inline-flex items-center gap-2 transition hover:text-white"><UserRound className="h-4 w-4 text-orange-400" />Équipe Maroc Treks</Link>
+                  <Link href="/qui-sommes-nous" className="inline-flex items-center gap-2 transition hover:text-white"><UserRound className="h-4 w-4 text-orange-400" />{BLOG_AUTHOR}</Link>
                   <span className="inline-flex items-center gap-2"><Clock3 className="h-4 w-4 text-orange-400" />{post.readingTime} de lecture</span>
                   <span>Publié le <time dateTime={post.publishedAt}>{formatDate(post.publishedAt)}</time></span>
                   <span className="hidden items-center gap-2 sm:inline-flex"><Compass className="h-4 w-4 text-orange-400" />Conseils de guides locaux</span>
@@ -112,6 +113,17 @@ export default async function BlogPostPage({ params }: Props) {
                   )}
                 </section>
               ))}
+
+              <footer className="mt-8 flex items-center gap-4 border-y border-stone-300 py-7" aria-label="Auteur de l’article">
+                <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-orange-600 text-white">
+                  <UserRound className="h-6 w-6" aria-hidden="true" />
+                </span>
+                <div>
+                  <p className="text-xs font-black uppercase tracking-[0.18em] text-orange-700">Article écrit par</p>
+                  <Link href="/qui-sommes-nous" className="mt-1 inline-block font-display text-2xl font-black text-slate-950 transition hover:text-orange-700">{BLOG_AUTHOR}</Link>
+                  <p className="mt-1 text-sm leading-6 text-slate-600">Guide local de Maroc Treks, basé à Armed dans la vallée d’Imlil.</p>
+                </div>
+              </footer>
 
               <section className="mt-14 border-t border-stone-300 pt-10" aria-labelledby="related-guides-heading">
                 <p className="text-xs font-black uppercase tracking-[0.18em] text-orange-700">Continuer à préparer votre voyage</p>
