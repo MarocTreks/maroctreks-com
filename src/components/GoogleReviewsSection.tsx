@@ -22,7 +22,7 @@ export const googleReviews: GoogleReview[] = [
     avatarBg: "bg-[#004D40]",
     reviewCount: "1 avis publié",
     rating: 5,
-    text: "I'm incredibly lucky to have already done six treks with Mohamed and his team. It's pure bliss, nothing but kindness. Complete safety. Paradise-like landscapes.\n\nBut above all, the spontaneous little details that showcase their kindness and generosity. My most cherished travel memories are undoubtedly with them. I'll be back as soon as possible.",
+    text: "J’ai la chance inouïe d’avoir déjà fait 6 treks avec Mohamed et son équipe. C’est que du bonheur, de la gentillesse. Une sécurité totale. Des paysages paradisiaques.\n\nMais surtout des petites attentions spontanées au quotidien qui prouvent leur générosité. Mes plus beaux souvenirs de voyage sont assurément avec eux. J’y retournerai dès que possible.",
   },
   {
     id: "eve-tondeur",
@@ -31,7 +31,7 @@ export const googleReviews: GoogleReview[] = [
     avatarBg: "bg-[#D84315]",
     reviewCount: "6 avis publiés",
     rating: 5,
-    text: "I've done six treks with Mohammed over the past twenty years (Jebel Sahro, Jebel Siroua, the desert and Merzouga, Mgoun, along the coast, and Toubkal), and I can attest to his professionalism. The treks are very well organized, comfortable, with luggage transport, excellent food, and above all, a friendly and attentive guide and a team always ready to please.\n\nJust a little tip: a lightweight inflatable mattress is a great addition to the ones provided. Enjoy your trek with Mohammed!",
+    text: "J’ai fait six treks avec Mohamed depuis une vingtaine d’années (Jebel Saghro, Jebel Siroua, le désert et Merzouga, Mgoun, la côte et le Toubkal) et je peux témoigner de son professionnalisme. Les treks sont très bien organisés, confortables, avec transport des bagages, excellente nourriture et surtout un guide chaleureux, attentif et une équipe aux petits soins.\n\nUn petit conseil : un matelas gonflable léger en plus de ceux fournis. Bon trek avec Mohamed !",
   },
   {
     id: "marie-christine-wall",
@@ -40,7 +40,7 @@ export const googleReviews: GoogleReview[] = [
     avatarBg: "bg-[#455A64]",
     reviewCount: "3 avis publiés",
     rating: 5,
-    text: "A week-long trip with CAFGI in June 2025. Delicious food, efficient muleteers. Mohamed, the guide, set a steady and rather slow pace which allowed the entire group to reach the summit of Toubkal without difficulty. Thank you to the whole team.",
+    text: "Un séjour d’une semaine avec le CAFGI en juin 2025. Nourriture délicieuse, muletiers efficaces. Mohamed, le guide, a su imposer un rythme régulier et plutôt lent qui a permis à tout le groupe d’atteindre le sommet du Toubkal sans encombre. Merci à toute l’équipe.",
   },
   {
     id: "gorete-matias",
@@ -49,7 +49,7 @@ export const googleReviews: GoogleReview[] = [
     avatarBg: "bg-[#4A148C]",
     reviewCount: "9 avis publiés",
     rating: 5,
-    text: "Mohamed and his team are excellent professionals. The entire trek to Toubkal was superbly organized.\n\nA memorable experience!",
+    text: "Mohamed et son équipe sont d’excellents professionnels. Tout le trek au Toubkal était superbement bien organisé.\n\nUne expérience mémorable !",
   },
   {
     id: "luisa-piccinini",
@@ -58,7 +58,7 @@ export const googleReviews: GoogleReview[] = [
     avatarBg: "bg-[#8D6E63]",
     reviewCount: "2 avis publiés",
     rating: 5,
-    text: "Went on a trek two years ago with a CAF group. Great experience. Thanks to the whole team. Luisa",
+    text: "Partie en trek il y a deux ans avec un groupe du CAF. Superbe expérience. Merci à toute l’équipe. Luisa",
   },
 ];
 

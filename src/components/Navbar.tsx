@@ -156,9 +156,11 @@ export default function Navbar() {
   function loadGoogleTranslate(callback: () => void) {
     ensureTranslateElement();
 
+    (window as unknown as { googleTranslateElementInit?: () => void }).googleTranslateElementInit = initializeGoogleTranslate;
+
     if (!document.querySelector("[data-google-translate-script]")) {
       const script = document.createElement("script");
-      script.src = "https://translate.google.com/translate_a/element.js";
+      script.src = "https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
       script.async = true;
       script.dataset.googleTranslateScript = "true";
       script.onload = initializeGoogleTranslate;
@@ -190,16 +192,6 @@ export default function Navbar() {
     combo.dispatchEvent(new Event("change"));
   }
 
-  function allowPageTranslation() {
-    document.documentElement.removeAttribute("translate");
-    document.documentElement.classList.remove("notranslate");
-  }
-
-  function preventPageTranslation() {
-    document.documentElement.setAttribute("translate", "no");
-    document.documentElement.classList.add("notranslate");
-  }
-
   function applyLanguage(language: string) {
     setLanguageDropdownOpen(false);
     setSelectedLanguage(language);
@@ -207,12 +199,10 @@ export default function Navbar() {
     setTranslateCookie(language);
 
     if (language === "fr") {
-      preventPageTranslation();
       window.location.reload();
       return;
     }
 
-    allowPageTranslation();
     loadGoogleTranslate(() => selectGoogleLanguage(language));
   }
 
@@ -226,10 +216,7 @@ export default function Navbar() {
       setSelectedLanguage(savedLanguage);
 
       if (savedLanguage !== "fr") {
-        allowPageTranslation();
         loadGoogleTranslate(() => selectGoogleLanguage(savedLanguage));
-      } else {
-        preventPageTranslation();
       }
     }, 0);
     // Restore the visitor's saved language once after hydration.

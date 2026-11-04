@@ -86,9 +86,8 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html
       lang="fr"
-      translate="no"
       suppressHydrationWarning
-      className={`${inter.variable} ${outfit.variable} notranslate h-full antialiased font-sans`}
+      className={`${inter.variable} ${outfit.variable} h-full antialiased font-sans`}
     >
       <body className="min-h-full flex flex-col bg-brand-sand text-brand-slate">
         <JsonLd data={[organization, person, website]} />

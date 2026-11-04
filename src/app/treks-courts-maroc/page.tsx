@@ -63,20 +63,20 @@ export default function ShortTreksPage() {
   return <>
     <JsonLd data={schema} />
     <Navbar />
-    <main className="flex-grow bg-brand-sand">
+    <main className="min-w-0 flex-grow overflow-x-clip bg-brand-sand">
       <header className="relative overflow-hidden bg-slate-950 py-20 text-white sm:py-32">
         <Image src={heroImage} alt="Randonneurs dans le Haut Atlas" fill priority unoptimized sizes="100vw" className="object-cover" />
         <div className="absolute inset-0 bg-gradient-to-r from-slate-950/90 via-slate-950/65 to-slate-950/25" />
-        <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="relative mx-auto min-w-0 max-w-7xl px-4 sm:px-6 lg:px-8">
           <p className="text-xs font-extrabold uppercase tracking-[0.2em] text-orange-300">Départ de Marrakech · Guide local</p>
-          <h1 className="mt-4 max-w-4xl font-display text-4xl font-black tracking-tight sm:text-6xl">Treks de 2, 3 et 4 jours dans le Haut Atlas</h1>
+          <h1 className="mt-4 max-w-4xl break-words font-display text-4xl font-black tracking-tight sm:text-6xl">Treks de 2, 3 et 4 jours dans le Haut Atlas</h1>
           <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-200">Villages amazighs, itinérance entre vallées ou ascension du Toubkal : choisissez un format court sans consacrer une semaine entière au trek.</p>
-          <div className="mt-8 flex flex-wrap gap-3"><Link href="#programmes" className="btn-primary">Comparer les programmes <ArrowRight className="h-4 w-4" /></Link><Link href="/contact" className="btn-on-dark">Demander conseil</Link></div>
+          <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap"><Link href="#programmes" className="theme-button-primary w-full sm:w-auto">Comparer les programmes <ArrowRight className="h-4 w-4" /></Link><Link href="/contact" className="theme-button-on-dark w-full sm:w-auto">Demander conseil</Link></div>
         </div>
       </header>
 
       <section className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
-        <div className="grid gap-6 rounded-2xl border border-stone-200 bg-white p-7 shadow-sm sm:grid-cols-3">
+        <div className="grid min-w-0 gap-6 rounded-2xl border border-stone-200 bg-white p-5 shadow-sm sm:grid-cols-3 sm:p-7">
           <Feature icon={<Clock3 />} title="Durée adaptée">Choisissez 2, 3 ou 4 jours selon votre séjour.</Feature>
           <Feature icon={<MapPin />} title="Depuis Marrakech">Les transferts sont organisés vers le départ.</Feature>
           <Feature icon={<ShieldCheck />} title="Programme confirmé">Le parcours final dépend du niveau et de la météo.</Feature>
@@ -85,25 +85,23 @@ export default function ShortTreksPage() {
 
       <section id="programmes" className="mx-auto max-w-7xl scroll-mt-24 px-4 pb-20 sm:px-6 lg:px-8">
         <div className="mb-10 max-w-3xl"><p className="text-xs font-extrabold uppercase tracking-[0.18em] text-orange-700">Trois formats personnalisables</p><h2 className="mt-3 font-display text-3xl font-black text-slate-950 sm:text-4xl">Quel trek court vous correspond ?</h2><p className="mt-4 leading-7 text-slate-600">Après votre demande, notre équipe confirme les étapes, les nuits, le matériel, le guide affecté et le prix selon vos dates et votre groupe.</p></div>
-        <div className="space-y-10">
-          {programs.map((program, index) => <article id={program.id} key={program.id} className="scroll-mt-24 overflow-hidden rounded-2xl border border-stone-200 bg-white shadow-sm">
-            <div className="grid lg:grid-cols-[0.85fr_1.15fr]">
-              <div className="relative min-h-72 lg:min-h-full"><Image src={program.image} alt={program.alt} fill unoptimized sizes="(max-width:1023px) 100vw,42vw" className="object-cover" /><span className="absolute left-5 top-5 rounded-full bg-white px-4 py-2 text-sm font-black text-orange-800 shadow">{program.duration}</span></div>
-              <div className="p-6 sm:p-9"><p className="text-xs font-extrabold uppercase tracking-[0.16em] text-orange-700">Option {index + 1}</p><h2 className="mt-2 font-display text-2xl font-black text-slate-950 sm:text-3xl">{program.title}</h2><p className="mt-3 leading-7 text-slate-600">{program.intro}</p><span className="mt-5 inline-flex items-center gap-2 rounded-full bg-stone-100 px-3 py-2 text-xs font-bold text-slate-700"><Footprints className="h-4 w-4 text-orange-700" />{program.difficulty}</span>
-                <ol className="mt-7 space-y-5 border-l-2 border-orange-200 pl-6">{program.days.map(([title, description]) => <li key={title}><h3 className="font-display font-extrabold text-slate-900">{title}</h3><p className="mt-1 text-sm leading-6 text-slate-600">{description}</p></li>)}</ol>
-                <p className="mt-6 rounded-lg bg-orange-50 p-4 text-sm leading-6 text-orange-950"><strong>À confirmer :</strong> {program.note}</p><Link href="/contact" className="btn-primary mt-6">Recevoir le programme et le prix <ArrowRight className="h-4 w-4" /></Link>
-              </div>
+        <div className="grid gap-6 lg:grid-cols-3">
+          {programs.map((program, index) => <article id={program.id} key={program.id} className="flex scroll-mt-24 flex-col overflow-hidden rounded-xl border border-stone-200 bg-white shadow-sm">
+            <div className="relative min-h-52"><Image src={program.image} alt={program.alt} fill unoptimized sizes="(max-width:1023px) 100vw,33vw" className="object-cover" /><span className="absolute left-4 top-4 rounded-full bg-white px-3 py-1.5 text-xs font-black text-orange-800 shadow">{program.duration}</span></div>
+            <div className="flex flex-1 flex-col p-5"><p className="text-xs font-extrabold uppercase tracking-[0.16em] text-orange-700">Option {index + 1}</p><h2 className="mt-2 font-display text-xl font-black leading-tight text-slate-950">{program.title}</h2><p className="mt-3 text-sm leading-6 text-slate-600">{program.intro}</p><span className="mt-4 inline-flex w-fit items-center gap-2 rounded-full bg-stone-100 px-3 py-1.5 text-xs font-bold text-slate-700"><Footprints className="h-4 w-4 text-orange-700" />{program.difficulty}</span>
+              <ol className="mt-5 space-y-4 border-l-2 border-orange-200 pl-4">{program.days.map(([title, description]) => <li key={title}><h3 className="font-display text-sm font-extrabold leading-5 text-slate-900">{title}</h3><p className="mt-1 text-xs leading-5 text-slate-600">{description}</p></li>)}</ol>
+              <p className="mt-5 rounded-lg bg-orange-50 p-3 text-xs leading-5 text-orange-950"><strong>À confirmer :</strong> {program.note}</p><Link href="/contact" className="theme-button-primary mt-5 w-full">Recevoir le programme et le prix <ArrowRight className="h-4 w-4" /></Link>
             </div>
           </article>)}
         </div>
       </section>
 
-      <section className="bg-white py-16"><div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-2 lg:px-8"><div><p className="text-xs font-extrabold uppercase tracking-[0.18em] text-orange-700">Organisation locale</p><h2 className="mt-3 font-display text-3xl font-black text-slate-950">Ce qui est normalement prévu</h2><ul className="mt-6 space-y-3">{included.map(item => <li key={item} className="flex gap-3 text-slate-700"><Check className="mt-0.5 h-5 w-5 shrink-0 text-emerald-700" />{item}</li>)}</ul></div><div className="rounded-2xl bg-slate-950 p-8 text-white"><h2 className="font-display text-2xl font-black">Un tarif adapté à votre groupe</h2><p className="mt-4 leading-7 text-slate-300">Indiquez vos dates, le nombre de voyageurs et votre expérience. L’équipe Maroc Treks vous répond avec l’itinéraire précis, les prestations incluses et le prix.</p><Link href="/contact" className="btn-primary mt-7">Préparer mon trek <ArrowRight className="h-4 w-4" /></Link></div></div></section>
+      <section className="bg-white py-16"><div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-2 lg:px-8"><div><p className="text-xs font-extrabold uppercase tracking-[0.18em] text-orange-700">Organisation locale</p><h2 className="mt-3 font-display text-3xl font-black text-slate-950">Ce qui est normalement prévu</h2><ul className="mt-6 space-y-3">{included.map(item => <li key={item} className="flex gap-3 text-slate-700"><Check className="mt-0.5 h-5 w-5 shrink-0 text-emerald-700" />{item}</li>)}</ul></div><div className="rounded-2xl bg-slate-950 p-8 text-white"><h2 className="font-display text-2xl font-black">Un tarif adapté à votre groupe</h2><p className="mt-4 leading-7 text-slate-300">Indiquez vos dates, le nombre de voyageurs et votre expérience. L’équipe Maroc Treks vous répond avec l’itinéraire précis, les prestations incluses et le prix.</p><Link href="/contact" className="theme-button-primary mt-7 w-full sm:w-auto">Préparer mon trek <ArrowRight className="h-4 w-4" /></Link></div></div></section>
     </main>
     <Footer />
   </>;
 }
 
 function Feature({ icon, title, children }: { icon: React.ReactNode; title: string; children: React.ReactNode }) {
-  return <div className="flex gap-4"><span className="[&>svg]:h-6 [&>svg]:w-6 [&>svg]:text-orange-700">{icon}</span><div><h2 className="font-display font-extrabold text-slate-950">{title}</h2><p className="mt-1 text-sm leading-6 text-slate-600">{children}</p></div></div>;
+  return <div className="flex min-w-0 gap-4"><span className="shrink-0 [&>svg]:h-6 [&>svg]:w-6 [&>svg]:text-orange-700">{icon}</span><div className="min-w-0"><h2 className="font-display font-extrabold text-slate-950">{title}</h2><p className="mt-1 break-words text-sm leading-6 text-slate-600">{children}</p></div></div>;
 }

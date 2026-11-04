@@ -368,16 +368,16 @@ export default function QuiSommesNous() {
             <h2 id="references-heading" className="mt-3 font-display text-3xl font-black text-slate-950">Des années de terrain, racontées aussi par nos voyageurs</h2>
             <p className="mt-5 max-w-3xl leading-7 text-slate-600">Des clubs et associations ont publié leurs propres récits de voyages accompagnés par Mohamed. Ces archives indépendantes permettent de retrouver une partie de l’histoire de l’équipe sur les sentiers du Maroc.</p>
             <p className="mt-4 max-w-3xl rounded-xl border border-orange-200 bg-orange-50 p-4 text-sm leading-6 text-slate-700">Certaines archives anciennes citent le domaine singulier <strong>maroctrek.com</strong>, autrefois utilisé par Mohamed. Le site officiel actuel est exclusivement <strong>www.maroctreks.com</strong>. Cette précision aide les voyageurs à relier les récits historiques à l’équipe actuelle sans confondre les domaines.</p>
-            <div className="mt-8 grid gap-4 md:grid-cols-3">
-              {[
-                { label: "Club Alpin Français de Grenoble", href: "https://www.cafgrenoble.com/actualites-du-club/1396" },
-                { label: "GR Sentiers — récit publié", href: "https://www.grsentiers.org/pdf/GR_SENTIERS_185.pdf" },
-                { label: "LPO — compte rendu Haut Atlas", href: "https://www-old.lpo.fr/images/voyagesornithos/Maroc/Maroc-Haut-Atlas-Yesou-juin_2011.pdf" },
-              ].map((reference) => (
-                <a key={reference.href} href={reference.href} target="_blank" rel="noopener noreferrer" className="group flex items-center justify-between gap-4 rounded-2xl border border-stone-200 bg-white p-5 font-bold text-slate-800 shadow-sm transition hover:border-orange-300 hover:text-orange-700">
-                  {reference.label}<ExternalLink className="h-4 w-4 shrink-0" />
-                </a>
-              ))}
+            <div className="mt-8 max-w-md">
+              <a
+                href="https://www.cafgrenoble.com/actualites-du-club/1396"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex items-center justify-between gap-4 rounded-2xl border border-stone-200 bg-white p-5 font-bold text-slate-800 shadow-sm transition hover:border-orange-300 hover:text-orange-700"
+              >
+                Club Alpin Français de Grenoble
+                <ExternalLink className="h-4 w-4 shrink-0" />
+              </a>
             </div>
           </div>
         </section>

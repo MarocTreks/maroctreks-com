@@ -378,7 +378,7 @@ export default function TrekDetailLayout({
                 </div>
                 <h2 className="font-display text-2xl font-black">{sectionHeadings.request}</h2>
                 <p className="text-sm font-light leading-relaxed text-slate-300">
-                  Prix disponible sur demande. Contactez-nous pour un devis personnalisé.
+                  Tarif adapté à vos dates et à la taille de votre groupe. Devis gratuit sans intermédiaire.
                 </p>
                 <div className="space-y-3">
                   <Link
@@ -398,9 +398,9 @@ export default function TrekDetailLayout({
                     <span>Contacter l’équipe (WhatsApp)</span>
                   </a>
                 </div>
-                <div className="pt-2 flex items-center justify-center gap-2 text-xs text-orange-100">
-                  <ShieldCheck className="h-4 w-4 text-white" />
-                  <span>{price || "Sur demande"}</span>
+                <div className="pt-2 flex items-center justify-center gap-2 text-xs text-orange-200">
+                  <ShieldCheck className="h-4 w-4 text-orange-400" />
+                  <span>Organisation directe avec guide local certifié</span>
                 </div>
               </div>
 

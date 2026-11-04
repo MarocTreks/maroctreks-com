@@ -25,6 +25,7 @@ const nextConfig: NextConfig = {
       { source: "/terms-and-conditions", destination: "/conditions-reservation", permanent: true },
       { source: "/galleries", destination: "/qui-sommes-nous", permanent: true },
       { source: "/galeries", destination: "/qui-sommes-nous", permanent: true },
+      { source: "/anti-atlas", destination: "/antis-atlas", permanent: true },
       {
         source: "/randonnee-dans-le-moyen-atlas-8-jours",
         destination: "/randonnee-moyen-atlas",

@@ -18,6 +18,7 @@ const regionalGuides: Record<string, { href: string; title: string }[]> = {
   "/haut-atlas-mgoun": [{ href: "/blog/trek-vallee-ait-bouguemez-4-5-jours", title: "Trek dans la vallée des Aït Bouguemez" }],
   "/vallees-dades-roses": [{ href: "/blog/haut-atlas-maroc-guide-complet", title: "Guide complet du Haut Atlas" }],
   "/antis-atlas": [{ href: "/blog/haut-atlas-maroc-guide-complet", title: "Comprendre les massifs du Maroc" }],
+  "/le-desert": [{ href: "/blog/trek-dunes-chegaga-8-jours-guide", title: "Guide du trek dans les dunes de Chegaga" }],
 };
 
 export default function CategoryLanding({ category }: { category: TourCategoryDefinition }) {
