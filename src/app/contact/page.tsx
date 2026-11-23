@@ -7,6 +7,7 @@ import { Mail, Phone, MapPin, Send, CheckCircle, ShieldCheck, Copy, Check, Exter
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { WhatsAppIcon } from "@/components/WhatsAppButton";
+import { BUSINESS_EMAIL } from "@/lib/business";
 import { cloudinaryImage } from "@/lib/tour-media";
 
 export default function Contact() {
@@ -57,8 +58,8 @@ export default function Contact() {
 
   const subjectText = `Demande de réservation — ${selectedTrekLabel}`;
 
-  const mailtoUrl = `mailto:tadrartmed@gmail.com?subject=${encodeURIComponent(subjectText)}&body=${encodeURIComponent(buildSummaryText())}`;
-  const gmailWebUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=tadrartmed@gmail.com&su=${encodeURIComponent(subjectText)}&body=${encodeURIComponent(buildSummaryText())}`;
+  const mailtoUrl = `mailto:${BUSINESS_EMAIL}?subject=${encodeURIComponent(subjectText)}&body=${encodeURIComponent(buildSummaryText())}`;
+  const gmailWebUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${BUSINESS_EMAIL}&su=${encodeURIComponent(subjectText)}&body=${encodeURIComponent(buildSummaryText())}`;
   const whatsAppUrl = `https://wa.me/212667591933?text=${encodeURIComponent(buildSummaryText())}`;
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -130,7 +131,7 @@ export default function Contact() {
                 </a>
 
                 <a
-                  href="mailto:tadrartmed@gmail.com"
+                  href={`mailto:${BUSINESS_EMAIL}`}
                   className="theme-panel flex items-center gap-4 p-6 transition-[border-color,box-shadow] hover:border-orange-300 hover:shadow-[0_12px_32px_rgba(15,23,42,0.1)]"
                 >
                   <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-md bg-orange-100 text-orange-700">
@@ -138,7 +139,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <span className="block text-xs text-slate-400 font-bold uppercase tracking-wider">Email</span>
-                    <span className="text-base font-bold text-brand-slate hover:text-brand-orange transition-colors break-all">tadrartmed@gmail.com</span>
+                    <span className="text-base font-bold text-brand-slate hover:text-brand-orange transition-colors break-all">{BUSINESS_EMAIL}</span>
                   </div>
                 </a>
 
