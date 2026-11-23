@@ -85,7 +85,6 @@ export default function Contact() {
               src={cloudinaryImage("a13ae920-abb1-41d7-abd9-18cc92bada6e_ov6j0q")}
               alt=""
               fill
-              unoptimized
               sizes="100vw"
               className="h-full w-full object-cover"
             />
@@ -241,7 +240,7 @@ export default function Contact() {
                   </div>
                 </div>
               ) : (
-                <form onSubmit={handleSubmit} className="space-y-6">
+                <form onSubmit={handleSubmit} data-analytics-event="Quote form prepared" className="space-y-6">
                   <div className="space-y-2">
                     <h3 className="font-display text-2xl font-bold text-brand-slate">Formulaire de réservation</h3>
                     <p className="text-xs text-slate-400">Remplissez ces quelques lignes pour recevoir votre devis personnalisé gratuit.</p>

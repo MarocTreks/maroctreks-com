@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import { Inter, Outfit } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 import { DEFAULT_DESCRIPTION, JsonLd, SITE_NAME, SITE_URL } from "@/lib/seo";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import SiteAnalytics from "@/components/SiteAnalytics";
 import { BUSINESS_EMAIL, BUSINESS_NAME, BUSINESS_OWNER, BUSINESS_PHONE_E164, GOOGLE_MAPS_URL, TRIPADVISOR_URL } from "@/lib/business";
 
 const inter = Inter({
@@ -93,6 +95,8 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <JsonLd data={[organization, person, website]} />
         {children}
         <WhatsAppButton />
+        <SiteAnalytics />
+        <Analytics />
       </body>
     </html>
   );

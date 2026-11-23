@@ -27,6 +27,136 @@ export type BlogPost = {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "quel-trek-choisir-maroc",
+    title: "Quel trek choisir au Maroc ? Le guide pour trouver l’itinéraire qui vous ressemble",
+    seoTitle: "Quel trek choisir au Maroc ? Guide par saison et niveau",
+    excerpt: "Atlas, Toubkal, M’Goun, Anti-Atlas ou désert : comparez les régions, les saisons et les niveaux pour choisir un trek vraiment adapté à votre voyage.",
+    description: "Comparez les meilleurs treks au Maroc selon votre niveau, la saison, la durée et vos envies : Toubkal, M’Goun, Anti-Atlas, Vallée Heureuse ou désert.",
+    category: "Préparer son trek",
+    publishedAt: "2026-11-23",
+    updatedAt: "2026-11-23",
+    readingTime: "12 min",
+    image: cloudinaryImage("a8d4d94f-942f-497a-a703-02cc997f161f_c5fqte"),
+    imageAlt: "Village amazigh au pied des sommets du Haut Atlas marocain",
+    relatedHref: "/circuits",
+    relatedLabel: "Comparer tous nos circuits",
+    sections: [
+      {
+        heading: "L’essentiel pour choisir sans se tromper",
+        paragraphs: [
+          "Le meilleur trek au Maroc n’est pas forcément le plus haut ni le plus long. C’est celui qui correspond à votre saison de voyage, à votre rythme et à ce que vous avez envie de vivre : atteindre un sommet, traverser des villages, marcher en famille ou dormir sous les étoiles du désert.",
+          "Pour une première décision, retenez ce repère simple : le Haut Atlas se prête surtout aux treks de montagne du printemps à l’automne ; l’Anti-Atlas et le Sahara sont particulièrement agréables pendant les mois frais. La durée et le dénivelé quotidien permettent ensuite d’affiner le choix.",
+        ],
+        bullets: [
+          "Pour un premier trek : vallée d’Aït Bouguemez ou villages du massif du Toubkal",
+          "Pour un sommet : Toubkal à 4 167 m ou M’Goun à 4 068 m",
+          "Pour voyager en hiver : Jbel Saghro, Siroua, Tafraout ou désert marocain",
+          "Pour partir en famille : Vallée Heureuse avec des étapes souples",
+          "Pour une immersion nomade : vallée du Drâa ou dunes de Chegaga",
+        ],
+      },
+      {
+        heading: "Quel trek selon la saison ?",
+        paragraphs: [
+          "De mai à octobre, les itinéraires d’altitude du Haut Atlas offrent les meilleures possibilités. Juillet et août peuvent être chauds dans les vallées, mais les nuits restent fraîches en hauteur. Le printemps apporte des paysages plus verts ; le début de l’automne offre souvent une lumière claire et des sentiers plus calmes.",
+          "De novembre à mars, mieux vaut regarder vers le Jbel Saghro, l’Anti-Atlas, la côte Atlantique ou le Sahara. L’ascension hivernale du Toubkal reste possible pour des marcheurs préparés, mais elle devient une course de montagne avec neige, froid et matériel technique ; ce n’est plus le même voyage qu’en été.",
+        ],
+        links: [{ href: "/blog/meilleure-periode-trekking-maroc", label: "Voir le calendrier région par région" }],
+      },
+      {
+        heading: "Pour un premier trek : les villages du Haut Atlas",
+        paragraphs: [
+          "Autour d’Imlil, des itinéraires de trois à six jours relient des villages amazighs, des cultures en terrasses et des cols panoramiques. Ils permettent de découvrir la montagne sans faire de l’ascension du Toubkal une obligation. Les nuits en gîte et chez l’habitant donnent au voyage une vraie dimension humaine.",
+          "C’est un bon choix si vous marchez régulièrement mais n’avez jamais fait de trek itinérant. Demandez des étapes de quatre à cinq heures et une journée d’adaptation avant de franchir les cols les plus hauts.",
+        ],
+        links: [
+          { href: "/haut-atlas-toubkal", label: "Découvrir les treks du Toubkal" },
+          { href: "/blog/trek-4-jours-haut-atlas-villages-cuisine", label: "Voir un itinéraire de 4 jours" },
+        ],
+      },
+      {
+        heading: "Pour atteindre un sommet : Toubkal ou M’Goun ?",
+        paragraphs: [
+          "Le Toubkal est le sommet le plus connu et le plus accessible depuis Marrakech. En conditions estivales, son itinéraire normal ne demande pas d’escalade, mais l’altitude et la longue montée finale exigent de l’endurance. Deux jours constituent une formule rapide ; quatre à six jours permettent une approche plus progressive et plus riche.",
+          "Le M’Goun propose une aventure plus isolée dans le Haut Atlas central. Son ascension s’intègre naturellement à une traversée de la Vallée Heureuse et demande davantage de temps. Choisissez le Toubkal pour un premier 4 000 m et le M’Goun pour une itinérance plus sauvage.",
+        ],
+        links: [
+          { href: "/circuit-toubkal-6-jours-lac-ifni", label: "Circuit du Toubkal en 6 jours" },
+          { href: "/randonnee-dans-le-haut-atlas-central", label: "Trek du M’Goun" },
+          { href: "/blog/ascension-toubkal-guide-pratique", label: "Préparer l’ascension du Toubkal" },
+        ],
+      },
+      {
+        heading: "Pour marcher en famille : la Vallée Heureuse",
+        paragraphs: [
+          "La vallée des Aït Bouguemez combine villages, champs, greniers collectifs et sentiers modulables. Elle permet de construire des journées plus courtes, de prévoir des pauses et d’adapter l’itinéraire à l’âge des enfants. L’objectif n’est pas la performance mais le plaisir de progresser ensemble.",
+          "Pour une famille, regardez surtout le temps de marche réel, le dénivelé, la chaleur attendue et le confort des hébergements. Une étape de douze kilomètres sur terrain facile peut être plus agréable qu’une courte montée raide.",
+        ],
+        links: [
+          { href: "/randonnee-en-famille-vallee-heureuse-dait-bouguemez-8-jours", label: "Voir le trek familial" },
+          { href: "/blog/trek-famille-ait-bouguemez-guide", label: "Lire le guide avec des enfants" },
+        ],
+      },
+      {
+        heading: "Pour l’hiver et les grands espaces : Anti-Atlas ou Sahara",
+        paragraphs: [
+          "Le Jbel Saghro offre des plateaux volcaniques, des pitons rocheux et de vastes horizons, sans les altitudes extrêmes du Haut Atlas. Autour de Tafraout, les vallées d’amandiers et les villages de l’Anti-Atlas composent un trek plus doux, particulièrement beau à la fin de l’hiver.",
+          "Dans le Sahara, la marche change de rythme. Les étapes suivent les dunes, les regs et les palmeraies, avec un bivouac le soir. Choisissez le désert pour le silence et l’immersion ; choisissez l’Anti-Atlas si vous préférez un relief plus varié et davantage de villages.",
+        ],
+        links: [
+          { href: "/randonnee-jbel-saghro", label: "Trek dans le Jbel Saghro" },
+          { href: "/le-desert", label: "Comparer les treks dans le désert" },
+        ],
+      },
+      {
+        heading: "Choisir la bonne durée",
+        paragraphs: [
+          "Trois ou quatre jours suffisent pour déconnecter et découvrir la vie des vallées. Une semaine permet une vraie traversée, avec des paysages qui évoluent et un rythme de marche qui s’installe. Au-delà de dix jours, le trek devient un voyage complet où la récupération et la régularité comptent autant que la condition physique.",
+          "Ne comptez pas uniquement les jours de marche. Gardez une marge à l’arrivée, surtout si vous prenez l’avion, et évitez de placer l’étape la plus difficile au lendemain d’un long trajet.",
+        ],
+        bullets: [
+          "3 à 4 jours : première expérience ou court séjour depuis Marrakech",
+          "6 à 8 jours : meilleur équilibre entre marche, rencontres et variété",
+          "10 à 15 jours : grande itinérance pour marcheurs habitués",
+          "Plus de 20 jours : traversée engagée demandant endurance et disponibilité",
+        ],
+      },
+      {
+        heading: "Comment évaluer votre niveau réel ?",
+        paragraphs: [
+          "Le nombre d’heures ne suffit pas à décrire la difficulté. Une journée de cinq heures à 3 500 m, sur un sentier pierreux, fatigue davantage que cinq heures en plaine. Regardez ensemble le dénivelé positif, l’altitude maximale, la technicité du terrain, la succession des étapes et le confort des nuits.",
+          "Avant de réserver, dites simplement ce que vous pratiquez aujourd’hui : fréquence de marche, distance habituelle, plus grand dénivelé réalisé et expérience en altitude. Un guide local peut alors ajuster les étapes sans vous vendre un niveau qui ne correspond pas au terrain.",
+        ],
+        bullets: [
+          "Facile : 3 à 5 h de marche, faible altitude et pauses possibles",
+          "Modéré : 5 à 6 h, plusieurs jours de suite et dénivelé régulier",
+          "Soutenu : 6 à 8 h, cols élevés, terrain irrégulier ou longues traversées",
+          "Engagé : haute altitude, conditions hivernales ou isolement important",
+        ],
+      },
+      {
+        heading: "Guide, hébergement et portage : ce qui change l’expérience",
+        paragraphs: [
+          "Un trek accompagné ne se résume pas à suivre un chemin. Le guide adapte le rythme, lit les conditions, facilite les rencontres et coordonne l’équipe. Dans l’Atlas, les mules transportent généralement le bagage principal ; dans le désert, ce rôle revient aux dromadaires. Vous gardez un sac de journée avec l’eau et les affaires indispensables.",
+          "Les nuits peuvent alterner entre gîtes, maisons d’hôtes, refuges et bivouacs. Demandez ce qui est réellement prévu : chambre privative ou dortoir, douche disponible, couverture ou sac de couchage, transfert des bagages et repas inclus.",
+        ],
+        links: [{ href: "/informations-pratiques", label: "Consulter les informations pratiques" }],
+      },
+      {
+        heading: "Notre conseil final avant de réserver",
+        paragraphs: [
+          "Choisissez d’abord la bonne région pour la saison, puis un niveau que vous pourriez tenir plusieurs jours de suite. Ajoutez ensuite ce qui donnera du sens au voyage : un sommet, des villages, des paysages désertiques ou du temps en famille.",
+          "Si vous hésitez entre deux circuits, indiquez-nous vos dates, le nombre de voyageurs, votre expérience et le nombre d’heures que vous souhaitez marcher chaque jour. Nous vous dirons franchement quel itinéraire convient le mieux et ce qu’il est utile d’adapter.",
+        ],
+        links: [
+          { href: "/circuits", label: "Voir tous les circuits" },
+          { href: "/contact", label: "Demander conseil à un guide local" },
+          { href: "/blog/que-mettre-sac-trek-maroc", label: "Préparer son sac" },
+        ],
+      },
+    ],
+  },
+  {
     slug: "trek-4-jours-haut-atlas-villages-cuisine",
     title: "4 jours dans le Haut Atlas : de village en village, jusqu’à la cuisine d’Armed",
     seoTitle: "Trek 4 jours Haut Atlas : villages et cuisine",

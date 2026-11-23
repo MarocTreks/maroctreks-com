@@ -77,7 +77,6 @@ export default function InformationsPratiques() {
               src={cloudinaryImage("58897216-87b3-488c-ba10-2914b95e69f1_qztmlj")}
               alt=""
               fill
-              unoptimized
               sizes="100vw"
               className="object-cover"
             />

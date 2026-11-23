@@ -15,10 +15,6 @@ export function cloudinaryImage(publicId: string) {
   return `${cloudinaryBase}/f_auto,q_auto,c_limit,w_1800/${publicId}`;
 }
 
-export function isCloudinaryImage(src: string) {
-  return src.startsWith(`${cloudinaryBase}/`);
-}
-
 export const tourMediaBySlug: Record<string, TourMedia> = {
   "circuit-toubkal-6-jours-lac-ifni": {
     hero: {

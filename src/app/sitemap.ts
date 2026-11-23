@@ -17,6 +17,8 @@ const routes = [
   "/politique-confidentialite",
   "/conditions-reservation",
   "/blog",
+  "/en",
+  "/en/mount-toubkal-trek",
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {

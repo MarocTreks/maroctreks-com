@@ -52,7 +52,7 @@ export default async function BlogPostPage({ params }: Props) {
       <main className="flex-grow bg-[#fbf8f1]">
         <article>
           <header className="relative min-h-[520px] overflow-hidden bg-slate-950 text-white sm:min-h-[720px]">
-            <Image src={post.image} alt={post.imageAlt} fill priority unoptimized sizes="100vw" className="object-cover" />
+            <Image src={post.image} alt={post.imageAlt} fill priority sizes="100vw" className="object-cover" />
             <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(2,6,23,0.94)_0%,rgba(2,6,23,0.72)_48%,rgba(2,6,23,0.2)_100%)]" />
             <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-slate-950/20" />
             <div className="relative mx-auto flex min-h-[520px] max-w-7xl flex-col justify-end px-4 pb-8 pt-20 sm:min-h-[720px] sm:px-6 sm:pb-20 lg:px-8">

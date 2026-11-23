@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { ChevronLeft, ChevronRight, Expand, X } from "lucide-react";
-import { isCloudinaryImage, type TourMediaImage } from "@/lib/tour-media";
+import type { TourMediaImage } from "@/lib/tour-media";
 
 export default function TourGallery({
   images,
@@ -127,7 +127,6 @@ export default function TourGallery({
               src={image.src}
               alt=""
               fill
-              unoptimized={isCloudinaryImage(image.src)}
               sizes="160px"
               className="object-cover transition-transform duration-300 group-hover:scale-105"
             />
@@ -174,7 +173,6 @@ export default function TourGallery({
                 src={selectedImage.src}
                 alt={selectedImage.alt}
                 fill
-                unoptimized={isCloudinaryImage(selectedImage.src)}
                 sizes="94vw"
                 className="object-contain"
               />

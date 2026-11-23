@@ -8,6 +8,7 @@ export const metadata = createMetadata({
   title: category.seoTitle,
   description: category.seoDescription,
   path: category.path,
+  languages: { "fr-FR": category.path, en: "/en/mount-toubkal-trek", "x-default": category.path },
 });
 
 export default function ToubkalCategoryPage() {

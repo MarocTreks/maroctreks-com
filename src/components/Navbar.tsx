@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { Mountain, Menu, X, ChevronDown, Calendar, Phone } from "lucide-react";
 
 declare global {
@@ -76,6 +76,7 @@ export default function Navbar() {
   const [languageDropdownOpen, setLanguageDropdownOpen] = useState(false);
   const [selectedLanguage, setSelectedLanguage] = useState("fr");
   const pathname = usePathname();
+  const router = useRouter();
 
   const languages = [
     { code: "fr", short: "FR", name: "Français" },
@@ -156,7 +157,11 @@ export default function Navbar() {
   function loadGoogleTranslate(callback: () => void) {
     ensureTranslateElement();
 
-    (window as unknown as { googleTranslateElementInit?: () => void }).googleTranslateElementInit = initializeGoogleTranslate;
+    Object.defineProperty(window, "googleTranslateElementInit", {
+      configurable: true,
+      value: initializeGoogleTranslate,
+      writable: true,
+    });
 
     if (!document.querySelector("[data-google-translate-script]")) {
       const script = document.createElement("script");
@@ -196,6 +201,13 @@ export default function Navbar() {
     setLanguageDropdownOpen(false);
     setSelectedLanguage(language);
     window.localStorage.setItem("maroctreks-language", language);
+
+    if (language === "en") {
+      setTranslateCookie("fr");
+      router.push("/en");
+      return;
+    }
+
     setTranslateCookie(language);
 
     if (language === "fr") {

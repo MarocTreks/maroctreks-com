@@ -171,9 +171,9 @@ const faqs = [
 
 const editorialGuides = [
   {
-    href: "/blog/haut-atlas-maroc-guide-complet",
-    title: "Haut Atlas : le guide complet pour préparer son trek",
-    description: "Massifs, vallées, saisons et niveaux : les repères essentiels avant de choisir votre itinéraire.",
+    href: "/blog/quel-trek-choisir-maroc",
+    title: "Quel trek choisir au Maroc ?",
+    description: "Saison, niveau, durée et région : le guide complet pour trouver l’itinéraire qui vous ressemble.",
     image: cloudinaryImage("57930de4-d20a-4f25-983c-d0d95832500a_n5kysm"),
   },
   {
@@ -301,7 +301,7 @@ function ShortTreksFeature() {
           aria-label="Découvrir les treks de 2, 3 et 4 jours dans le Haut Atlas"
           className="group relative min-h-[240px] overflow-hidden rounded-xl border border-white/15 bg-slate-800 shadow-xl sm:min-h-[290px]"
         >
-          <Image src={images.shortTreks} alt="Randonneurs dans les montagnes du Haut Atlas" fill unoptimized sizes="(min-width: 1024px) 38vw, 100vw" className="object-cover transition-transform duration-500 group-hover:scale-[1.03] motion-reduce:transition-none" />
+          <Image src={images.shortTreks} alt="Randonneurs dans les montagnes du Haut Atlas" fill sizes="(min-width: 1024px) 38vw, 100vw" className="object-cover transition-transform duration-500 group-hover:scale-[1.03] motion-reduce:transition-none" />
           <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent" />
           <span className="absolute bottom-5 left-5 right-5 flex items-center justify-between font-display font-extrabold">
             Un trek court, une vraie immersion
@@ -383,7 +383,6 @@ export default function HomepagePremiumContent() {
             fill
             priority={index === 0}
             loading={index === 0 ? undefined : "eager"}
-            unoptimized
             sizes="100vw"
             className={`object-cover object-center transition-opacity duration-700 motion-reduce:transition-none ${
               heroSlide === index ? "opacity-100" : "opacity-0"

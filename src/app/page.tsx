@@ -8,6 +8,7 @@ export const metadata = createMetadata({
   description:
     "Organisez votre trek au Maroc avec Maroc Treks, équipe locale de guides : Toubkal, M'Goun, Haut Atlas et Sahara. Circuits sur mesure et devis direct.",
   path: "/",
+  languages: { "fr-FR": "/", en: "/en", "x-default": "/" },
 });
 
 export default function Home() {

@@ -1,3 +1,7 @@
+"use client";
+
+import { usePathname } from "next/navigation";
+
 export function WhatsAppIcon({ className = "h-5 w-5" }: { className?: string }) {
   return (
     <svg
@@ -12,17 +16,23 @@ export function WhatsAppIcon({ className = "h-5 w-5" }: { className?: string }) 
 }
 
 export default function WhatsAppButton() {
+  const isEnglish = usePathname().startsWith("/en");
+  const href = isEnglish
+    ? "https://wa.me/212667591933?text=Hello%20Maroc%20Treks%2C%20I%20would%20like%20to%20plan%20a%20trek%20in%20Morocco."
+    : "https://wa.me/212667591933?text=Bonjour%20Maroc%20Treks%2C%20je%20souhaite%20organiser%20un%20trek%20au%20Maroc.";
+  const label = isEnglish ? "Contact the Maroc Treks team on WhatsApp" : "Contacter l’équipe Maroc Treks sur WhatsApp";
+
   return (
     <a
-      href="https://wa.me/212667591933?text=Bonjour%20Maroc%20Treks%2C%20je%20souhaite%20organiser%20un%20trek%20au%20Maroc."
+      href={href}
       target="_blank"
       rel="noreferrer"
-      aria-label="Contact MarocTreks Team sur WhatsApp"
+      aria-label={label}
       className="fixed bottom-3 right-3 z-40 inline-flex h-12 w-12 items-center justify-center rounded-full bg-[#0f766e] p-0 text-white shadow-[0_10px_30px_rgba(15,23,42,0.28)] ring-3 ring-white/90 transition-[transform,background-color] hover:scale-[1.02] hover:bg-[#0b5f59] focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[#25D366] md:bottom-7 md:right-7 lg:h-14 lg:w-auto lg:gap-2 lg:px-4 lg:ring-4"
     >
       <WhatsAppIcon className="h-5 w-5 sm:h-6 sm:w-6" />
       <span className="hidden whitespace-nowrap text-xs font-extrabold lg:inline">
-        Contact MarocTreks Team
+        {isEnglish ? "Contact our local team" : "Contacter notre équipe"}
       </span>
     </a>
   );

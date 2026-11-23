@@ -66,7 +66,7 @@ export default function BlogPage() {
             {blogPosts.map((post) => (
               <article key={post.slug} className="group relative flex h-full flex-col">
                 <div className="relative aspect-[16/9] overflow-hidden rounded-2xl bg-slate-200 sm:aspect-[4/3]">
-                  <Image src={post.image} alt={post.imageAlt} fill unoptimized sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 33vw" className="object-cover transition duration-700 group-hover:scale-105" />
+                  <Image src={post.image} alt={post.imageAlt} fill sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 33vw" className="object-cover transition duration-700 group-hover:scale-105" />
                   <span className="absolute left-4 top-4 rounded-full bg-white/90 px-3 py-1.5 text-[10px] font-black uppercase tracking-[0.13em] text-orange-800 shadow-sm backdrop-blur">{post.category}</span>
                 </div>
                 <div className="flex flex-1 flex-col pt-5">

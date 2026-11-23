@@ -2,6 +2,8 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   images: {
+    formats: ["image/avif", "image/webp"],
+    minimumCacheTTL: 2678400,
     remotePatterns: [
       {
         protocol: "https",
@@ -31,8 +33,8 @@ const nextConfig: NextConfig = {
         destination: "/randonnee-moyen-atlas",
         permanent: true,
       },
-      { source: "/:locale(fr|en|es|nl)", destination: "/", permanent: true },
-      { source: "/:locale(fr|en|es|nl)/:path*", destination: "/:path*", permanent: true },
+      { source: "/:locale(fr|es|nl)", destination: "/", permanent: true },
+      { source: "/:locale(fr|es|nl)/:path*", destination: "/:path*", permanent: true },
     ];
   },
   async headers() {

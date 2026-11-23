@@ -18,7 +18,7 @@ import TourGallery from "@/components/TourGallery";
 import { WhatsAppIcon } from "@/components/WhatsAppButton";
 import { JsonLd, SITE_URL } from "@/lib/seo";
 import type { TourDetailLabels, TourSectionHeadings } from "@/lib/tours";
-import { isCloudinaryImage, type TourMediaImage } from "@/lib/tour-media";
+import type { TourMediaImage } from "@/lib/tour-media";
 
 const trekGuides = {
   season: { href: "/blog/meilleure-periode-trekking-maroc", title: "Quelle saison choisir pour un trek au Maroc ?" },
@@ -164,7 +164,6 @@ export default function TrekDetailLayout({
             alt={bannerImageAlt}
             fill
             priority
-            unoptimized={isCloudinaryImage(bannerImage)}
             sizes="100vw"
             className="object-cover"
           />
@@ -274,7 +273,6 @@ export default function TrekDetailLayout({
                             src={image.src}
                             alt={image.alt}
                             fill
-                            unoptimized={isCloudinaryImage(image.src)}
                             sizes={index === 0 ? "(max-width: 1023px) 45vw, 330px" : "(max-width: 1023px) 45vw, 330px"}
                             className="object-cover"
                           />

@@ -10,17 +10,19 @@ type PageMetadata = {
   description: string;
   path: string;
   image?: string;
+  languages?: Record<string, string>;
+  locale?: string;
   article?: { publishedTime: string; modifiedTime: string; authors: string[] };
 };
 
-export function createMetadata({ title, description, path, image = "/opengraph-image", article }: PageMetadata): Metadata {
+export function createMetadata({ title, description, path, image = "/opengraph-image", languages, locale = "fr_FR", article }: PageMetadata): Metadata {
   return {
     title: path === "/" ? { absolute: title } : title,
     description,
-    alternates: { canonical: path },
+    alternates: { canonical: path, ...(languages ? { languages } : {}) },
     openGraph: article ? {
       type: "article",
-      locale: "fr_FR",
+      locale,
       siteName: SITE_NAME,
       title,
       description,
@@ -31,7 +33,7 @@ export function createMetadata({ title, description, path, image = "/opengraph-i
       authors: article.authors,
     } : {
       type: "website",
-      locale: "fr_FR",
+      locale,
       siteName: SITE_NAME,
       title,
       description,

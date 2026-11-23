@@ -65,7 +65,7 @@ export default function ShortTreksPage() {
     <Navbar />
     <main className="min-w-0 flex-grow overflow-x-clip bg-brand-sand">
       <header className="relative overflow-hidden bg-slate-950 py-20 text-white sm:py-32">
-        <Image src={heroImage} alt="Randonneurs dans le Haut Atlas" fill priority unoptimized sizes="100vw" className="object-cover" />
+        <Image src={heroImage} alt="Randonneurs dans le Haut Atlas" fill priority sizes="100vw" className="object-cover" />
         <div className="absolute inset-0 bg-gradient-to-r from-slate-950/90 via-slate-950/65 to-slate-950/25" />
         <div className="relative mx-auto min-w-0 max-w-7xl px-4 sm:px-6 lg:px-8">
           <p className="text-xs font-extrabold uppercase tracking-[0.2em] text-orange-300">Départ de Marrakech · Guide local</p>
@@ -87,7 +87,7 @@ export default function ShortTreksPage() {
         <div className="mb-10 max-w-3xl"><p className="text-xs font-extrabold uppercase tracking-[0.18em] text-orange-700">Trois formats personnalisables</p><h2 className="mt-3 font-display text-3xl font-black text-slate-950 sm:text-4xl">Quel trek court vous correspond ?</h2><p className="mt-4 leading-7 text-slate-600">Après votre demande, notre équipe confirme les étapes, les nuits, le matériel, le guide affecté et le prix selon vos dates et votre groupe.</p></div>
         <div className="grid gap-6 lg:grid-cols-3">
           {programs.map((program, index) => <article id={program.id} key={program.id} className="flex scroll-mt-24 flex-col overflow-hidden rounded-xl border border-stone-200 bg-white shadow-sm">
-            <div className="relative min-h-52"><Image src={program.image} alt={program.alt} fill unoptimized sizes="(max-width:1023px) 100vw,33vw" className="object-cover" /><span className="absolute left-4 top-4 rounded-full bg-white px-3 py-1.5 text-xs font-black text-orange-800 shadow">{program.duration}</span></div>
+            <div className="relative min-h-52"><Image src={program.image} alt={program.alt} fill sizes="(max-width:1023px) 100vw,33vw" className="object-cover" /><span className="absolute left-4 top-4 rounded-full bg-white px-3 py-1.5 text-xs font-black text-orange-800 shadow">{program.duration}</span></div>
             <div className="flex flex-1 flex-col p-5"><p className="text-xs font-extrabold uppercase tracking-[0.16em] text-orange-700">Option {index + 1}</p><h2 className="mt-2 font-display text-xl font-black leading-tight text-slate-950">{program.title}</h2><p className="mt-3 text-sm leading-6 text-slate-600">{program.intro}</p><span className="mt-4 inline-flex w-fit items-center gap-2 rounded-full bg-stone-100 px-3 py-1.5 text-xs font-bold text-slate-700"><Footprints className="h-4 w-4 text-orange-700" />{program.difficulty}</span>
               <ol className="mt-5 space-y-4 border-l-2 border-orange-200 pl-4">{program.days.map(([title, description]) => <li key={title}><h3 className="font-display text-sm font-extrabold leading-5 text-slate-900">{title}</h3><p className="mt-1 text-xs leading-5 text-slate-600">{description}</p></li>)}</ol>
               <p className="mt-5 rounded-lg bg-orange-50 p-3 text-xs leading-5 text-orange-950"><strong>À confirmer :</strong> {program.note}</p><Link href="/contact" className="theme-button-primary mt-5 w-full">Recevoir le programme et le prix <ArrowRight className="h-4 w-4" /></Link>

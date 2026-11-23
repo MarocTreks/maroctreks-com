@@ -33,7 +33,6 @@ export default function TourCard({
           src={tour.image}
           alt={tour.imageAlt}
           fill
-          unoptimized={tour.image.startsWith("https://")}
           sizes="(max-width: 767px) 88vw, (max-width: 1023px) 48vw, 30vw"
           className="object-cover transition-transform duration-500 ease-out group-hover:scale-[1.04] group-focus-within:scale-[1.04] motion-reduce:transition-none"
         />

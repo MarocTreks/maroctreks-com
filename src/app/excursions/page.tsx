@@ -67,7 +67,6 @@ export default function Excursions() {
             alt={excursionImages.hero.alt}
             fill
             preload
-            unoptimized
             sizes="100vw"
             className="object-cover object-center"
           />
@@ -172,7 +171,6 @@ export default function Excursions() {
                     src={excursionImages.sections[sectionIndex].src}
                     alt={excursionImages.sections[sectionIndex].alt}
                     fill
-                    unoptimized
                     sizes="(min-width: 1024px) 42vw, 100vw"
                     className="object-cover"
                   />

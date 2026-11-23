@@ -50,7 +50,6 @@ export default function CircuitsPage() {
             alt="Montagnes de l'Atlas au Maroc"
             fill
             priority
-            unoptimized
             sizes="100vw"
             className="object-cover"
           />

@@ -94,7 +94,6 @@ export default function QuiSommesNous() {
               alt={mohamedPhotos.forest.alt}
               fill
               priority
-              unoptimized
               sizes="(min-width: 1280px) 1280px, 100vw"
               className="object-contain object-top sm:object-right"
             />
@@ -241,7 +240,6 @@ export default function QuiSommesNous() {
                 alt={mohamedPhotos.trail.alt}
                 width={mohamedPhotos.trail.width}
                 height={mohamedPhotos.trail.height}
-                unoptimized
                 sizes="(min-width: 1024px) 380px, 90vw"
                 className="h-auto w-full object-contain"
               />
@@ -276,7 +274,6 @@ export default function QuiSommesNous() {
                   alt={mohamedPhotos.portrait.alt}
                   width={mohamedPhotos.portrait.width}
                   height={mohamedPhotos.portrait.height}
-                  unoptimized
                   sizes="(min-width: 768px) 48vw, 100vw"
                   className="h-auto w-full object-contain"
                 />
@@ -291,7 +288,6 @@ export default function QuiSommesNous() {
                   alt={mohamedPhotos.river.alt}
                   width={mohamedPhotos.river.width}
                   height={mohamedPhotos.river.height}
-                  unoptimized
                   sizes="(min-width: 768px) 48vw, 100vw"
                   className="h-auto w-full object-contain"
                 />
@@ -308,7 +304,6 @@ export default function QuiSommesNous() {
                 alt={mohamedPhotos.snow.alt}
                 width={mohamedPhotos.snow.width}
                 height={mohamedPhotos.snow.height}
-                unoptimized
                 sizes="(min-width: 640px) 480px, 90vw"
                 className="h-auto w-full object-contain"
               />
