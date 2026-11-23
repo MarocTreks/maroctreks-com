@@ -39,6 +39,7 @@ export default async function BlogPostPage({ params }: Props) {
 
   const articleSchema = { "@context": "https://schema.org", "@type": "BlogPosting", "@id": `${SITE_URL}/blog/${post.slug}#article`, headline: post.title, description: post.description, image: post.image, datePublished: post.publishedAt, dateModified: post.updatedAt, inLanguage: "fr-FR", author: { "@type": "Person", name: BLOG_AUTHOR, url: `${SITE_URL}/qui-sommes-nous` }, publisher: { "@id": `${SITE_URL}/#organization` }, mainEntityOfPage: `${SITE_URL}/blog/${post.slug}` };
   const breadcrumbSchema = { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: "Accueil", item: SITE_URL }, { "@type": "ListItem", position: 2, name: "Blog", item: `${SITE_URL}/blog` }, { "@type": "ListItem", position: 3, name: post.title, item: `${SITE_URL}/blog/${post.slug}` }] };
+  const eventSchema = post.event ? { "@context": "https://schema.org", "@type": "Event", name: post.event.name, description: post.description, image: post.image, startDate: post.event.startDate, endDate: post.event.endDate, eventStatus: "https://schema.org/EventScheduled", eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode", location: { "@type": "Place", name: post.event.locationName, address: { "@type": "PostalAddress", addressCountry: "MA" } }, organizer: { "@id": `${SITE_URL}/#organization` }, url: `${SITE_URL}/blog/${post.slug}` } : null;
   const relatedPosts = [
     ...blogPosts.filter((candidate) => candidate.slug !== post.slug && candidate.category === post.category),
     ...blogPosts.filter((candidate) => candidate.slug !== post.slug && candidate.category !== post.category),
@@ -47,7 +48,7 @@ export default async function BlogPostPage({ params }: Props) {
 
   return (
     <>
-      <JsonLd data={[articleSchema, breadcrumbSchema]} />
+      <JsonLd data={eventSchema ? [articleSchema, breadcrumbSchema, eventSchema] : [articleSchema, breadcrumbSchema]} />
       <Navbar />
       <main className="flex-grow bg-[#fbf8f1]">
         <article>

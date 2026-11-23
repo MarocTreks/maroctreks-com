@@ -22,10 +22,138 @@ export type BlogPost = {
   imageAlt: string;
   relatedHref: string;
   relatedLabel: string;
+  event?: {
+    name: string;
+    startDate: string;
+    endDate: string;
+    locationName: string;
+  };
   sections: BlogSection[];
 };
 
 export const blogPosts: BlogPost[] = [
+  {
+    slug: "reveillon-2027-desert-draa",
+    title: "Réveillon 2027 dans le désert du Drâa : trek et bivouac sous les étoiles",
+    seoTitle: "Réveillon 2027 dans le désert du Drâa",
+    excerpt: "Du 30 décembre 2026 au 6 janvier 2027, choisissez 2 à 5 jours de marche et célébrez le Nouvel An dans un bivouac traditionnel du Sahara.",
+    description: "Fêtez le passage à 2027 dans le désert du Drâa : trek de 2 à 5 jours, bivouac traditionnel, repas marocains et réveillon sous les étoiles.",
+    category: "Désert marocain",
+    publishedAt: "2026-11-23",
+    updatedAt: "2026-11-23",
+    readingTime: "9 min",
+    image: cloudinaryImage("474a07e8-538c-4915-9b4a-50d84d470979_jr5e0h"),
+    imageAlt: "Groupe de randonneurs dans les dunes de la vallée du Drâa au Maroc",
+    relatedHref: "/contact",
+    relatedLabel: "Demander le programme du Réveillon 2027",
+    event: {
+      name: "Réveillon 2027 dans le désert du Drâa",
+      startDate: "2026-12-30",
+      endDate: "2027-01-06",
+      locationName: "Désert du Drâa, sud du Maroc",
+    },
+    sections: [
+      {
+        heading: "Les dates à retenir pour le Réveillon 2027",
+        paragraphs: [
+          "Le Réveillon 2027 désigne la soirée du 31 décembre 2026 et le passage au 1er janvier 2027. Maroc Treks organise cette aventure dans le désert du Drâa sur une période plus large, du 30 décembre 2026 au 6 janvier 2027, afin de proposer plusieurs durées de randonnée.",
+          "Vous pouvez choisir de marcher pendant 2, 3, 4 ou 5 jours selon le temps dont vous disposez et le niveau d’immersion recherché. Les jours précis de départ et de retour, le point de rendez-vous et le programme détaillé sont confirmés dans la proposition écrite correspondant à votre formule.",
+        ],
+        bullets: [
+          "Période de l’événement : du 30 décembre 2026 au 6 janvier 2027",
+          "Nuit du Réveillon : du 31 décembre 2026 au 1er janvier 2027",
+          "Durée de marche au choix : 2, 3, 4 ou 5 jours",
+          "Destination : désert du Drâa, dans le sud marocain",
+          "Tarif personnalisé selon la formule et le nombre de participants",
+        ],
+      },
+      {
+        heading: "Pourquoi célébrer le Nouvel An dans le désert du Drâa ?",
+        paragraphs: [
+          "À la fin du mois de décembre, le désert offre une manière radicalement différente de terminer l’année. Les journées se déroulent au rythme de la marche, entre dunes, espaces ouverts et lumière d’hiver. Le soir, le bruit des villes laisse place au feu de camp et au ciel du Sahara.",
+          "Cette proposition s’adresse aux voyageurs qui recherchent une expérience simple et collective plutôt qu’une soirée de gala. Le décor est exceptionnel, mais l’essentiel se trouve dans la marche, les repas partagés et le temps passé avec l’équipe locale.",
+        ],
+        links: [
+          { href: "/le-desert", label: "Découvrir nos treks dans le désert" },
+          { href: "/randonnee-desert-marocain-circuit-de-8-jours-vallee-du-draa", label: "Explorer la vallée du Drâa à pied" },
+        ],
+      },
+      {
+        heading: "Quelle formule choisir : 2, 3, 4 ou 5 jours de marche ?",
+        paragraphs: [
+          "Deux jours permettent une première rencontre avec la marche dans le désert et le bivouac. Trois jours donnent davantage de temps pour prendre le rythme. Quatre ou cinq jours conviennent mieux à ceux qui veulent s’éloigner progressivement des zones accessibles et vivre une véritable continuité entre les étapes.",
+          "La durée ne doit pas être choisie uniquement en fonction du calendrier. Votre expérience de la randonnée, votre aisance avec un confort simple et votre envie de marcher plusieurs jours de suite comptent tout autant. Indiquez-nous votre niveau habituel : nous vous orienterons vers la formule la plus cohérente.",
+        ],
+        bullets: [
+          "2 jours : une découverte courte du désert et du bivouac",
+          "3 jours : un bon compromis entre marche et temps disponible",
+          "4 jours : une immersion plus progressive dans les paysages du Drâa",
+          "5 jours : l’expérience la plus complète proposée pour cet événement",
+        ],
+      },
+      {
+        heading: "Un bivouac traditionnel, sans luxe artificiel",
+        paragraphs: [
+          "Le campement est pensé pour vivre le désert avec simplicité. Les nuits se passent sous tente, au milieu des dunes, dans une ambiance conviviale. Il ne s’agit pas d’un camp hôtelier : le confort est sobre et l’expérience repose sur la proximité avec la nature.",
+          "Les tentes de couchage accueillent deux personnes. Une tente individuelle peut être demandée à l’avance. Une tente de cuisine permet au cuisinier de préparer les repas, tandis qu’une tente mess commune réunit le groupe pour manger et passer la soirée à l’abri si nécessaire.",
+        ],
+        bullets: [
+          "Tentes de deux personnes pour la nuit",
+          "Tente individuelle disponible sur demande",
+          "Tente de cuisine et tente mess commune",
+          "Repas traditionnels préparés par un cuisinier",
+          "Espace partagé autour du feu de camp",
+        ],
+      },
+      {
+        heading: "La soirée du 31 décembre sous les étoiles",
+        paragraphs: [
+          "Après la journée dans le désert, le groupe se retrouve au bivouac pour célébrer le passage à la nouvelle année. Le dîner traditionnel est préparé sur place par le cuisinier. La soirée se poursuit autour du feu, avec de la musique et des chants sahariens.",
+          "L’ambiance se veut chaleureuse et authentique. Il n’y a ni salle de réception ni mise en scène luxueuse : seulement le campement, l’équipe, les voyageurs et le ciel nocturne. C’est précisément cette simplicité qui rend le Réveillon différent.",
+        ],
+      },
+      {
+        heading: "Quel niveau faut-il pour marcher dans le désert ?",
+        paragraphs: [
+          "Le désert ne présente pas les dénivelés du Haut Atlas, mais marcher dans le sable et sur des terrains irréguliers sollicite les jambes différemment. L’enchaînement des étapes et la vie en bivouac demandent également une condition physique normale et l’envie de vivre dehors pendant plusieurs jours.",
+          "Le rythme est adapté au groupe et la formule doit rester cohérente avec votre expérience. Avant de confirmer, précisez-nous vos habitudes de marche, vos éventuelles contraintes et le nombre de participants. Ces informations nous permettent de vous conseiller honnêtement.",
+        ],
+      },
+      {
+        heading: "Que faut-il emporter fin décembre ?",
+        paragraphs: [
+          "Le soleil peut être généreux dans la journée, mais les températures baissent rapidement après son coucher. Une veste chaude, des couches faciles à superposer, un bonnet et un vêtement coupe-vent sont indispensables pour les soirées et les matinées. Pendant la marche, prévoyez de bonnes chaussures déjà portées, une protection solaire, des lunettes et un foulard contre le sable.",
+          "La liste définitive dépend de la durée choisie et des conditions annoncées avant le départ. Maroc Treks communique les recommandations adaptées avec le programme confirmé.",
+        ],
+        links: [{ href: "/blog/que-mettre-sac-trek-maroc", label: "Consulter notre liste d’équipement" }],
+      },
+      {
+        heading: "Ce que le devis doit préciser avant votre réservation",
+        paragraphs: [
+          "Le tarif est établi sur demande, car il dépend de la durée de marche, du nombre de voyageurs et des services retenus. Avant tout engagement, demandez une proposition écrite indiquant les dates exactes, le point de rendez-vous, les transferts éventuels, les repas, les nuits, l’encadrement et les prestations qui restent à votre charge.",
+          "Cette étape évite les malentendus et vous permet de comparer les formules sur des éléments concrets. La réservation n’est confirmée qu’après accord sur le programme, le prix et les conditions communiquées par Maroc Treks.",
+        ],
+      },
+      {
+        heading: "Questions fréquentes sur le Réveillon dans le Drâa",
+        paragraphs: [
+          "Peut-on venir seul ? Oui, une demande individuelle est possible. La composition du groupe et la disponibilité d’une tente individuelle doivent être confirmées avant la réservation.",
+          "Faut-il être un randonneur expérimenté ? Pas nécessairement pour la formule la plus courte, mais il faut pouvoir marcher plusieurs heures et accepter le confort simple du bivouac. Les formules longues demandent davantage d’endurance.",
+          "Fait-il froid la nuit ? Les nuits d’hiver dans le désert peuvent être froides. Des vêtements chauds et un équipement de nuit adapté sont donc essentiels.",
+          "Le prix est-il fixe ? Non. Il varie selon la durée choisie, le nombre de participants et les services confirmés dans le devis.",
+          "Comment vérifier les places disponibles ? Contactez directement Maroc Treks avec vos dates, le nombre de voyageurs et la durée souhaitée. L’équipe vous répondra avec les disponibilités et le programme correspondant.",
+        ],
+      },
+      {
+        heading: "Demandez le programme du Réveillon 2027",
+        paragraphs: [
+          "Pour recevoir une proposition, indiquez le nombre de participants, la formule envisagée — 2, 3, 4 ou 5 jours —, votre expérience de la marche et vos besoins particuliers. Vous recevrez ainsi un programme adapté plutôt qu’une offre générique.",
+          "Les départs se déroulent pendant la période du 30 décembre 2026 au 6 janvier 2027. Comme il s’agit d’un événement à dates fixes, contactez l’équipe suffisamment tôt pour vérifier les places et organiser les détails pratiques.",
+        ],
+        links: [{ href: "/contact", label: "Recevoir le programme et le tarif" }],
+      },
+    ],
+  },
   {
     slug: "quel-trek-choisir-maroc",
     title: "Quel trek choisir au Maroc ? Le guide pour trouver l’itinéraire qui vous ressemble",
